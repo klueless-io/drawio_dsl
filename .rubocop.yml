@@ -69,6 +69,9 @@ Naming/MethodParameterName:
 Style/EmptyMethod:    
   Exclude:
     - "**/spec/**/*"
+Style/MultilineBlockChain:
+  Exclude:
+    - "**/spec/**/*"
 Metrics/ParameterLists:
   Exclude:
     - "**/spec/**/*"

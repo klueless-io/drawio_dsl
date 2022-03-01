@@ -1,6 +1,15 @@
 # frozen_string_literal: true
 
+require 'securerandom'
+require 'k_config'
+require 'k_log'
+require 'k_director'
+
+require_relative 'drawio_dsl/configuration'
 require_relative 'drawio_dsl/version'
+require_relative 'drawio_dsl/schema'
+require_relative 'drawio_dsl/builder'
+require_relative 'drawio_dsl/drawio'
 
 module DrawioDsl
   # raise DrawioDsl::Error, 'Sample message'
