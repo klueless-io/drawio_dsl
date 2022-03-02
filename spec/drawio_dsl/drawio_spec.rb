@@ -112,10 +112,10 @@ RSpec.describe DrawioDsl::Drawio do
       # .build('xm')
     end
 
-    fit do
-      # puts JSON.pretty_generate(director.builder.diagram.to_h)
-      File.write('/Users/davidcruwys/dev/kgems/drawio_dsl/spec/.samples/drawio/sample.json', JSON.pretty_generate(director.builder.diagram.to_h))
-      # director.builder.debug
-    end
+    # fit do
+    #   # puts JSON.pretty_generate(director.builder.diagram.to_h)
+    #   File.write('/Users/davidcruwys/dev/kgems/drawio_dsl/spec/.samples/drawio/sample.json', JSON.pretty_generate(director.builder.diagram.to_h))
+    #   # director.builder.debug
+    # end
   end
 end
