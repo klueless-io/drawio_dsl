@@ -1,3 +1,13 @@
+# [0.1.0](https://github.com/klueless-io/drawio_dsl/compare/v0.0.1...v0.1.0) (2022-03-02)
+
+
+### Features
+
+* initial draw-io dsl ([ac197c8](https://github.com/klueless-io/drawio_dsl/commit/ac197c88b66b883b5fcce93090c285bc9ccdb7a3))
+* initial draw-io dsl ([12c8b98](https://github.com/klueless-io/drawio_dsl/commit/12c8b98392e5f7da598cf2f9c375f1ca7041533b))
+* initial draw-io dsl ([6ef32ad](https://github.com/klueless-io/drawio_dsl/commit/6ef32adcb1287d9993ebe30c437326716357a08e))
+* initial draw-io dsl ([16827b5](https://github.com/klueless-io/drawio_dsl/commit/16827b57767d12c387167b86f17b33115d1d0378))
+
 ## [Unreleased]
 
 ## [0.1.0] - 2022-02-25
