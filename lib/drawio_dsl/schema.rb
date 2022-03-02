@@ -40,6 +40,7 @@ module DrawioDsl
       end
     end
 
+    # Default Palette contains palette information that can be inherited at each level
     class DefaultPalette
       attr_accessor :fill_color
       attr_accessor :stroke_color
@@ -128,13 +129,45 @@ module DrawioDsl
       attr_accessor :palette
       attr_accessor :elements
 
-      # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
+      # attr_accessor :dx              # dx         = "2636"
+      # attr_accessor :dy              # dy         = "2332"
+      attr_accessor :grid            # grid       = "0"
+      attr_accessor :grid_size       # gridSize   = "10"
+      attr_accessor :guides          # guides     = "1"
+      attr_accessor :tooltips        # tooltips   = "1"
+      attr_accessor :connect         # connect    = "1"
+      attr_accessor :arrows          # arrows     = "1"
+      attr_accessor :fold            # fold       = "1"
+      attr_accessor :page_no         # page       = "1"
+      attr_accessor :page_scale      # pageScale  = "1"
+      attr_accessor :page_width      # pageWidth  = "583"
+      attr_accessor :page_height     # pageHeight = "827"
+      attr_accessor :background      # background = "#FFFACD"
+      attr_accessor :page_shadow     # shadow     = "0"
+      attr_accessor :math            # math       = "0"
+
+      # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
       def initialize(diagram, **args)
         @diagram = diagram
 
-        @id = args[:id]
-        @name = args[:name]
-        @theme = args[:theme] || diagram.theme
+        @id           = args[:id]
+        @name         = args[:name]
+        @theme        = args[:theme]        || diagram.theme
+
+        @grid         = args[:grid]         || 0
+        @grid_size    = args[:grid_size]    || 10
+        @guides       = args[:guides]       || 1
+        @tooltips     = args[:tooltips]     || 1
+        @connect      = args[:connect]      || 1
+        @arrows       = args[:arrows]       || 1
+        @fold         = args[:fold]         || 1
+        @page_no      = args[:page_no]      || 1
+        @page_scale   = args[:page_scale]   || 1
+        @page_width   = args[:page_width]   || 1169 # A4
+        @page_height  = args[:page_height]  || 827  # A4
+        @background   = args[:background]   || '#FFFACD'
+        @page_shadow  = args[:page_shadow]  || 0
+        @math         = args[:math]         || 0
 
         @style = DrawioDsl::Schema::CommonStyle.new(**args) do
           # Inherit from the diagram style when specific style not specified.
@@ -158,7 +191,7 @@ module DrawioDsl
 
         @elements = args[:elements] || []
       end
-      # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
+      # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
 
       def to_h
         {
@@ -177,6 +210,7 @@ module DrawioDsl
       attr_accessor :page
 
       attr_accessor :theme
+      attr_accessor :title
 
       # The style of the element, these will derive from the page style if not provided
       attr_accessor :white_space
@@ -208,8 +242,9 @@ module DrawioDsl
 
       # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
       def apply_defaults(args, element_defaults)
-        @theme            = args[:theme]            || page.theme # KConfig.configuration.drawio.themes.sample
+        @theme            = args[:theme] || page.theme # KConfig.configuration.drawio.themes.sample
         theme_palette     = KConfig.configuration.drawio.palette(page.theme)
+        @title            = args[:title]            || ''
 
         @white_space      = args[:white_space]      || page.style.white_space # wrap or nil
         @html             = args[:html]             || page.style.html

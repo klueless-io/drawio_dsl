@@ -51,6 +51,8 @@ RSpec.describe DrawioDsl::Drawio do
   end
 
   context 'scenarios' do
+    let(:config_key) { :drawio_sample_spec }
+
     before do
       director
         .diagram(
@@ -104,10 +106,14 @@ RSpec.describe DrawioDsl::Drawio do
           process
           ellipse
         end
+      # .cd(:samples)
+      # .add('a.txt')
+      # .play_actions
+      # .build('xm')
     end
 
     fit do
-      puts JSON.pretty_generate(director.builder.diagram.to_h)
+      # puts JSON.pretty_generate(director.builder.diagram.to_h)
       File.write('/Users/davidcruwys/dev/kgems/drawio_dsl/spec/.samples/drawio/sample.json', JSON.pretty_generate(director.builder.diagram.to_h))
       # director.builder.debug
     end

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe DrawioDsl::Builder do
+RSpec.describe DrawioDsl::DomBuilder do
   let(:instance) { described_class.new }
 
   context 'on initialize' do
@@ -14,6 +14,12 @@ RSpec.describe DrawioDsl::Builder do
       subject { instance.diagram.host }
 
       it { is_expected.not_to be_nil }
+    end
+
+    describe '.dom' do
+      subject { instance.dom }
+
+      it { is_expected.to be_a(Hash) }
     end
   end
 

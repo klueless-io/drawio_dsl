@@ -2,7 +2,7 @@
 
 module DrawioDsl
   # DrawioDsl is a DSL for draw-io diagrams.
-  class Builder
+  class DomBuilder
     attr_reader :actions
     attr_reader :last_action
 
@@ -18,11 +18,22 @@ module DrawioDsl
       @actions = []
       @last_action = {}
       set_diagram
+      set_layout_engine
     end
 
     def queue_action(action)
       @actions << action
       @last_action = action
+    end
+
+    def set_layout_engine(**opts)
+      @layout_engine = DrawioDsl::LayoutEngine.new(**opts)
+    end
+
+    def layout_engine
+      return @layout_engine if defined? @layout_engine
+
+      set_layout_engine
     end
 
     def set_diagram(**opts)
@@ -33,7 +44,7 @@ module DrawioDsl
       return @diagram if defined? @diagram
 
       set_diagram
-    end      
+    end
 
     def add_page(**opts)
       @current_page = DrawioDsl::Schema::Page.new(diagram, **opts)
@@ -48,6 +59,8 @@ module DrawioDsl
       @current_element = element
 
       element.id = "#{current_page.id}-#{current_page.elements.length + 1}" unless element.id
+
+      layout_engine.container.place_element(element)
 
       current_page.elements << element
       @current_element
@@ -81,6 +94,10 @@ module DrawioDsl
     def debug
       puts JSON.pretty_generate(actions)
       puts JSON.pretty_generate(diagram.to_h)
+    end
+
+    def dom
+      diagram.to_h
     end
   end
 end

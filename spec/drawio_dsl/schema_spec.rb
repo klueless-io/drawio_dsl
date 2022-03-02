@@ -113,7 +113,7 @@ RSpec.describe DrawioDsl::Schema do
             shadow: diagram.style.shadow,
             sketch: diagram.style.sketch,
             glass: diagram.style.glass
-)
+          )
         end
 
         # fit { puts JSON.pretty_generate(instance.to_h) }
@@ -147,7 +147,7 @@ RSpec.describe DrawioDsl::Schema do
           )
         end
       end
-      
+
       context 'when theme is present on page' do
         let(:page_args) { { theme: :style_02 } }
 

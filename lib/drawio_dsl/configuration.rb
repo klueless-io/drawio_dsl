@@ -68,12 +68,12 @@ module DrawioDsl
     # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     def add_themes
       add_theme(:style_01         , fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#333333')
-      add_theme(:style_02         , fill_color: '#dae8fc', stroke_color: '#6c8ebf')
-      add_theme(:style_03         , fill_color: '#d5e8d4', stroke_color: '#82b366')
-      add_theme(:style_04         , fill_color: '#ffe6cc', stroke_color: '#d79b00')
-      add_theme(:style_05         , fill_color: '#fff2cc', stroke_color: '#d6b656')
-      add_theme(:style_06         , fill_color: '#f8cecc', stroke_color: '#b85450')
-      add_theme(:style_07         , fill_color: '#e1d5e7', stroke_color: '#9673a6')
+      add_theme(:style_02         , fill_color: '#dae8fc', stroke_color: '#6c8ebf', font_color: '#333333')
+      add_theme(:style_03         , fill_color: '#d5e8d4', stroke_color: '#82b366', font_color: '#333333')
+      add_theme(:style_04         , fill_color: '#ffe6cc', stroke_color: '#d79b00', font_color: '#333333')
+      add_theme(:style_05         , fill_color: '#fff2cc', stroke_color: '#d6b656', font_color: '#333333')
+      add_theme(:style_06         , fill_color: '#f8cecc', stroke_color: '#b85450', font_color: '#333333')
+      add_theme(:style_07         , fill_color: '#e1d5e7', stroke_color: '#9673a6', font_color: '#333333')
       add_theme(:style_08         , fill_color: '#60a917', stroke_color: '#2D7600', font_color: '#ffffff')
       add_theme(:style_09         , fill_color: '#008a00', stroke_color: '#005700', font_color: '#ffffff')
       add_theme(:style_10         , fill_color: '#1ba1e2', stroke_color: '#006EAF', font_color: '#ffffff')

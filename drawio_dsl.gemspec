@@ -48,4 +48,5 @@ Gem::Specification.new do |spec|
   # spec.add_dependency 'dry-struct', '~> 1'
   # spec.add_dependency 'k_type', '~> 0.0.0'
   # spec.add_dependency 'k_util', '~> 0.0.0'
+  spec.add_dependency 'nokogiri', '~> 1.13'
 end

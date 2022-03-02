@@ -60,9 +60,10 @@ Metrics/ModuleLength:
     - "**/spec/**/*"
 Naming/MemoizedInstanceVariableName:
   Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
 Naming/VariableNumber:
-  Exclude:
-    - "**/spec/**/*"
+  Enabled: false
 Naming/MethodParameterName:
   AllowedNames:
     - as
