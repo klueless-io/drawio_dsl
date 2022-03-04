@@ -56,6 +56,7 @@ module DrawioDsl
       builder.add_flex_layout(**opts)
     end
 
+    # rubocop:disable Metrics/CyclomaticComplexity
     def random(**opts)
       case rand(7)
       when 0
@@ -74,6 +75,7 @@ module DrawioDsl
         hexagon(**opts)
       end
     end
+    # rubocop:enable Metrics/CyclomaticComplexity
 
     def square(**opts)
       builder.add_square(**opts)
