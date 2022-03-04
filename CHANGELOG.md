@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/klueless-io/drawio_dsl/compare/v0.2.0...v0.3.0) (2022-03-04)
+
+
+### Features
+
+* add samples for direction, alignment, themes, styles and page margin ([2e9f735](https://github.com/klueless-io/drawio_dsl/commit/2e9f735ba50c9391d7dea64c565ca9c0fb61978a))
+
 # [0.2.0](https://github.com/klueless-io/drawio_dsl/compare/v0.1.0...v0.2.0) (2022-03-04)
 
 
