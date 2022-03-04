@@ -15,6 +15,8 @@ module DrawioDsl
       page = DrawioDsl::DrawioPage.new(self, **opts.merge(name: name))
       page.instance_eval(&block) if block_given?
 
+      layout = DrawioDsl::LayoutEngine.new(builder.current_page)
+      layout.call
       self
     end
 
@@ -54,6 +56,25 @@ module DrawioDsl
       builder.add_flex_layout(**opts)
     end
 
+    def random(**opts)
+      case rand(7)
+      when 0
+        square(**opts)
+      when 1
+        rectangle(**opts)
+      when 2
+        circle(**opts)
+      when 3
+        process(**opts)
+      when 4
+        ellipse(**opts)
+      when 5
+        diamond(**opts)
+      when 6
+        hexagon(**opts)
+      end
+    end
+
     def square(**opts)
       builder.add_square(**opts)
     end
@@ -72,6 +93,14 @@ module DrawioDsl
 
     def ellipse(**opts)
       builder.add_ellipse(**opts)
+    end
+
+    def diamond(**opts)
+      builder.add_diamond(**opts)
+    end
+
+    def hexagon(**opts)
+      builder.add_hexagon(**opts)
     end
 
     private

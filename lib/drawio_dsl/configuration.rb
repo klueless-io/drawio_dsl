@@ -32,9 +32,12 @@ module DrawioDsl
     attr_accessor :circle
     attr_accessor :process
     attr_accessor :ellipse
-    attr_accessor :triangle
-    attr_accessor :parallelogram
+    attr_accessor :diamond
     attr_accessor :hexagon
+
+    # <mxCell id="6" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="TqO-B">
+    #     <mxGeometry x="-496" y="115" width="80" height="80" as="geometry"/>
+    # </mxCell>
 
     def initialize
       @base_style = BaseStyle.new(white_space: :wrap, html: 1, rounded: nil, shadow: nil, sketch: nil, glass: nil)
@@ -45,7 +48,8 @@ module DrawioDsl
       @circle     = ShapeDefaults.new(:circle    , 0, 0, 160, 160, 'ellipse')
       @process    = ShapeDefaults.new(:process   , 0, 0, 200, 120, 'shape=process')
       @ellipse    = ShapeDefaults.new(:ellipse   , 0, 0, 200, 120, 'ellipse')
-      @triangle   = ShapeDefaults.new(:triangle  , 0, 0, 160, 160, 'rhombus')
+      @diamond    = ShapeDefaults.new(:diamond  , 0, 0, 160, 160, 'rhombus')
+      @hexagon    = ShapeDefaults.new(:hexagon  , 0, 0, 200, 120, 'shape=hexagon')
 
       @themes     = {}
       add_themes
@@ -90,26 +94,26 @@ module DrawioDsl
       add_theme(:style_21         , fill_color: '#647687', stroke_color: '#314354', font_color: '#ffffff')
       add_theme(:style_22         , fill_color: '#76608a', stroke_color: '#432D57', font_color: '#ffffff')
       add_theme(:style_23         , fill_color: '#a0522d', stroke_color: '#6D1F00', font_color: '#ffffff')
-      add_theme(:style_24         , fill_color: '#fad7ac', stroke_color: '#b46504')
-      add_theme(:style_25         , fill_color: '#fad9d5', stroke_color: '#ae4132')
-      add_theme(:style_26         , fill_color: '#b0e3e6', stroke_color: '#0e8088')
-      add_theme(:style_27         , fill_color: '#b1ddf0', stroke_color: '#10739e')
-      add_theme(:style_28         , fill_color: '#d0cee2', stroke_color: '#56517e')
-      add_theme(:style_29         , fill_color: '#bac8d3', stroke_color: '#23445d')
-      add_theme(:style_30         , fill_color: '#f5f5f5', stroke_color: '#666666', gradient: '#b3b3b3')
-      add_theme(:style_31         , fill_color: '#dae8fc', stroke_color: '#6c8ebf', gradient: '#7ea6e0')
-      add_theme(:style_32         , fill_color: '#d5e8d4', stroke_color: '#82b366', gradient: '#97d077')
-      add_theme(:style_33         , fill_color: '#ffcd28', stroke_color: '#d79b00', gradient: '#ffa500')
-      add_theme(:style_34         , fill_color: '#fff2cc', stroke_color: '#d6b656', gradient: '#ffd966')
-      add_theme(:style_35         , fill_color: '#f8cecc', stroke_color: '#b85450', gradient: '#ea6b66')
-      add_theme(:style_36         , fill_color: '#e6d0de', stroke_color: '#996185', gradient: '#d5739d')
-      add_theme(:style_37         , fill_color: '#eeeeee', stroke_color: '#36393d')
-      add_theme(:style_38         , fill_color: '#f9f7ed', stroke_color: '#36393d')
-      add_theme(:style_39         , fill_color: '#ffcc99', stroke_color: '#36393d')
-      add_theme(:style_40         , fill_color: '#cce5ff', stroke_color: '#36393d')
-      add_theme(:style_41         , fill_color: '#ffff88', stroke_color: '#36393d')
-      add_theme(:style_42         , fill_color: '#cdeb8b', stroke_color: '#36393d')
-      add_theme(:style_43         , fill_color: '#ffcccc', stroke_color: '#36393d')
+      add_theme(:style_24         , fill_color: '#fad7ac', stroke_color: '#b46504', font_color: '#333333')
+      add_theme(:style_25         , fill_color: '#fad9d5', stroke_color: '#ae4132', font_color: '#333333')
+      add_theme(:style_26         , fill_color: '#b0e3e6', stroke_color: '#0e8088', font_color: '#000000')
+      add_theme(:style_27         , fill_color: '#b1ddf0', stroke_color: '#10739e', font_color: '#000000')
+      add_theme(:style_28         , fill_color: '#d0cee2', stroke_color: '#56517e', font_color: '#000000')
+      add_theme(:style_29         , fill_color: '#bac8d3', stroke_color: '#23445d', font_color: '#000000')
+      add_theme(:style_30         , fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#000000', gradient: '#b3b3b3')
+      add_theme(:style_31         , fill_color: '#dae8fc', stroke_color: '#6c8ebf', font_color: '#000000', gradient: '#7ea6e0')
+      add_theme(:style_32         , fill_color: '#d5e8d4', stroke_color: '#82b366', font_color: '#000000', gradient: '#97d077')
+      add_theme(:style_33         , fill_color: '#ffcd28', stroke_color: '#d79b00', font_color: '#000000', gradient: '#ffa500')
+      add_theme(:style_34         , fill_color: '#fff2cc', stroke_color: '#d6b656', font_color: '#000000', gradient: '#ffd966')
+      add_theme(:style_35         , fill_color: '#f8cecc', stroke_color: '#b85450', font_color: '#000000', gradient: '#ea6b66')
+      add_theme(:style_36         , fill_color: '#e6d0de', stroke_color: '#996185', font_color: '#000000', gradient: '#d5739d')
+      add_theme(:style_37         , fill_color: '#eeeeee', stroke_color: '#36393d', font_color: '#000000')
+      add_theme(:style_38         , fill_color: '#f9f7ed', stroke_color: '#36393d', font_color: '#000000')
+      add_theme(:style_39         , fill_color: '#ffcc99', stroke_color: '#36393d', font_color: '#000000')
+      add_theme(:style_40         , fill_color: '#cce5ff', stroke_color: '#36393d', font_color: '#000000')
+      add_theme(:style_41         , fill_color: '#ffff88', stroke_color: '#36393d', font_color: '#000000')
+      add_theme(:style_42         , fill_color: '#cdeb8b', stroke_color: '#36393d', font_color: '#000000')
+      add_theme(:style_43         , fill_color: '#ffcccc', stroke_color: '#36393d', font_color: '#000000')
     end
     # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
   end

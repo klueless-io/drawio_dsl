@@ -109,6 +109,16 @@ module DrawioDsl
       add_shape(ellipse)
     end
 
+    def add_diamond(**opts)
+      diamond = DrawioDsl::Schema::Diamond.new(current_page, **opts)
+      add_shape(diamond)
+    end
+
+    def add_hexagon(**opts)
+      add_hexagon = DrawioDsl::Schema::Hexagon.new(current_page, **opts)
+      add_shape(add_hexagon)
+    end
+
     def debug
       puts JSON.pretty_generate(actions)
       puts JSON.pretty_generate(diagram.to_h)

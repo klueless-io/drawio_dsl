@@ -1,0 +1,98 @@
+<mxfile host="oFL">
+  <diagram id="Q0u" name="PgMargin-default">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="Q0u-A"/>
+        <mxCell id="Q0u-B" parent="Q0u-A"/>
+        <mxCell id="Q0u-2" value="Page Margin 50, 50 (Default)" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="80" y="80" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="300" y="80" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-4" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="520" y="80" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="740" y="80" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-6" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="80" y="300" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-7" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="300" y="300" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-8" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="520" y="300" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Q0u-9" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Q0u-B">
+          <mxGeometry x="740" y="300" width="160" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ig3" name="PgMargin-0-0">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="ig3-A"/>
+        <mxCell id="ig3-B" parent="ig3-A"/>
+        <mxCell id="ig3-2" value="Page Margin 0, 0" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="250" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-4" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="470" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="690" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-6" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="30" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-7" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="250" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-8" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="470" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="ig3-9" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="ig3-B">
+          <mxGeometry x="690" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="YYo" name="PgMargin-90-70">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="YYo-A"/>
+        <mxCell id="YYo-B" parent="YYo-A"/>
+        <mxCell id="YYo-2" value="Page Margin 90, 70" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="120" y="100" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="340" y="100" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-4" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="560" y="100" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="780" y="100" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-6" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="120" y="320" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-7" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="340" y="320" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-8" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="560" y="320" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YYo-9" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="YYo-B">
+          <mxGeometry x="780" y="320" width="160" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

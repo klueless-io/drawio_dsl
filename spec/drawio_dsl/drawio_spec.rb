@@ -59,34 +59,46 @@ RSpec.describe DrawioDsl::Drawio do
           theme: :style_01 # TODO
         )
         .page('Grid Layout Horizontal', margin_top: 0, margin_left: 0) do
-          grid_layout(wrap_at: 3, v_align: :bottom, h_align: :center)
-          square(title: 'Square')
-          circle(title: 'Circle')
-          rectangle(title: 'Rectangle')
-          ellipse(title: 'Ellipse')
-          process(title: 'Process')
-          square
-          circle
-          rectangle
-          ellipse
-          process
+          grid_layout(wrap_at: 3, v_align: :bottom, h_align: :right)
+          # square(title: '01')
+          # circle(title: '02')
+          # rectangle(title: '03')
+          # ellipse(title: '04')
+          # process(title: '05')
+          diamond(title: '06')
+          hexagon(title: '07')
         end
-        # .page('Grid Layout Vertical') do
-        #   grid_layout(direction: :vertical)
-        #   square(title: 'Square')
-        #   circle(title: 'Circle')
-        #   rectangle(title: 'Rectangle')
-        #   ellipse(title: 'Ellipse')
-        #   process(title: 'Process')
-        #   # square
-        #   # square
-        #   # square
-        #   # square
-        #   # square
-        #   # square
-        #   # square
-        # end
-        .apply_layout
+
+      # .page('Grid Layout Horizontal', margin_top: 0, margin_left: 0) do
+      #   grid_layout(wrap_at: 3, v_align: :bottom, h_align: :right)
+      #   square(title: 'Square')
+      #   circle(title: 'Circle')
+      #   rectangle(title: 'Rectangle')
+      #   ellipse(title: 'Ellipse')
+      #   process(title: 'Process')
+      #   square
+      #   circle
+      #   rectangle
+      #   ellipse
+      #   process
+      # end
+      # .page('Grid Layout Vertical') do
+      #   grid_layout(direction: :vertical)
+      #   square(title: 'Square')
+      #   circle(title: 'Circle')
+      #   rectangle(title: 'Rectangle')
+      #   ellipse(title: 'Ellipse')
+      #   process(title: 'Process')
+      #   square
+      #   square
+      #   square
+      #   square
+      #   square
+      #   square
+      #   square
+      # end
+
+      # .apply_layout
       # .page('Normal') do
       #   flex_layout
       #   square

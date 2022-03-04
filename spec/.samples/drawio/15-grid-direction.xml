@@ -1,0 +1,60 @@
+<mxfile host="Sov">
+  <diagram id="9m7" name="Horizontal">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="9m7-A"/>
+        <mxCell id="9m7-B" parent="9m7-A"/>
+        <mxCell id="9m7-2" value="01" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9m7-3" value="02" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="250" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9m7-4" value="03" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="470" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9m7-5" value="04" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="30" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9m7-6" value="05" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="250" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9m7-7" value="06" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="470" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9m7-8" value="07" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="9m7-B">
+          <mxGeometry x="30" y="470" width="160" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vAy" name="Vertical">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="vAy-A"/>
+        <mxCell id="vAy-B" parent="vAy-A"/>
+        <mxCell id="vAy-2" value="01" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="vAy-3" value="02" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="30" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="vAy-4" value="03" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="30" y="470" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="vAy-5" value="04" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="250" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="vAy-6" value="05" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="250" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="vAy-7" value="06" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="250" y="470" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="vAy-8" value="07" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="vAy-B">
+          <mxGeometry x="470" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

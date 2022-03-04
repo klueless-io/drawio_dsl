@@ -358,8 +358,8 @@ module DrawioDsl
 
       # rubocop:disable Metrics/AbcSize
       def horizontal_shape_alignment(shape)
-        return page.position_x + ((grid_size - shape.w) / 2)    if h_align == :left
-        return page.position_x + (grid_size - shape.x)          if v_align == :right
+        return page.position_x + ((grid_size - shape.w) / 2)  if h_align == :center
+        return page.position_x + (grid_size - shape.w)        if h_align == :right
 
         page.position_x
       end
@@ -367,35 +367,37 @@ module DrawioDsl
 
       # rubocop:disable Metrics/AbcSize
       def vertical_shape_alignment(shape)
-        return page.position_y + ((grid_size - shape.h) / 2)    if v_align == :middle
-        return page.position_y + (grid_size - shape.h)          if v_align == :bottom
+        return page.position_y + ((grid_size - shape.h) / 2)  if v_align == :center || v_align == :middle
+        return page.position_y + (grid_size - shape.h)        if v_align == :bottom
 
         page.position_y
       end
       # rubocop:enable Metrics/AbcSize
 
       def move_cell_horizontally
-        if cell_no >= wrap_at
-          # Flow down to the next row
-          page.position_x = anchor_x
-          page.position_y += grid_size
-          @cell_no = 1
-        else
+        if cell_no < wrap_at
           page.position_x += grid_size
           @cell_no += 1
+          return
         end
+
+        # Flow down to the next row
+        page.position_x = anchor_x
+        page.position_y += grid_size
+        @cell_no = 1
       end
 
       def move_cell_vertically
-        if cell_no >= wrap_at
-          # Flow right to the next column
-          page.position_y = anchor_y
-          page.position_x += grid_size
-          @cell_no = 0
-        else
+        if cell_no < wrap_at
           page.position_y += grid_size
           @cell_no += 1
+          return
         end
+
+        # Flow right to the next column
+        page.position_y = anchor_y
+        page.position_x += grid_size
+        @cell_no = 1
       end
     end
 
@@ -492,7 +494,7 @@ module DrawioDsl
       # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
       def apply_defaults(args, shape_defaults)
         @theme            = args[:theme] || page.theme # KConfig.configuration.drawio.themes.sample
-        theme_palette     = KConfig.configuration.drawio.palette(page.theme)
+        theme_palette     = KConfig.configuration.drawio.palette(theme)
         @title            = args[:title]            || ''
 
         @white_space      = args[:white_space]      || page.style.white_space # wrap or nil
@@ -555,7 +557,6 @@ module DrawioDsl
       end
     end
 
-    # Graphical shape in the form of a square
     class Square < Shape
       def initialize(page, **args)
         super(page, **args)
@@ -564,7 +565,6 @@ module DrawioDsl
       end
     end
 
-    # Graphical shape in the form of a rectangle
     class Rectangle < Shape
       def initialize(page, **args)
         super(page, **args)
@@ -573,7 +573,6 @@ module DrawioDsl
       end
     end
 
-    # Graphical shape in the form of a circle
     class Circle < Shape
       def initialize(page, **args)
         super(page, **args)
@@ -582,7 +581,6 @@ module DrawioDsl
       end
     end
 
-    # Graphical shape in the form of an rectangle with to vertical lines
     class Process < Shape
       def initialize(page, **args)
         super(page, **args)
@@ -591,12 +589,27 @@ module DrawioDsl
       end
     end
 
-    # Graphical shape in the form of an ellipse
     class Ellipse < Shape
       def initialize(page, **args)
         super(page, **args)
 
         apply_defaults(args, KConfig.configuration.drawio.ellipse)
+      end
+    end
+
+    class Diamond < Shape
+      def initialize(page, **args)
+        super(page, **args)
+
+        apply_defaults(args, KConfig.configuration.drawio.diamond)
+      end
+    end
+
+    class Hexagon < Shape
+      def initialize(page, **args)
+        super(page, **args)
+
+        apply_defaults(args, KConfig.configuration.drawio.hexagon)
       end
     end
   end
