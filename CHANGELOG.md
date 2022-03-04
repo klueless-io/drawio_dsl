@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/klueless-io/drawio_dsl/compare/v0.1.0...v0.2.0) (2022-03-04)
+
+
+### Features
+
+* update drawio with grid layout engine ([cc5dc51](https://github.com/klueless-io/drawio_dsl/commit/cc5dc51debfd902a815df704fa2dd77f39f498c7))
+
 # [0.1.0](https://github.com/klueless-io/drawio_dsl/compare/v0.0.1...v0.1.0) (2022-03-02)
 
 
