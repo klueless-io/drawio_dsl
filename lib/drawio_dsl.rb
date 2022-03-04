@@ -12,7 +12,6 @@ require_relative 'drawio_dsl/version'
 require_relative 'drawio_dsl/schema'
 require_relative 'drawio_dsl/dom_builder'
 require_relative 'drawio_dsl/xml_builder'
-require_relative 'drawio_dsl/layout_container'
 require_relative 'drawio_dsl/layout_engine'
 require_relative 'drawio_dsl/drawio'
 

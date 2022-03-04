@@ -7,7 +7,8 @@ module DrawioDsl
     attr_reader :last_action
 
     attr_reader :current_page
-    attr_reader :current_element
+    attr_reader :current_layout_rule
+    attr_reader :current_shape
 
     def initialize
       @actions = []
@@ -18,22 +19,12 @@ module DrawioDsl
       @actions = []
       @last_action = {}
       set_diagram
-      set_layout_engine
+      # set_layout_engine
     end
 
     def queue_action(action)
       @actions << action
       @last_action = action
-    end
-
-    def set_layout_engine(**opts)
-      @layout_engine = DrawioDsl::LayoutEngine.new(**opts)
-    end
-
-    def layout_engine
-      return @layout_engine if defined? @layout_engine
-
-      set_layout_engine
     end
 
     def set_diagram(**opts)
@@ -55,40 +46,67 @@ module DrawioDsl
       @current_page
     end
 
-    def add_element(element)
-      @current_element = element
+    # ----------------------------------------------------------------------
+    # Layout provides rules for positioning components
+    # ----------------------------------------------------------------------
 
-      element.id = "#{current_page.id}-#{current_page.elements.length + 1}" unless element.id
+    def add_grid_layout(**opts)
+      rule = DrawioDsl::Schema::GridLayout.new(current_page, **opts)
+      add_layout_rule(rule)
+    end
 
-      layout_engine.container.place_element(element)
+    def add_flex_layout(**opts)
+      rule = DrawioDsl::Schema::FlexLayout.new(current_page, **opts)
+      add_layout_rule(rule)
+    end
 
-      current_page.elements << element
-      @current_element
+    def add_layout_rule(rule)
+      @current_layout_rule = rule
+
+      rule.id = "rule-#{current_page.nodes.length + 1}" unless rule.id
+
+      current_page.nodes << rule
+
+      rule
+    end
+
+    # ----------------------------------------------------------------------
+    # Shapes represent visual components
+    # ----------------------------------------------------------------------
+
+    def add_shape(shape)
+      @current_shape = shape
+
+      shape.id = "#{current_page.id}-#{current_page.nodes.length + 1}" unless shape.id
+
+      current_page.nodes << shape
+
+      shape
     end
 
     def add_square(**opts)
       square = DrawioDsl::Schema::Square.new(current_page, **opts)
-      add_element(square)
+      add_shape(square)
     end
 
     def add_rectangle(**opts)
       rectangle = DrawioDsl::Schema::Rectangle.new(current_page, **opts)
-      add_element(rectangle)
+      add_shape(rectangle)
     end
 
     def add_circle(**opts)
       circle = DrawioDsl::Schema::Circle.new(current_page, **opts)
-      add_element(circle)
+      add_shape(circle)
     end
 
     def add_process(**opts)
       process = DrawioDsl::Schema::Process.new(current_page, **opts)
-      add_element(process)
+      add_shape(process)
     end
 
     def add_ellipse(**opts)
       ellipse = DrawioDsl::Schema::Ellipse.new(current_page, **opts)
-      add_element(ellipse)
+      add_shape(ellipse)
     end
 
     def debug

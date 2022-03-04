@@ -9,8 +9,11 @@ RSpec.describe DrawioDsl::Schema do
   let(:page) { DrawioDsl::Schema::Page.new(diagram, **page_args) }
   let(:page_args) { {} }
 
-  let(:element) { DrawioDsl::Schema::Element.new(page, **element_args) }
-  let(:element_args) { {} }
+  let(:node) { DrawioDsl::Schema::Node.new(page, **node_args) }
+  let(:node_args) { {} }
+
+  let(:shape) { DrawioDsl::Schema::Shape.new(page, **shape_args) }
+  let(:shape_args) { {} }
 
   subject { instance }
 
@@ -91,14 +94,26 @@ RSpec.describe DrawioDsl::Schema do
 
     it { is_expected.to have_attributes(id: 1, name: 'Page 1') }
 
-    it 'should have elements' do
-      expect(instance.elements).to eq []
+    it 'should have nodes' do
+      expect(instance.nodes).to eq []
     end
 
     context '.theme' do
       subject { instance.theme }
 
       it { is_expected.not_to be_nil }
+    end
+
+    context '.margin_left' do
+      subject { instance.margin_left }
+
+      it { is_expected.to be > 0 }
+    end
+
+    context '.margin_top' do
+      subject { instance.margin_top }
+
+      it { is_expected.to be > 0 }
     end
 
     context '.style' do
@@ -155,7 +170,7 @@ RSpec.describe DrawioDsl::Schema do
           is_expected.to have_attributes(
             fill_color: '#dae8fc',
             stroke_color: '#6c8ebf',
-            font_color: nil,
+            font_color: '#333333',
             gradient: nil
           )
         end
@@ -163,10 +178,22 @@ RSpec.describe DrawioDsl::Schema do
     end
   end
 
-  describe DrawioDsl::Schema::Element do
-    let(:instance) { element }
+  describe DrawioDsl::Schema::Node do
+    let(:instance) { node }
 
-    let(:element_args) { { id: 1 } }
+    it { is_expected.to have_attributes(id: nil, classification: :unknown) }
+
+    context 'with valid attributes' do
+      let(:node_args) { { id: 1, classification: :square } }
+
+      it { is_expected.to have_attributes(classification: :square) }
+    end
+  end
+
+  describe DrawioDsl::Schema::Shape do
+    let(:instance) { shape }
+
+    let(:shape_args) { { id: 1 } }
 
     it { is_expected.to have_attributes(id: 1) }
 
@@ -197,13 +224,13 @@ RSpec.describe DrawioDsl::Schema do
     end
   end
 
-  context 'elements on a page' do
+  context 'nodes on a page' do
     let(:instance) { described_class.new(page, **args) }
     let(:args) { { id: 1 } }
 
-    describe DrawioDsl::Schema::Element do
+    describe DrawioDsl::Schema::Shape do
       context 'with minimal valid attributes' do
-        it { is_expected.to have_attributes(id: 1, type: :element, x: 0, y: 0, w: 20, h: 20) }
+        it { is_expected.to have_attributes(id: 1, type: :shape, x: 0, y: 0, w: 20, h: 20) }
       end
 
       context 'with valid attributes' do
@@ -227,7 +254,7 @@ RSpec.describe DrawioDsl::Schema do
 
     describe DrawioDsl::Schema::Rectangle do
       context 'with minimal valid attributes' do
-        it { is_expected.to have_attributes(id: 1, type: :rectangle, x: 0, y: 0, w: 240, h: 120) }
+        it { is_expected.to have_attributes(id: 1, type: :rectangle, x: 0, y: 0, w: 200, h: 120) }
       end
 
       context 'with valid attributes' do
@@ -251,7 +278,7 @@ RSpec.describe DrawioDsl::Schema do
 
     describe DrawioDsl::Schema::Process do
       context 'with minimal valid attributes' do
-        it { is_expected.to have_attributes(id: 1, type: :process, x: 0, y: 0, w: 240, h: 120) }
+        it { is_expected.to have_attributes(id: 1, type: :process, x: 0, y: 0, w: 200, h: 120) }
       end
 
       context 'with valid attributes' do
@@ -263,7 +290,7 @@ RSpec.describe DrawioDsl::Schema do
 
     describe DrawioDsl::Schema::Ellipse do
       context 'with minimal valid attributes' do
-        it { is_expected.to have_attributes(id: 1, type: :ellipse, x: 0, y: 0, w: 240, h: 120) }
+        it { is_expected.to have_attributes(id: 1, type: :ellipse, x: 0, y: 0, w: 200, h: 120) }
       end
 
       context 'with valid attributes' do

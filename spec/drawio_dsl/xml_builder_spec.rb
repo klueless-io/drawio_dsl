@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 RSpec.describe DrawioDsl::XmlBuilder do
-  let(:director) { DrawioDsl::Drawio.init(nil) }
+  let(:director) do
+    DrawioDsl::Drawio
+      .init(nil)
+  end
   let(:instance) { described_class.new(director.builder.diagram) }
   let(:build) { instance.build }
 
@@ -23,10 +26,9 @@ RSpec.describe DrawioDsl::XmlBuilder do
         is_expected
           .to include('mxfile host')
           .and match(/<diagram id="xxx" name="Page 1">/)
-          .and match(/<mxGraphModel .* page="xxx" .*>/)
           .and match(/<diagram id="yyy" name="Page 2">/)
-          .and match(/<mxGraphModel .* page="yyy" .*>/)
-          .and match(%r{<root/>})
+          .and match(/<mxGraphModel .* page="1" .*>/)
+          .and match(/<root>/)
       end
     end
   end
@@ -51,7 +53,7 @@ RSpec.describe DrawioDsl::XmlBuilder do
           end
       end
 
-      fit do
+      it do
         File.write('spec/.samples/drawio/basic.xml', build)
         File.write('spec/.samples/drawio/basic.drawio', build)
       end

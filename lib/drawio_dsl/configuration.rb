@@ -17,16 +17,16 @@ module DrawioDsl
 
     BaseStyle = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
 
-    ElementDefaults   = Struct.new(:type, :x, :y, :w, :h, :style_modifiers)
-    ElementThemeStyle = Struct.new(:fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
+    ShapeDefaults   = Struct.new(:type, :x, :y, :w, :h, :style_modifiers)
+    ShapeThemeStyle = Struct.new(:fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
 
     attr_accessor :base_style
 
     # Theme colors
     attr_accessor :themes
 
-    # Element shapes
-    attr_accessor :element
+    # Shape shapes
+    attr_accessor :shape
     attr_accessor :square
     attr_accessor :rectangle
     attr_accessor :circle
@@ -39,13 +39,13 @@ module DrawioDsl
     def initialize
       @base_style = BaseStyle.new(white_space: :wrap, html: 1, rounded: nil, shadow: nil, sketch: nil, glass: nil)
 
-      @element    = ElementDefaults.new(:element   , 0, 0, 20, 20, '')
-      @square     = ElementDefaults.new(:square    , 0, 0, 160, 160, '')
-      @rectangle  = ElementDefaults.new(:rectangle , 0, 0, 240, 120, '')
-      @circle     = ElementDefaults.new(:circle    , 0, 0, 160, 160, 'ellipse')
-      @process    = ElementDefaults.new(:process   , 0, 0, 240, 120, 'shape=process')
-      @ellipse    = ElementDefaults.new(:ellipse   , 0, 0, 240, 120, 'ellipse')
-      @triangle   = ElementDefaults.new(:triangle  , 0, 0, 160, 160, 'rhombus')
+      @shape      = ShapeDefaults.new(:shape   , 0, 0, 20, 20, '')
+      @square     = ShapeDefaults.new(:square    , 0, 0, 160, 160, '')
+      @rectangle  = ShapeDefaults.new(:rectangle , 0, 0, 200, 120, '')
+      @circle     = ShapeDefaults.new(:circle    , 0, 0, 160, 160, 'ellipse')
+      @process    = ShapeDefaults.new(:process   , 0, 0, 200, 120, 'shape=process')
+      @ellipse    = ShapeDefaults.new(:ellipse   , 0, 0, 200, 120, 'ellipse')
+      @triangle   = ShapeDefaults.new(:triangle  , 0, 0, 160, 160, 'rhombus')
 
       @themes     = {}
       add_themes
@@ -62,7 +62,7 @@ module DrawioDsl
     private
 
     def add_theme(name, **opts)
-      @themes[name] = ElementThemeStyle.new(**opts)
+      @themes[name] = ShapeThemeStyle.new(**opts)
     end
 
     # rubocop:disable Metrics/AbcSize, Metrics/MethodLength

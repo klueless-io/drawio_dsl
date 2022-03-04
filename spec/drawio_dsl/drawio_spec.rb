@@ -28,7 +28,7 @@ RSpec.describe DrawioDsl::Drawio do
     describe '.builder' do
       subject { director.builder }
 
-      it { is_expected.to be_a(DrawioDsl::Builder) }
+      it { is_expected.to be_a(DrawioDsl::DomBuilder) }
     end
   end
 
@@ -58,64 +58,97 @@ RSpec.describe DrawioDsl::Drawio do
         .diagram(
           theme: :style_01 # TODO
         )
-        .page('Normal') do
+        .page('Grid Layout Horizontal', margin_top: 0, margin_left: 0) do
+          grid_layout(wrap_at: 3, v_align: :bottom, h_align: :center)
+          square(title: 'Square')
+          circle(title: 'Circle')
+          rectangle(title: 'Rectangle')
+          ellipse(title: 'Ellipse')
+          process(title: 'Process')
           square
-          rectangle
-          rectangle(rounded: 1)
           circle
-          process
-          ellipse
-        end
-        .page('Sketch', sketch: 1) do
-          square
           rectangle
-          rectangle(rounded: 1)
-          circle
-          process
           ellipse
-        end
-        .page('Shadow', shadow: 1) do
-          square
-          rectangle
-          rectangle(rounded: 1)
-          circle
           process
-          ellipse
         end
-        .page('Shadow+Sketch', shadow: 1, sketch: 1) do
-          square
-          rectangle
-          rectangle(rounded: 1)
-          circle
-          process
-          ellipse
-        end
-        .page('Round+Glass', glass: 1, rounded: 1) do
-          square
-          rectangle
-          rectangle(rounded: 1)
-          circle
-          process
-          ellipse
-        end
-        .page('All', shadow: 1, glass: 1, sketch: 1, rounded: 1) do
-          square
-          rectangle
-          rectangle(rounded: 1)
-          circle
-          process
-          ellipse
-        end
+        # .page('Grid Layout Vertical') do
+        #   grid_layout(direction: :vertical)
+        #   square(title: 'Square')
+        #   circle(title: 'Circle')
+        #   rectangle(title: 'Rectangle')
+        #   ellipse(title: 'Ellipse')
+        #   process(title: 'Process')
+        #   # square
+        #   # square
+        #   # square
+        #   # square
+        #   # square
+        #   # square
+        #   # square
+        # end
+        .apply_layout
+      # .page('Normal') do
+      #   flex_layout
+      #   square
+      #   rectangle
+      #   rectangle(rounded: 1)
+      #   circle
+      #   process
+      #   ellipse
+      # end
+      # .page('Sketch', sketch: 1) do
+      #   square
+      #   rectangle
+      #   rectangle(rounded: 1)
+      #   circle
+      #   process
+      #   ellipse
+      # end
+      # .page('Shadow', shadow: 1) do
+      #   square
+      #   rectangle
+      #   rectangle(rounded: 1)
+      #   circle
+      #   process
+      #   ellipse
+      # end
+      # .page('Shadow+Sketch', shadow: 1, sketch: 1) do
+      #   square
+      #   rectangle
+      #   rectangle(rounded: 1)
+      #   circle
+      #   process
+      #   ellipse
+      # end
+      # .page('Round+Glass', glass: 1, rounded: 1) do
+      #   square
+      #   rectangle
+      #   rectangle(rounded: 1)
+      #   circle
+      #   process
+      #   ellipse
+      # end
+      # .page('All', shadow: 1, glass: 1, sketch: 1, rounded: 1) do
+      #   square
+      #   rectangle
+      #   rectangle(rounded: 1)
+      #   circle
+      #   process
+      #   ellipse
+      # end
+
       # .cd(:samples)
       # .add('a.txt')
       # .play_actions
       # .build('xm')
     end
 
-    # fit do
-    #   # puts JSON.pretty_generate(director.builder.diagram.to_h)
-    #   File.write('/Users/davidcruwys/dev/kgems/drawio_dsl/spec/.samples/drawio/sample.json', JSON.pretty_generate(director.builder.diagram.to_h))
-    #   # director.builder.debug
-    # end
+    fit do
+      json = JSON.pretty_generate(director.builder.diagram.to_h)
+      build = DrawioDsl::XmlBuilder.new(director.builder.diagram).build
+      File.write('spec/.samples/drawio/sample.json', json)
+      File.write('spec/.samples/drawio/sample.xml', build)
+      File.write('spec/.samples/drawio/sample.drawio', build)
+    end
   end
 end

@@ -67,6 +67,10 @@ Naming/VariableNumber:
 Naming/MethodParameterName:
   AllowedNames:
     - as
+    - x
+    - y
+    - w
+    - h
 Style/EmptyMethod:    
   Exclude:
     - "**/spec/**/*"

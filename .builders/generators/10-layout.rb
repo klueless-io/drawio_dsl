@@ -5,9 +5,22 @@ KManager.action :bootstrap do
         on_exist:                   :skip,                      # %i[skip write compare]
         on_action:                  :queue                      # %i[queue execute]
       )
+      .diagram(theme: :style_01)
+      .page('Grid-Right', page_shadow: 1) do
+        grid_layout(wrap_at: 3)
+        square(title: 'Square')
+        rectangle(title: 'Rectangle')
+        rectangle(title: 'Rectangle (Rounded)', rounded: 1)
+        circle(title: 'Circle')
+        process(title: 'Process')
+        ellipse(title: 'Ellipse')
+      end
 
-    File.write('spec/.samples/drawio/10-layout.xml', director.build)
-    File.write('spec/.samples/drawio/10-layout.drawio', director.build)
+    diagram = DrawioDsl::XmlBuilder.new(director.builder.diagram)
+
+
+    File.write('../spec/.samples/drawio/10-layout.xml', diagram.build)
+    File.write('../spec/.samples/drawio/10-layout.drawio', diagram.build)
   end
 end
 
