@@ -31,6 +31,24 @@ RSpec.describe DrawioDsl::XmlBuilder do
           .and match(/<root>/)
       end
     end
+
+    context 'when nodes are added to page' do
+      before do
+        director.page('Page 1', id: 'xxx') do
+          square
+          circle
+        end
+      end
+
+      it do
+        # puts subject
+        is_expected
+          .to include('mxfile host')
+          .and match(/<diagram id="xxx" name="Page 1">/)
+          .and match(/<mxCell id="xxx-1" value="" style="whiteSpace=wrap;html=1.*>/)
+          .and match(/<mxCell id="xxx-2" value="" style="double=1;ellipse.*>/)
+      end
+    end
   end
 
   context 'sample scenarios' do

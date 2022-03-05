@@ -33,20 +33,30 @@ RSpec.describe DrawioDsl::Drawio do
   end
 
   describe '#page' do
-    context 'with name' do
-      let(:name) { 'Normal' }
+    context 'with a block' do
+      before do
+        director.page('page1') do
+          grid_layout
+          square
+          circle
+        end
+      end
 
-      before { director.page(name) }
+      context 'has a page' do
+        subject { director.builder.diagram.pages.first }
 
-      it {
-        puts JSON.pretty_generate(director.builder.diagram.to_h)
-      }
+        it { is_expected.to have_attributes(name: 'page1') }
 
-      # context 'with block' do
-      #   subject { director.page(name) { square } }
+        context 'with two shapes' do
+          subject { director.builder.diagram.pages.first.shapes }
 
-      #   it { is_expected.to be_a(DrawioDsl::Page) }
-      # end
+          it { is_expected.to have_attributes(count: 2) }
+        end
+      end
+
+      # fit {
+      #   puts JSON.pretty_generate(director.builder.diagram.to_h)
+      # }
     end
   end
 
@@ -67,6 +77,9 @@ RSpec.describe DrawioDsl::Drawio do
           # process(title: '05')
           diamond(title: '06')
           hexagon(title: '07')
+          cloud(title: '08')
+          note(title: '09')
+          callout(title: '10')
         end
 
       # .page('Grid Layout Horizontal', margin_top: 0, margin_left: 0) do
@@ -155,7 +168,7 @@ RSpec.describe DrawioDsl::Drawio do
       # .build('xm')
     end
 
-    fit do
+    it do
       json = JSON.pretty_generate(director.builder.diagram.to_h)
       build = DrawioDsl::XmlBuilder.new(director.builder.diagram).build
       File.write('spec/.samples/drawio/sample.json', json)

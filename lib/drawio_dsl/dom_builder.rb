@@ -119,6 +119,21 @@ module DrawioDsl
       add_shape(add_hexagon)
     end
 
+    def add_cloud(**opts)
+      cloud = DrawioDsl::Schema::Cloud.new(current_page, **opts)
+      add_shape(cloud)
+    end
+
+    def add_note(**opts)
+      note = DrawioDsl::Schema::Note.new(current_page, **opts)
+      add_shape(note)
+    end
+
+    def add_callout(**opts)
+      callout = DrawioDsl::Schema::Callout.new(current_page, **opts)
+      add_shape(callout)
+    end
+
     def debug
       puts JSON.pretty_generate(actions)
       puts JSON.pretty_generate(diagram.to_h)

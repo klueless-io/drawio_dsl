@@ -58,7 +58,7 @@ module DrawioDsl
 
     # rubocop:disable Metrics/CyclomaticComplexity
     def random(**opts)
-      case rand(7)
+      case rand(10)
       when 0
         square(**opts)
       when 1
@@ -73,6 +73,12 @@ module DrawioDsl
         diamond(**opts)
       when 6
         hexagon(**opts)
+      when 7
+        cloud(**opts)
+      when 8
+        note(**opts)
+      when 9
+        callout(**opts)
       end
     end
     # rubocop:enable Metrics/CyclomaticComplexity
@@ -103,6 +109,18 @@ module DrawioDsl
 
     def hexagon(**opts)
       builder.add_hexagon(**opts)
+    end
+
+    def cloud(**opts)
+      builder.add_cloud(**opts)
+    end
+
+    def note(**opts)
+      builder.add_note(**opts)
+    end
+
+    def callout(**opts)
+      builder.add_callout(**opts)
     end
 
     private

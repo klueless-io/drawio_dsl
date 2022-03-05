@@ -8,6 +8,9 @@ KManager.action :bootstrap do
       .page('Style-Plain', margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 5)
 
+        square(title: 'The quick brown fox jumps over the lazy dog')
+        circle(title: 'Mary had a little lamb')
+
         KConfig.configuration.drawio.themes.keys.each do |theme|
           random(title: theme.to_s, theme: theme)
         end

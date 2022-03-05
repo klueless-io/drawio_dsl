@@ -34,7 +34,7 @@ module DrawioDsl
         when :layout_rule
           @current_layout = node
         when :shape
-          current_layout.position_shape(node)
+          current_layout&.position_shape(node)
         end
         # node.debug(format: :row)
       end

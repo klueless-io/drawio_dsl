@@ -16,42 +16,33 @@ module DrawioDsl
     include KLog::Logging
 
     BaseStyle = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
-
-    ShapeDefaults   = Struct.new(:type, :x, :y, :w, :h, :style_modifiers)
+    ShapeDefaults   = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
     ShapeThemeStyle = Struct.new(:fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
+
+    Shapes = Struct.new(
+      :shape,
+      :square,
+      :rectangle,
+      :circle,
+      :process,
+      :ellipse,
+      :diamond,
+      :hexagon,
+      :cloud,
+      :note,
+      :callout,
+      keyword_init: true
+    )
 
     attr_accessor :base_style
 
-    # Theme colors
     attr_accessor :themes
-
-    # Shape shapes
-    attr_accessor :shape
-    attr_accessor :square
-    attr_accessor :rectangle
-    attr_accessor :circle
-    attr_accessor :process
-    attr_accessor :ellipse
-    attr_accessor :diamond
-    attr_accessor :hexagon
-
-    # <mxCell id="6" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="TqO-B">
-    #     <mxGeometry x="-496" y="115" width="80" height="80" as="geometry"/>
-    # </mxCell>
+    attr_accessor :shapes
 
     def initialize
       @base_style = BaseStyle.new(white_space: :wrap, html: 1, rounded: nil, shadow: nil, sketch: nil, glass: nil)
 
-      @shape      = ShapeDefaults.new(:shape   , 0, 0, 20, 20, '')
-      @square     = ShapeDefaults.new(:square    , 0, 0, 160, 160, '')
-      @rectangle  = ShapeDefaults.new(:rectangle , 0, 0, 200, 120, '')
-      @circle     = ShapeDefaults.new(:circle    , 0, 0, 160, 160, 'ellipse')
-      @process    = ShapeDefaults.new(:process   , 0, 0, 200, 120, 'shape=process')
-      @ellipse    = ShapeDefaults.new(:ellipse   , 0, 0, 200, 120, 'ellipse')
-      @diamond    = ShapeDefaults.new(:diamond  , 0, 0, 160, 160, 'rhombus')
-      @hexagon    = ShapeDefaults.new(:hexagon  , 0, 0, 200, 120, 'shape=hexagon')
-
-      @themes     = {}
+      add_shapes
       add_themes
     end
 
@@ -65,12 +56,30 @@ module DrawioDsl
 
     private
 
+    def add_shapes
+      @shapes = Shapes.new(
+        shape: ShapeDefaults.new(type: :shape , x: 0, y: 0, w: 20, h: 20, style_modifiers: ''),
+        square: ShapeDefaults.new(type: :square , x: 0, y: 0, w: 160, h: 160, style_modifiers: ''),
+        rectangle: ShapeDefaults.new(type: :rectangle , x: 0, y: 0, w: 200, h: 120, style_modifiers: ''),
+        circle: ShapeDefaults.new(type: :circle , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;ellipse'),
+        process: ShapeDefaults.new(type: :process , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;shape=process'),
+        ellipse: ShapeDefaults.new(type: :ellipse , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;ellipse'),
+        diamond: ShapeDefaults.new(type: :diamond , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;rhombus'),
+        hexagon: ShapeDefaults.new(type: :hexagon , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;shape=hexagon'),
+        cloud: ShapeDefaults.new(type: :cloud , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=cloud'),
+        note: ShapeDefaults.new(type: :note , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=note'),
+        callout: ShapeDefaults.new(type: :callout , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=callout')
+      )
+    end
+
     def add_theme(name, **opts)
       @themes[name] = ShapeThemeStyle.new(**opts)
     end
 
     # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
     def add_themes
+      @themes = {}
+
       add_theme(:style_01         , fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#333333')
       add_theme(:style_02         , fill_color: '#dae8fc', stroke_color: '#6c8ebf', font_color: '#333333')
       add_theme(:style_03         , fill_color: '#d5e8d4', stroke_color: '#82b366', font_color: '#333333')

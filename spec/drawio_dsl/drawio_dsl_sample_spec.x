@@ -24,12 +24,6 @@ RSpec.describe DrawioDsl::Drawio do
 
       it { is_expected.to eq(k_builder) }
     end
-
-    describe '.builder' do
-      subject { director.builder }
-
-      it { is_expected.to be_a(DrawioDsl::Builder) }
-    end
   end
 
   context 'scenarios' do

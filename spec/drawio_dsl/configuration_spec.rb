@@ -16,17 +16,15 @@ RSpec.describe DrawioDsl::Configuration do
       it { is_expected.to have_attributes(white_space: :wrap, html: 1) }
     end
 
-    context 'should have shape' do
-      describe '.shape' do
-        subject { instance.shape }
+    describe '#shapes' do
+      subject { instance.shapes }
 
-        it { is_expected.to have_attributes(type: :shape, x: 0, y: 0, w: 20, h: 20, style_modifiers: '') }
-      end
+      it { is_expected.not_to be_nil }
 
-      %w[square rectangle circle process ellipse triangle parallelogram hexagon].each do |name|
-        describe ".#{name}" do
-          it { is_expected.to respond_to(name) }
-        end
+      context 'check one of the shapes' do
+        subject { instance.shapes.square }
+
+        it { is_expected.to have_attributes(type: :square) }
       end
     end
 

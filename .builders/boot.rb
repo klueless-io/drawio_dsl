@@ -60,6 +60,7 @@ resource_manager
   .fileset
   .glob('*.rb', exclude: ['boot.rb'])
   .glob('generators/**/*.rb')
+  .glob('blueprint/**/*.rb')
 resource_manager.add_resources
 
 KManager.boot
