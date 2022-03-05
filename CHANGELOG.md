@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/klueless-io/drawio_dsl/compare/v0.3.0...v0.4.0) (2022-03-05)
+
+
+### Features
+
+* big refactor, plus 98% test coverage ([0d1075c](https://github.com/klueless-io/drawio_dsl/commit/0d1075c177ff1441246950aaa7306ef774ba6df4))
+
 # [0.3.0](https://github.com/klueless-io/drawio_dsl/compare/v0.2.0...v0.3.0) (2022-03-04)
 
 
