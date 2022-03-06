@@ -1,0 +1,82 @@
+[
+  {
+    "type": "callout",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "double=1;shape=callout"
+  },
+  {
+    "type": "circle",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "double=1;ellipse"
+  },
+  {
+    "type": "cloud",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "double=1;shape=cloud"
+  },
+  {
+    "type": "diamond",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "double=1;rhombus"
+  },
+  {
+    "type": "ellipse",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": "double=1;ellipse"
+  },
+  {
+    "type": "hexagon",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": "double=1;shape=hexagon"
+  },
+  {
+    "type": "note",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "double=1;shape=note"
+  },
+  {
+    "type": "process",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": "double=1;shape=process"
+  },
+  {
+    "type": "rectangle",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": ""
+  },
+  {
+    "type": "square",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": ""
+  }
+]

@@ -45,11 +45,15 @@ KConfig.configure(CONFIG_KEY) do |config|
   base_folder       = File.expand_path('../', builder_folder)
   global_template   = File.expand_path('~/dev/kgems/k_templates/templates')
 
+  # Templates
   config.template_folders.add(:global_template    , global_template)
   config.template_folders.add(:template           , File.expand_path('.templates', Dir.pwd))
 
+  # Target Folders
   config.target_folders.add(:app                  , base_folder)
+  config.target_folders.add(:lib                  , :app, 'lib', 'drawio_dsl')
   config.target_folders.add(:builder              , builder_folder)
+  config.target_folders.add(:data                 , :builder, '.data')
 end
 
 KConfig.configuration(CONFIG_KEY).debug
