@@ -10,9 +10,11 @@ require 'k_director'
 require_relative 'drawio_dsl/configuration'
 require_relative 'drawio_dsl/version'
 require_relative 'drawio_dsl/schema/_'
+require_relative 'drawio_dsl/dom_builder_shapes'
 require_relative 'drawio_dsl/dom_builder'
 require_relative 'drawio_dsl/xml_builder'
 require_relative 'drawio_dsl/layout_engine'
+require_relative 'drawio_dsl/drawio_shapes'
 require_relative 'drawio_dsl/drawio'
 
 module DrawioDsl

@@ -25,7 +25,7 @@ KManager.action :requires do
 
         cd(:spec)
 
-        shapes.take(1).each do |shape|
+        shapes.each do |shape|
           add("schema/shapes/#{shape['type']}_spec.rb",
             template_file: 'schema_shape_spec.rb',
             shape: shape)
