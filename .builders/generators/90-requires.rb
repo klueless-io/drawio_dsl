@@ -24,6 +24,12 @@ KManager.action :requires do
         cd(:lib)
 
         add('schema/_.rb.txt', template_file: 'schema_require.rb', shapes: shapes)
+
+        shapes.take(1).each do |shape|
+          add("schema/shapes/#{shape['type']}.rb.txt",
+            template_file: 'schema_shape.rb',
+            shape: shape)
+        end
       end
 
 
