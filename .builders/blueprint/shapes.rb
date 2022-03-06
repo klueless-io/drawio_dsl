@@ -4,18 +4,20 @@ KManager.model :shapes, namespace: %i[domain] do
   table :shapes do
     fields [:type, :x, :y, :w, :h, :style_modifiers]
 
-    # row :shape      , x: 0, y: 0, w:  20, h:  20, style_modifiers: ''
-    row :callout    , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=callout'
-    row :circle     , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;ellipse'
-    row :cloud      , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=cloud'
-    row :diamond    , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;rhombus'
-    row :ellipse    , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;ellipse'
-    row :hexagon    , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;shape=hexagon'
-    row :note       , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=note'
-    row :process    , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;shape=process'
-    row :rectangle  , x: 0, y: 0, w: 200, h: 120, style_modifiers: ''
-    row :square     ,  0,  0,  160,  160,  ''
-    
+    # shape is a custom object
+    # row :shape      , 0, 0,  20,  20, ''
+
+    row :callout    , 0, 0, 160, 160, 'double=1;shape=callout'
+    row :circle     , 0, 0, 160, 160, 'double=1;ellipse'
+    row :cloud      , 0, 0, 160, 160, 'double=1;shape=cloud'
+    row :diamond    , 0, 0, 160, 160, 'double=1;rhombus'
+    row :ellipse    , 0, 0, 200, 120, 'double=1;ellipse'
+    row :hexagon    , 0, 0, 200, 120, 'double=1;shape=hexagon'
+    row :note       , 0, 0, 160, 160, 'double=1;shape=note'
+    row :process    , 0, 0, 200, 120, 'double=1;shape=process'
+    row :rectangle  , 0, 0, 200, 120, ''
+    row :square     , 0, 0, 160, 160, ''
+
   end
 
   action do
