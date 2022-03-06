@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/klueless-io/drawio_dsl/compare/v0.4.0...v0.4.1) (2022-03-06)
+
+
+### Bug Fixes
+
+* add support for generated shapes ([b52f278](https://github.com/klueless-io/drawio_dsl/commit/b52f2786281acadc32d546f0ed9c7ac2c8fc1094))
+
 # [0.4.0](https://github.com/klueless-io/drawio_dsl/compare/v0.3.0...v0.4.0) (2022-03-05)
 
 
