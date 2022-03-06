@@ -5,7 +5,7 @@ module DrawioDsl
   module DrawioShapes
     # rubocop:disable Metrics/CyclomaticComplexity
     def random(**opts)
-      case rand(10)
+      case rand(12)
       when 0
         callout(**opts)
       when 1
@@ -19,13 +19,17 @@ module DrawioDsl
       when 5
         hexagon(**opts)
       when 6
-        note(**opts)
+        hcontainer(**opts)
       when 7
-        process(**opts)
+        note(**opts)
       when 8
-        rectangle(**opts)
+        process(**opts)
       when 9
+        rectangle(**opts)
+      when 10
         square(**opts)
+      when 11
+        vcontainer(**opts)
       end
     end
     # rubocop:enable Metrics/CyclomaticComplexity
@@ -54,6 +58,10 @@ module DrawioDsl
       builder.add_hexagon(**opts)
     end
 
+    def hcontainer(**opts)
+      builder.add_hcontainer(**opts)
+    end
+
     def note(**opts)
       builder.add_note(**opts)
     end
@@ -68,6 +76,10 @@ module DrawioDsl
 
     def square(**opts)
       builder.add_square(**opts)
+    end
+
+    def vcontainer(**opts)
+      builder.add_vcontainer(**opts)
     end
   end
 end

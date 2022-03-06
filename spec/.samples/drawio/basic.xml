@@ -1,42 +1,42 @@
-<mxfile host="SdI">
-  <diagram id="oTs" name="Normal">
+<mxfile host="Bca">
+  <diagram id="Dgt" name="Normal">
     <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
       <root>
-        <mxCell id="oTs-A"/>
-        <mxCell id="oTs-B" parent="oTs-A"/>
-        <mxCell id="oTs-1" value="Square" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="oTs-B">
+        <mxCell id="Dgt-A"/>
+        <mxCell id="Dgt-B" parent="Dgt-A"/>
+        <mxCell id="Dgt-1" value="Square" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Dgt-B">
           <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
         </mxCell>
-        <mxCell id="oTs-2" value="Rectangle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="oTs-B">
+        <mxCell id="Dgt-2" value="Rectangle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Dgt-B">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="oTs-3" value="Rectangle (Rounded)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="oTs-B">
+        <mxCell id="Dgt-3" value="Rectangle (Rounded)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Dgt-B">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="oTs-4" value="Circle" style="double=1;ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="oTs-B">
+        <mxCell id="Dgt-4" value="Circle" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Dgt-B">
           <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
         </mxCell>
-        <mxCell id="oTs-5" value="Process" style="double=1;shape=process;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="oTs-B">
+        <mxCell id="Dgt-5" value="Process" style="shape=process;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Dgt-B">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="oTs-6" value="Ellipse" style="double=1;ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="oTs-B">
+        <mxCell id="Dgt-6" value="Ellipse" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Dgt-B">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="jAq" name="Sketch">
+  <diagram id="eWH" name="Sketch">
     <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="jAq-A"/>
-        <mxCell id="jAq-B" parent="jAq-A"/>
-        <mxCell id="jAq-1" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="jAq-B">
+        <mxCell id="eWH-A"/>
+        <mxCell id="eWH-B" parent="eWH-A"/>
+        <mxCell id="eWH-1" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="eWH-B">
           <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
         </mxCell>
-        <mxCell id="jAq-2" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="jAq-B">
+        <mxCell id="eWH-2" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="eWH-B">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="jAq-3" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="jAq-B">
+        <mxCell id="eWH-3" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="eWH-B">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
       </root>

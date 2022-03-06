@@ -4,8 +4,18 @@
 module DrawioDsl
   # Used to attach configuration to KConfig module
   module ConfigurationShapes
+    ShapeDefaults   = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    Shapes = Struct.new(
+      :shape,
+      {{#each shapes}}
+      :{{snake ./type}},
+      {{/each}}
+      keyword_init: true
+    )
+
     def add_shapes
       @shapes = Shapes.new(
+        shape: ShapeDefaults.new(type: :shape, x: 0, y: 0, w: 20, h: 20, style_modifiers: ''),
         {{#each shapes}}
         {{snake ./type}}: ShapeDefaults.new(type: :{{snake ./type}}, x: {{./x}}, y: {{./y}}, w: {{./w}}, h: {{./h}}, style_modifiers: '{{{./style_modifiers}}}'){{#if @last}}{{^}},{{/if}}
         {{/each}}

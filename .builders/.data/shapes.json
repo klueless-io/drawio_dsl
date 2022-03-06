@@ -5,7 +5,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "double=1;shape=callout"
+    "style_modifiers": "shape=callout"
   },
   {
     "type": "circle",
@@ -13,7 +13,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "double=1;ellipse"
+    "style_modifiers": "ellipse"
   },
   {
     "type": "cloud",
@@ -21,7 +21,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "double=1;shape=cloud"
+    "style_modifiers": "shape=cloud"
   },
   {
     "type": "diamond",
@@ -29,7 +29,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "double=1;rhombus"
+    "style_modifiers": "rhombus"
   },
   {
     "type": "ellipse",
@@ -37,7 +37,7 @@
     "y": 0,
     "w": 200,
     "h": 120,
-    "style_modifiers": "double=1;ellipse"
+    "style_modifiers": "ellipse"
   },
   {
     "type": "hexagon",
@@ -45,7 +45,15 @@
     "y": 0,
     "w": 200,
     "h": 120,
-    "style_modifiers": "double=1;shape=hexagon"
+    "style_modifiers": "shape=hexagon"
+  },
+  {
+    "type": "hcontainer",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": "swimlane;horizontal=0"
   },
   {
     "type": "note",
@@ -53,7 +61,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "double=1;shape=note"
+    "style_modifiers": "shape=note"
   },
   {
     "type": "process",
@@ -61,7 +69,7 @@
     "y": 0,
     "w": 200,
     "h": 120,
-    "style_modifiers": "double=1;shape=process"
+    "style_modifiers": "shape=process"
   },
   {
     "type": "rectangle",
@@ -78,5 +86,13 @@
     "w": 160,
     "h": 160,
     "style_modifiers": ""
+  },
+  {
+    "type": "vcontainer",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": "swimlane"
   }
 ]

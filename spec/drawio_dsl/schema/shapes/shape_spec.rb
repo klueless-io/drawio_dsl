@@ -20,7 +20,7 @@ RSpec.describe DrawioDsl::Schema::Shape do
       subject { described_class.configure_shape(name) }
 
       context 'when the shape configuration is valid' do
-        let(:name) { :shape }
+        let(:name) { :square }
 
         it 'sets the shape defaults' do
           expect(described_class.shape_defaults).not_to be_nil

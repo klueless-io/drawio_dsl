@@ -33,6 +33,11 @@ module DrawioDsl
       add_shape(hexagon)
     end
 
+    def add_hcontainer(**opts)
+      hcontainer = DrawioDsl::Schema::Hcontainer.new(current_page, **opts)
+      add_shape(hcontainer)
+    end
+
     def add_note(**opts)
       note = DrawioDsl::Schema::Note.new(current_page, **opts)
       add_shape(note)
@@ -51,6 +56,11 @@ module DrawioDsl
     def add_square(**opts)
       square = DrawioDsl::Schema::Square.new(current_page, **opts)
       add_shape(square)
+    end
+
+    def add_vcontainer(**opts)
+      vcontainer = DrawioDsl::Schema::Vcontainer.new(current_page, **opts)
+      add_shape(vcontainer)
     end
   end
 end

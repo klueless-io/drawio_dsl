@@ -4,26 +4,13 @@
 module DrawioDsl
   # Configuration container for the DrawIO DSL
   class Configuration
+    include DrawioDsl::ConfigurationShapes
+    include DrawioDsl::ConfigurationShapes
+
     include KLog::Logging
 
     BaseStyle = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
-    ShapeDefaults   = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
     ShapeThemeStyle = Struct.new(:fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
-
-    Shapes = Struct.new(
-      :shape,
-      :square,
-      :rectangle,
-      :circle,
-      :process,
-      :ellipse,
-      :diamond,
-      :hexagon,
-      :cloud,
-      :note,
-      :callout,
-      keyword_init: true
-    )
 
     attr_accessor :base_style
 
@@ -46,22 +33,6 @@ module DrawioDsl
     end
 
     private
-
-    def add_shapes
-      @shapes = Shapes.new(
-        shape: ShapeDefaults.new(type: :shape , x: 0, y: 0, w: 20, h: 20, style_modifiers: ''),
-        square: ShapeDefaults.new(type: :square , x: 0, y: 0, w: 160, h: 160, style_modifiers: ''),
-        rectangle: ShapeDefaults.new(type: :rectangle , x: 0, y: 0, w: 200, h: 120, style_modifiers: ''),
-        circle: ShapeDefaults.new(type: :circle , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;ellipse'),
-        process: ShapeDefaults.new(type: :process , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;shape=process'),
-        ellipse: ShapeDefaults.new(type: :ellipse , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;ellipse'),
-        diamond: ShapeDefaults.new(type: :diamond , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;rhombus'),
-        hexagon: ShapeDefaults.new(type: :hexagon , x: 0, y: 0, w: 200, h: 120, style_modifiers: 'double=1;shape=hexagon'),
-        cloud: ShapeDefaults.new(type: :cloud , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=cloud'),
-        note: ShapeDefaults.new(type: :note , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=note'),
-        callout: ShapeDefaults.new(type: :callout , x: 0, y: 0, w: 160, h: 160, style_modifiers: 'double=1;shape=callout')
-      )
-    end
 
     def add_theme(name, **opts)
       @themes[name] = ShapeThemeStyle.new(**opts)

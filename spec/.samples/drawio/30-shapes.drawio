@@ -1,0 +1,40 @@
+<mxfile host="Uwp">
+  <diagram id="rRj" name="Shapes">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="rRj-A"/>
+        <mxCell id="rRj-B" parent="rRj-A"/>
+        <mxCell id="rRj-2" value="square" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-3" value="rectangle" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="230" y="50" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-4" value="circle" style="double=1;ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="470" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-5" value="process" style="double=1;shape=process;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="670" y="50" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-6" value="ellipse" style="double=1;ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="890" y="50" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-7" value="diamond" style="double=1;rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="30" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-8" value="hexagon" style="double=1;shape=hexagon;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="230" y="270" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-9" value="cloud" style="double=1;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="470" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-10" value="note" style="double=1;shape=note;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="690" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="rRj-11" value="callout" style="double=1;shape=callout;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="rRj-B">
+          <mxGeometry x="910" y="250" width="160" height="160" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

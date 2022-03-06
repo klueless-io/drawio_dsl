@@ -15,7 +15,7 @@ KManager.action :requires do
 
         cd(:lib)
 
-        add('schema/_.rb.txt', template_file: 'schema_require.rb', shapes: shapes)
+        add('schema/_.rb', template_file: 'schema_require.rb', shapes: shapes)
 
         shapes.each do |shape|
           add("schema/shapes/#{shape['type']}.rb",
@@ -36,10 +36,5 @@ KManager.action :requires do
         end
 
       end
-
-    # # director.play_actions
-    # director.builder.debug
-    # director.debug
-    # director.k_builder.debug
   end
 end
