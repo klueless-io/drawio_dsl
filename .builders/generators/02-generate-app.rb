@@ -23,6 +23,10 @@ KManager.action :requires do
             shape: shape)
         end
 
+        add("drawio_shapes.rb"        , template_file: 'drawio_shapes.rb'       , shapes: shapes, shape_length: shapes.length)
+        add("dom_builder_shapes.rb"   , template_file: 'dom_builder_shapes.rb'  , shapes: shapes)
+        add("configuration_shapes.rb" , template_file: 'configuration_shapes.rb', shapes: shapes)
+
         cd(:spec)
 
         shapes.each do |shape|

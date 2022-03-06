@@ -7,67 +7,67 @@ module DrawioDsl
     def random(**opts)
       case rand(10)
       when 0
-        square(**opts)
+        callout(**opts)
       when 1
-        rectangle(**opts)
-      when 2
         circle(**opts)
+      when 2
+        cloud(**opts)
       when 3
-        process(**opts)
+        diamond(**opts)
       when 4
         ellipse(**opts)
       when 5
-        diamond(**opts)
-      when 6
         hexagon(**opts)
-      when 7
-        cloud(**opts)
-      when 8
+      when 6
         note(**opts)
+      when 7
+        process(**opts)
+      when 8
+        rectangle(**opts)
       when 9
-        callout(**opts)
+        square(**opts)
       end
     end
     # rubocop:enable Metrics/CyclomaticComplexity
 
-    def square(**opts)
-      builder.add_square(**opts)
-    end
-
-    def rectangle(**opts)
-      builder.add_rectangle(**opts)
+    def callout(**opts)
+      builder.add_callout(**opts)
     end
 
     def circle(**opts)
       builder.add_circle(**opts)
     end
 
-    def process(**opts)
-      builder.add_process(**opts)
-    end
-
-    def ellipse(**opts)
-      builder.add_ellipse(**opts)
+    def cloud(**opts)
+      builder.add_cloud(**opts)
     end
 
     def diamond(**opts)
       builder.add_diamond(**opts)
     end
 
-    def hexagon(**opts)
-      builder.add_hexagon(**opts)
+    def ellipse(**opts)
+      builder.add_ellipse(**opts)
     end
 
-    def cloud(**opts)
-      builder.add_cloud(**opts)
+    def hexagon(**opts)
+      builder.add_hexagon(**opts)
     end
 
     def note(**opts)
       builder.add_note(**opts)
     end
 
-    def callout(**opts)
-      builder.add_callout(**opts)
+    def process(**opts)
+      builder.add_process(**opts)
+    end
+
+    def rectangle(**opts)
+      builder.add_rectangle(**opts)
+    end
+
+    def square(**opts)
+      builder.add_square(**opts)
     end
   end
 end
