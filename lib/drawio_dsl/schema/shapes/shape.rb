@@ -5,18 +5,14 @@ module DrawioDsl
     # Shape is a graphical element, it can be a shape, a text, or a group (todo)
     class Shape < Node
       class << self
+        attr_reader :shape_defaults
+
         def configure_shape(name)
           raise "Shape #{name} not found in configuration" unless KConfig.configuration.drawio.shapes.members.include?(name)
 
           config = KConfig.configuration.drawio.shapes[name]
 
           @shape_defaults = config.clone
-        end
-
-        def shape_defaults
-          return @shape_defaults if defined? @shape_defaults
-
-          raise 'Shape defaults not configured'
         end
       end
 
@@ -113,6 +109,7 @@ module DrawioDsl
         }
       end
 
+      # :nocov:
       def debug(format: :detail)
         if format == :detail
           debug_detail({ id: id, classification: classification, type: type })
@@ -120,6 +117,7 @@ module DrawioDsl
           debug_row(classification, id, type, x, y, w, h)
         end
       end
+      # :nocov:
     end
   end
 end

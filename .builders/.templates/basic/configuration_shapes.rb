@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # Attach configuration to the DrawIO DSL module
+# :nocov:
 module DrawioDsl
   # Used to attach configuration to KConfig module
   module ConfigurationShapes
@@ -23,3 +24,4 @@ module DrawioDsl
     end
   end
 end
+# :nocov:

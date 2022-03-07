@@ -69,4 +69,10 @@ RSpec.describe DrawioDsl::Schema::Diagram do
       end
     end
   end
+
+  describe '.to_h' do
+    subject { instance.to_h }
+
+    it { is_expected.not_to be_nil }
+  end
 end

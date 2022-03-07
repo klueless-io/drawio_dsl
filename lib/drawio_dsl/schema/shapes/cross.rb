@@ -2,8 +2,8 @@
 
 module DrawioDsl
   module Schema
-    class Vcontainer < Shape
-      configure_shape(:vcontainer)
+    class Cross < Shape
+      configure_shape(:cross)
     end
   end
 end

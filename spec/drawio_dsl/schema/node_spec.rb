@@ -21,4 +21,22 @@ RSpec.describe DrawioDsl::Schema::Node do
 
     it { is_expected.to eq page }
   end
+
+  context '.id' do
+    subject { instance.id }
+
+    it { is_expected.to be_nil }
+  end
+
+  context '.classification' do
+    subject { instance.classification }
+
+    it { is_expected.to eq :unknown }
+  end
+
+  describe '.to_h' do
+    subject { instance.to_h }
+
+    it { is_expected.not_to be_nil }
+  end
 end

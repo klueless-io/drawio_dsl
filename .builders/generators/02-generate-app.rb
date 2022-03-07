@@ -35,6 +35,9 @@ KManager.action :requires do
             shape: shape)
         end
 
+        cd(:app)
+        run_command('rubocop -a')
+
       end
   end
 end

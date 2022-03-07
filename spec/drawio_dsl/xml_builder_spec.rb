@@ -46,7 +46,7 @@ RSpec.describe DrawioDsl::XmlBuilder do
           .to include('mxfile host')
           .and match(/<diagram id="xxx" name="Page 1">/)
           .and match(/<mxCell id="xxx-1" value="" style="whiteSpace=wrap;html=1.*>/)
-          .and match(/<mxCell id="xxx-2" value="" style="double=1;ellipse.*>/)
+          .and match(/<mxCell id="xxx-2" value="" style="ellipse.*>/)
       end
     end
   end

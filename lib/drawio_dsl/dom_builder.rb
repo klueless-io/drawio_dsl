@@ -86,10 +86,12 @@ module DrawioDsl
       shape
     end
 
+    # :nocov:
     def debug
       puts JSON.pretty_generate(actions)
       puts JSON.pretty_generate(diagram.to_h)
     end
+    # :nocov:
 
     def dom
       diagram.to_h

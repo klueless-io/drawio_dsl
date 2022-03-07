@@ -2,8 +2,8 @@
 
 module DrawioDsl
   module Schema
-    class Hcontainer < Shape
-      configure_shape(:hcontainer)
+    class Container3 < Shape
+      configure_shape(:container3)
     end
   end
 end

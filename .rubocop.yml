@@ -11,6 +11,7 @@ AllCops:
     - ".builders/**/*"
     - "spec/samples/**/*"
 
+
 Metrics/BlockLength:
   Exclude:
     - "**/spec/**/*"
@@ -35,9 +36,6 @@ Metrics/BlockLength:
     - shared_examples_for
     - transaction
 
-Metrics/MethodLength:
-  Max: 25
-
 Layout/LineLength:
   Max: 200
   # Ignores annotate output
@@ -58,6 +56,25 @@ Metrics/ClassLength:
 Metrics/ModuleLength:
   Exclude:
     - "**/spec/**/*"
+    - "lib/drawio_dsl/drawio_shapes.rb"
+    - "lib/drawio_dsl/schema/shapes/diagram.rb"
+    - "lib/drawio_dsl/dom_builder_shapes.rb"
+Metrics/AbcSize:
+  Exclude:
+    - "lib/drawio_dsl/drawio_shapes.rb"
+    - "lib/drawio_dsl/configuration_shapes.rb"
+    - "lib/drawio_dsl/configuration_themes.rb"
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - "lib/drawio_dsl/drawio_shapes.rb"
+Metrics/MethodLength:
+  Max: 25
+  Exclude:
+    - "lib/drawio_dsl/drawio_shapes.rb"
+    - "lib/drawio_dsl/schema/shapes/shape.rb"
+    - "lib/drawio_dsl/schema/shapes/page.rb"
+    - "lib/drawio_dsl/configuration_shapes.rb"
+    - "lib/drawio_dsl/configuration_themes.rb"
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 Naming/AccessorMethodName:

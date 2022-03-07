@@ -5,8 +5,8 @@ KManager.action :bootstrap do
     director = DrawioDsl::Drawio
       .init(k_builder)
       .diagram(theme: :style_06)
-      .page('Style-Plain', margin_left: 0, margin_top: 0) do
-        grid_layout(wrap_at: 5)
+      .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
+        grid_layout(wrap_at: 8)
 
         square(title: 'The quick brown fox jumps over the lazy dog')
         circle(title: 'Mary had a little lamb')

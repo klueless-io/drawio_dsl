@@ -2,6 +2,10 @@
 
 > DrawIO DSL can build DrawIO diagrams using a Domain Specific Language
 
+## ToDo
+
+- Diagram needs to support background color and it needs to trickle down to pages
+
 ## Installation
 
 Add this line to your application's Gemfile:

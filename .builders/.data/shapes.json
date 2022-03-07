@@ -1,11 +1,51 @@
 [
   {
+    "type": "actor",
+    "x": 0,
+    "y": 0,
+    "w": 40,
+    "h": 50,
+    "style_modifiers": "shape=actor"
+  },
+  {
+    "type": "actor2",
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 50,
+    "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
+  },
+  {
     "type": "callout",
     "x": 0,
     "y": 0,
     "w": 160,
-    "h": 160,
+    "h": 120,
     "style_modifiers": "shape=callout"
+  },
+  {
+    "type": "callout2",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "shape=mxgraph.basic.oval_callout"
+  },
+  {
+    "type": "callout3",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "shape=mxgraph.basic.cloud_callout"
+  },
+  {
+    "type": "callout4",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 120,
+    "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
   },
   {
     "type": "circle",
@@ -24,12 +64,36 @@
     "style_modifiers": "shape=cloud"
   },
   {
+    "type": "cross",
+    "x": 0,
+    "y": 0,
+    "w": 50,
+    "h": 50,
+    "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
+  },
+  {
+    "type": "envelop",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 100,
+    "style_modifiers": "shape=message"
+  },
+  {
     "type": "diamond",
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 100,
+    "style_modifiers": "rhombus"
+  },
+  {
+    "type": "document",
     "x": 0,
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "rhombus"
+    "style_modifiers": "shape=mxgraph.basic.document"
   },
   {
     "type": "ellipse",
@@ -48,12 +112,36 @@
     "style_modifiers": "shape=hexagon"
   },
   {
-    "type": "hcontainer",
+    "type": "container",
     "x": 0,
     "y": 0,
-    "w": 200,
-    "h": 120,
+    "w": 160,
+    "h": 160,
     "style_modifiers": "swimlane;horizontal=0"
+  },
+  {
+    "type": "container2",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "swimlane"
+  },
+  {
+    "type": "container3",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "swimlane;startSize=50"
+  },
+  {
+    "type": "container4",
+    "x": 0,
+    "y": 0,
+    "w": 160,
+    "h": 160,
+    "style_modifiers": "swimlane;resizable=0"
   },
   {
     "type": "note",
@@ -80,6 +168,14 @@
     "style_modifiers": ""
   },
   {
+    "type": "rectangle2",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 120,
+    "style_modifiers": "shape=mxgraph.basic.cloud_rect"
+  },
+  {
     "type": "square",
     "x": 0,
     "y": 0,
@@ -88,11 +184,35 @@
     "style_modifiers": ""
   },
   {
-    "type": "vcontainer",
+    "type": "step",
     "x": 0,
     "y": 0,
-    "w": 200,
-    "h": 120,
-    "style_modifiers": "swimlane"
+    "w": 120,
+    "h": 80,
+    "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
+  },
+  {
+    "type": "tick",
+    "x": 0,
+    "y": 0,
+    "w": 50,
+    "h": 50,
+    "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
+  },
+  {
+    "type": "face",
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 100,
+    "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
+  },
+  {
+    "type": "triangle",
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 100,
+    "style_modifiers": "triangle"
   }
 ]

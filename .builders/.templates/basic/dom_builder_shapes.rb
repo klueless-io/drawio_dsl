@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# :nocov:
 module DrawioDsl
   # DrawioDsl is a DSL for draw-io diagrams.
   module DomBuilderShapes
@@ -12,3 +13,4 @@ module DrawioDsl
     {{/each}}
   end
 end
+# :nocov:

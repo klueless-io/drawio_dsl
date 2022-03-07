@@ -4,7 +4,14 @@
 module DrawioDsl
   # Configuration for each theme
   module ConfigurationThemes
-    # rubocop:disable Metrics/AbcSize, Metrics/MethodLength
+    ShapeThemeStyle = Struct.new(:fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
+
+    attr_accessor :themes
+
+    def add_theme(name, **opts)
+      @themes[name] = ShapeThemeStyle.new(**opts)
+    end
+
     def add_themes
       @themes = {}
 
@@ -52,6 +59,5 @@ module DrawioDsl
       add_theme(:style_42         , fill_color: '#cdeb8b', stroke_color: '#36393d', font_color: '#000000')
       add_theme(:style_43         , fill_color: '#ffcccc', stroke_color: '#36393d', font_color: '#000000')
     end
-    # rubocop:enable Metrics/AbcSize, Metrics/MethodLength
   end
 end

@@ -38,6 +38,7 @@ RSpec.describe DrawioDsl::Drawio do
         director.page('page1') do
           grid_layout
           square
+          flex_layout
           circle
         end
       end
@@ -53,10 +54,6 @@ RSpec.describe DrawioDsl::Drawio do
           it { is_expected.to have_attributes(count: 2) }
         end
       end
-
-      # fit {
-      #   puts JSON.pretty_generate(director.builder.diagram.to_h)
-      # }
     end
   end
 

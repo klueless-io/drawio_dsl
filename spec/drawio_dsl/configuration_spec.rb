@@ -5,10 +5,6 @@ RSpec.describe DrawioDsl::Configuration do
 
   subject { instance }
 
-  it 'should be an instance of DrawioDsl::Configuration' do
-    expect(instance).to be_a(described_class)
-  end
-
   context 'should have configuration' do
     describe '#base_style' do
       subject { instance.base_style }
