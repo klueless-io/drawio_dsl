@@ -1,5 +1,5 @@
 {
-  "host": "wpy",
+  "host": "uDx",
   "theme": "style_01",
   "palette": {
     "fill_color": "#f5f5f5",
@@ -17,7 +17,7 @@
   },
   "pages": [
     {
-      "id": "Whp",
+      "id": "aXz",
       "name": "Grid Layout Horizontal",
       "position_x": 440,
       "position_y": 220,
@@ -63,11 +63,12 @@
           "anchor_y": 0,
           "direction": "horizontal",
           "wrap_at": 3,
-          "grid_size": 220,
+          "grid_w": 220,
+          "grid_h": 220,
           "cell_no": 3
         },
         {
-          "id": "Whp-2",
+          "id": "aXz-2",
           "classification": "shape",
           "type": "diamond",
           "x": 120,
@@ -77,7 +78,7 @@
           "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "Whp-3",
+          "id": "aXz-3",
           "classification": "shape",
           "type": "hexagon",
           "x": 240,
@@ -87,7 +88,7 @@
           "style": "shape=hexagon;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "Whp-4",
+          "id": "aXz-4",
           "classification": "shape",
           "type": "cloud",
           "x": 500,
@@ -97,7 +98,7 @@
           "style": "shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "Whp-5",
+          "id": "aXz-5",
           "classification": "shape",
           "type": "note",
           "x": 60,
@@ -107,7 +108,7 @@
           "style": "shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "Whp-6",
+          "id": "aXz-6",
           "classification": "shape",
           "type": "callout",
           "x": 280,

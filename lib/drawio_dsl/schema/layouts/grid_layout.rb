@@ -6,22 +6,28 @@ module DrawioDsl
     class GridLayout < Layout
       attr_accessor :direction
       attr_accessor :wrap_at
-      attr_accessor :grid_size
+      attr_accessor :grid_size # this is an alternative to grid_w/grid_h
+      attr_accessor :grid_w
+      attr_accessor :grid_h
       attr_accessor :cell_no
       attr_accessor :h_align
       attr_accessor :v_align
 
+      # rubocop:disable Metrics/CyclomaticComplexity
       def initialize(page, **args)
         @type       = :grid_layout
         @direction  = args[:direction]  || :horizontal
         @wrap_at    = args[:wrap_at]    || 5
         @grid_size  = args[:grid_size]  || 220
+        @grid_w     = args[:grid_w]     || grid_size
+        @grid_h     = args[:grid_h]     || grid_size
         @h_align    = args[:h_align]    || :center
         @v_align    = args[:v_align]    || :center
         @cell_no    = 1
 
         super(page, **args)
       end
+      # rubocop:enable Metrics/CyclomaticComplexity
 
       def position_shape(shape)
         fire_after_init
@@ -47,7 +53,8 @@ module DrawioDsl
         super.merge(
           direction: direction,
           wrap_at: wrap_at,
-          grid_size: grid_size,
+          grid_w: grid_w,
+          grid_h: grid_h,
           cell_no: cell_no
         )
       end
@@ -56,8 +63,8 @@ module DrawioDsl
 
       # rubocop:disable Metrics/AbcSize
       def horizontal_shape_alignment(shape)
-        return page.position_x + ((grid_size - shape.w) / 2)  if h_align == :center
-        return page.position_x + (grid_size - shape.w)        if h_align == :right
+        return page.position_x + ((grid_w - shape.w) / 2)  if h_align == :center
+        return page.position_x + (grid_w - shape.w)        if h_align == :right
 
         page.position_x
       end
@@ -65,8 +72,8 @@ module DrawioDsl
 
       # rubocop:disable Metrics/AbcSize
       def vertical_shape_alignment(shape)
-        return page.position_y + ((grid_size - shape.h) / 2)  if v_align == :center || v_align == :middle
-        return page.position_y + (grid_size - shape.h)        if v_align == :bottom
+        return page.position_y + ((grid_h - shape.h) / 2)  if v_align == :center || v_align == :middle
+        return page.position_y + (grid_h - shape.h)        if v_align == :bottom
 
         page.position_y
       end
@@ -74,27 +81,27 @@ module DrawioDsl
 
       def move_cell_horizontally
         if cell_no < wrap_at
-          page.position_x += grid_size
+          page.position_x += grid_w
           @cell_no += 1
           return
         end
 
         # Flow down to the next row
         page.position_x = anchor_x
-        page.position_y += grid_size
+        page.position_y += grid_w
         @cell_no = 1
       end
 
       def move_cell_vertically
         if cell_no < wrap_at
-          page.position_y += grid_size
+          page.position_y += grid_h
           @cell_no += 1
           return
         end
 
         # Flow right to the next column
         page.position_y = anchor_y
-        page.position_x += grid_size
+        page.position_x += grid_h
         @cell_no = 1
       end
     end

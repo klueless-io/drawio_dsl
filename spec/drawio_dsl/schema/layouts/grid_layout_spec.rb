@@ -17,7 +17,8 @@ RSpec.describe DrawioDsl::Schema::GridLayout do
           type: :grid_layout,
           direction: :horizontal,
           wrap_at: 5,
-          grid_size: 220,
+          grid_w: 220,
+          grid_h: 220,
           h_align: :center,
           v_align: :center,
           cell_no: 1
@@ -26,10 +27,21 @@ RSpec.describe DrawioDsl::Schema::GridLayout do
 
       # fit { puts JSON.pretty_generate(subject.to_h) }
     end
+
+    context 'grid_size drives grid_w/grid_h' do
+      let(:layout_args) { { grid_size: 149 } }
+
+      it do
+        is_expected.to have_attributes(
+          grid_w: 149,
+          grid_h: 149
+        )
+      end
+    end
   end
 
   context 'when direction is horizontal' do
-    let(:layout_args) { { direction: :horizontal, wrap_at: 3, grid_size: 100 } }
+    let(:layout_args) { { direction: :horizontal, wrap_at: 3, grid_w: 100 } }
 
     context 'when 0 shape' do
       it { is_expected.to have_attributes(cell_no: 1) }
@@ -117,7 +129,7 @@ RSpec.describe DrawioDsl::Schema::GridLayout do
   end
 
   context 'when direction is vertical' do
-    let(:layout_args) { { direction: :vertical, wrap_at: 3, grid_size: 100 } }
+    let(:layout_args) { { direction: :vertical, wrap_at: 3, grid_h: 100 } }
 
     context 'when 0 shape' do
       it { is_expected.to have_attributes(cell_no: 1) }

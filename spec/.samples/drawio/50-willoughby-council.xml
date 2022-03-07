@@ -1,0 +1,70 @@
+<mxfile host="DB2">
+  <diagram id="vk2" name="Shapes">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="vk2-A"/>
+        <mxCell id="vk2-B" parent="vk2-A"/>
+        <mxCell id="vk2-2" value="PREPARATION FOR INVESTIGATION " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="60" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-3" value="(source: Hunter &amp; Central Coast Regional Environmental Management Strategy &#x2013; Investigations guideline) " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="280" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-4" value="Enter report into system" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="500" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-5" value="Preliminary Review " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="720" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-6" value="Insufficient Information " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="940" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-7" value="Seek Additional Information " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="1160" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-8" value="Identify Possible Breach " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="1380" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-9" value="Insufficient evidence or no breach detected " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="1600" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-10" value="Plan follow up action " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="1820" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-11" value="Establish Jurisdiction - Council or other agency? " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="2040" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-12" value="Refer to other agency " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="2260" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-13" value="Council Responsibility " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="2480" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-14" value="Plan investigation " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="2700" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-15" value="Conduct investigation Gather and manage evidence (Evidence Gathering Guideline) " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="2920" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-16" value="Prepare recommendations report " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="3140" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-17" value="Make decision " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="3360" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-18" value="Take action (Enforcement Options Guideline) " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="3580" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-19" value="Review investigation " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="3800" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-20" value="Close case " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="4020" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="vk2-21" value="Feedback to complainant " style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="vk2-B">
+          <mxGeometry x="-40" y="4240" width="300" height="100" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

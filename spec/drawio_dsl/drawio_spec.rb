@@ -38,6 +38,7 @@ RSpec.describe DrawioDsl::Drawio do
         director.page('page1') do
           grid_layout
           square
+          circle
           flex_layout
           circle
         end
@@ -48,10 +49,16 @@ RSpec.describe DrawioDsl::Drawio do
 
         it { is_expected.to have_attributes(name: 'page1') }
 
-        context 'with two shapes' do
-          subject { director.builder.diagram.pages.first.nodes.shapes }
+        context 'with two layouts' do
+          subject { director.builder.diagram.pages.first.nodes.layouts }
 
           it { is_expected.to have_attributes(count: 2) }
+        end
+
+        context 'with three shapes' do
+          subject { director.builder.diagram.pages.first.nodes.shapes }
+
+          it { is_expected.to have_attributes(count: 3) }
         end
       end
     end
