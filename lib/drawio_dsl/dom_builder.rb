@@ -54,20 +54,20 @@ module DrawioDsl
 
     def add_grid_layout(**opts)
       rule = DrawioDsl::Schema::GridLayout.new(current_page, **opts)
-      add_layout_rule(rule)
+      add_layout(rule)
     end
 
     def add_flex_layout(**opts)
       rule = DrawioDsl::Schema::FlexLayout.new(current_page, **opts)
-      add_layout_rule(rule)
+      add_layout(rule)
     end
 
-    def add_layout_rule(rule)
+    def add_layout(rule)
       @current_layout_rule = rule
 
       rule.id = "rule-#{current_page.nodes.length + 1}" unless rule.id
 
-      current_page.nodes << rule
+      current_page.nodes.add(rule)
 
       rule
     end
@@ -81,7 +81,7 @@ module DrawioDsl
 
       shape.id = "#{current_page.id}-#{current_page.nodes.length + 1}" unless shape.id
 
-      current_page.nodes << shape
+      current_page.nodes.add(shape)
 
       shape
     end

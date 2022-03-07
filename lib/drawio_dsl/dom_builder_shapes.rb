@@ -138,6 +138,21 @@ module DrawioDsl
       triangle = DrawioDsl::Schema::Triangle.new(current_page, **opts)
       add_shape(triangle)
     end
+
+    def add_embed_row(**opts)
+      embed_row = DrawioDsl::Schema::EmbedRow.new(current_page, **opts)
+      add_shape(embed_row)
+    end
+
+    def add_embed_col50(**opts)
+      embed_col50 = DrawioDsl::Schema::EmbedCol50.new(current_page, **opts)
+      add_shape(embed_col50)
+    end
+
+    def add_embed_col200(**opts)
+      embed_col200 = DrawioDsl::Schema::EmbedCol200.new(current_page, **opts)
+      add_shape(embed_col200)
+    end
   end
 end
 # :nocov:

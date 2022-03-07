@@ -41,6 +41,8 @@ Layout/LineLength:
   # Ignores annotate output
   IgnoredPatterns: ['\A# \*\*']
   IgnoreCopDirectives: true
+  Exclude:
+    - "lib/drawio_dsl/configuration_shapes.rb"
 
 Lint/UnusedMethodArgument:
   AllowUnusedKeywordArguments: true

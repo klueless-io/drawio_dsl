@@ -1,5 +1,5 @@
 {
-  "host": "m8W",
+  "host": "wpy",
   "theme": "style_01",
   "palette": {
     "fill_color": "#f5f5f5",
@@ -17,7 +17,7 @@
   },
   "pages": [
     {
-      "id": "4vt",
+      "id": "Whp",
       "name": "Grid Layout Horizontal",
       "position_x": 440,
       "position_y": 220,
@@ -67,7 +67,7 @@
           "cell_no": 3
         },
         {
-          "id": "4vt-2",
+          "id": "Whp-2",
           "classification": "shape",
           "type": "diamond",
           "x": 120,
@@ -77,7 +77,7 @@
           "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "4vt-3",
+          "id": "Whp-3",
           "classification": "shape",
           "type": "hexagon",
           "x": 240,
@@ -87,7 +87,7 @@
           "style": "shape=hexagon;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "4vt-4",
+          "id": "Whp-4",
           "classification": "shape",
           "type": "cloud",
           "x": 500,
@@ -97,7 +97,7 @@
           "style": "shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "4vt-5",
+          "id": "Whp-5",
           "classification": "shape",
           "type": "note",
           "x": 60,
@@ -107,7 +107,7 @@
           "style": "shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "4vt-6",
+          "id": "Whp-6",
           "classification": "shape",
           "type": "callout",
           "x": 280,

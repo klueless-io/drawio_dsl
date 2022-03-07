@@ -5,7 +5,7 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(27)
+      case rand(30)
       when 0
         actor(**opts)
       when 1
@@ -60,6 +60,12 @@ module DrawioDsl
         face(**opts)
       when 26
         triangle(**opts)
+      when 27
+        embed_row(**opts)
+      when 28
+        embed_col50(**opts)
+      when 29
+        embed_col200(**opts)
       end
     end
 
@@ -169,6 +175,18 @@ module DrawioDsl
 
     def triangle(**opts)
       builder.add_triangle(**opts)
+    end
+
+    def embed_row(**opts)
+      builder.add_embed_row(**opts)
+    end
+
+    def embed_col50(**opts)
+      builder.add_embed_col50(**opts)
+    end
+
+    def embed_col200(**opts)
+      builder.add_embed_col200(**opts)
     end
   end
   # :nocov:

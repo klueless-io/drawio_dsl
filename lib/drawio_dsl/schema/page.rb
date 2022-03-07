@@ -86,13 +86,13 @@ module DrawioDsl
           @gradient     ||= theme_palette.gradient
         end
 
-        @nodes = args[:nodes] || []
+        @nodes = NodeList.new # []
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
 
-      def shapes
-        @nodes.select { |node| node.is_a?(DrawioDsl::Schema::Shape) }
-      end
+      # def shapes
+      #   nodes.shapes
+      # end
 
       def to_h
         {
@@ -104,7 +104,7 @@ module DrawioDsl
           palette: palette.to_h,
           style: style.to_h,
           settings: settings,
-          nodes: nodes.map(&:to_h)
+          nodes: nodes.to_h
         }
       end
 

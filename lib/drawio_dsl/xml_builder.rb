@@ -52,23 +52,13 @@ module DrawioDsl
           xml.root do
             xml.mxCell(id: "#{page.id}-A")
             xml.mxCell(id: "#{page.id}-B", parent: "#{page.id}-A")
-            page.nodes.each do |node|
-              build_shape(xml, node) if node.classification == :shape
+            page.nodes.all.each do |node|
+              node.as_xml(xml) if node.classification == :shape
             end
           end
         end
       end
     end
     # rubocop:enable  Metrics/MethodLength, Metrics/AbcSize, Metrics/BlockLength
-
-    def build_shape(xml, shape)
-      # puts "opts: #{opts}"
-      # puts shape.x
-      # puts shape.y
-
-      xml.mxCell(id: shape.id, value: shape.title, style: shape.style, vertex: 1, parent: "#{shape.page.id}-B") do
-        xml.mxGeometry(x: shape.x, y: shape.y, width: shape.w, height: shape.h, as: 'geometry')
-      end
-    end
   end
 end

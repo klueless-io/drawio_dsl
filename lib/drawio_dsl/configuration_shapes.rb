@@ -35,6 +35,9 @@ module DrawioDsl
       :tick,
       :face,
       :triangle,
+      :embed_row,
+      :embed_col50,
+      :embed_col200,
       keyword_init: true
     )
 
@@ -55,8 +58,8 @@ module DrawioDsl
         document: ShapeDefaults.new(type: :document, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'shape=mxgraph.basic.document'),
         ellipse: ShapeDefaults.new(type: :ellipse, x: 0, y: 0, w: 200, h: 120, style_modifiers: 'ellipse'),
         hexagon: ShapeDefaults.new(type: :hexagon, x: 0, y: 0, w: 200, h: 120, style_modifiers: 'shape=hexagon'),
-        container: ShapeDefaults.new(type: :container, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'swimlane;horizontal=0'),
-        container2: ShapeDefaults.new(type: :container2, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'swimlane'),
+        container: ShapeDefaults.new(type: :container, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'swimlane'),
+        container2: ShapeDefaults.new(type: :container2, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'swimlane;horizontal=0'),
         container3: ShapeDefaults.new(type: :container3, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'swimlane;startSize=50'),
         container4: ShapeDefaults.new(type: :container4, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'swimlane;resizable=0'),
         note: ShapeDefaults.new(type: :note, x: 0, y: 0, w: 160, h: 160, style_modifiers: 'shape=note'),
@@ -67,7 +70,12 @@ module DrawioDsl
         step: ShapeDefaults.new(type: :step, x: 0, y: 0, w: 120, h: 80, style_modifiers: 'shape=step;perimeter=stepPerimeter;fixedSize=1'),
         tick: ShapeDefaults.new(type: :tick, x: 0, y: 0, w: 50, h: 50, style_modifiers: 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick'),
         face: ShapeDefaults.new(type: :face, x: 0, y: 0, w: 100, h: 100, style_modifiers: 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley'),
-        triangle: ShapeDefaults.new(type: :triangle, x: 0, y: 0, w: 100, h: 100, style_modifiers: 'triangle')
+        triangle: ShapeDefaults.new(type: :triangle, x: 0, y: 0, w: 100, h: 100, style_modifiers: 'triangle'),
+        embed_row: ShapeDefaults.new(type: :embed_row, x: 0, y: 0, w: 200, h: 40,
+                                     style_modifiers: 'shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest'),
+        embed_col50: ShapeDefaults.new(type: :embed_col50, x: 0, y: 0, w: 50, h: 40, style_modifiers: 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden'),
+        embed_col200: ShapeDefaults.new(type: :embed_col200, x: 0, y: 0, w: 150, h: 40,
+                                        style_modifiers: 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden')
       )
     end
   end

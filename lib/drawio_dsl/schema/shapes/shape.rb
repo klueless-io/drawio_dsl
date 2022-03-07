@@ -96,6 +96,12 @@ module DrawioDsl
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
+      def as_xml(xml)
+        xml.mxCell(id: id, value: title, style: style, vertex: 1, parent: "#{page.id}-B") do
+          xml.mxGeometry(x: x, y: y, width: w, height: h, as: 'geometry')
+        end
+      end
+
       def to_h
         {
           id: id,

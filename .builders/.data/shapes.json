@@ -117,7 +117,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "swimlane;horizontal=0"
+    "style_modifiers": "swimlane"
   },
   {
     "type": "container2",
@@ -125,7 +125,7 @@
     "y": 0,
     "w": 160,
     "h": 160,
-    "style_modifiers": "swimlane"
+    "style_modifiers": "swimlane;horizontal=0"
   },
   {
     "type": "container3",
@@ -214,5 +214,29 @@
     "w": 100,
     "h": 100,
     "style_modifiers": "triangle"
+  },
+  {
+    "type": "embed_row",
+    "x": 0,
+    "y": 0,
+    "w": 200,
+    "h": 40,
+    "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
+  },
+  {
+    "type": "embed_col50",
+    "x": 0,
+    "y": 0,
+    "w": 50,
+    "h": 40,
+    "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
+  },
+  {
+    "type": "embed_col200",
+    "x": 0,
+    "y": 0,
+    "w": 150,
+    "h": 40,
+    "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
   }
 ]

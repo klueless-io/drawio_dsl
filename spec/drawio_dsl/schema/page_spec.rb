@@ -123,8 +123,6 @@ RSpec.describe DrawioDsl::Schema::Page do
             nodes: []
           )
         end
-
-        # fit { puts JSON.pretty_generate(subject) }
       end
     end
   end
@@ -141,16 +139,10 @@ RSpec.describe DrawioDsl::Schema::Page do
     it { is_expected.to eq(0) }
   end
 
-  context '.nodes' do
+  context '.nodes.all' do
     subject { instance.nodes }
 
-    it { is_expected.to be_a(Array).and be_empty }
-  end
-
-  context '.shapes' do
-    subject { instance.shapes }
-
-    it { is_expected.to be_a(Array).and be_empty }
+    it { is_expected.to be_a(DrawioDsl::Schema::NodeList) }
   end
 
   context '.style' do

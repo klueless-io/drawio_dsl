@@ -49,7 +49,7 @@ RSpec.describe DrawioDsl::Drawio do
         it { is_expected.to have_attributes(name: 'page1') }
 
         context 'with two shapes' do
-          subject { director.builder.diagram.pages.first.shapes }
+          subject { director.builder.diagram.pages.first.nodes.shapes }
 
           it { is_expected.to have_attributes(count: 2) }
         end

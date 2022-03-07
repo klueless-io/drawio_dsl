@@ -14,22 +14,15 @@ module DrawioDsl
     attr_reader :current_page
     attr_reader :current_layout
 
-    # attr_reader :page_margin_top
-    # attr_reader :page_margin_left
-    # attr_reader :x
-    # attr_reader :y
-
     def initialize(page)
       @page = page
-      # @x = 0
-      # @y = 0
     end
 
     def call
       page.position_x = page.margin_left
       page.position_y = page.margin_top
 
-      page.nodes.each do |node|
+      page.nodes.all.each do |node|
         case node.classification
         when :layout_rule
           @current_layout = node
