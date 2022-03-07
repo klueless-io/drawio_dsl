@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/klueless-io/drawio_dsl/compare/v0.5.0...v0.5.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* refactor nodes array to nodelist object ([10372a5](https://github.com/klueless-io/drawio_dsl/commit/10372a529e6274bae451dae15626dfbac4b9cccb))
+
 # [0.5.0](https://github.com/klueless-io/drawio_dsl/compare/v0.4.1...v0.5.0) (2022-03-07)
 
 
