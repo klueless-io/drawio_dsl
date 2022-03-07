@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/klueless-io/drawio_dsl/compare/v0.4.1...v0.5.0) (2022-03-07)
+
+
+### Features
+
+* add new and update older shapes ([64a0d83](https://github.com/klueless-io/drawio_dsl/commit/64a0d83dda6181183c0980914b7b2ee1520b84e6))
+* final code generation in place for shapes ([ac4ed3c](https://github.com/klueless-io/drawio_dsl/commit/ac4ed3cace4e1794d38306e14d3cee60529add4b))
+* final code generation in place for shapes ([4c2a6fb](https://github.com/klueless-io/drawio_dsl/commit/4c2a6fb376fe61cfd44a699677f7781c9e2b215c))
+
 ## [0.4.1](https://github.com/klueless-io/drawio_dsl/compare/v0.4.0...v0.4.1) (2022-03-06)
 
 
