@@ -32,8 +32,7 @@ gem install drawio_dsl
 
 As a Developer, I to use natural language to build diagrams quickly, so that I can create visual documentation
 
-See all [stories](./STORIES.md)
-
+See all [project plan](./docs/project-plan.md)
 
 ## Usage
 
