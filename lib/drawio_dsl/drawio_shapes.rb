@@ -5,68 +5,110 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(30)
+      case rand(37)
       when 0
-        actor(**opts)
+        h1(**opts)
       when 1
-        actor2(**opts)
+        h2(**opts)
       when 2
-        callout(**opts)
+        h3(**opts)
       when 3
-        callout2(**opts)
+        h4(**opts)
       when 4
-        callout3(**opts)
+        h5(**opts)
       when 5
-        callout4(**opts)
+        h6(**opts)
       when 6
-        circle(**opts)
+        p(**opts)
       when 7
-        cloud(**opts)
+        actor(**opts)
       when 8
-        cross(**opts)
+        actor2(**opts)
       when 9
-        envelop(**opts)
+        callout(**opts)
       when 10
-        diamond(**opts)
+        callout2(**opts)
       when 11
-        document(**opts)
+        callout3(**opts)
       when 12
-        ellipse(**opts)
+        callout4(**opts)
       when 13
-        hexagon(**opts)
+        circle(**opts)
       when 14
-        container(**opts)
+        cloud(**opts)
       when 15
-        container2(**opts)
+        cross(**opts)
       when 16
-        container3(**opts)
+        envelop(**opts)
       when 17
-        container4(**opts)
+        diamond(**opts)
       when 18
-        note(**opts)
+        document(**opts)
       when 19
-        process(**opts)
+        ellipse(**opts)
       when 20
-        rectangle(**opts)
+        hexagon(**opts)
       when 21
-        rectangle2(**opts)
+        container(**opts)
       when 22
-        square(**opts)
+        container2(**opts)
       when 23
-        step(**opts)
+        container3(**opts)
       when 24
-        tick(**opts)
+        container4(**opts)
       when 25
-        face(**opts)
+        note(**opts)
       when 26
-        triangle(**opts)
+        process(**opts)
       when 27
-        embed_row(**opts)
+        rectangle(**opts)
       when 28
-        embed_col50(**opts)
+        rectangle2(**opts)
       when 29
+        square(**opts)
+      when 30
+        step(**opts)
+      when 31
+        tick(**opts)
+      when 32
+        face(**opts)
+      when 33
+        triangle(**opts)
+      when 34
+        embed_row(**opts)
+      when 35
+        embed_col50(**opts)
+      when 36
         embed_col200(**opts)
       end
+    end
+
+    def h1(**opts)
+      builder.add_h1(**opts)
+    end
+
+    def h2(**opts)
+      builder.add_h2(**opts)
+    end
+
+    def h3(**opts)
+      builder.add_h3(**opts)
+    end
+
+    def h4(**opts)
+      builder.add_h4(**opts)
+    end
+
+    def h5(**opts)
+      builder.add_h5(**opts)
+    end
+
+    def h6(**opts)
+      builder.add_h6(**opts)
+    end
+
+    def p(**opts)
+      builder.add_p(**opts)
     end
 
     def actor(**opts)

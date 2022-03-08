@@ -41,7 +41,7 @@ RSpec.describe DrawioDsl::Schema::GridLayout do
   end
 
   context 'when direction is horizontal' do
-    let(:layout_args) { { direction: :horizontal, wrap_at: 3, grid_w: 100 } }
+    let(:layout_args) { { direction: :horizontal, wrap_at: 3, grid_size: 100 } }
 
     context 'when 0 shape' do
       it { is_expected.to have_attributes(cell_no: 1) }
@@ -129,7 +129,7 @@ RSpec.describe DrawioDsl::Schema::GridLayout do
   end
 
   context 'when direction is vertical' do
-    let(:layout_args) { { direction: :vertical, wrap_at: 3, grid_h: 100 } }
+    let(:layout_args) { { direction: :vertical, wrap_at: 3, grid_size: 100 } }
 
     context 'when 0 shape' do
       it { is_expected.to have_attributes(cell_no: 1) }

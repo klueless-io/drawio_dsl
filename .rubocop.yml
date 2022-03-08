@@ -77,6 +77,9 @@ Metrics/MethodLength:
     - "lib/drawio_dsl/schema/shapes/page.rb"
     - "lib/drawio_dsl/configuration_shapes.rb"
     - "lib/drawio_dsl/configuration_themes.rb"
+Metrics/PerceivedComplexity:
+  Exclude:
+    - "lib/drawio_dsl/drawio_shapes.rb"
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 Naming/AccessorMethodName:

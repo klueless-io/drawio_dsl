@@ -17,6 +17,7 @@ KManager.action :requires do
 
         add('schema/_.rb', template_file: 'schema_require.rb', shapes: shapes)
 
+        # build source code for each shape
         shapes.each do |shape|
           add("schema/shapes/#{shape['type']}.rb",
             template_file: 'schema_shape.rb',
@@ -29,6 +30,7 @@ KManager.action :requires do
 
         cd(:spec)
 
+        # build spec for each shape
         shapes.each do |shape|
           add("schema/shapes/#{shape['type']}_spec.rb",
             template_file: 'schema_shape_spec.rb',

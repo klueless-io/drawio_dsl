@@ -1,6 +1,70 @@
 [
   {
+    "type": "h1",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
+    "type": "h2",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
+    "type": "h3",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
+    "type": "h4",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=37;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
+    "type": "h5",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=28;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
+    "type": "h6",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=21;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
+    "type": "p",
+    "text_only": true,
+    "x": 0,
+    "y": 0,
+    "w": 100,
+    "h": 50,
+    "style_modifiers": "text;fontSize=16;fontColor=#ffffff;fontStyle=1;fillColor=none"
+  },
+  {
     "type": "actor",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 40,
@@ -9,6 +73,7 @@
   },
   {
     "type": "actor2",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 30,
@@ -17,6 +82,7 @@
   },
   {
     "type": "callout",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -25,6 +91,7 @@
   },
   {
     "type": "callout2",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -33,6 +100,7 @@
   },
   {
     "type": "callout3",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -41,6 +109,7 @@
   },
   {
     "type": "callout4",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -49,6 +118,7 @@
   },
   {
     "type": "circle",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -57,6 +127,7 @@
   },
   {
     "type": "cloud",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -65,6 +136,7 @@
   },
   {
     "type": "cross",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 50,
@@ -73,6 +145,7 @@
   },
   {
     "type": "envelop",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -81,6 +154,7 @@
   },
   {
     "type": "diamond",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 100,
@@ -89,6 +163,7 @@
   },
   {
     "type": "document",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -97,6 +172,7 @@
   },
   {
     "type": "ellipse",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 200,
@@ -105,6 +181,7 @@
   },
   {
     "type": "hexagon",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 200,
@@ -113,6 +190,7 @@
   },
   {
     "type": "container",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -121,6 +199,7 @@
   },
   {
     "type": "container2",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -129,6 +208,7 @@
   },
   {
     "type": "container3",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -137,6 +217,7 @@
   },
   {
     "type": "container4",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -145,6 +226,7 @@
   },
   {
     "type": "note",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -153,6 +235,7 @@
   },
   {
     "type": "process",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 200,
@@ -161,6 +244,7 @@
   },
   {
     "type": "rectangle",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 200,
@@ -169,6 +253,7 @@
   },
   {
     "type": "rectangle2",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 200,
@@ -177,6 +262,7 @@
   },
   {
     "type": "square",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 160,
@@ -185,6 +271,7 @@
   },
   {
     "type": "step",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 120,
@@ -193,6 +280,7 @@
   },
   {
     "type": "tick",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 50,
@@ -201,6 +289,7 @@
   },
   {
     "type": "face",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 100,
@@ -209,6 +298,7 @@
   },
   {
     "type": "triangle",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 100,
@@ -217,6 +307,7 @@
   },
   {
     "type": "embed_row",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 200,
@@ -225,6 +316,7 @@
   },
   {
     "type": "embed_col50",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 50,
@@ -233,6 +325,7 @@
   },
   {
     "type": "embed_col200",
+    "text_only": false,
     "x": 0,
     "y": 0,
     "w": 150,

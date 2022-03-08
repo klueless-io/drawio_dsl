@@ -88,7 +88,7 @@ module DrawioDsl
 
         # Flow down to the next row
         page.position_x = anchor_x
-        page.position_y += grid_w
+        page.position_y += grid_h
         @cell_no = 1
       end
 
@@ -101,7 +101,7 @@ module DrawioDsl
 
         # Flow right to the next column
         page.position_y = anchor_y
-        page.position_x += grid_h
+        page.position_x += grid_w
         @cell_no = 1
       end
     end

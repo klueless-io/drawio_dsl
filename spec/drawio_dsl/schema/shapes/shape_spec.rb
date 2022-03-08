@@ -13,11 +13,9 @@ RSpec.describe DrawioDsl::Schema::Shape do
   let(:page_args) { {} }
   let(:page) { DrawioDsl::Schema::Page.new(diagram, **page_args) }
 
-  it_behaves_like :basic_shape_attributes
-
   context 'class methods' do
     describe '.configure_shape' do
-      subject { described_class.configure_shape(name) }
+      before { described_class.configure_shape(name) }
 
       context 'when the shape configuration is valid' do
         let(:name) { :square }
@@ -30,8 +28,8 @@ RSpec.describe DrawioDsl::Schema::Shape do
       context 'when the shape is not found in the configuration' do
         let(:name) { :unknown }
 
-        it 'raises an error' do
-          expect { subject }.to raise_error(RuntimeError)
+        it 'sets the shape defaults' do
+          expect(described_class.shape_defaults).not_to be_nil
         end
       end
     end

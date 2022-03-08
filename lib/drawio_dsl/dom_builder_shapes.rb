@@ -4,6 +4,41 @@
 module DrawioDsl
   # DrawioDsl is a DSL for draw-io diagrams.
   module DomBuilderShapes
+    def add_h1(**opts)
+      h1 = DrawioDsl::Schema::H1.new(current_page, **opts)
+      add_shape(h1)
+    end
+
+    def add_h2(**opts)
+      h2 = DrawioDsl::Schema::H2.new(current_page, **opts)
+      add_shape(h2)
+    end
+
+    def add_h3(**opts)
+      h3 = DrawioDsl::Schema::H3.new(current_page, **opts)
+      add_shape(h3)
+    end
+
+    def add_h4(**opts)
+      h4 = DrawioDsl::Schema::H4.new(current_page, **opts)
+      add_shape(h4)
+    end
+
+    def add_h5(**opts)
+      h5 = DrawioDsl::Schema::H5.new(current_page, **opts)
+      add_shape(h5)
+    end
+
+    def add_h6(**opts)
+      h6 = DrawioDsl::Schema::H6.new(current_page, **opts)
+      add_shape(h6)
+    end
+
+    def add_p(**opts)
+      p = DrawioDsl::Schema::P.new(current_page, **opts)
+      add_shape(p)
+    end
+
     def add_actor(**opts)
       actor = DrawioDsl::Schema::Actor.new(current_page, **opts)
       add_shape(actor)
