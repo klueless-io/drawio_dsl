@@ -1,3 +1,10 @@
+## [0.5.6](https://github.com/klueless-io/drawio_dsl/compare/v0.5.5...v0.5.6) (2022-03-08)
+
+
+### Bug Fixes
+
+* add sample diagram for the github readme file ([3fe7dfc](https://github.com/klueless-io/drawio_dsl/commit/3fe7dfcdd2de0721539cd78d9c8bb3a5552f2489))
+
 ## [0.5.5](https://github.com/klueless-io/drawio_dsl/compare/v0.5.4...v0.5.5) (2022-03-08)
 
 
