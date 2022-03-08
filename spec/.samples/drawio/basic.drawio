@@ -1,1 +1,45 @@
-<mxfile host="Electron" modified="2022-03-07T23:42:09.786Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/16.5.1 Chrome/96.0.4664.110 Electron/16.0.7 Safari/537.36" version="16.5.1" etag="BAN86dvOWWBfTAs85Mb5" type="device" pages="2"><diagram id="NXi" name="Normal">5ZZNT4MwGMc/DYkeTFg7UI+DMb1ozDjotdIOmhWKpQzmp7dAGSBzyZLtsAkH2v/zPH358efFgG5cPgmURi8cE2YAE5cGnBsATCxrqi6VstWKaYFGCQXFjWZ2gk+/SZuo1ZxikmmtkSTnTNJ0KAY8SUggBxoSghfDtBVneCCkKCQjwQ8QG6vvFMtIqxP7sQs8ExpGeuoHcN8EPlGwDgXPEz2fAeBi4c3mThOOUTuW3mgWIcyL3qTQM6ArOJdNKy5dwiq4LbbXD3o3q2sXBzKcdpmCJPKYQr3xDWK5RuF/5WoUvVq5bQkVEZXET1FQ9QtlAwM6kYyZ6k1Uc0UZcznjos6GK6s6lZ5JwdekF7Hro6rgiezpzbF/G3p3GyIkKX+zU6YkPCZSbFVK0bt5tkYe9e7bTkTaMOGutgOlGprV39zAiNtS+RIlIbsCdMDchw6cCB08hM68WVYPE8G3x2IUTd0/hTodQXWpCPaYUZWql6rqOBdny/M+0daI4JvgAcmyEUL1Dk+rZqrjF4jyvGa0Ryg97borcuPJEKpu9/2vY72/LOj9AA==</diagram><diagram id="SRk" name="Sketch">7ZVBb4MgFMc/DcclFjK3HVtXu8su87Azk1chohhKp92nHyh20i5ply7LDkVNeD8eD3n/hyKSVN1K04Y/KwYS4Yh1iDwijCP7OHMXmG80LwuttjUbMMIkTdN5MvSjQgsW+DuQiQ8Y4GykW8Fg49mAjFLSiCaEuapryE3AqNaqDd3WSrIANLSAI5DlVB7TV8EM93QWP3wNPIEouF/6Ht8NAxUdnf1ONpwy1U4QWSIc26x0FJEFciy8SaKVMifdRueqS0A6Wca8Zi/lzbxfO70syGLcqoba/HJsn993Krcw1kmfLbMbJWi5MJA1NHd2awvQLsNNJa01s91NCSbn3lgLKRMlle6nkvWtu5yT0aqEyUjcNzdD1WbCh+ZfCrSB7qAOwhwszhHyMA0rUBUYvbN2eILCA9RO6i32jE9KbQ+pr/FiH/dHulhfL81FSuKrkmcoiaPvlMT/SklysZL9Zx/YVde/1rX3PfHb8PEmv3Ky/AQ=</diagram></mxfile>
+<mxfile host="KTW">
+  <diagram id="Jbn" name="Normal">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+      <root>
+        <mxCell id="Jbn-A"/>
+        <mxCell id="Jbn-B" parent="Jbn-A"/>
+        <mxCell id="Jbn-1" value="Square" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Jbn-B">
+          <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Jbn-2" value="Rectangle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Jbn-B">
+          <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="Jbn-3" value="Rectangle (Rounded)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Jbn-B">
+          <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="Jbn-4" value="Circle" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Jbn-B">
+          <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Jbn-5" value="Process" style="shape=process;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Jbn-B">
+          <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="Jbn-6" value="Ellipse" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="Jbn-B">
+          <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="knE" name="Sketch">
+    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="knE-A"/>
+        <mxCell id="knE-B" parent="knE-A"/>
+        <mxCell id="knE-1" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="knE-B">
+          <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="knE-2" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="knE-B">
+          <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="knE-3" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="knE-B">
+          <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

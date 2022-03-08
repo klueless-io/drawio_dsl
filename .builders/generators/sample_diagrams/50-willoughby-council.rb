@@ -3,7 +3,7 @@ KManager.action :bootstrap do
 
     # :rounded, :shadow, :sketch, :glass
     director = DrawioDsl::Drawio
-      .init(k_builder)
+      .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_03)
       .page('Shapes', margin_left: 0, margin_top: 0, rounded: 1) do
         grid_layout(direction: :vertical, grid_h: 120, grid_w: 400, wrap_at: 10, grid: 0)
@@ -43,10 +43,9 @@ KManager.action :bootstrap do
         square(theme: :style_02, w: 240, h: 140, title: '10. TAKE ACTION: Once a decision is made as to the action that should happen in respect of the breach the council can then decide as to what the appropriate action is: WARNING, CIVIL, CRIMINAL and then proceed from there => it is important to keep the complainant informed throughout the entire process to be able to explain why you have taken the course you&apos;ve taken and to be able to justify it')
 
       end
-
-    diagram = DrawioDsl::XmlBuilder.new(director.builder.diagram)
-
-    File.write('../spec/.samples/drawio/50-willoughby-council.xml', diagram.build)
-    File.write('../spec/.samples/drawio/50-willoughby-council.drawio', diagram.build)
+      .cd(:spec)
+      .save('.samples/50-willoughby-council.drawio')
+      .cd(:docs)
+      .export_svg('samples/willoughby-council', page: 1)
   end
 end

@@ -1,7 +1,7 @@
 KManager.action :bootstrap do
   action do
-    director = DrawioDsl::Drawio
-      .init(k_builder)
+    DrawioDsl::Drawio
+      .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_01)
       .page('PgMargin-default') do
         grid_layout(wrap_at: 4)
@@ -36,11 +36,7 @@ KManager.action :bootstrap do
         square
         circle
       end
-
-    diagram = DrawioDsl::XmlBuilder.new(director.builder.diagram)
-
-
-    File.write('../spec/.samples/drawio/10-page-margin.xml', diagram.build)
-    File.write('../spec/.samples/drawio/10-page-margin.drawio', diagram.build)
+      .cd(:spec)
+      .save('.samples/10-page-margin.drawio')
   end
 end

@@ -27,6 +27,7 @@ module DrawioDsl
 
       add(file_name, content: diagram.build, **opts)
 
+      # if last_save_file_name is nil then you are not in execute mode
       @last_save_file_name = k_builder.last_output_file
 
       self
@@ -43,6 +44,21 @@ module DrawioDsl
       page -= 1 # use zero based index
 
       output_file_name = "#{output_file_name}.svg" unless output_file_name.end_with?('.svg')
+
+      command = "/Applications/draw.io.app/Contents/MacOS/draw.io '#{last_save_file_name}' -p #{page} -x -o #{output_file_name}"
+
+      run_command(command)
+
+      self
+    end
+
+    def export_png(output_file_name, page: 1)
+      return unless last_save_file_name
+      return unless File.exist?(last_save_file_name)
+
+      page -= 1 # use zero based index
+
+      output_file_name = "#{output_file_name}.png" unless output_file_name.end_with?('.png')
 
       command = "/Applications/draw.io.app/Contents/MacOS/draw.io '#{last_save_file_name}' -p #{page} -x -o #{output_file_name}"
 

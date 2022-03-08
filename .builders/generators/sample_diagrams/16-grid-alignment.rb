@@ -9,10 +9,7 @@ KManager.action :bootstrap do
     # KConfig.configuration.drawio.rectangle.h = KConfig.configuration.drawio.rectangle.h / 4
 
     director = DrawioDsl::Drawio
-      .init(k_builder,
-        on_exist:                   :skip,                      # %i[skip write compare]
-        on_action:                  :queue                      # %i[queue execute]
-      )
+      .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_01)
       .page('Grid-Center', margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 3)
@@ -64,10 +61,10 @@ KManager.action :bootstrap do
         square
         circle
       end
-
-    diagram = DrawioDsl::XmlBuilder.new(director.builder.diagram)
-
-    File.write('../spec/.samples/drawio/16-grid-alignment.xml', diagram.build)
-    File.write('../spec/.samples/drawio/16-grid-alignment.drawio', diagram.build)
+      .cd(:spec)
+      .save('.samples/16-grid-alignment.drawio')
+      .cd(:docs)
+      # note: there is no difference between center and top/bottom/left/right using SVG/PNG
+      .export_svg('samples/grid-alignment', page: 1)
   end
 end

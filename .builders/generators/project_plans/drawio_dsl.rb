@@ -1,8 +1,7 @@
 KManager.action :todo_drawio_dsl do
   action do
 
-    # :rounded, :shadow, :sketch, :glass
-    director = DrawioDsl::Drawio
+    DrawioDsl::Drawio
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(rounded: 1, glass: 1)
       .page('In progress', theme: :style_03, margin_left: 0, margin_top: 0) do
@@ -42,15 +41,17 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'add save as .drawio')
+        square(w: 300, h: 60, title: 'write samples into docs folder and display in readme')
+        square(w: 300, h: 60, title: 'add export as .PNG, needs to take a page number as the PNG will not support multiple pages')
         square(w: 300, h: 60, title: 'add export as .SVG, needs to take a page number as the SVG will not support multiple pages')
+        square(w: 300, h: 60, title: 'add save as .drawio')
 
       end
       .cd(:spec)
       .save('project-plans/drawio_dsl.drawio')
       .cd(:docs)
-      .export_svg('project_in_progress.svg', page: 1)
-      .export_svg('project_todo.svg'       , page: 2)
-      .export_svg('project_done.svg'       , page: 3)
+      .export_svg('project_in_progress', page: 1)
+      .export_svg('project_todo'       , page: 2)
+      .export_svg('project_done'       , page: 3)
   end
 end
