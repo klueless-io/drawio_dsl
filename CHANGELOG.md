@@ -1,3 +1,10 @@
+## [0.5.5](https://github.com/klueless-io/drawio_dsl/compare/v0.5.4...v0.5.5) (2022-03-08)
+
+
+### Bug Fixes
+
+* add support for PNG/SVG and add sample documents ([4393be1](https://github.com/klueless-io/drawio_dsl/commit/4393be1db0deaf2040a4f395fd6f5c86ab4778db))
+
 ## [0.5.4](https://github.com/klueless-io/drawio_dsl/compare/v0.5.3...v0.5.4) (2022-03-08)
 
 
