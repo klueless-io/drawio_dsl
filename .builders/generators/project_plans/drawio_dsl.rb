@@ -6,17 +6,18 @@ KManager.action :todo_drawio_dsl do
       .diagram(rounded: 1, glass: 1)
       .page('In progress', theme: :style_03, margin_left: 0, margin_top: 0) do
 
-        h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
-        p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan - In progress')
+        # h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
+        # p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan - In progress')
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        square(w: 300, h: 60, title: 'add :shape and :text-only to random shape generator')
         square(w: 300, h: 60, title: 'write SVG directly into other projects')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 
-        h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
-        p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan')
+        # h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
+        # p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan')
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
@@ -36,11 +37,12 @@ KManager.action :todo_drawio_dsl do
       end
       .page('Done', theme: :style_06, margin_left: 0, margin_top: 0) do
 
-        h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
-        p(x: 350, y: 40, w: 400, h: 80, title: 'Done')
+        # h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
+        # p(x: 350, y: 40, w: 400, h: 80, title: 'Done')
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        square(w: 300, h: 60, title: 'add sample diagram for the github readme file')
         square(w: 300, h: 60, title: 'write samples into docs folder and display in readme')
         square(w: 300, h: 60, title: 'add export as .PNG, needs to take a page number as the PNG will not support multiple pages')
         square(w: 300, h: 60, title: 'add export as .SVG, needs to take a page number as the SVG will not support multiple pages')

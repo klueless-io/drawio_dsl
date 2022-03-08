@@ -38,6 +38,8 @@ See [project plan](./docs/project-plan.md)
 
 See all [samples](./docs/samples/samples.md)
 
+![](docs/samples/samples.svg)
+
 ## Usage
 
 See all [usage examples](./USAGE.md)
