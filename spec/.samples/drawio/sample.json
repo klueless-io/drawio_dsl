@@ -1,5 +1,5 @@
 {
-  "host": "370",
+  "host": "F1T",
   "theme": "style_01",
   "palette": {
     "fill_color": "#f5f5f5",
@@ -17,7 +17,7 @@
   },
   "pages": [
     {
-      "id": "BLq",
+      "id": "BdB",
       "name": "Grid Layout Horizontal",
       "position_x": 440,
       "position_y": 220,
@@ -68,7 +68,7 @@
           "cell_no": 3
         },
         {
-          "id": "BLq-2",
+          "id": "BdB-2",
           "classification": "shape",
           "type": "diamond",
           "x": 120,
@@ -78,7 +78,7 @@
           "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "BLq-3",
+          "id": "BdB-3",
           "classification": "shape",
           "type": "hexagon",
           "x": 240,
@@ -88,7 +88,7 @@
           "style": "shape=hexagon;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "BLq-4",
+          "id": "BdB-4",
           "classification": "shape",
           "type": "cloud",
           "x": 500,
@@ -98,7 +98,7 @@
           "style": "shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "BLq-5",
+          "id": "BdB-5",
           "classification": "shape",
           "type": "note",
           "x": 60,
@@ -108,7 +108,7 @@
           "style": "shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
         },
         {
-          "id": "BLq-6",
+          "id": "BdB-6",
           "classification": "shape",
           "type": "callout",
           "x": 280,
