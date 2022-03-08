@@ -28,19 +28,19 @@ module DrawioDsl
       add(file_name, content: diagram.build, **opts)
 
       @last_save_file_name = k_builder.last_output_file
-  
+
       self
     end
 
     def osave(file_name, **opts)
-      save(file_name, **{ open: :write    }.merge(opts))
+      save(file_name, **{ open: :write }.merge(opts))
     end
 
     def export_svg(output_file_name, page: 1)
       return unless last_save_file_name
       return unless File.exist?(last_save_file_name)
 
-      page = page - 1 # use zero based index
+      page -= 1 # use zero based index
 
       output_file_name = "#{output_file_name}.svg" unless output_file_name.end_with?('.svg')
 
@@ -50,7 +50,6 @@ module DrawioDsl
 
       self
     end
-
   end
 
   # DrawioDsl::DrawioPage is created when you call .page on the draw-io DSL.
