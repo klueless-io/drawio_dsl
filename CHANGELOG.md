@@ -1,3 +1,11 @@
+## [0.5.4](https://github.com/klueless-io/drawio_dsl/compare/v0.5.3...v0.5.4) (2022-03-08)
+
+
+### Bug Fixes
+
+* add generated project plan ([fa36f25](https://github.com/klueless-io/drawio_dsl/commit/fa36f25ff6f6d137ed3b1a3b141097305d4b6c19))
+* add generated project plan ([7faf9b0](https://github.com/klueless-io/drawio_dsl/commit/7faf9b03da5b1aaf8461c73eb375b506aca05124))
+
 ## [0.5.3](https://github.com/klueless-io/drawio_dsl/compare/v0.5.2...v0.5.3) (2022-03-08)
 
 
