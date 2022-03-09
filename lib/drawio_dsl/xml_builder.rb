@@ -28,7 +28,7 @@ module DrawioDsl
       end
     end
 
-    # rubocop:disable  Metrics/MethodLength, Metrics/AbcSize, Metrics/BlockLength
+    # rubocop:disable  Metrics/MethodLength, Metrics/AbcSize
     def build_page(xml, page)
       xml.diagram(id: page.id, name: page.name) do
         xml.mxGraphModel(
@@ -50,15 +50,16 @@ module DrawioDsl
           shadow: page.page_shadow
         ) do
           xml.root do
-            xml.mxCell(id: "#{page.id}-A")
-            xml.mxCell(id: "#{page.id}-B", parent: "#{page.id}-A")
+            # xml.mxCell(id: "#{page.id}-A")
+            # xml.mxCell(id: "#{page.id}-B", parent: "#{page.id}-A")
             page.nodes.all.each do |node|
-              node.as_xml(xml) if node.classification == :shape
+              # puts node.classification
+              node.as_xml(xml) if %i[shape anchor].include?(node.classification)
             end
           end
         end
       end
     end
-    # rubocop:enable  Metrics/MethodLength, Metrics/AbcSize, Metrics/BlockLength
+    # rubocop:enable  Metrics/MethodLength, Metrics/AbcSize
   end
 end

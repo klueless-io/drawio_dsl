@@ -120,7 +120,10 @@ RSpec.describe DrawioDsl::Schema::Page do
               page_shadow: 8,
               math: 8
             },
-            nodes: []
+            nodes: [
+              { id: 'page_root_8', classification: :anchor },
+              { id: 'node_root_8', classification: :anchor }
+            ]
           )
         end
       end

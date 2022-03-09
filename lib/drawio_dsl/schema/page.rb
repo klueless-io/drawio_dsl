@@ -87,6 +87,10 @@ module DrawioDsl
         end
 
         @nodes = NodeList.new # []
+
+        # add anchor nodes
+        @nodes.add(DrawioDsl::Schema::Anchor.new(self, id: "page_root_#{id}"))
+        @nodes.add(DrawioDsl::Schema::Anchor.new(self, id: "node_root_#{id}"))
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
 

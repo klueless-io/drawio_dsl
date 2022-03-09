@@ -49,3 +49,5 @@ require_relative 'shapes/triangle'
 require_relative 'shapes/embed_row'
 require_relative 'shapes/embed_col50'
 require_relative 'shapes/embed_col200'
+
+require_relative 'virtual/anchor'

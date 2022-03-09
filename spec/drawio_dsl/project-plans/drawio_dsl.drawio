@@ -1,84 +1,87 @@
-<mxfile host="0zN">
-  <diagram id="btf" name="In progress">
+<mxfile host="E0C">
+  <diagram id="iJ0" name="In progress">
     <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="btf-A"/>
-        <mxCell id="btf-B" parent="btf-A"/>
-        <mxCell id="btf-2" value="add :shape and :text-only to random shape generator" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="btf-B">
+        <mxCell id="iJ0-A"/>
+        <mxCell id="iJ0-B" parent="iJ0-A"/>
+        <mxCell id="iJ0-2" value="First level child nodes need to hang of node 1" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="iJ0-B">
           <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="btf-3" value="write SVG directly into other projects" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="btf-B">
+        <mxCell id="iJ0-3" value="Add page background to theme, use it whenever the theme is set at a diagram/page level" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="iJ0-B">
           <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="0JU" name="To Do">
+  <diagram id="Ek9" name="To Do">
     <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="0JU-A"/>
-        <mxCell id="0JU-B" parent="0JU-A"/>
-        <mxCell id="0JU-2" value="First level child nodes need to hang of node 1" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-A"/>
+        <mxCell id="Ek9-B" parent="Ek9-A"/>
+        <mxCell id="Ek9-2" value="write SVG directly into other projects" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-3" value="Add page background to theme, use it whenever the theme is set at a diagram/page level" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-3" value="add :shape and :text-only to random shape generator" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-4" value="Nodes need to support child nodes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-4" value="Nodes need to support child nodes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="650" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-5" value="Grid layout does no position itself in relation to the last element" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-5" value="Grid layout does no position itself in relation to the last element" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="10" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-6" value="Dynamic sized shapes that expand to the size of their text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-6" value="Dynamic sized shapes that expand to the size of their text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="330" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-7" value="Control of text padding left, right, top and bottom" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-7" value="Control of text padding left, right, top and bottom" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="650" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-8" value="Improve the theme control over text-only shapes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-8" value="Improve the theme control over text-only shapes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="10" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-9" value="x,y settings do not work for shapes within a grid layout" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-9" value="x,y settings do not work for shapes within a grid layout" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="330" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-10" value="background color does not work from the diagram object" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-10" value="background color does not work from the diagram object" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="650" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-11" value="settings style attributes need to de-duplicate" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-11" value="settings style attributes need to de-duplicate" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="10" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-12" value="need to setup new project plans" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-12" value="need to setup new project plans" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="330" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-13" value="write SVG directly into other projects" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-13" value="write SVG directly into other projects" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="650" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="0JU-14" value="page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="0JU-B">
+        <mxCell id="Ek9-14" value="page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="Ek9-B">
           <mxGeometry x="10" y="330" width="300" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="e1D" name="Done">
+  <diagram id="qwT" name="Done">
     <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="e1D-A"/>
-        <mxCell id="e1D-B" parent="e1D-A"/>
-        <mxCell id="e1D-2" value="add sample diagram for the github readme file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="e1D-B">
+        <mxCell id="qwT-A"/>
+        <mxCell id="qwT-B" parent="qwT-A"/>
+        <mxCell id="qwT-2" value="Nodes can belong to a parent node, the top level node responds with truthy to root?" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="qwT-B">
           <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="e1D-3" value="write samples into docs folder and display in readme" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="e1D-B">
+        <mxCell id="qwT-3" value="add sample diagram for the github readme file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="qwT-B">
           <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="e1D-4" value="add export as .PNG, needs to take a page number as the PNG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="e1D-B">
+        <mxCell id="qwT-4" value="write samples into docs folder and display in readme" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="qwT-B">
           <mxGeometry x="650" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="e1D-5" value="add export as .SVG, needs to take a page number as the SVG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="e1D-B">
+        <mxCell id="qwT-5" value="add export as .PNG, needs to take a page number as the PNG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="qwT-B">
           <mxGeometry x="10" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="e1D-6" value="add save as .drawio" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="e1D-B">
+        <mxCell id="qwT-6" value="add export as .SVG, needs to take a page number as the SVG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="qwT-B">
           <mxGeometry x="330" y="90" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="qwT-7" value="add save as .drawio" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="qwT-B">
+          <mxGeometry x="650" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>

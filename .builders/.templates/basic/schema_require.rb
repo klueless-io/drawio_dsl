@@ -15,3 +15,5 @@ require_relative 'shapes/shape'
 {{#each shapes}}
 require_relative 'shapes/{{snake ./type}}'
 {{/each}}
+
+require_relative 'virtual/anchor'

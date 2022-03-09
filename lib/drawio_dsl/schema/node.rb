@@ -7,11 +7,13 @@ module DrawioDsl
     class Node
       attr_accessor :id
       attr_accessor :page
+      attr_accessor :parent
       attr_accessor :classification
 
       def initialize(page, **args)
         @page = page
         @id = args[:id]
+        @parent = args[:parent]
         @classification = args[:classification] || :unknown
       end
 
@@ -20,6 +22,10 @@ module DrawioDsl
           id: id,
           classification: classification
         }
+      end
+
+      def root?
+        parent.nil?
       end
 
       # :nocov:
