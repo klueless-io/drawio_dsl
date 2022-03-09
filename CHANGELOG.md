@@ -1,3 +1,10 @@
+## [0.5.7](https://github.com/klueless-io/drawio_dsl/compare/v0.5.6...v0.5.7) (2022-03-09)
+
+
+### Bug Fixes
+
+* Nodes can belong to a parent node, the top level node responds with truthy to root? ([3ab5dad](https://github.com/klueless-io/drawio_dsl/commit/3ab5dad60a81880cb603be9ab9f82994d8ac2562))
+
 ## [0.5.6](https://github.com/klueless-io/drawio_dsl/compare/v0.5.5...v0.5.6) (2022-03-08)
 
 
