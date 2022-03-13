@@ -11,7 +11,7 @@ require 'English'
 exit 0 if ARGV.include?('--no-verify')
 
 warning_keywords = %w[console.log]
-keywords = %w[binding.pry console.dir byebug debugger]
+keywords = %w[binding.pry console.dir byebug]
 files_changed = `git diff-index --name-only HEAD --`.split
 
 # puts '----------------------------------------------------------------------'
@@ -28,6 +28,7 @@ files_changed -= ['README.md']
 
 files_changed = files_changed.reject { |f| f.downcase.end_with?('.json') }
 files_changed = files_changed.reject { |f| f.downcase.end_with?('.yml') }
+files_changed = files_changed.reject { |f| f.downcase.end_with?('.svg') }
 
 # ignore files from specific folders
 
