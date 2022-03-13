@@ -4,7 +4,7 @@ RSpec.describe DrawioDsl::DrawIoExtensions do
   let(:instance) { described_class.new }
 
   subject { instance }
-  
+
   describe '#initialize' do
     it 'should be initialized' do
       expect(subject).to be_a described_class
@@ -16,7 +16,7 @@ RSpec.describe DrawioDsl::DrawIoExtensions do
 
     context '.sections' do
       subject { instance.sections }
-    
+
       it { is_expected.not_to be_empty }
     end
   end

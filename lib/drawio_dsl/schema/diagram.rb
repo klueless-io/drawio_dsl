@@ -49,7 +49,7 @@ module DrawioDsl
           theme: theme,
           palette: palette.to_h,
           style: style.to_h,
-          pages: pages.select { |p| p.active? }.map(&:to_h)
+          pages: pages.select(&:active?).map(&:to_h)
         }
       end
     end

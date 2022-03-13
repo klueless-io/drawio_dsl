@@ -10,6 +10,7 @@ AllCops:
   Exclude:
     - ".builders/**/*"
     - "spec/samples/**/*"
+    - "lib/drawio_dsl/drawio_extensions.rb"
 
 Metrics/BlockLength:
   Exclude:

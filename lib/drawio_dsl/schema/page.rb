@@ -40,7 +40,7 @@ module DrawioDsl
         @diagram = diagram
 
         @id           = args[:id]
-        @active       = args[:active].nil? ? true : !!args[:active]
+        @active       = args[:active].nil? ? true : !args[:active].nil?
         @name         = args[:name]
         @theme        = args[:theme] || diagram.theme
 

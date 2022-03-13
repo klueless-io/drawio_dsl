@@ -22,7 +22,7 @@ module DrawioDsl
 
     def build_diagram(xml)
       xml.mxfile(host: diagram.host) do
-        diagram.pages.select { |page| page.active? }.each do |page|
+        diagram.pages.select(&:active?).each do |page|
           build_page(xml, page)
         end
       end
