@@ -1,3 +1,16 @@
+# [0.6.0](https://github.com/klueless-io/drawio_dsl/compare/v0.5.7...v0.6.0) (2022-03-13)
+
+
+### Bug Fixes
+
+* update failing tests ([37ebbbd](https://github.com/klueless-io/drawio_dsl/commit/37ebbbd37cf70b150c83dbd2a389c6f176a917cf))
+* update pre-commit ([374a29b](https://github.com/klueless-io/drawio_dsl/commit/374a29bad9f50ac01b670d6bfa01e42e9864e00e))
+
+
+### Features
+
+* first level child nodes need to hang of node 1, build example shapes from extensions.js ([4b233fb](https://github.com/klueless-io/drawio_dsl/commit/4b233fb452eafa8052e7d5014e19bec07ecf5657))
+
 ## [0.5.7](https://github.com/klueless-io/drawio_dsl/compare/v0.5.6...v0.5.7) (2022-03-09)
 
 
