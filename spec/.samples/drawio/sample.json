@@ -1,5 +1,5 @@
 {
-  "host": "8ur",
+  "host": "6mf",
   "theme": "style_01",
   "palette": {
     "fill_color": "#f5f5f5",
@@ -17,10 +17,10 @@
   },
   "pages": [
     {
-      "id": "C8B",
-      "name": "Grid Layout Horizontal",
-      "position_x": 440,
-      "position_y": 220,
+      "id": "FhJ",
+      "name": "iOS UI components",
+      "position_x": 220,
+      "position_y": 880,
       "theme": "style_01",
       "palette": {
         "fill_color": "#f5f5f5",
@@ -56,74 +56,264 @@
       },
       "nodes": [
         {
-          "id": "page_root_",
-          "classification": "anchor"
-        },
-        {
-          "id": "node_root_",
-          "classification": "anchor"
-        },
-        {
-          "id": "rule-3",
-          "classification": "layout_rule",
-          "type": "grid_layout",
-          "anchor_x": 0,
-          "anchor_y": 0,
-          "direction": "horizontal",
-          "wrap_at": 3,
-          "grid_w": 220,
-          "grid_h": 220,
-          "cell_no": 3
-        },
-        {
-          "id": "C8B-4",
-          "classification": "shape",
-          "type": "diamond",
-          "x": 120,
-          "y": 120,
-          "w": 100,
-          "h": 100,
-          "style": "rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
-        },
-        {
-          "id": "C8B-5",
-          "classification": "shape",
-          "type": "hexagon",
-          "x": 240,
-          "y": 100,
-          "w": 200,
-          "h": 120,
-          "style": "shape=hexagon;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
-        },
-        {
-          "id": "C8B-6",
-          "classification": "shape",
-          "type": "cloud",
-          "x": 500,
-          "y": 60,
-          "w": 160,
-          "h": 160,
-          "style": "shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
-        },
-        {
-          "id": "C8B-7",
-          "classification": "shape",
-          "type": "note",
-          "x": 60,
-          "y": 280,
-          "w": 160,
-          "h": 160,
-          "style": "shape=note;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
-        },
-        {
-          "id": "C8B-8",
-          "classification": "shape",
-          "type": "callout",
-          "x": 280,
-          "y": 320,
-          "w": 160,
-          "h": 120,
-          "style": "shape=callout;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333"
+          "id": "page_root_FhJ",
+          "parent_id": "FhJ",
+          "classification": "anchor",
+          "type": "page_root",
+          "nodes": [
+            {
+              "id": "node_root_FhJ",
+              "parent_id": "page_root_FhJ",
+              "classification": "anchor",
+              "type": "node_root",
+              "nodes": [
+                {
+                  "id": "rule-2",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "layout_rule",
+                  "type": "grid_layout",
+                  "anchor_x": 0,
+                  "anchor_y": 0,
+                  "direction": "horizontal",
+                  "wrap_at": 5,
+                  "grid_w": 220,
+                  "grid_h": 220,
+                  "cell_no": 2
+                },
+                {
+                  "id": "FhJ-2",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 60,
+                  "y": 60,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fillColor=none;strokeColor=none;"
+                },
+                {
+                  "id": "FhJ-3",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 280,
+                  "y": 60,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-4",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 500,
+                  "y": 60,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shape=mxgraph.ios7.misc.adjust"
+                },
+                {
+                  "id": "FhJ-5",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 720,
+                  "y": 60,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shape=mxgraph.ios7ui.onOffButton;buttonState=on;strokeColor2=#aaaaaa;fillColor2=#ffffff"
+                },
+                {
+                  "id": "FhJ-6",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 940,
+                  "y": 60,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-7",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 60,
+                  "y": 280,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-8",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 280,
+                  "y": 280,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-9",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 500,
+                  "y": 280,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-10",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 720,
+                  "y": 280,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-11",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 940,
+                  "y": 280,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-12",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 60,
+                  "y": 500,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-13",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 280,
+                  "y": 500,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shape=mxgraph.ios.iKeybLett"
+                },
+                {
+                  "id": "FhJ-14",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 500,
+                  "y": 500,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-15",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 720,
+                  "y": 500,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-16",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 940,
+                  "y": 500,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-17",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 60,
+                  "y": 720,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-18",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 280,
+                  "y": 720,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-19",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 500,
+                  "y": 720,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-20",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 720,
+                  "y": 720,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-21",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 940,
+                  "y": 720,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                },
+                {
+                  "id": "FhJ-22",
+                  "parent_id": "node_root_FhJ",
+                  "classification": "shape",
+                  "type": "square",
+                  "x": 60,
+                  "y": 940,
+                  "w": 160,
+                  "h": 160,
+                  "style": "whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;mxCompositeShape"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

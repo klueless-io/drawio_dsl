@@ -23,13 +23,23 @@ module DrawioDsl
       page.position_y = page.margin_top
 
       page.nodes.all.each do |node|
-        case node.classification
-        when :layout_rule
-          @current_layout = node
-        when :shape
-          current_layout&.position_shape(node)
-        end
-        # node.debug(format: :row)
+        traverse_node(node)
+      end
+    end
+
+    def traverse_node(node)
+      process_node(node)
+      node.nodes.all.each do |child|
+        traverse_node(child)
+      end
+    end
+
+    def process_node(node)
+      case node.classification
+      when :layout_rule
+        @current_layout = node
+      when :shape
+        current_layout&.position_shape(node)
       end
     end
   end

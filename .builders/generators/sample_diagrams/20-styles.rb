@@ -1,8 +1,7 @@
 KManager.action :bootstrap do
   action do
 
-    # :rounded, :shadow, :sketch, :glass
-    director = DrawioDsl::Drawio
+    DrawioDsl::Drawio
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_06)
       .page('Style-Plain', margin_left: 0, margin_top: 0) do

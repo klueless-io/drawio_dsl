@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="Pk5" name="Horizontal">
+        <mxGraphModel dx="1680" dy="1166" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#FFF8F0" math="0" shadow="0">
+            <root>
+                <mxCell id="page_root_Pk5"/>
+                <mxCell id="node_root_Pk5" parent="page_root_Pk5"/>
+                <mxCell id="Pk5-2" value="NoCode as a Service" style="whiteSpace=wrap;html=1;fontColor=#ffffff;text;fontSize=37;fontColor=#ffffff;fontStyle=1;fillColor=#0050ef;strokeColor=#001DBC;" parent="node_root_Pk5" vertex="1">
+                    <mxGeometry x="202" y="77" width="424" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pk5-3" value="End User" style="whiteSpace=wrap;html=1;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;shape=actor" parent="node_root_Pk5" vertex="1">
+                    <mxGeometry x="119" y="171" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pk5-4" value="Coder" style="whiteSpace=wrap;html=1;fillColor=#008a00;strokeColor=#005700;fontColor=#ffffff;shape=actor" parent="node_root_Pk5" vertex="1">
+                    <mxGeometry x="703" y="451" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pk5-8" value="Design Surface" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" parent="node_root_Pk5" vertex="1">
+                    <mxGeometry x="49" y="248" width="196" height="408" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pk5-6" value="DSL - Pallet" style="whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="node_root_Pk5" vertex="1">
+                    <mxGeometry x="65" y="259" width="160" height="163" as="geometry"/>
+                </mxCell>
+                <mxCell id="Pk5-7" value="UI - Pallet" style="whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" parent="node_root_Pk5" vertex="1">
+                    <mxGeometry x="65" y="472" width="160" height="173" as="geometry"/>
+                </mxCell>
+                <mxCell id="0" value="DSL Code" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="node_root_Pk5">
+                    <mxGeometry x="394" y="315" width="130" height="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="node_root_Pk5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="252" y="351" as="sourcePoint"/>
+                        <mxPoint x="382" y="351" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="node_root_Pk5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="426" y="401" as="sourcePoint"/>
+                        <mxPoint x="426" y="645" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="GitHub" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="node_root_Pk5">
+                    <mxGeometry x="288" y="631" width="288" height="208" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="node_root_Pk5" source="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="727" y="776" as="sourcePoint"/>
+                        <mxPoint x="777" y="726" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="Develpment Environment&lt;br&gt;&lt;br&gt;(VSCode)" style="whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="node_root_Pk5">
+                    <mxGeometry x="639" y="513" width="196" height="426" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="DSL Editor" style="whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="node_root_Pk5">
+                    <mxGeometry x="655" y="755" width="160" height="173" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="node_root_Pk5" target="7">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="577" y="730" as="sourcePoint"/>
+                        <mxPoint x="627" y="680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;fillColor=#008a00;strokeColor=#005700;startArrow=classic;startFill=0;" edge="1" parent="node_root_Pk5" source="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="788" y="395" as="sourcePoint"/>
+                        <mxPoint x="638" y="853" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="" style="endArrow=classic;html=1;fillColor=#008a00;strokeColor=#005700;startArrow=classic;startFill=0;exitX=0.625;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="node_root_Pk5" source="5" target="0">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="554.822251214538" y="809.6263380743471" as="sourcePoint"/>
+                        <mxPoint x="648" y="863" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;fillColor=#008a00;strokeColor=#005700;startArrow=classic;startFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="node_root_Pk5" source="0" target="Pk5-8">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="564.822251214538" y="819.6263380743471" as="sourcePoint"/>
+                        <mxPoint x="658" y="873" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="User Design Surface Product" style="text;html=1;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="node_root_Pk5">
+                    <mxGeometry x="60" y="681" width="174" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Coder DSL Editor Product" style="text;html=1;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" vertex="1" parent="node_root_Pk5">
+                    <mxGeometry x="856" y="823" width="174" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

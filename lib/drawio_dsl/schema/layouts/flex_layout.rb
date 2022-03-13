@@ -10,13 +10,12 @@ module DrawioDsl
       attr_reader :perpendicular_max
 
       def initialize(page, **args)
-        @type = :flex_layout
         @direction = args[:direction] || :horizontal
         @wrap_at = args[:wrap_at] || (direction == :horizontal ? 1000 : 800)
         @gap = args[:gap] || 20
         @perpendicular_max = 0
 
-        super(page, **args)
+        super(page, **args.merge(type: :flex_layout))
       end
 
       def position_shape(shape)

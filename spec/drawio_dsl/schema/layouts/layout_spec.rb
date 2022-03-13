@@ -12,7 +12,7 @@ RSpec.describe DrawioDsl::Schema::Layout do
     context '.type' do
       subject { instance.type }
 
-      it { is_expected.to be_nil }
+      it { is_expected.to eq(:unknown) }
     end
 
     context '.anchor_x' do

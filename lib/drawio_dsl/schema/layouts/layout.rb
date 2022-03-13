@@ -4,8 +4,6 @@ module DrawioDsl
   module Schema
     # Provides base configuration for automatic layouts
     class Layout < Node
-      attr_accessor :type
-
       # represents the x coordinate of the top left corner layout area
       # this coordinate is based on the current location of the page
       attr_accessor :anchor_x
@@ -31,7 +29,6 @@ module DrawioDsl
 
       def to_h
         super.merge(
-          type: type,
           anchor_x: anchor_x,
           anchor_y: anchor_y
         )

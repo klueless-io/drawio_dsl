@@ -11,6 +11,7 @@ module DrawioDsl
       attr_accessor :position_y
 
       attr_accessor :id
+      attr_accessor :active
       attr_reader :name
       attr_reader :theme
       attr_reader :style
@@ -39,6 +40,7 @@ module DrawioDsl
         @diagram = diagram
 
         @id           = args[:id]
+        @active       = args[:active].nil? ? true : !!args[:active]
         @name         = args[:name]
         @theme        = args[:theme] || diagram.theme
 
@@ -87,16 +89,21 @@ module DrawioDsl
         end
 
         @nodes = NodeList.new # []
-
-        # add anchor nodes
-        @nodes.add(DrawioDsl::Schema::Anchor.new(self, id: "page_root_#{id}"))
-        @nodes.add(DrawioDsl::Schema::Anchor.new(self, id: "node_root_#{id}"))
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
 
-      # def shapes
-      #   nodes.shapes
-      # end
+      def active?
+        !!@active
+      end
+
+      def add_node(node)
+        @nodes.add(self, node)
+        node
+      end
+
+      def as_xml(xml)
+        nodes.as_xml(xml)
+      end
 
       def to_h
         {

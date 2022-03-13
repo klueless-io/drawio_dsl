@@ -1,4 +1,4 @@
-KManager.model :shapes, namespace: %i[domain] do
+m = KManager.model :shapes, namespace: %i[domain] do
   # microapp = import(:handlebars_helpers, :microapp)
 
   table :shapes do
@@ -60,3 +60,5 @@ KManager.model :shapes, namespace: %i[domain] do
       .add_file('shapes.json', content: shapes, on_exist: :write)
   end
 end
+
+

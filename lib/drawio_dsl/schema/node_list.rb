@@ -9,7 +9,8 @@ module DrawioDsl
         @nodes = []
       end
 
-      def add(node)
+      def add(parent, node)
+        node.parent = parent
         @nodes << node
       end
 
@@ -27,6 +28,24 @@ module DrawioDsl
 
       def length
         @nodes.length
+      end
+
+      def empty?
+        @nodes.empty?
+      end
+
+      def any?
+        @nodes.any?
+      end
+
+      def first
+        @nodes.first
+      end
+
+      def as_xml(xml)
+        nodes.each do |node|
+          node.as_xml(xml) if node.respond_to?(:as_xml)
+        end
       end
 
       def to_h

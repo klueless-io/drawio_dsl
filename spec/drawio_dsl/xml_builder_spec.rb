@@ -26,11 +26,11 @@ RSpec.describe DrawioDsl::XmlBuilder do
         is_expected
           .to include('mxfile host')
           .and match(/<diagram id="xxx" name="Page 1">/)
-          .and match(/<mxCell id="page_root_xxx"\/>/)
-          .and match(/<mxCell id="node_root_xxx"\/>/)
+          .and match(/<mxCell id="page_root_xxx" parent="xxx"\/>/)
+          .and match(/<mxCell id="node_root_xxx" parent="page_root_xxx"\/>/)
           .and match(/<diagram id="yyy" name="Page 2">/)
-          .and match(/<mxCell id="page_root_yyy"\/>/)
-          .and match(/<mxCell id="node_root_yyy"\/>/)
+          .and match(/<mxCell id="page_root_yyy" parent="yyy"\/>/)
+          .and match(/<mxCell id="node_root_yyy" parent="page_root_yyy"\/>/)
           .and match(/<mxGraphModel .* page="1" .*>/)
           .and match(/<root>/)
       end
@@ -49,8 +49,8 @@ RSpec.describe DrawioDsl::XmlBuilder do
         is_expected
           .to include('mxfile host')
           .and match(/<diagram id="xxx" name="Page 1">/)
-          .and match(/<mxCell id="page_root_xxx"\/>/)
-          .and match(/<mxCell id="node_root_xxx"\/>/)
+          .and match(/<mxCell id="page_root_xxx" parent="xxx"\/>/)
+          .and match(/<mxCell id="node_root_xxx" parent="page_root_xxx"\/>/)
           .and match(/<mxCell id="xxx-\d" value="" style="whiteSpace=wrap;html=1.*>/)
           .and match(/<mxCell id="xxx-\d" value="" style="ellipse.*>/)
       end

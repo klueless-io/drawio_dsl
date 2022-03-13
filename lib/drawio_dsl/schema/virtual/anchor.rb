@@ -18,6 +18,8 @@ module DrawioDsl
         else
           xml.mxCell(id: id)
         end
+
+        nodes.as_xml(xml)
       end
     end
   end

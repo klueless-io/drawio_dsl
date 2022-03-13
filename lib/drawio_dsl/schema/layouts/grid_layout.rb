@@ -15,7 +15,6 @@ module DrawioDsl
 
       # rubocop:disable Metrics/CyclomaticComplexity
       def initialize(page, **args)
-        @type       = :grid_layout
         @direction  = args[:direction]  || :horizontal
         @wrap_at    = args[:wrap_at]    || 5
         @grid_size  = args[:grid_size]  || 220
@@ -25,7 +24,7 @@ module DrawioDsl
         @v_align    = args[:v_align]    || :center
         @cell_no    = 1
 
-        super(page, **args)
+        super(page, **args.merge(type: :grid_layout))
       end
       # rubocop:enable Metrics/CyclomaticComplexity
 

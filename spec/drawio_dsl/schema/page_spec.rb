@@ -120,32 +120,63 @@ RSpec.describe DrawioDsl::Schema::Page do
               page_shadow: 8,
               math: 8
             },
-            nodes: [
-              { id: 'page_root_8', classification: :anchor },
-              { id: 'node_root_8', classification: :anchor }
-            ]
+            nodes: []
           )
         end
       end
     end
   end
+  # {
+  #   id: 'page_root_8',
+  #   classification: :anchor,
+  #   nodes: [
+  #     {
+  #       id: 'node_root_8',
+  #       classification: :anchor
+  #     }
+  #   ]
+  # },
 
-  context '.position_x' do
+  describe '.position_x' do
     subject { instance.position_x }
 
     it { is_expected.to eq(0) }
   end
 
-  context '.position_y' do
+  describe '.position_y' do
     subject { instance.position_y }
 
     it { is_expected.to eq(0) }
   end
 
-  context '.nodes.all' do
+  describe '.nodes' do
     subject { instance.nodes }
 
     it { is_expected.to be_a(DrawioDsl::Schema::NodeList) }
+
+    describe '.empty?' do
+      subject { instance.nodes }
+
+      it { is_expected.to be_empty }
+    end
+  end
+
+  describe '#add_node' do
+    subject { node }
+
+    let(:command) { instance.add_node(node) }
+    let(:node) { DrawioDsl::Schema::Node.new(instance, id: 'page_root') }
+
+    it { expect { command }.to change { instance.nodes.length }.from(0).to(1) }
+    it { is_expected.to be_root }
+
+    context 'new node belongs to a parent' do
+      subject { node.parent }
+
+      before { command }
+
+      it { is_expected.to eq(instance).and be_a(DrawioDsl::Schema::Page) }
+    end
   end
 
   context '.style' do

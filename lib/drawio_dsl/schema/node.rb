@@ -9,23 +9,36 @@ module DrawioDsl
       attr_accessor :page
       attr_accessor :parent
       attr_accessor :classification
+      attr_accessor :type
+      attr_accessor :nodes
 
       def initialize(page, **args)
         @page = page
         @id = args[:id]
         @parent = args[:parent]
         @classification = args[:classification] || :unknown
+        @type = args[:type] || :unknown
+        @nodes = NodeList.new
       end
 
       def to_h
-        {
+        result = {
           id: id,
-          classification: classification
+          parent_id: parent&.id,
+          classification: classification,
+          type: type
         }
+        result[:nodes] = nodes.to_h if nodes.any?
+        result
       end
 
       def root?
-        parent.nil?
+        parent.nil? || parent.is_a?(DrawioDsl::Schema::Page)
+      end
+
+      def add_node(node)
+        @nodes.add(self, node)
+        node
       end
 
       # :nocov:

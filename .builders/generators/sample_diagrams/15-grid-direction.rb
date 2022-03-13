@@ -1,13 +1,5 @@
 KManager.action :bootstrap do
   action do
-
-    # KConfig.configuration.drawio.square.w = KConfig.configuration.drawio.square.w / 4
-    # KConfig.configuration.drawio.square.h = KConfig.configuration.drawio.square.h / 4
-    # KConfig.configuration.drawio.circle.w = KConfig.configuration.drawio.circle.w / 4
-    # KConfig.configuration.drawio.circle.h = KConfig.configuration.drawio.circle.h / 4
-    # KConfig.configuration.drawio.rectangle.w = KConfig.configuration.drawio.rectangle.w / 4
-    # KConfig.configuration.drawio.rectangle.h = KConfig.configuration.drawio.rectangle.h / 4
-
     DrawioDsl::Drawio
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_01)

@@ -11,7 +11,6 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'First level child nodes need to hang of node 1')
         square(w: 300, h: 60, title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
@@ -42,7 +41,11 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'Nodes can belong to a parent node, the top level node responds with truthy to root?')
+        square(w: 300, h: 60, title: 'generate extension based graphics based on drawio extensions.js')
+        square(w: 300, h: 60, title: 'active? flag on page defaulting to true. set to false to exclude page from diagram.')
+        square(w: 300, h: 60, title: 'first level child nodes need to hang of node 1')
+        square(w: 300, h: 60, title: 'node has child nodes and add_node will set a nodes parent')
+        square(w: 300, h: 60, title: 'nodes can belong to a parent node, the top level node responds with truthy to root?')
         square(w: 300, h: 60, title: 'add sample diagram for the github readme file')
         square(w: 300, h: 60, title: 'write samples into docs folder and display in readme')
         square(w: 300, h: 60, title: 'add export as .PNG, needs to take a page number as the PNG will not support multiple pages')

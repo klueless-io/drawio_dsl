@@ -37,7 +37,6 @@ module DrawioDsl
       attr_accessor :font_color
       attr_accessor :gradient
 
-      attr_accessor :type
       attr_accessor :text_only
       attr_accessor :x
       attr_accessor :y
@@ -85,7 +84,6 @@ module DrawioDsl
 
       def style
         key_values = []
-        key_values << style_modifiers unless style_modifiers.empty?
         key_values << "whiteSpace=#{white_space}"         if white_space
         key_values << "html=#{html}"                      if html
         key_values << "rounded=#{rounded}"                if rounded
@@ -96,20 +94,22 @@ module DrawioDsl
         key_values << "strokeColor=#{stroke_color}"       if stroke_color
         key_values << "fontColor=#{font_color}"           if font_color
         key_values << "gradient=#{gradient}"              if gradient
+        key_values << style_modifiers unless style_modifiers.empty?
 
         key_values.join(';')
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
       def as_xml(xml)
-        xml.mxCell(id: id, value: title, style: style, vertex: 1, parent: "#{page.id}-B") do
+        xml.mxCell(id: id, value: title, style: style, vertex: 1, parent: parent&.id) do
           xml.mxGeometry(x: x, y: y, width: w, height: h, as: 'geometry')
         end
       end
 
       def to_h
-        {
+        result = {
           id: id,
+          parent_id: parent&.id,
           classification: classification,
           type: type,
           x: x,
@@ -118,6 +118,8 @@ module DrawioDsl
           h: h,
           style: style
         }
+        result[:nodes] = nodes.to_h if nodes.any?
+        result
       end
 
       # :nocov:
