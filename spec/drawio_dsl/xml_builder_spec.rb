@@ -51,8 +51,8 @@ RSpec.describe DrawioDsl::XmlBuilder do
           .and match(/<diagram id="xxx" name="Page 1">/)
           .and match(/<mxCell id="page_root_xxx" parent="xxx"\/>/)
           .and match(/<mxCell id="node_root_xxx" parent="page_root_xxx"\/>/)
-          .and match(/<mxCell id="xxx-\d" value="" style="whiteSpace=wrap;html=1.*>/)
-          .and match(/<mxCell id="xxx-\d" value="" style="ellipse.*>/)
+          .and match(/<mxCell id="xxx-1" value="" .*>/)
+          .and match(/<mxCell id="xxx-2" value="" .*>/)
       end
     end
   end
