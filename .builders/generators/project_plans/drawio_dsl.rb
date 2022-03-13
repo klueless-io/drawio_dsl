@@ -11,6 +11,8 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        square(w: 300, h: 60, title: 'formatter DSL that can render HTML directly into the title property')
+        square(w: 300, h: 60, title: 'formatter DSL for class and interface generation')
         square(w: 300, h: 60, title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
@@ -23,7 +25,7 @@ KManager.action :todo_drawio_dsl do
         square(w: 300, h: 60, title: 'write SVG directly into other projects')
         square(w: 300, h: 60, title: 'add :shape and :text-only to random shape generator')
         square(w: 300, h: 60, title: 'Nodes need to support child nodes')
-        square(w: 300, h: 60, title: 'Grid layout does no position itself in relation to the last element')
+        square(w: 300, h: 60, title: 'Grid layout does not position itself in relation to the last element')
         square(w: 300, h: 60, title: 'Dynamic sized shapes that expand to the size of their text')
         square(w: 300, h: 60, title: 'Control of text padding left, right, top and bottom')
         square(w: 300, h: 60, title: 'Improve the theme control over text-only shapes')
