@@ -149,8 +149,8 @@ module DrawioDsl
       add_shape(rectangle2)
     end
 
-    def add_square(**opts)
-      square = DrawioDsl::Schema::Square.new(current_page, **opts)
+    def add_square(**opts, &block)
+      square = DrawioDsl::Schema::Square.new(current_page, **opts, &block)
       add_shape(square)
     end
 

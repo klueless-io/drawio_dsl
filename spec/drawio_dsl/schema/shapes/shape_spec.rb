@@ -35,7 +35,7 @@ RSpec.describe DrawioDsl::Schema::Shape do
     end
   end
 
-  context '.style' do
+  describe '.style' do
     subject { instance.style }
 
     context 'when not present' do
@@ -57,6 +57,36 @@ RSpec.describe DrawioDsl::Schema::Shape do
 
       it do
         is_expected.to start_with('whiteSpace=yyy;html=yyy;rounded=yyy;shadow=yyy;sketch=yyy;glass=yyy')
+      end
+    end
+  end
+
+  describe '#format' do
+    context 'when format type is unknown' do
+      subject { instance.format(:unknown) }
+
+      it { is_expected.to be_a(DrawioDsl::Formatters::BaseFormatter) }
+
+      describe '#as_html' do
+        subject { instance.format(:unknown).as_html }
+
+        it { is_expected.to be_a(String).and be_empty }
+      end
+    end
+
+    context 'when format type is class' do
+      subject { instance.format(:class) }
+
+      it { is_expected.to be_a(DrawioDsl::Formatters::KlassFormatter) }
+
+      describe '#as_html' do
+        subject { instance.as_html }
+
+        let(:instance) { described_class.new(diagram, **args).format(:class) }
+
+        before { instance.header('hello world') }
+
+        it { is_expected.to be_a(String).and eq('<p style="margin:0px;margin-left:4px;margin-top:4px;text-align:center"><b>hello world</b></p><hr size="1"/>') }
       end
     end
   end

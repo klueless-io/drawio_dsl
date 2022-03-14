@@ -8,64 +8,38 @@ KManager.action :html_shapes do
       .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 0, background: '#FFEADB') do
         grid_layout(wrap_at: 8)
 
-        html = <<-HTML
-        
-        <p style="margin:0px;margin-top:4px;text-align:center">
-          <i>&lt;&lt;Interface&gt;&gt;</i>
-        </p>
-        <p style="margin:0px;margin-top:4px;text-align:center;">
-          <b>IPerson</b>
-        </p>
-        <hr size="1"/>
-        <p style="margin:0px;margin-left:4px;">
-          first_name: string
-          <br/>
-          last_name: string
-          <br/>
-          age: Integer
-        </p>
-        <hr size="1"/>
-        <p style="margin:0px;margin-left:4px;">
-          full_name(): string
-        </p>
-
-        HTML
+        html = DrawioDsl::Formatters::InterfaceFormatter.new
+          .header('IPerson')
+          .field(:first_name, type: :string)
+          .field(:last_name, type: :string)
+          .field(:age, type: :integer)
+          .field(:birthday, type: :date)
+          .method(:full_name)
+          .as_html
 
         square(
-          title: html.gsub(/\n/, ''),
+          title: html,
           style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'
         )
 
-        # square do
-        #   formatter(:interface)
-        #     .name('IPerson')
-        #     .field(:field1, type: :string)
-        #     .field(:field2, type: :string)
-        #     .method(:full_name, type: :string)
-        # end
+        square(title: 'xxx', style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica') do
+          format(:interface)
+            .header('IPerson')
+            .field(:field1, type: :string)
+            .field(:field2, type: :string)
+            .method(:full_name, type: :string)
+        end
 
-        html = <<-HTML
-        
-        <p style="margin:0px;margin-top:4px;text-align:center;">
-          <b>Person</b>
-        </p>
-        <hr size="1"/>
-        <p style="margin:0px;margin-left:4px;">
-          first_name: string
-          <br/>
-          last_name: string
-          <br/>
-          age: Integer
-        </p>
-        <hr size="1"/>
-        <p style="margin:0px;margin-left:4px;">
-          full_name(): string
-        </p>
+        html = DrawioDsl::Formatters::KlassFormatter.new
+          .header('Person')
+          .field(:first_name, type: :string)
+          .field(:last_name, type: :string)
+          .field(:age, type: :integer)
+          .method(:full_name)
+          .as_html
 
-        HTML
-        
         square(
-          title: html.gsub(/\n/, ''),
+          title: html,
           style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'
         )
 

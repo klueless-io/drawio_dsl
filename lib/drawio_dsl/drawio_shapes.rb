@@ -199,8 +199,8 @@ module DrawioDsl
       builder.add_rectangle2(**opts)
     end
 
-    def square(**opts)
-      builder.add_square(**opts)
+    def square(**opts, &block)
+      builder.add_square(**opts, &block)
     end
 
     def step(**opts)

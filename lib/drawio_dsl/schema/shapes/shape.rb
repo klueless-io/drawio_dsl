@@ -4,6 +4,8 @@ module DrawioDsl
   module Schema
     # Shape is a graphical element, it can be a shape, a text, or a group (todo)
     class Shape < Node
+      include DrawioDsl::Formatters::Factory
+
       class << self
         attr_reader :shape_defaults
 
@@ -23,6 +25,7 @@ module DrawioDsl
 
       attr_accessor :theme
       attr_accessor :title
+      attr_accessor :value
 
       # The style of the element, these will derive from the page style if not provided
       attr_accessor :white_space
@@ -44,11 +47,15 @@ module DrawioDsl
       attr_accessor :h
       attr_accessor :style_modifiers
 
-      def initialize(page, **args)
+      def initialize(page, **args, &block)
         args[:classification] = :shape
         super(page, **args)
 
         apply_defaults(args)
+
+        instance_eval(&block) if block_given?
+
+        @value = formatter.empty? ? title : formatter.as_html
       end
 
       def shape_defaults
@@ -101,7 +108,7 @@ module DrawioDsl
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
       def as_xml(xml)
-        xml.mxCell(id: id, value: title, style: style, vertex: 1, parent: parent&.id) do
+        xml.mxCell(id: id, value: value, style: style, vertex: 1, parent: parent&.id) do
           xml.mxGeometry(x: x, y: y, width: w, height: h, as: 'geometry')
         end
       end
