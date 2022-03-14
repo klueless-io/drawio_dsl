@@ -6,8 +6,8 @@ module DrawioDsl
   module DomBuilderShapes
     {{#each shapes}}
 
-    def add_{{snake ./type}}(**opts)
-      {{snake ./type}} = DrawioDsl::Schema::{{camel ./type}}.new(current_page, **opts)
+    def add_{{snake ./type}}(**opts, &block)
+      {{snake ./type}} = DrawioDsl::Schema::{{camel ./type}}.new(current_page, **opts, &block)
       add_shape({{snake ./type}})
     end
     {{/each}}

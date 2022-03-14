@@ -5,7 +5,7 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(37)
+      case rand(39)
       when 0
         h1(**opts)
       when 1
@@ -37,198 +37,210 @@ module DrawioDsl
       when 14
         cloud(**opts)
       when 15
-        cross(**opts)
-      when 16
-        envelop(**opts)
-      when 17
-        diamond(**opts)
-      when 18
-        document(**opts)
-      when 19
-        ellipse(**opts)
-      when 20
-        hexagon(**opts)
-      when 21
         container(**opts)
-      when 22
+      when 16
         container2(**opts)
-      when 23
+      when 17
         container3(**opts)
-      when 24
+      when 18
         container4(**opts)
+      when 19
+        cross(**opts)
+      when 20
+        envelop(**opts)
+      when 21
+        diamond(**opts)
+      when 22
+        document(**opts)
+      when 23
+        ellipse(**opts)
+      when 24
+        hexagon(**opts)
       when 25
-        note(**opts)
+        interface(**opts)
       when 26
-        process(**opts)
+        klass(**opts)
       when 27
-        rectangle(**opts)
+        note(**opts)
       when 28
-        rectangle2(**opts)
+        process(**opts)
       when 29
-        square(**opts)
+        rectangle(**opts)
       when 30
-        step(**opts)
+        rectangle2(**opts)
       when 31
-        tick(**opts)
+        square(**opts)
       when 32
-        face(**opts)
+        step(**opts)
       when 33
-        triangle(**opts)
+        tick(**opts)
       when 34
-        embed_row(**opts)
+        face(**opts)
       when 35
-        embed_col50(**opts)
+        triangle(**opts)
       when 36
+        embed_row(**opts)
+      when 37
+        embed_col50(**opts)
+      when 38
         embed_col200(**opts)
       end
     end
 
-    def h1(**opts)
-      builder.add_h1(**opts)
+    def h1(**opts, &block)
+      builder.add_h1(**opts, &block)
     end
 
-    def h2(**opts)
-      builder.add_h2(**opts)
+    def h2(**opts, &block)
+      builder.add_h2(**opts, &block)
     end
 
-    def h3(**opts)
-      builder.add_h3(**opts)
+    def h3(**opts, &block)
+      builder.add_h3(**opts, &block)
     end
 
-    def h4(**opts)
-      builder.add_h4(**opts)
+    def h4(**opts, &block)
+      builder.add_h4(**opts, &block)
     end
 
-    def h5(**opts)
-      builder.add_h5(**opts)
+    def h5(**opts, &block)
+      builder.add_h5(**opts, &block)
     end
 
-    def h6(**opts)
-      builder.add_h6(**opts)
+    def h6(**opts, &block)
+      builder.add_h6(**opts, &block)
     end
 
-    def p(**opts)
-      builder.add_p(**opts)
+    def p(**opts, &block)
+      builder.add_p(**opts, &block)
     end
 
-    def actor(**opts)
-      builder.add_actor(**opts)
+    def actor(**opts, &block)
+      builder.add_actor(**opts, &block)
     end
 
-    def actor2(**opts)
-      builder.add_actor2(**opts)
+    def actor2(**opts, &block)
+      builder.add_actor2(**opts, &block)
     end
 
-    def callout(**opts)
-      builder.add_callout(**opts)
+    def callout(**opts, &block)
+      builder.add_callout(**opts, &block)
     end
 
-    def callout2(**opts)
-      builder.add_callout2(**opts)
+    def callout2(**opts, &block)
+      builder.add_callout2(**opts, &block)
     end
 
-    def callout3(**opts)
-      builder.add_callout3(**opts)
+    def callout3(**opts, &block)
+      builder.add_callout3(**opts, &block)
     end
 
-    def callout4(**opts)
-      builder.add_callout4(**opts)
+    def callout4(**opts, &block)
+      builder.add_callout4(**opts, &block)
     end
 
-    def circle(**opts)
-      builder.add_circle(**opts)
+    def circle(**opts, &block)
+      builder.add_circle(**opts, &block)
     end
 
-    def cloud(**opts)
-      builder.add_cloud(**opts)
+    def cloud(**opts, &block)
+      builder.add_cloud(**opts, &block)
     end
 
-    def cross(**opts)
-      builder.add_cross(**opts)
+    def container(**opts, &block)
+      builder.add_container(**opts, &block)
     end
 
-    def envelop(**opts)
-      builder.add_envelop(**opts)
+    def container2(**opts, &block)
+      builder.add_container2(**opts, &block)
     end
 
-    def diamond(**opts)
-      builder.add_diamond(**opts)
+    def container3(**opts, &block)
+      builder.add_container3(**opts, &block)
     end
 
-    def document(**opts)
-      builder.add_document(**opts)
+    def container4(**opts, &block)
+      builder.add_container4(**opts, &block)
     end
 
-    def ellipse(**opts)
-      builder.add_ellipse(**opts)
+    def cross(**opts, &block)
+      builder.add_cross(**opts, &block)
     end
 
-    def hexagon(**opts)
-      builder.add_hexagon(**opts)
+    def envelop(**opts, &block)
+      builder.add_envelop(**opts, &block)
     end
 
-    def container(**opts)
-      builder.add_container(**opts)
+    def diamond(**opts, &block)
+      builder.add_diamond(**opts, &block)
     end
 
-    def container2(**opts)
-      builder.add_container2(**opts)
+    def document(**opts, &block)
+      builder.add_document(**opts, &block)
     end
 
-    def container3(**opts)
-      builder.add_container3(**opts)
+    def ellipse(**opts, &block)
+      builder.add_ellipse(**opts, &block)
     end
 
-    def container4(**opts)
-      builder.add_container4(**opts)
+    def hexagon(**opts, &block)
+      builder.add_hexagon(**opts, &block)
     end
 
-    def note(**opts)
-      builder.add_note(**opts)
+    def interface(**opts, &block)
+      builder.add_interface(**opts, &block)
     end
 
-    def process(**opts)
-      builder.add_process(**opts)
+    def klass(**opts, &block)
+      builder.add_klass(**opts, &block)
     end
 
-    def rectangle(**opts)
-      builder.add_rectangle(**opts)
+    def note(**opts, &block)
+      builder.add_note(**opts, &block)
     end
 
-    def rectangle2(**opts)
-      builder.add_rectangle2(**opts)
+    def process(**opts, &block)
+      builder.add_process(**opts, &block)
+    end
+
+    def rectangle(**opts, &block)
+      builder.add_rectangle(**opts, &block)
+    end
+
+    def rectangle2(**opts, &block)
+      builder.add_rectangle2(**opts, &block)
     end
 
     def square(**opts, &block)
       builder.add_square(**opts, &block)
     end
 
-    def step(**opts)
-      builder.add_step(**opts)
+    def step(**opts, &block)
+      builder.add_step(**opts, &block)
     end
 
-    def tick(**opts)
-      builder.add_tick(**opts)
+    def tick(**opts, &block)
+      builder.add_tick(**opts, &block)
     end
 
-    def face(**opts)
-      builder.add_face(**opts)
+    def face(**opts, &block)
+      builder.add_face(**opts, &block)
     end
 
-    def triangle(**opts)
-      builder.add_triangle(**opts)
+    def triangle(**opts, &block)
+      builder.add_triangle(**opts, &block)
     end
 
-    def embed_row(**opts)
-      builder.add_embed_row(**opts)
+    def embed_row(**opts, &block)
+      builder.add_embed_row(**opts, &block)
     end
 
-    def embed_col50(**opts)
-      builder.add_embed_col50(**opts)
+    def embed_col50(**opts, &block)
+      builder.add_embed_col50(**opts, &block)
     end
 
-    def embed_col200(**opts)
-      builder.add_embed_col200(**opts)
+    def embed_col200(**opts, &block)
+      builder.add_embed_col200(**opts, &block)
     end
   end
   # :nocov:
