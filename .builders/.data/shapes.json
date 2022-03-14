@@ -229,8 +229,8 @@
     "text_only": false,
     "x": 0,
     "y": 0,
-    "w": 200,
-    "h": 120,
+    "w": 160,
+    "h": 160,
     "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
   },
   {
@@ -238,8 +238,8 @@
     "text_only": false,
     "x": 0,
     "y": 0,
-    "w": 200,
-    "h": 120,
+    "w": 160,
+    "h": 160,
     "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
   },
   {

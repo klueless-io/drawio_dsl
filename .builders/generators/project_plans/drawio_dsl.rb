@@ -11,8 +11,6 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'formatter DSL that can render HTML directly into the title property')
-        square(w: 300, h: 60, title: 'formatter DSL for class and interface generation')
         square(w: 300, h: 60, title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
@@ -43,6 +41,9 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        square(w: 300, h: 60, title: 'introduce .value property to shape and let it use either formatted HTML or plain text title')
+        square(w: 300, h: 60, title: 'formatter DSL that can render HTML directly into the value property')
+        square(w: 300, h: 60, title: 'formatter DSL for class and interface generation')
         square(w: 300, h: 60, title: 'generate extension based graphics based on drawio extensions.js')
         square(w: 300, h: 60, title: 'active? flag on page defaulting to true. set to false to exclude page from diagram.')
         square(w: 300, h: 60, title: 'first level child nodes need to hang of node 1')
