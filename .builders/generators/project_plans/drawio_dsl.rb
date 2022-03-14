@@ -11,7 +11,7 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
+        todo(title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 
@@ -20,19 +20,19 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'write SVG directly into other projects')
-        square(w: 300, h: 60, title: 'add :shape and :text-only to random shape generator')
-        square(w: 300, h: 60, title: 'Nodes need to support child nodes')
-        square(w: 300, h: 60, title: 'Grid layout does not position itself in relation to the last element')
-        square(w: 300, h: 60, title: 'Dynamic sized shapes that expand to the size of their text')
-        square(w: 300, h: 60, title: 'Control of text padding left, right, top and bottom')
-        square(w: 300, h: 60, title: 'Improve the theme control over text-only shapes')
-        square(w: 300, h: 60, title: 'x,y settings do not work for shapes within a grid layout')
-        square(w: 300, h: 60, title: 'background color does not work from the diagram object')
-        square(w: 300, h: 60, title: 'settings style attributes need to de-duplicate')
-        square(w: 300, h: 60, title: 'need to setup new project plans')
-        square(w: 300, h: 60, title: 'write SVG directly into other projects')
-        square(w: 300, h: 60, title: 'page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient')
+        todo(title: 'write SVG directly into other projects')
+        todo(title: 'add :shape and :text-only to random shape generator')
+        todo(title: 'Nodes need to support child nodes')
+        todo(title: 'Grid layout does not position itself in relation to the last element')
+        todo(title: 'Dynamic sized shapes that expand to the size of their text')
+        todo(title: 'Control of text padding left, right, top and bottom')
+        todo(title: 'Improve the theme control over text-only shapes')
+        todo(title: 'x,y settings do not work for shapes within a grid layout')
+        todo(title: 'background color does not work from the diagram object')
+        todo(title: 'settings style attributes need to de-duplicate')
+        todo(title: 'need to setup new project plans')
+        todo(title: 'write SVG directly into other projects')
+        todo(title: 'page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient')
       end
       .page('Done', theme: :style_06, margin_left: 0, margin_top: 0) do
 
@@ -41,19 +41,20 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        square(w: 300, h: 60, title: 'introduce .value property to shape and let it use either formatted HTML or plain text title')
-        square(w: 300, h: 60, title: 'formatter DSL that can render HTML directly into the value property')
-        square(w: 300, h: 60, title: 'formatter DSL for class and interface generation')
-        square(w: 300, h: 60, title: 'generate extension based graphics based on drawio extensions.js')
-        square(w: 300, h: 60, title: 'active? flag on page defaulting to true. set to false to exclude page from diagram.')
-        square(w: 300, h: 60, title: 'first level child nodes need to hang of node 1')
-        square(w: 300, h: 60, title: 'node has child nodes and add_node will set a nodes parent')
-        square(w: 300, h: 60, title: 'nodes can belong to a parent node, the top level node responds with truthy to root?')
-        square(w: 300, h: 60, title: 'add sample diagram for the github readme file')
-        square(w: 300, h: 60, title: 'write samples into docs folder and display in readme')
-        square(w: 300, h: 60, title: 'add export as .PNG, needs to take a page number as the PNG will not support multiple pages')
-        square(w: 300, h: 60, title: 'add export as .SVG, needs to take a page number as the SVG will not support multiple pages')
-        square(w: 300, h: 60, title: 'add save as .drawio')
+        todo(title: 'Add todo shape to simplify project plan drawing')
+        todo(title: 'introduce .value property to shape and let it use either formatted HTML or plain text title')
+        todo(title: 'formatter DSL that can render HTML directly into the value property')
+        todo(title: 'formatter DSL for class and interface generation')
+        todo(title: 'generate extension based graphics based on drawio extensions.js')
+        todo(title: 'active? flag on page defaulting to true. set to false to exclude page from diagram.')
+        todo(title: 'first level child nodes need to hang of node 1')
+        todo(title: 'node has child nodes and add_node will set a nodes parent')
+        todo(title: 'nodes can belong to a parent node, the top level node responds with truthy to root?')
+        todo(title: 'add sample diagram for the github readme file')
+        todo(title: 'write samples into docs folder and display in readme')
+        todo(title: 'add export as .PNG, needs to take a page number as the PNG will not support multiple pages')
+        todo(title: 'add export as .SVG, needs to take a page number as the SVG will not support multiple pages')
+        todo(title: 'add save as .drawio')
 
       end
       .cd(:spec)

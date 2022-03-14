@@ -43,6 +43,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :square               , false, 0, 0, 160, 160, ''
     row :step                 , false, 0, 0, 120,  80, 'shape=step;perimeter=stepPerimeter;fixedSize=1'
     row :tick                 , false, 0, 0,  50,  50, 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick'
+    row :todo                 , false, 0, 0, 300,  60, ''
     row :face                 , false, 0, 0, 100, 100, 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley'
     row :triangle             , false, 0, 0, 100, 100, 'triangle'
 

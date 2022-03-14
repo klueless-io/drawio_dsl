@@ -174,6 +174,11 @@ module DrawioDsl
       add_shape(tick)
     end
 
+    def add_todo(**opts, &block)
+      todo = DrawioDsl::Schema::Todo.new(current_page, **opts, &block)
+      add_shape(todo)
+    end
+
     def add_face(**opts, &block)
       face = DrawioDsl::Schema::Face.new(current_page, **opts, &block)
       add_shape(face)

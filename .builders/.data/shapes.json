@@ -306,6 +306,15 @@
     "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
   },
   {
+    "type": "todo",
+    "text_only": false,
+    "x": 0,
+    "y": 0,
+    "w": 300,
+    "h": 60,
+    "style_modifiers": ""
+  },
+  {
     "type": "face",
     "text_only": false,
     "x": 0,
