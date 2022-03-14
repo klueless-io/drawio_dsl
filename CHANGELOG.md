@@ -1,3 +1,11 @@
+# [0.7.0](https://github.com/klueless-io/drawio_dsl/compare/v0.6.0...v0.7.0) (2022-03-14)
+
+
+### Features
+
+* add support for HTML formatters to shapes ([14b05e2](https://github.com/klueless-io/drawio_dsl/commit/14b05e2c55ea61ad8f275d678ca4fcff8a43b466))
+* add support for html shapes ([d2d0e72](https://github.com/klueless-io/drawio_dsl/commit/d2d0e72bef8f44c244dd209d191ab29aea0091c1))
+
 # [0.6.0](https://github.com/klueless-io/drawio_dsl/compare/v0.5.7...v0.6.0) (2022-03-13)
 
 
