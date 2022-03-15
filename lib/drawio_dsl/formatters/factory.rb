@@ -9,11 +9,12 @@ module DrawioDsl
       include KLog::Logging
 
       FORMATTERS = {
-        class: DrawioDsl::Formatters::KlassFormatter,
+        klass: DrawioDsl::Formatters::KlassFormatter,
+        class: DrawioDsl::Formatters::KlassFormatter, # alias for klass
         interface: DrawioDsl::Formatters::InterfaceFormatter
       }.freeze
 
-      def format(type)
+      def format_instance(type)
         unless FORMATTERS.key?(type)
           log.error "Unknown formatter type: #{type}"
           @formatter = nil

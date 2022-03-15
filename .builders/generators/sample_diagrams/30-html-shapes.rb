@@ -6,7 +6,7 @@ KManager.action :html_shapes do
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_11)
       .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 0, background: '#FFEADB') do
-        grid_layout(wrap_at: 8, direction: :vertical)
+        grid_layout(wrap_at: 8)
 
         # html = DrawioDsl::Formatters::InterfaceFormatter.new
         #   .header('IPerson')
@@ -23,7 +23,7 @@ KManager.action :html_shapes do
         # )
 
         interface(theme: :style_07) do
-          format(:interface)
+          format
             .header('IPerson')
             .field(:field1, type: :string)
             .field(:field2, type: :string)
@@ -42,8 +42,7 @@ KManager.action :html_shapes do
       end
       .cd(:spec)
       .save('.samples/30-html-shapes.drawio')
-      # .cd(:docs)
-      # .export_svg('samples/themes-square', page: 1)
-
+      .cd(:docs)
+      .export_svg('samples/html-shapes', page: 1)
   end
 end

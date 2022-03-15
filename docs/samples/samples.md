@@ -10,6 +10,10 @@
 
 ## Styles
 
+## HTML
+
+![](html-shapes.svg)
+
 ## Plain
 
 ![](styles-plain.svg)

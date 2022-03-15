@@ -23,6 +23,10 @@ RSpec.describe DrawioDsl::Schema::Shape do
         it 'sets the shape defaults' do
           expect(described_class.shape_defaults).not_to be_nil
         end
+
+        it 'sets the shape key' do
+          expect(described_class.shape_key).to eq(name)
+        end
       end
 
       context 'when the shape is not found in the configuration' do
@@ -88,6 +92,14 @@ RSpec.describe DrawioDsl::Schema::Shape do
 
         it { is_expected.to be_a(String).and eq('<p style="margin:0px;margin-left:4px;margin-top:4px;text-align:center"><b>hello world</b></p><hr size="1"/>') }
       end
+    end
+
+    context 'when format type is inferred from underlying shape' do
+      let(:instance) { DrawioDsl::Schema::Interface.new(diagram) }
+
+      subject { instance.format }
+
+      it { is_expected.to be_a(DrawioDsl::Formatters::InterfaceFormatter) }
     end
   end
 end

@@ -7,17 +7,17 @@ module DrawioDsl
       include DrawioDsl::Formatters::Factory
 
       class << self
+        attr_reader :shape_key
         attr_reader :shape_defaults
 
-        def configure_shape(name)
-          unless KConfig.configuration.drawio.shapes.members.include?(name)
-            puts "Shape #{name} not found in configuration"
+        def configure_shape(key)
+          unless KConfig.configuration.drawio.shapes.members.include?(key)
+            puts "Shape #{key} not found in configuration"
             return
           end
 
-          config = KConfig.configuration.drawio.shapes[name]
-
-          @shape_defaults = config.clone
+          @shape_key = key
+          @shape_defaults = KConfig.configuration.drawio.shapes[key].clone
         end
       end
 
@@ -87,6 +87,11 @@ module DrawioDsl
         @stroke_color     = args[:stroke_color]     || (text_only ? nil : theme_palette.stroke_color)
         @gradient         = args[:gradient]         || (text_only ? nil : theme_palette.gradient)
         @font_color       = args[:font_color]       || theme_palette.font_color
+      end
+
+      def format(type = nil)
+        type ||= self.class.shape_key
+        format_instance(type)
       end
 
       def style

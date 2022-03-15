@@ -11,7 +11,9 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
+        todo(title: 'move DrawioDsl::Formatters::Factory::FORMATTERS to resource file')
+        todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
+
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 
@@ -20,6 +22,9 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
+        todo(title: 'need to setup new project plans')
+        todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
         todo(title: 'add :shape and :text-only to random shape generator')
         todo(title: 'Nodes need to support child nodes')
@@ -28,10 +33,6 @@ KManager.action :todo_drawio_dsl do
         todo(title: 'Control of text padding left, right, top and bottom')
         todo(title: 'Improve the theme control over text-only shapes')
         todo(title: 'x,y settings do not work for shapes within a grid layout')
-        todo(title: 'background color does not work from the diagram object')
-        todo(title: 'settings style attributes need to de-duplicate')
-        todo(title: 'need to setup new project plans')
-        todo(title: 'write SVG directly into other projects')
         todo(title: 'page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient')
       end
       .page('Done', theme: :style_06, margin_left: 0, margin_top: 0) do
@@ -41,6 +42,7 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'alter configure_shape so it sets the default shape key and use that for selecting the default HTML formatter')
         todo(title: 'Add todo shape to simplify project plan drawing')
         todo(title: 'introduce .value property to shape and let it use either formatted HTML or plain text title')
         todo(title: 'formatter DSL that can render HTML directly into the value property')

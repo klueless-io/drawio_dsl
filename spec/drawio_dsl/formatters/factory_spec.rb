@@ -5,14 +5,14 @@ RSpec.describe DrawioDsl::Formatters::Factory do
 
   let(:instance) { Class.new { extend DrawioDsl::Formatters::Factory } }
 
-  it { is_expected.to respond_to(:format) }
+  it { is_expected.to respond_to(:format_instance) }
 
   describe '#FORMATTERS' do
     it { expect(described_class::FORMATTERS).to be_a(Hash) }
   end
 
-  describe '#format' do
-    subject { instance.format(type) }
+  describe '#format_instance' do
+    subject { instance.format_instance(type) }
 
     context 'when invalid type' do
       let(:type) { :invalid }
