@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/klueless-io/drawio_dsl/compare/v0.7.0...v0.8.0) (2022-03-15)
+
+
+### Features
+
+* alter configure_shape so it sets the default shape key and use that for selecting the default HTML formatter ([f0cde77](https://github.com/klueless-io/drawio_dsl/commit/f0cde7719c7b230147f10e269cbb9f02584b542b))
+
 # [0.7.0](https://github.com/klueless-io/drawio_dsl/compare/v0.6.0...v0.7.0) (2022-03-14)
 
 
