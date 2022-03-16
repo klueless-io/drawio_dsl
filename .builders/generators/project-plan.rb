@@ -1,4 +1,4 @@
-KManager.action :todo_drawio_dsl do
+KManager.action :project_plan do
   action do
 
     DrawioDsl::Drawio
@@ -11,9 +11,10 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'move DrawioDsl::Formatters::Factory::FORMATTERS to resource file')
-        todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
-
+        todo(title: 'ensure that ids are working as expected')
+        todo(title: 'alter the initial parameter of all shapes so that it can be an ID, without named attribute')
+        todo(title: 'add new shapes related to line connectors')
+        todo(title: 'line connectors need to support autolinking using ids')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 
@@ -22,7 +23,9 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'Add page background to theme, use it whenever the theme is set at a diagram/page level')
+        todo(title: 'add page background to theme, use it whenever the theme is set at a diagram/page level')
+        todo(title: 'move DrawioDsl::Formatters::Factory::FORMATTERS to resource file')
+        todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
         todo(title: 'need to setup new project plans')
         todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
@@ -42,8 +45,9 @@ KManager.action :todo_drawio_dsl do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'move project-plan files')
         todo(title: 'alter configure_shape so it sets the default shape key and use that for selecting the default HTML formatter')
-        todo(title: 'Add todo shape to simplify project plan drawing')
+        todo(title: 'add todo shape to simplify project plan drawing')
         todo(title: 'introduce .value property to shape and let it use either formatted HTML or plain text title')
         todo(title: 'formatter DSL that can render HTML directly into the value property')
         todo(title: 'formatter DSL for class and interface generation')
@@ -59,11 +63,10 @@ KManager.action :todo_drawio_dsl do
         todo(title: 'add save as .drawio')
 
       end
-      .cd(:spec)
-      .save('project-plans/drawio_dsl.drawio')
       .cd(:docs)
-      .export_svg('project_in_progress', page: 1)
-      .export_svg('project_todo'       , page: 2)
-      .export_svg('project_done'       , page: 3)
+      .save('project-plan/project.drawio')
+      .export_svg('project-plan/project_in_progress', page: 1)
+      .export_svg('project-plan/project_todo'       , page: 2)
+      .export_svg('project-plan/project_done'       , page: 3)
   end
 end

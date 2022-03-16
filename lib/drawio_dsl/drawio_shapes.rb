@@ -89,164 +89,164 @@ module DrawioDsl
       end
     end
 
-    def h1(**opts, &block)
-      builder.add_h1(**opts, &block)
+    def h1(id = nil, **opts, &block)
+      builder.add_h1(id, **opts, &block)
     end
 
-    def h2(**opts, &block)
-      builder.add_h2(**opts, &block)
+    def h2(id = nil, **opts, &block)
+      builder.add_h2(id, **opts, &block)
     end
 
-    def h3(**opts, &block)
-      builder.add_h3(**opts, &block)
+    def h3(id = nil, **opts, &block)
+      builder.add_h3(id, **opts, &block)
     end
 
-    def h4(**opts, &block)
-      builder.add_h4(**opts, &block)
+    def h4(id = nil, **opts, &block)
+      builder.add_h4(id, **opts, &block)
     end
 
-    def h5(**opts, &block)
-      builder.add_h5(**opts, &block)
+    def h5(id = nil, **opts, &block)
+      builder.add_h5(id, **opts, &block)
     end
 
-    def h6(**opts, &block)
-      builder.add_h6(**opts, &block)
+    def h6(id = nil, **opts, &block)
+      builder.add_h6(id, **opts, &block)
     end
 
-    def p(**opts, &block)
-      builder.add_p(**opts, &block)
+    def p(id = nil, **opts, &block)
+      builder.add_p(id, **opts, &block)
     end
 
-    def actor(**opts, &block)
-      builder.add_actor(**opts, &block)
+    def actor(id = nil, **opts, &block)
+      builder.add_actor(id, **opts, &block)
     end
 
-    def actor2(**opts, &block)
-      builder.add_actor2(**opts, &block)
+    def actor2(id = nil, **opts, &block)
+      builder.add_actor2(id, **opts, &block)
     end
 
-    def callout(**opts, &block)
-      builder.add_callout(**opts, &block)
+    def callout(id = nil, **opts, &block)
+      builder.add_callout(id, **opts, &block)
     end
 
-    def callout2(**opts, &block)
-      builder.add_callout2(**opts, &block)
+    def callout2(id = nil, **opts, &block)
+      builder.add_callout2(id, **opts, &block)
     end
 
-    def callout3(**opts, &block)
-      builder.add_callout3(**opts, &block)
+    def callout3(id = nil, **opts, &block)
+      builder.add_callout3(id, **opts, &block)
     end
 
-    def callout4(**opts, &block)
-      builder.add_callout4(**opts, &block)
+    def callout4(id = nil, **opts, &block)
+      builder.add_callout4(id, **opts, &block)
     end
 
-    def circle(**opts, &block)
-      builder.add_circle(**opts, &block)
+    def circle(id = nil, **opts, &block)
+      builder.add_circle(id, **opts, &block)
     end
 
-    def cloud(**opts, &block)
-      builder.add_cloud(**opts, &block)
+    def cloud(id = nil, **opts, &block)
+      builder.add_cloud(id, **opts, &block)
     end
 
-    def container(**opts, &block)
-      builder.add_container(**opts, &block)
+    def container(id = nil, **opts, &block)
+      builder.add_container(id, **opts, &block)
     end
 
-    def container2(**opts, &block)
-      builder.add_container2(**opts, &block)
+    def container2(id = nil, **opts, &block)
+      builder.add_container2(id, **opts, &block)
     end
 
-    def container3(**opts, &block)
-      builder.add_container3(**opts, &block)
+    def container3(id = nil, **opts, &block)
+      builder.add_container3(id, **opts, &block)
     end
 
-    def container4(**opts, &block)
-      builder.add_container4(**opts, &block)
+    def container4(id = nil, **opts, &block)
+      builder.add_container4(id, **opts, &block)
     end
 
-    def cross(**opts, &block)
-      builder.add_cross(**opts, &block)
+    def cross(id = nil, **opts, &block)
+      builder.add_cross(id, **opts, &block)
     end
 
-    def envelop(**opts, &block)
-      builder.add_envelop(**opts, &block)
+    def envelop(id = nil, **opts, &block)
+      builder.add_envelop(id, **opts, &block)
     end
 
-    def diamond(**opts, &block)
-      builder.add_diamond(**opts, &block)
+    def diamond(id = nil, **opts, &block)
+      builder.add_diamond(id, **opts, &block)
     end
 
-    def document(**opts, &block)
-      builder.add_document(**opts, &block)
+    def document(id = nil, **opts, &block)
+      builder.add_document(id, **opts, &block)
     end
 
-    def ellipse(**opts, &block)
-      builder.add_ellipse(**opts, &block)
+    def ellipse(id = nil, **opts, &block)
+      builder.add_ellipse(id, **opts, &block)
     end
 
-    def hexagon(**opts, &block)
-      builder.add_hexagon(**opts, &block)
+    def hexagon(id = nil, **opts, &block)
+      builder.add_hexagon(id, **opts, &block)
     end
 
-    def interface(**opts, &block)
-      builder.add_interface(**opts, &block)
+    def interface(id = nil, **opts, &block)
+      builder.add_interface(id, **opts, &block)
     end
 
-    def klass(**opts, &block)
-      builder.add_klass(**opts, &block)
+    def klass(id = nil, **opts, &block)
+      builder.add_klass(id, **opts, &block)
     end
 
-    def note(**opts, &block)
-      builder.add_note(**opts, &block)
+    def note(id = nil, **opts, &block)
+      builder.add_note(id, **opts, &block)
     end
 
-    def process(**opts, &block)
-      builder.add_process(**opts, &block)
+    def process(id = nil, **opts, &block)
+      builder.add_process(id, **opts, &block)
     end
 
-    def rectangle(**opts, &block)
-      builder.add_rectangle(**opts, &block)
+    def rectangle(id = nil, **opts, &block)
+      builder.add_rectangle(id, **opts, &block)
     end
 
-    def rectangle2(**opts, &block)
-      builder.add_rectangle2(**opts, &block)
+    def rectangle2(id = nil, **opts, &block)
+      builder.add_rectangle2(id, **opts, &block)
     end
 
-    def square(**opts, &block)
-      builder.add_square(**opts, &block)
+    def square(id = nil, **opts, &block)
+      builder.add_square(id, **opts, &block)
     end
 
-    def step(**opts, &block)
-      builder.add_step(**opts, &block)
+    def step(id = nil, **opts, &block)
+      builder.add_step(id, **opts, &block)
     end
 
-    def tick(**opts, &block)
-      builder.add_tick(**opts, &block)
+    def tick(id = nil, **opts, &block)
+      builder.add_tick(id, **opts, &block)
     end
 
-    def todo(**opts, &block)
-      builder.add_todo(**opts, &block)
+    def todo(id = nil, **opts, &block)
+      builder.add_todo(id, **opts, &block)
     end
 
-    def face(**opts, &block)
-      builder.add_face(**opts, &block)
+    def face(id = nil, **opts, &block)
+      builder.add_face(id, **opts, &block)
     end
 
-    def triangle(**opts, &block)
-      builder.add_triangle(**opts, &block)
+    def triangle(id = nil, **opts, &block)
+      builder.add_triangle(id, **opts, &block)
     end
 
-    def embed_row(**opts, &block)
-      builder.add_embed_row(**opts, &block)
+    def embed_row(id = nil, **opts, &block)
+      builder.add_embed_row(id, **opts, &block)
     end
 
-    def embed_col50(**opts, &block)
-      builder.add_embed_col50(**opts, &block)
+    def embed_col50(id = nil, **opts, &block)
+      builder.add_embed_col50(id, **opts, &block)
     end
 
-    def embed_col200(**opts, &block)
-      builder.add_embed_col200(**opts, &block)
+    def embed_col200(id = nil, **opts, &block)
+      builder.add_embed_col200(id, **opts, &block)
     end
   end
   # :nocov:

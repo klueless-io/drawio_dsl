@@ -10,10 +10,12 @@ module DrawioDsl
         super({ p: { margin: '0px', margin_left: '4px', margin_top: '4px' } })
       end
 
-      def header(value)
-        html.p('<i>Interface</i>', text_align: :center)
-        html.p("<b>#{value}</b>", text_align: :center)
+      def header(name, description: nil, interface_type: 'Interface')
+        html.p("<i>&lt;&lt; #{interface_type} &gt;&gt;</i>", text_align: :center)
+        html.p("<b>#{name}</b>", text_align: :center)
         html.hr
+
+        html.group(:description).p(description) if description
 
         self
       end

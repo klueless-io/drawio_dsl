@@ -1,6 +1,21 @@
 m = KManager.model :shapes, namespace: %i[domain] do
   # microapp = import(:handlebars_helpers, :microapp)
 
+  table :strokes do
+    fields [:name, :style]
+
+    row :dashed               , 'dashed=1;fixDash=1'
+    row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'
+    row :dashdot              , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
+    row :dashdotdot           , 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
+    row :dotdotdot            , 'dashed=1;fixDash=1;dashPattern=1 2'
+    row :longdash             , 'dashed=1;fixDash=1;dashPattern=16 6'
+    row :dashlongdash         , 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
+    row :dashed24             , 'dashed=1;fixDash=1;dashPattern=3 8'
+    row :dashed32             , 'dashed=1;fixDash=1;dashPattern=6 5'
+    row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
+  end
+
   table :shapes do
     fields [:type, :text_only, :x, :y, :w, :h, :style_modifiers]
 
@@ -46,6 +61,9 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :todo                 , false, 0, 0, 300,  60, ''
     row :face                 , false, 0, 0, 100, 100, 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley'
     row :triangle             , false, 0, 0, 100, 100, 'triangle'
+
+    row :line                 , false, 0, 0,  50,  50, 'edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;'
+    # edge="1" parent="node_root_2T8" source="b" target="c"
 
     # configuration for embedded element shape
     # note that the width / height probably should be driven of parent shape

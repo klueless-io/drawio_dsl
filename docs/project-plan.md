@@ -4,19 +4,19 @@
 
 The next ticket to work on
 
-![](docs/../project_in_progress.svg)
+![](project-plan/project_in_progress.svg)
 
 ## To Do
 
 List of tickets to do
 
-![](docs/../project_todo.svg)
+![](project-plan/project_todo.svg)
 
 ## Complete
 
 List of completed tickets
 
-![](docs/../project_done.svg)
+![](project-plan/project_done.svg)
 
 
 ## Copyright

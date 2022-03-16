@@ -6,7 +6,8 @@ module DrawioDsl
   module DomBuilderShapes
     {{#each shapes}}
 
-    def add_{{snake ./type}}(**opts, &block)
+    def add_{{snake ./type}}(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
       {{snake ./type}} = DrawioDsl::Schema::{{camel ./type}}.new(current_page, **opts, &block)
       add_shape({{snake ./type}})
     end

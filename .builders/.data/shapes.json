@@ -333,6 +333,15 @@
     "style_modifiers": "triangle"
   },
   {
+    "type": "line",
+    "text_only": false,
+    "x": 0,
+    "y": 0,
+    "w": 50,
+    "h": 50,
+    "style_modifiers": "edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;"
+  },
+  {
     "type": "embed_row",
     "text_only": false,
     "x": 0,

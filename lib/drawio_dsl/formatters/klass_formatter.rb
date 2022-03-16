@@ -10,9 +10,11 @@ module DrawioDsl
         super({ p: { margin: '0px', margin_left: '4px', margin_top: '4px' } })
       end
 
-      def header(value)
-        html.p("<b>#{value}</b>", text_align: :center)
+      def header(name, description: nil)
+        html.p("<b>#{name}</b>", text_align: :center)
         html.hr
+
+        html.group(:description).p(description) if description
 
         self
       end

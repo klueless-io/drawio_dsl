@@ -8,17 +8,17 @@ KManager.action :html_shapes do
       .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 0, background: '#FFEADB') do
         grid_layout(wrap_at: 8)
 
-        # html = DrawioDsl::Formatters::InterfaceFormatter.new
+        # html = DrawioDsl::Formatters::KlassFormatter.new
         #   .header('IPerson')
         #   .field(:first_name, type: :string)
         #   .field(:last_name, type: :string)
         #   .field(:age, type: :integer)
         #   .field(:birthday, type: :date)
         #   .method(:full_name)
+        #   .method(:sean)
         #   .as_html
 
-        # square(
-        #   title: html,
+        # square(title: html,
         #   style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'
         # )
 
@@ -41,8 +41,8 @@ KManager.action :html_shapes do
         end
       end
       .cd(:spec)
-      .save('.samples/30-html-shapes.drawio')
-      .cd(:docs)
-      .export_svg('samples/html-shapes', page: 1)
+      .osave('.samples/30-html-shapes.drawio')
+      # .cd(:docs)
+      # .export_svg('samples/html-shapes', page: 1)
   end
 end

@@ -14,8 +14,8 @@ module DrawioDsl
     end
     {{#each shapes}}
 
-    def {{snake ./type}}(**opts, &block)
-      builder.add_{{snake ./type}}(**opts, &block)
+    def {{snake ./type}}(id = nil, **opts, &block)
+      builder.add_{{snake ./type}}(id, **opts, &block)
     end
     {{/each}}
   end
