@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/klueless-io/drawio_dsl/compare/v0.8.0...v0.8.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* alter the initial parameter of all shapes so that it can be an ID, without named attribute ([9c00a63](https://github.com/klueless-io/drawio_dsl/commit/9c00a634f818d25b92042a9cdb81749dbe994cf5))
+
 # [0.8.0](https://github.com/klueless-io/drawio_dsl/compare/v0.7.0...v0.8.0) (2022-03-15)
 
 
