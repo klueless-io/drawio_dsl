@@ -11,7 +11,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
         
-        todo(title: 'build a class diagram')
+        todo(title: 'build a domain (class) diagram')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
@@ -69,7 +69,6 @@ KManager.action :project_plan do
         todo(title: 'add export as .PNG, needs to take a page number as the PNG will not support multiple pages')
         todo(title: 'add export as .SVG, needs to take a page number as the SVG will not support multiple pages')
         todo(title: 'add save as .drawio')
-
       end
       .cd(:docs)
       .save('project-plan/project.drawio')

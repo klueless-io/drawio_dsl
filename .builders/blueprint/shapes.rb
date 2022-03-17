@@ -124,6 +124,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :container4           , :element, 0, 0, 160, 160, 'swimlane;resizable=0'
     row :cross                , :element, 0, 0,  50,  50, 'verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x'
     row :envelop              , :element, 0, 0, 160, 100, 'shape=message'
+    row :database             , :element, 0, 0, 160,  80, 'shape=mxgraph.flowchart.database;strokeWidth=1'
     row :diamond              , :element, 0, 0, 100, 100, 'rhombus'
     row :document             , :element, 0, 0, 160, 160, 'shape=mxgraph.basic.document'
     row :ellipse              , :element, 0, 0, 200, 120, 'ellipse'

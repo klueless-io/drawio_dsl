@@ -4,6 +4,12 @@
 module DrawioDsl
   # DrawioDsl is a DSL for draw-io diagrams.
   module DomBuilderShapes
+    def add_line(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      line = DrawioDsl::Schema::Line.new(current_page, **opts, &block)
+      add_shape(line)
+    end
+
     def add_h1(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
       h1 = DrawioDsl::Schema::H1.new(current_page, **opts, &block)
@@ -130,6 +136,12 @@ module DrawioDsl
       add_shape(envelop)
     end
 
+    def add_database(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      database = DrawioDsl::Schema::Database.new(current_page, **opts, &block)
+      add_shape(database)
+    end
+
     def add_diamond(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
       diamond = DrawioDsl::Schema::Diamond.new(current_page, **opts, &block)
@@ -224,12 +236,6 @@ module DrawioDsl
       opts = { id: id }.merge(opts) if id
       triangle = DrawioDsl::Schema::Triangle.new(current_page, **opts, &block)
       add_shape(triangle)
-    end
-
-    def add_line(id = nil, **opts, &block)
-      opts = { id: id }.merge(opts) if id
-      line = DrawioDsl::Schema::Line.new(current_page, **opts, &block)
-      add_shape(line)
     end
 
     def add_embed_row(id = nil, **opts, &block)

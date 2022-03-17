@@ -5,90 +5,96 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(41)
+      case rand(42)
       when 0
-        h1(**opts)
-      when 1
-        h2(**opts)
-      when 2
-        h3(**opts)
-      when 3
-        h4(**opts)
-      when 4
-        h5(**opts)
-      when 5
-        h6(**opts)
-      when 6
-        p(**opts)
-      when 7
-        actor(**opts)
-      when 8
-        actor2(**opts)
-      when 9
-        callout(**opts)
-      when 10
-        callout2(**opts)
-      when 11
-        callout3(**opts)
-      when 12
-        callout4(**opts)
-      when 13
-        circle(**opts)
-      when 14
-        cloud(**opts)
-      when 15
-        container(**opts)
-      when 16
-        container2(**opts)
-      when 17
-        container3(**opts)
-      when 18
-        container4(**opts)
-      when 19
-        cross(**opts)
-      when 20
-        envelop(**opts)
-      when 21
-        diamond(**opts)
-      when 22
-        document(**opts)
-      when 23
-        ellipse(**opts)
-      when 24
-        hexagon(**opts)
-      when 25
-        interface(**opts)
-      when 26
-        klass(**opts)
-      when 27
-        note(**opts)
-      when 28
-        process(**opts)
-      when 29
-        rectangle(**opts)
-      when 30
-        rectangle2(**opts)
-      when 31
-        square(**opts)
-      when 32
-        step(**opts)
-      when 33
-        tick(**opts)
-      when 34
-        todo(**opts)
-      when 35
-        face(**opts)
-      when 36
-        triangle(**opts)
-      when 37
         line(**opts)
+      when 1
+        h1(**opts)
+      when 2
+        h2(**opts)
+      when 3
+        h3(**opts)
+      when 4
+        h4(**opts)
+      when 5
+        h5(**opts)
+      when 6
+        h6(**opts)
+      when 7
+        p(**opts)
+      when 8
+        actor(**opts)
+      when 9
+        actor2(**opts)
+      when 10
+        callout(**opts)
+      when 11
+        callout2(**opts)
+      when 12
+        callout3(**opts)
+      when 13
+        callout4(**opts)
+      when 14
+        circle(**opts)
+      when 15
+        cloud(**opts)
+      when 16
+        container(**opts)
+      when 17
+        container2(**opts)
+      when 18
+        container3(**opts)
+      when 19
+        container4(**opts)
+      when 20
+        cross(**opts)
+      when 21
+        envelop(**opts)
+      when 22
+        database(**opts)
+      when 23
+        diamond(**opts)
+      when 24
+        document(**opts)
+      when 25
+        ellipse(**opts)
+      when 26
+        hexagon(**opts)
+      when 27
+        interface(**opts)
+      when 28
+        klass(**opts)
+      when 29
+        note(**opts)
+      when 30
+        process(**opts)
+      when 31
+        rectangle(**opts)
+      when 32
+        rectangle2(**opts)
+      when 33
+        square(**opts)
+      when 34
+        step(**opts)
+      when 35
+        tick(**opts)
+      when 36
+        todo(**opts)
+      when 37
+        face(**opts)
       when 38
-        embed_row(**opts)
+        triangle(**opts)
       when 39
-        embed_col50(**opts)
+        embed_row(**opts)
       when 40
+        embed_col50(**opts)
+      when 41
         embed_col200(**opts)
       end
+    end
+
+    def line(id = nil, **opts, &block)
+      builder.add_line(id, **opts, &block)
     end
 
     def h1(id = nil, **opts, &block)
@@ -175,6 +181,10 @@ module DrawioDsl
       builder.add_envelop(id, **opts, &block)
     end
 
+    def database(id = nil, **opts, &block)
+      builder.add_database(id, **opts, &block)
+    end
+
     def diamond(id = nil, **opts, &block)
       builder.add_diamond(id, **opts, &block)
     end
@@ -237,10 +247,6 @@ module DrawioDsl
 
     def triangle(id = nil, **opts, &block)
       builder.add_triangle(id, **opts, &block)
-    end
-
-    def line(id = nil, **opts, &block)
-      builder.add_line(id, **opts, &block)
     end
 
     def embed_row(id = nil, **opts, &block)

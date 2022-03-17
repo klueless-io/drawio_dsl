@@ -8,6 +8,7 @@ module DrawioDsl
     ShapeDefaults = Struct.new(:type, :category, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
     Shapes = Struct.new(
       :shape,
+      :line,
       :h1,
       :h2,
       :h3,
@@ -29,6 +30,7 @@ module DrawioDsl
       :container4,
       :cross,
       :envelop,
+      :database,
       :diamond,
       :document,
       :ellipse,
@@ -45,7 +47,6 @@ module DrawioDsl
       :todo,
       :face,
       :triangle,
-      :line,
       :embed_row,
       :embed_col50,
       :embed_col200,
@@ -55,6 +56,7 @@ module DrawioDsl
     def add_shapes
       @shapes = Shapes.new(
         shape: ShapeDefaults.new(type: :shape, category: :element, x: 0, y: 0, w: 20, h: 20, style_modifiers: ''),
+        line: ShapeDefaults.new(type: :line, x: 0, category: :line, y: 0, w: 50, h: 50, style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'),
         h1: ShapeDefaults.new(type: :h1, x: 0, category: :text, y: 0, w: 100, h: 50, style_modifiers: 'text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none'),
         h2: ShapeDefaults.new(type: :h2, x: 0, category: :text, y: 0, w: 100, h: 50, style_modifiers: 'text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none'),
         h3: ShapeDefaults.new(type: :h3, x: 0, category: :text, y: 0, w: 100, h: 50, style_modifiers: 'text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none'),
@@ -76,6 +78,7 @@ module DrawioDsl
         container4: ShapeDefaults.new(type: :container4, x: 0, category: :element, y: 0, w: 160, h: 160, style_modifiers: 'swimlane;resizable=0'),
         cross: ShapeDefaults.new(type: :cross, x: 0, category: :element, y: 0, w: 50, h: 50, style_modifiers: 'verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x'),
         envelop: ShapeDefaults.new(type: :envelop, x: 0, category: :element, y: 0, w: 160, h: 100, style_modifiers: 'shape=message'),
+        database: ShapeDefaults.new(type: :database, x: 0, category: :element, y: 0, w: 160, h: 80, style_modifiers: 'shape=mxgraph.flowchart.database;strokeWidth=1'),
         diamond: ShapeDefaults.new(type: :diamond, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'rhombus'),
         document: ShapeDefaults.new(type: :document, x: 0, category: :element, y: 0, w: 160, h: 160, style_modifiers: 'shape=mxgraph.basic.document'),
         ellipse: ShapeDefaults.new(type: :ellipse, x: 0, category: :element, y: 0, w: 200, h: 120, style_modifiers: 'ellipse'),
@@ -92,7 +95,6 @@ module DrawioDsl
         todo: ShapeDefaults.new(type: :todo, x: 0, category: :element, y: 0, w: 300, h: 60, style_modifiers: ''),
         face: ShapeDefaults.new(type: :face, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley'),
         triangle: ShapeDefaults.new(type: :triangle, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'triangle'),
-        line: ShapeDefaults.new(type: :line, x: 0, category: :line, y: 0, w: 50, h: 50, style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'),
         embed_row: ShapeDefaults.new(type: :embed_row, x: 0, category: :element, y: 0, w: 200, h: 40, style_modifiers: 'shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest'),
         embed_col50: ShapeDefaults.new(type: :embed_col50, x: 0, category: :element, y: 0, w: 50, h: 40, style_modifiers: 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden'),
         embed_col200: ShapeDefaults.new(type: :embed_col200, x: 0, category: :element, y: 0, w: 150, h: 40, style_modifiers: 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden')
