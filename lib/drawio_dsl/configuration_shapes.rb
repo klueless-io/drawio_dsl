@@ -92,7 +92,7 @@ module DrawioDsl
         todo: ShapeDefaults.new(type: :todo, x: 0, category: :element, y: 0, w: 300, h: 60, style_modifiers: ''),
         face: ShapeDefaults.new(type: :face, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley'),
         triangle: ShapeDefaults.new(type: :triangle, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'triangle'),
-        line: ShapeDefaults.new(type: :line, x: 0, category: :line, y: 0, w: 50, h: 50, style_modifiers: 'edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;'),
+        line: ShapeDefaults.new(type: :line, x: 0, category: :line, y: 0, w: 50, h: 50, style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'),
         embed_row: ShapeDefaults.new(type: :embed_row, x: 0, category: :element, y: 0, w: 200, h: 40, style_modifiers: 'shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest'),
         embed_col50: ShapeDefaults.new(type: :embed_col50, x: 0, category: :element, y: 0, w: 50, h: 40, style_modifiers: 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden'),
         embed_col200: ShapeDefaults.new(type: :embed_col200, x: 0, category: :element, y: 0, w: 150, h: 40, style_modifiers: 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden')

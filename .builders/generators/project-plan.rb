@@ -10,11 +10,12 @@ KManager.action :project_plan do
         # p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan - In progress')
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
-
-        todo(title: 'refactor the shape->text_only (boolean) to category (symbol)')
-        todo(title: 'build configuration for line strokes (eg. dashed, dotted)')
+        
+        todo(title: 'build a class diagram')
         todo(title: 'add new shapes related to line connectors')
+        todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
+        todo(title: 'line connectors should not effect the grid positioning systems')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 
@@ -29,7 +30,7 @@ KManager.action :project_plan do
         todo(title: 'need to setup new project plans')
         todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
-        todo(title: 'add :shape and :text-only to random shape generator')
+        todo(title: 'add :shape, :line and :text to random shape generator')
         todo(title: 'Nodes need to support child nodes')
         todo(title: 'Grid layout does not position itself in relation to the last element')
         todo(title: 'Dynamic sized shapes that expand to the size of their text')
@@ -45,6 +46,11 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'build configuration for line strokes %i[dashed dotted dashdot dashdotdot dotdotdot longdash)')
+        todo(title: 'build configuration for line compass %i[n ne e se s sw w nw]')
+        todo(title: 'build configuration for line shape %i[style1 style2 style3 style4]')
+        todo(title: 'build configuration for arrows %i[straight triangle diamond circle cross short default none plain skewed_dash concave er_many er_one er_one_optional er_one_mandatory er_many_optional er_many_mandatory]')
+        todo(title: 'refactor the shape->text_only (boolean) to category (symbol)')
         todo(title: 'ensure that ids are working as expected')
         todo(title: 'alter the initial parameter of all shapes so that it can be an ID, without named attribute')
         todo(title: 'move project-plan files')

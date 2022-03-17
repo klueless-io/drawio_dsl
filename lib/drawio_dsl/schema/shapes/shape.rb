@@ -47,6 +47,9 @@ module DrawioDsl
       attr_accessor :h
       attr_accessor :style_modifiers
 
+      attr_accessor :source
+      attr_accessor :target
+
       def initialize(page, **args, &block)
         args[:classification] = :shape
         super(page, **args)
@@ -83,6 +86,9 @@ module DrawioDsl
         @h                = args[:h]                || shape_defaults.h
         @style_modifiers  = args[:style_modifiers]  || shape_defaults.style_modifiers
 
+        @source           = args[:source]
+        @target           = args[:target]
+
         @fill_color       = args[:fill_color]       || (category == :text ? nil : theme_palette.fill_color)
         @stroke_color     = args[:stroke_color]     || (category == :text ? nil : theme_palette.stroke_color)
         @gradient         = args[:gradient]         || (category == :text ? nil : theme_palette.gradient)
@@ -113,10 +119,25 @@ module DrawioDsl
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
       def as_xml(xml)
+
+        log.error self.category
+        log.error self.type
+        draw_element(xml) if category == :element
+        draw_line(xml)    if category == :line
+      end
+
+      def draw_element(xml)
         xml.mxCell(id: id, value: value, style: style, vertex: 1, parent: parent&.id) do
           xml.mxGeometry(x: x, y: y, width: w, height: h, as: 'geometry')
         end
       end
+
+      def draw_line(xml)
+        xml.mxCell(id: id, value: value, style: style, parent: parent&.id, source: source, target: target, edge: 1) do
+          xml.mxGeometry(relative: 1, as: 'geometry')
+        end
+      end
+
 
       def to_h
         result = {

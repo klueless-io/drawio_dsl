@@ -41,7 +41,69 @@
       "style": "dashed=1;fixDash=1;dashPattern=8 8"
     }
   ],
+  "connector_waypoints": [
+    {
+      "name": "straight",
+      "style": "edgeStyle=none"
+    },
+    {
+      "name": "orthogonal",
+      "style": "edgeStyle=orthogonalEdgeStyle"
+    },
+    {
+      "name": "elbow",
+      "style": "edgeStyle=elbowEdgeStyle"
+    },
+    {
+      "name": "elbow_vertical",
+      "style": "edgeStyle=elbowEdgeStyle;elbow=vertical"
+    },
+    {
+      "name": "isometric",
+      "style": "edgeStyle=isometricEdgeStyle"
+    },
+    {
+      "name": "isometric_vertical",
+      "style": "edgeStyle=isometricEdgeStyle;elbow=vertical"
+    },
+    {
+      "name": "orthogonal_curved",
+      "style": "edgeStyle=orthogonalEdgeStyle;curved=1"
+    },
+    {
+      "name": "entity_relation",
+      "style": "edgeStyle=entityRelationEdgeStyle"
+    }
+  ],
+  "connector_arrows": null,
+  "connector_shape": [
+    {
+      "name": "style1",
+      "style": ""
+    },
+    {
+      "name": "style2",
+      "style": "shape=link"
+    },
+    {
+      "name": "style3",
+      "style": "shape=flexArrow"
+    },
+    {
+      "name": "style4",
+      "style": "shape=arrow"
+    }
+  ],
   "shapes": [
+    {
+      "type": "line",
+      "category": "line",
+      "x": 0,
+      "y": 0,
+      "w": 50,
+      "h": 50,
+      "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0"
+    },
     {
       "type": "h1",
       "category": "text",
@@ -374,15 +436,6 @@
       "w": 100,
       "h": 100,
       "style_modifiers": "triangle"
-    },
-    {
-      "type": "line",
-      "category": "line",
-      "x": 0,
-      "y": 0,
-      "w": 50,
-      "h": 50,
-      "style_modifiers": "edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;"
     },
     {
       "type": "embed_row",

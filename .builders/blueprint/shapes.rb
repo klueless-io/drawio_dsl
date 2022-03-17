@@ -1,6 +1,15 @@
 m = KManager.model :shapes, namespace: %i[domain] do
   # microapp = import(:handlebars_helpers, :microapp)
 
+  # other settings
+  # strokeWidth: 1-n
+  #
+  # when there is an arrow at beginning
+  # startFill=1,0
+  # when there is an arrow at end
+  # endFill=1,0
+
+
   table :strokes do
     fields [:name, :style]
 
@@ -16,11 +25,95 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
   end
 
+  # table :connector_exit_positions vs entry_exit_positions do
+  #   fields [:name, :style]
+
+  #   row :n, 'exitX=0.5;exitY=0;exitDx=0;exitDy=0'
+  #   row :ne, 'exitX=1;exitY=0;exitDx=0;exitDy=0'
+  #   row :e, 'exitX=1;exitY=0.5;exitDx=0;exitDy=0'
+  #   row :se, 'exitX=1;exitY=1;exitDx=0;exitDy=0'
+  #   row :s, 'exitX=0.5;exitY=1;exitDx=0;exitDy=0'
+  #   row :sw, 'exitX=0;exitY=1;exitDx=0;exitDy=0'
+  #   row :w, 'exitX=0;exitY=0.5;exitDx=0;exitDy=0'
+  #   row :nw, 'exitX=0;exitY=0;exitDx=0;exitDy=0'
+  # end
+
+  table :connector_compass do
+    fields [:name, :style]
+
+    row :n  , x: 0.5 , y: 0
+    row :ne , x: 1   , y: 0
+    row :e  , x: 1   , y: 0.5
+    row :se , x: 1   , y: 1
+    row :s  , x: 0.5 , y: 1
+    row :sw , x: 0   , y: 1
+    row :w  , x: 0   , y: 0.5
+    row :nw , x: 0   , y: 0
+  end
+
+  table :connector_shape do
+    fields [:name, :style]
+
+    row :style1, ''
+    row :style2, 'shape=link'
+    row :style3, 'shape=flexArrow'
+    row :style4, 'shape=arrow'
+  end
+
+  table :connector_arrow do
+    fields [:name, :style]
+
+    row :simple                     , 'open'
+    row :triangle                   , 'block'
+    row :diamond                    , 'diamond'
+    row :circle                     , 'oval'
+    row :cross                      , 'cross'
+    row :short                      , 'classicThin'
+    row :default                    , 'classic'
+    row :none                       , 'none'
+    row :plain                      , 'open'
+    row :skewed_dash                , 'dash'
+    row :concave                    , 'openThin'
+    row :er_many                    , 'ERmany'
+    row :er_one                     , 'ERone'
+    row :er_one_optional            , 'ERzeroToOne'
+    row :er_one_mandatory           , 'ERmandOne'
+    row :er_many_optional           , 'ERzeroToMany'
+    row :er_many_mandatory          , 'ERoneToMany'
+  end
+
+  table :connector_waypoints do # aka edgeStyle
+    fields [:name, :style]
+
+    row :straight                 , 'edgeStyle=none'
+    row :orthogonal               , 'edgeStyle=orthogonalEdgeStyle'
+    row :elbow                    , 'edgeStyle=elbowEdgeStyle'
+    row :elbow_vertical           , 'edgeStyle=elbowEdgeStyle;elbow=vertical'
+    row :isometric                , 'edgeStyle=isometricEdgeStyle'
+    row :isometric_vertical       , 'edgeStyle=isometricEdgeStyle;elbow=vertical'
+    row :orthogonal_curved        , 'edgeStyle=orthogonalEdgeStyle;curved=1'
+    row :entity_relation          , 'edgeStyle=entityRelationEdgeStyle'
+  end
+
   table :shapes do
     fields [:type, :category, :x, :y, :w, :h, :style_modifiers]
 
     # shape is a custom object
     # row :shape      , 0, 0,  20,  20, ''
+
+    row :line                 , :line   , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+    # row :line                 , :line   , 0, 0,  50,  50, 'edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;'
+    # row :dashed               , 'dashed=1;fixDash=1'
+    # row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'
+    # row :dashdot              , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
+    # row :dashdotdot           , 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
+    # row :dotdotdot            , 'dashed=1;fixDash=1;dashPattern=1 2'
+    # row :longdash             , 'dashed=1;fixDash=1;dashPattern=16 6'
+    # row :dashlongdash         , 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
+    # row :dashed24             , 'dashed=1;fixDash=1;dashPattern=3 8'
+    # row :dashed32             , 'dashed=1;fixDash=1;dashPattern=6 5'
+    # row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
+    # edge="1" parent="node_root_2T8" source="b" target="c"
 
     # configuration for general purpose shapes
     row :h1                   , :text   , 0, 0, 100,  50, 'text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none'
@@ -62,9 +155,6 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :face                 , :element, 0, 0, 100, 100, 'verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley'
     row :triangle             , :element, 0, 0, 100, 100, 'triangle'
 
-    row :line                 , :line   , 0, 0,  50,  50, 'edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;'
-    # edge="1" parent="node_root_2T8" source="b" target="c"
-
     # configuration for embedded element shape
     # note that the width / height probably should be driven of parent shape
     row :embed_row            , :element, 0, 0, 200,  40, 'shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest'
@@ -76,7 +166,10 @@ m = KManager.model :shapes, namespace: %i[domain] do
     data = self.raw_data
     content = {
       strokes: data['strokes'],
-      shapes: data['shapes']
+      connector_waypoints: data['connector_waypoints'],
+      connector_arrows: data['connector_arrows'],
+      connector_shape: data['connector_shape'],
+      shapes: data['shapes'],
     }
 
     k_builder
