@@ -119,9 +119,8 @@ module DrawioDsl
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
       def as_xml(xml)
-
-        log.error self.category
-        log.error self.type
+        log.error category
+        log.error type
         draw_element(xml) if category == :element
         draw_line(xml)    if category == :line
       end
@@ -137,7 +136,6 @@ module DrawioDsl
           xml.mxGeometry(relative: 1, as: 'geometry')
         end
       end
-
 
       def to_h
         result = {

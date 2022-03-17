@@ -3,7 +3,6 @@ m = KManager.model :shapes, namespace: %i[domain] do
 
   # other settings
   # strokeWidth: 1-n
-  #
   # when there is an arrow at beginning
   # startFill=1,0
   # when there is an arrow at end
@@ -25,33 +24,20 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
   end
 
-  # table :connector_exit_positions vs entry_exit_positions do
-  #   fields [:name, :style]
-
-  #   row :n, 'exitX=0.5;exitY=0;exitDx=0;exitDy=0'
-  #   row :ne, 'exitX=1;exitY=0;exitDx=0;exitDy=0'
-  #   row :e, 'exitX=1;exitY=0.5;exitDx=0;exitDy=0'
-  #   row :se, 'exitX=1;exitY=1;exitDx=0;exitDy=0'
-  #   row :s, 'exitX=0.5;exitY=1;exitDx=0;exitDy=0'
-  #   row :sw, 'exitX=0;exitY=1;exitDx=0;exitDy=0'
-  #   row :w, 'exitX=0;exitY=0.5;exitDx=0;exitDy=0'
-  #   row :nw, 'exitX=0;exitY=0;exitDx=0;exitDy=0'
-  # end
-
   table :connector_compass do
-    fields [:name, :style]
+    fields %i[name x y]
 
-    row :n  , x: 0.5 , y: 0
-    row :ne , x: 1   , y: 0
-    row :e  , x: 1   , y: 0.5
-    row :se , x: 1   , y: 1
-    row :s  , x: 0.5 , y: 1
-    row :sw , x: 0   , y: 1
-    row :w  , x: 0   , y: 0.5
-    row :nw , x: 0   , y: 0
+    row :n  , x: 0.5 , y: 0       # 'exitX=0.5;exitY=0;exitDx=0;exitDy=0'  'entryX=0.5;entryY=0;entryDx=0;entryDy=0'
+    row :ne , x: 1   , y: 0       # 'exitX=1;exitY=0;exitDx=0;exitDy=0'    'entryX=1;entryY=0;entryDx=0;entryDy=0'
+    row :e  , x: 1   , y: 0.5     # 'exitX=1;exitY=0.5;exitDx=0;exitDy=0'  'entryX=1;entryY=0.5;entryDx=0;entryDy=0'
+    row :se , x: 1   , y: 1       # 'exitX=1;exitY=1;exitDx=0;exitDy=0'    'entryX=1;entryY=1;entryDx=0;entryDy=0'
+    row :s  , x: 0.5 , y: 1       # 'exitX=0.5;exitY=1;exitDx=0;exitDy=0'  'entryX=0.5;entryY=1;entryDx=0;entryDy=0'
+    row :sw , x: 0   , y: 1       # 'exitX=0;exitY=1;exitDx=0;exitDy=0'    'entryX=0;entryY=1;entryDx=0;entryDy=0'
+    row :w  , x: 0   , y: 0.5     # 'exitX=0;exitY=0.5;exitDx=0;exitDy=0'  'entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+    row :nw , x: 0   , y: 0       # 'exitX=0;exitY=0;exitDx=0;exitDy=0'    'entryX=0;entryY=0;entryDx=0;entryDy=0'
   end
 
-  table :connector_shape do
+  table :connector_design do
     fields [:name, :style]
 
     row :style1, ''
@@ -60,7 +46,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :style4, 'shape=arrow'
   end
 
-  table :connector_arrow do
+  table :connector_arrows do
     fields [:name, :style]
 
     row :simple                     , 'open'
@@ -166,9 +152,12 @@ m = KManager.model :shapes, namespace: %i[domain] do
     data = self.raw_data
     content = {
       strokes: data['strokes'],
-      connector_waypoints: data['connector_waypoints'],
-      connector_arrows: data['connector_arrows'],
-      connector_shape: data['connector_shape'],
+      connector: {
+        compass: data['connector_compass'],
+        waypoints: data['connector_waypoints'],
+        arrows: data['connector_arrows'],
+        design: data['connector_design']
+      },
       shapes: data['shapes'],
     }
 
