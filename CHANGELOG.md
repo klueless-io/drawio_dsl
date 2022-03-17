@@ -1,3 +1,10 @@
+## [0.8.2](https://github.com/klueless-io/drawio_dsl/compare/v0.8.1...v0.8.2) (2022-03-17)
+
+
+### Bug Fixes
+
+* refactor the shape->text_only (boolean) to category (symbol) ([a469b2f](https://github.com/klueless-io/drawio_dsl/commit/a469b2fb0af9e47af35e8835fde79faba66a36df))
+
 ## [0.8.1](https://github.com/klueless-io/drawio_dsl/compare/v0.8.0...v0.8.1) (2022-03-16)
 
 
