@@ -1,3 +1,10 @@
+## [0.8.4](https://github.com/klueless-io/drawio_dsl/compare/v0.8.3...v0.8.4) (2022-03-17)
+
+
+### Bug Fixes
+
+* add database shape ([abd80d8](https://github.com/klueless-io/drawio_dsl/commit/abd80d80e268484e6298c0e7a299cbbba3de4768))
+
 ## [0.8.3](https://github.com/klueless-io/drawio_dsl/compare/v0.8.2...v0.8.3) (2022-03-17)
 
 
