@@ -11,8 +11,8 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'ensure that ids are working as expected')
-        todo(title: 'alter the initial parameter of all shapes so that it can be an ID, without named attribute')
+        todo(title: 'refactor the shape->text_only (boolean) to category (symbol)')
+        todo(title: 'build configuration for line strokes (eg. dashed, dotted)')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connectors need to support autolinking using ids')
       end
@@ -45,6 +45,8 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'ensure that ids are working as expected')
+        todo(title: 'alter the initial parameter of all shapes so that it can be an ID, without named attribute')
         todo(title: 'move project-plan files')
         todo(title: 'alter configure_shape so it sets the default shape key and use that for selecting the default HTML formatter')
         todo(title: 'add todo shape to simplify project plan drawing')

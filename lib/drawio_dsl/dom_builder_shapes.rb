@@ -226,6 +226,12 @@ module DrawioDsl
       add_shape(triangle)
     end
 
+    def add_line(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      line = DrawioDsl::Schema::Line.new(current_page, **opts, &block)
+      add_shape(line)
+    end
+
     def add_embed_row(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
       embed_row = DrawioDsl::Schema::EmbedRow.new(current_page, **opts, &block)

@@ -2,7 +2,7 @@
 
 RSpec.shared_examples :basic_shape_attributes do
   context 'with minimal valid attributes' do
-    it { is_expected.to have_attributes(id: 1, type: default.type, text_only: default.text_only, x: default.x, y: default.y, w: default.w, h: default.h) }
+    it { is_expected.to have_attributes(id: 1, type: default.type, category: default.category, x: default.x, y: default.y, w: default.w, h: default.h) }
   end
 
   context 'with valid attributes' do

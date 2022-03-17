@@ -5,7 +5,7 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(40)
+      case rand(41)
       when 0
         h1(**opts)
       when 1
@@ -81,10 +81,12 @@ module DrawioDsl
       when 36
         triangle(**opts)
       when 37
-        embed_row(**opts)
+        line(**opts)
       when 38
-        embed_col50(**opts)
+        embed_row(**opts)
       when 39
+        embed_col50(**opts)
+      when 40
         embed_col200(**opts)
       end
     end
@@ -235,6 +237,10 @@ module DrawioDsl
 
     def triangle(id = nil, **opts, &block)
       builder.add_triangle(id, **opts, &block)
+    end
+
+    def line(id = nil, **opts, &block)
+      builder.add_line(id, **opts, &block)
     end
 
     def embed_row(id = nil, **opts, &block)

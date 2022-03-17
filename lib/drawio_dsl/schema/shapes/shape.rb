@@ -23,6 +23,7 @@ module DrawioDsl
 
       configure_shape(:shape)
 
+      attr_accessor :category
       attr_accessor :theme
       attr_accessor :title
       attr_accessor :value
@@ -40,7 +41,6 @@ module DrawioDsl
       attr_accessor :font_color
       attr_accessor :gradient
 
-      attr_accessor :text_only
       attr_accessor :x
       attr_accessor :y
       attr_accessor :w
@@ -76,16 +76,16 @@ module DrawioDsl
         @glass            = args[:glass]            || page.style.glass
 
         @type             = args[:type]             || shape_defaults.type
-        @text_only        = args[:text_only]        || shape_defaults.text_only
+        @category         = args[:category]         || shape_defaults.category
         @x                = args[:x]                || shape_defaults.x
         @y                = args[:y]                || shape_defaults.y
         @w                = args[:w]                || shape_defaults.w
         @h                = args[:h]                || shape_defaults.h
         @style_modifiers  = args[:style_modifiers]  || shape_defaults.style_modifiers
 
-        @fill_color       = args[:fill_color]       || (text_only ? nil : theme_palette.fill_color)
-        @stroke_color     = args[:stroke_color]     || (text_only ? nil : theme_palette.stroke_color)
-        @gradient         = args[:gradient]         || (text_only ? nil : theme_palette.gradient)
+        @fill_color       = args[:fill_color]       || (category == :text ? nil : theme_palette.fill_color)
+        @stroke_color     = args[:stroke_color]     || (category == :text ? nil : theme_palette.stroke_color)
+        @gradient         = args[:gradient]         || (category == :text ? nil : theme_palette.gradient)
         @font_color       = args[:font_color]       || theme_palette.font_color
       end
 

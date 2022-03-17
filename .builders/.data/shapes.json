@@ -1,371 +1,415 @@
-[
-  {
-    "type": "h1",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "h2",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "h3",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "h4",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=37;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "h5",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=28;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "h6",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=21;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "p",
-    "text_only": true,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 50,
-    "style_modifiers": "text;fontSize=16;fontColor=#ffffff;fontStyle=1;fillColor=none"
-  },
-  {
-    "type": "actor",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 40,
-    "h": 50,
-    "style_modifiers": "shape=actor"
-  },
-  {
-    "type": "actor2",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 30,
-    "h": 50,
-    "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
-  },
-  {
-    "type": "callout",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 120,
-    "style_modifiers": "shape=callout"
-  },
-  {
-    "type": "callout2",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "shape=mxgraph.basic.oval_callout"
-  },
-  {
-    "type": "callout3",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "shape=mxgraph.basic.cloud_callout"
-  },
-  {
-    "type": "callout4",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 120,
-    "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
-  },
-  {
-    "type": "circle",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "ellipse"
-  },
-  {
-    "type": "cloud",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "shape=cloud"
-  },
-  {
-    "type": "container",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "swimlane"
-  },
-  {
-    "type": "container2",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "swimlane;horizontal=0"
-  },
-  {
-    "type": "container3",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "swimlane;startSize=50"
-  },
-  {
-    "type": "container4",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "swimlane;resizable=0"
-  },
-  {
-    "type": "cross",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 50,
-    "h": 50,
-    "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
-  },
-  {
-    "type": "envelop",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 100,
-    "style_modifiers": "shape=message"
-  },
-  {
-    "type": "diamond",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 100,
-    "style_modifiers": "rhombus"
-  },
-  {
-    "type": "document",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "shape=mxgraph.basic.document"
-  },
-  {
-    "type": "ellipse",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 200,
-    "h": 120,
-    "style_modifiers": "ellipse"
-  },
-  {
-    "type": "hexagon",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 200,
-    "h": 120,
-    "style_modifiers": "shape=hexagon"
-  },
-  {
-    "type": "interface",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
-  },
-  {
-    "type": "klass",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
-  },
-  {
-    "type": "note",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": "shape=note"
-  },
-  {
-    "type": "process",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 200,
-    "h": 120,
-    "style_modifiers": "shape=process"
-  },
-  {
-    "type": "rectangle",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 200,
-    "h": 120,
-    "style_modifiers": ""
-  },
-  {
-    "type": "rectangle2",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 200,
-    "h": 120,
-    "style_modifiers": "shape=mxgraph.basic.cloud_rect"
-  },
-  {
-    "type": "square",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 160,
-    "h": 160,
-    "style_modifiers": ""
-  },
-  {
-    "type": "step",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 120,
-    "h": 80,
-    "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
-  },
-  {
-    "type": "tick",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 50,
-    "h": 50,
-    "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
-  },
-  {
-    "type": "todo",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 300,
-    "h": 60,
-    "style_modifiers": ""
-  },
-  {
-    "type": "face",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 100,
-    "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
-  },
-  {
-    "type": "triangle",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 100,
-    "h": 100,
-    "style_modifiers": "triangle"
-  },
-  {
-    "type": "line",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 50,
-    "h": 50,
-    "style_modifiers": "edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;"
-  },
-  {
-    "type": "embed_row",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 200,
-    "h": 40,
-    "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
-  },
-  {
-    "type": "embed_col50",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 50,
-    "h": 40,
-    "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
-  },
-  {
-    "type": "embed_col200",
-    "text_only": false,
-    "x": 0,
-    "y": 0,
-    "w": 150,
-    "h": 40,
-    "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
-  }
-]
+{
+  "strokes": [
+    {
+      "name": "dashed",
+      "style": "dashed=1;fixDash=1"
+    },
+    {
+      "name": "dotted",
+      "style": "dashed=1;fixDash=1;dashPattern=1 4"
+    },
+    {
+      "name": "dashdot",
+      "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5"
+    },
+    {
+      "name": "dashdotdot",
+      "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5"
+    },
+    {
+      "name": "dotdotdot",
+      "style": "dashed=1;fixDash=1;dashPattern=1 2"
+    },
+    {
+      "name": "longdash",
+      "style": "dashed=1;fixDash=1;dashPattern=16 6"
+    },
+    {
+      "name": "dashlongdash",
+      "style": "dashed=1;fixDash=1;dashPattern=10 6 16 6"
+    },
+    {
+      "name": "dashed24",
+      "style": "dashed=1;fixDash=1;dashPattern=3 8"
+    },
+    {
+      "name": "dashed32",
+      "style": "dashed=1;fixDash=1;dashPattern=6 5"
+    },
+    {
+      "name": "dashed44",
+      "style": "dashed=1;fixDash=1;dashPattern=8 8"
+    }
+  ],
+  "shapes": [
+    {
+      "type": "h1",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "h2",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "h3",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "h4",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=37;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "h5",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=28;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "h6",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=21;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "p",
+      "category": "text",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 50,
+      "style_modifiers": "text;fontSize=16;fontColor=#ffffff;fontStyle=1;fillColor=none"
+    },
+    {
+      "type": "actor",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 40,
+      "h": 50,
+      "style_modifiers": "shape=actor"
+    },
+    {
+      "type": "actor2",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 30,
+      "h": 50,
+      "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
+    },
+    {
+      "type": "callout",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 120,
+      "style_modifiers": "shape=callout"
+    },
+    {
+      "type": "callout2",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "shape=mxgraph.basic.oval_callout"
+    },
+    {
+      "type": "callout3",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "shape=mxgraph.basic.cloud_callout"
+    },
+    {
+      "type": "callout4",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 120,
+      "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
+    },
+    {
+      "type": "circle",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "ellipse"
+    },
+    {
+      "type": "cloud",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "shape=cloud"
+    },
+    {
+      "type": "container",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "swimlane"
+    },
+    {
+      "type": "container2",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "swimlane;horizontal=0"
+    },
+    {
+      "type": "container3",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "swimlane;startSize=50"
+    },
+    {
+      "type": "container4",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "swimlane;resizable=0"
+    },
+    {
+      "type": "cross",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 50,
+      "h": 50,
+      "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
+    },
+    {
+      "type": "envelop",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 100,
+      "style_modifiers": "shape=message"
+    },
+    {
+      "type": "diamond",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "style_modifiers": "rhombus"
+    },
+    {
+      "type": "document",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "shape=mxgraph.basic.document"
+    },
+    {
+      "type": "ellipse",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 200,
+      "h": 120,
+      "style_modifiers": "ellipse"
+    },
+    {
+      "type": "hexagon",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 200,
+      "h": 120,
+      "style_modifiers": "shape=hexagon"
+    },
+    {
+      "type": "interface",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
+    },
+    {
+      "type": "klass",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
+    },
+    {
+      "type": "note",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": "shape=note"
+    },
+    {
+      "type": "process",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 200,
+      "h": 120,
+      "style_modifiers": "shape=process"
+    },
+    {
+      "type": "rectangle",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 200,
+      "h": 120,
+      "style_modifiers": ""
+    },
+    {
+      "type": "rectangle2",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 200,
+      "h": 120,
+      "style_modifiers": "shape=mxgraph.basic.cloud_rect"
+    },
+    {
+      "type": "square",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 160,
+      "style_modifiers": ""
+    },
+    {
+      "type": "step",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 120,
+      "h": 80,
+      "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
+    },
+    {
+      "type": "tick",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 50,
+      "h": 50,
+      "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
+    },
+    {
+      "type": "todo",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 300,
+      "h": 60,
+      "style_modifiers": ""
+    },
+    {
+      "type": "face",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
+    },
+    {
+      "type": "triangle",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 100,
+      "style_modifiers": "triangle"
+    },
+    {
+      "type": "line",
+      "category": "line",
+      "x": 0,
+      "y": 0,
+      "w": 50,
+      "h": 50,
+      "style_modifiers": "edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;"
+    },
+    {
+      "type": "embed_row",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 200,
+      "h": 40,
+      "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
+    },
+    {
+      "type": "embed_col50",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 50,
+      "h": 40,
+      "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
+    },
+    {
+      "type": "embed_col200",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 150,
+      "h": 40,
+      "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
+    }
+  ]
+}

@@ -2,7 +2,9 @@ KManager.action :requires do
 
   action do
     shapes_file = k_builder.target_folders.get_filename(:data, 'shapes.json')
-    shapes = JSON.parse(File.read(shapes_file))
+    shapes_configuration = JSON.parse(File.read(shapes_file))
+    shapes = shapes_configuration['shapes']
+    # strokes = shapes_configuration['strokes']
 
     KDirector::Dsls::BasicDsl
       .init(k_builder,
