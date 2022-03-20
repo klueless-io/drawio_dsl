@@ -66,13 +66,11 @@ module DrawioDsl
         self
       end
 
-      
       def ul_s(**opts)
         html.ul_s(**opts)
 
         self
       end
-
 
       def ul_e(**opts)
         html.ul_e(**opts)
@@ -101,33 +99,43 @@ module DrawioDsl
       def ratio
         @ratio ||= 1.2
       end
+
       def base_margin_bottom
         @base_margin_bottom ||= 4
       end
+
       def p_margin_bottom
         @p_margin_bottom ||= base_margin_bottom
       end
+
       def b_margin_bottom
         @b_margin_bottom ||= base_margin_bottom
       end
+
       def li_margin_bottom
         @li_margin_bottom ||= base_margin_bottom
       end
+
       def h6_margin_bottom
         @h6_margin_bottom ||= base_margin_bottom
       end
+
       def h5_margin_bottom
         @h5_margin_bottom ||= h6_margin_bottom * ratio
       end
+
       def h4_margin_bottom
         @h4_margin_bottom ||= h5_margin_bottom * ratio
       end
+
       def h3_margin_bottom
         @h3_margin_bottom ||= h4_margin_bottom * ratio
       end
+
       def h2_margin_bottom
         @h2_margin_bottom ||= h3_margin_bottom * ratio
       end
+
       def h1_margin_bottom
         @h1_margin_bottom ||= h2_margin_bottom * ratio
       end

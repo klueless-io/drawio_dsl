@@ -83,8 +83,8 @@ module DrawioDsl
         add_line("<ul#{style_for(:ul, **opts)}>")
       end
 
-      def ul_e(**opts)
-        add_line("</ul>")
+      def ul_e(**_opts)
+        add_line('</ul>')
       end
 
       def add_line(line)

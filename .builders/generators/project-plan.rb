@@ -11,7 +11,6 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
         
-        todo(title: 'class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder')
         todo(title: 'class html builder to support include/extend modules, class methods')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
@@ -47,6 +46,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder')
         todo(title: 'group box, like a regular box but with a top aligned h1 style title')
         todo(title: 'build a domain (class) diagram')
         todo(title: 'build configuration for line strokes %i[dashed dotted dashdot dashdotdot dotdotdot longdash)')

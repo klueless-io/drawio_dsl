@@ -17,7 +17,7 @@ module DrawioDsl
             h4: { margin: '0px', margin_left: '4px', margin_bottom: "#{h4_margin_bottom}px" },
             h5: { margin: '0px', margin_left: '4px', margin_bottom: "#{h5_margin_bottom}px" },
             h6: { margin: '0px', margin_left: '4px', margin_bottom: "#{h6_margin_bottom}px" },
-            li: { margin: '0px', margin_left: '4px', margin_bottom: "#{li_margin_bottom}px" },
+            li: { margin: '0px', margin_left: '4px', margin_bottom: "#{li_margin_bottom}px" }
           }
         )
       end
