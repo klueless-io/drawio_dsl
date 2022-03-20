@@ -1,3 +1,11 @@
+## [0.8.7](https://github.com/klueless-io/drawio_dsl/compare/v0.8.6...v0.8.7) (2022-03-20)
+
+
+### Bug Fixes
+
+* class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder ([a414f73](https://github.com/klueless-io/drawio_dsl/commit/a414f73260221a6d1db30620d5ef2d665b44d96c))
+* class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder + update cops ([40c945c](https://github.com/klueless-io/drawio_dsl/commit/40c945cc963a80e10267fcca977015d4620b54b0))
+
 ## [0.8.6](https://github.com/klueless-io/drawio_dsl/compare/v0.8.5...v0.8.6) (2022-03-20)
 
 
