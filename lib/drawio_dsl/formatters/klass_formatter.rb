@@ -7,7 +7,19 @@ module DrawioDsl
     # Format the HTML to display an class on a class diagram
     class KlassFormatter < BaseFormatter
       def initialize
-        super({ p: { margin: '0px', margin_left: '4px', margin_top: '4px' } })
+        super(
+          {
+            p: { margin: '0px', margin_left: '4px', margin_bottom: "#{p_margin_bottom}px" },
+            b: { margin: '0px', margin_left: '4px', margin_bottom: "#{b_margin_bottom}px" },
+            h1: { margin: '0px', margin_left: '4px', margin_bottom: "#{h1_margin_bottom}px" },
+            h2: { margin: '0px', margin_left: '4px', margin_bottom: "#{h2_margin_bottom}px" },
+            h3: { margin: '0px', margin_left: '4px', margin_bottom: "#{h3_margin_bottom}px" },
+            h4: { margin: '0px', margin_left: '4px', margin_bottom: "#{h4_margin_bottom}px" },
+            h5: { margin: '0px', margin_left: '4px', margin_bottom: "#{h5_margin_bottom}px" },
+            h6: { margin: '0px', margin_left: '4px', margin_bottom: "#{h6_margin_bottom}px" },
+            li: { margin: '0px', margin_left: '4px', margin_bottom: "#{li_margin_bottom}px" },
+          }
+        )
       end
 
       def header(name, description: nil)

@@ -77,6 +77,48 @@ RSpec.describe DrawioDsl::Formatters::HtmlBuilder do
       it { is_expected.to eq('<p>hello world</p>') }
     end
 
+    context 'when call #h1' do
+      before { instance.h1('hello world') }
+
+      it { is_expected.to eq('<h1>hello world</h1>') }
+    end
+
+    context 'when call #h2' do
+      before { instance.h2('hello world') }
+
+      it { is_expected.to eq('<h2>hello world</h2>') }
+    end
+
+    context 'when call #h3' do
+      before { instance.h3('hello world') }
+
+      it { is_expected.to eq('<h3>hello world</h3>') }
+    end
+
+    context 'when call #h4' do
+      before { instance.h4('hello world') }
+
+      it { is_expected.to eq('<h4>hello world</h4>') }
+    end
+
+    context 'when call #h5' do
+      before { instance.h5('hello world') }
+
+      it { is_expected.to eq('<h5>hello world</h5>') }
+    end
+
+    context 'when call #h6' do
+      before { instance.h6('hello world') }
+
+      it { is_expected.to eq('<h6>hello world</h6>') }
+    end
+
+    context 'when call #li' do
+      before { instance.li('hello world') }
+
+      it { is_expected.to eq('<li>hello world</li>') }
+    end
+
     context 'when calling #p with defaults pre-configured for p' do
       let(:instance) { described_class.new(p: { margin: '0px', margin_top: '4px' }) }
 

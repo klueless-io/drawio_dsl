@@ -8,20 +8,6 @@ KManager.action :html_shapes do
       .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 0, background: '#FFEADB') do
         grid_layout(wrap_at: 8)
 
-        # html = DrawioDsl::Formatters::KlassFormatter.new
-        #   .header('IPerson')
-        #   .field(:first_name, type: :string)
-        #   .field(:last_name, type: :string)
-        #   .field(:age, type: :integer)
-        #   .field(:birthday, type: :date)
-        #   .method(:full_name)
-        #   .method(:sean)
-        #   .as_html
-
-        # square(title: html,
-        #   style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'
-        # )
-
         interface(theme: :style_07) do
           format
             .header('IPerson')
@@ -38,6 +24,42 @@ KManager.action :html_shapes do
             .field(:age, type: :integer)
             .field(:birthday, type: :date)
             .method(:full_name, type: :string)
+        end
+
+        klass(h: 280) do
+          format
+            .header('Custom HTML')
+            .p('David')
+            .b('Cruwys')
+            .hr
+            .h1('h1')
+            .h2('h2')
+            .h3('h3')
+            .h4('h4')
+            .h5('h5')
+            .h6('h6')
+            .ul_s
+            .li('li')
+            .li('li')
+            .ul_e
+        end
+
+        interface(theme: :style_07, h: 280) do
+          format
+            .header('ICustom HTML')
+            .p('David')
+            .b('Cruwys')
+            .hr
+            .h1('h1')
+            .h2('h2')
+            .h3('h3')
+            .h4('h4')
+            .h5('h5')
+            .h6('h6')
+            .ul_s
+            .li('li')
+            .li('li')
+            .ul_e
         end
       end
       .cd(:spec)

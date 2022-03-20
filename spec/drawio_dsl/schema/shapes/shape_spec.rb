@@ -90,7 +90,7 @@ RSpec.describe DrawioDsl::Schema::Shape do
 
         before { instance.header('hello world') }
 
-        it { is_expected.to be_a(String).and eq('<p style="margin:0px;margin-left:4px;margin-top:4px;text-align:center"><b>hello world</b></p><hr size="1"/>') }
+        it { is_expected.to be_a(String).and eq('<p style="margin:0px;margin-left:4px;margin-bottom:4px;text-align:center"><b>hello world</b></p><hr size="1"/>') }
       end
     end
 
