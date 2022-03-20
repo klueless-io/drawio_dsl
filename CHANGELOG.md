@@ -1,3 +1,10 @@
+## [0.8.6](https://github.com/klueless-io/drawio_dsl/compare/v0.8.5...v0.8.6) (2022-03-20)
+
+
+### Bug Fixes
+
+* group box, like a regular box but with a top aligned h1 style title ([282c7e8](https://github.com/klueless-io/drawio_dsl/commit/282c7e8ab8c932082ba9d6914b34767163f1e5e3))
+
 ## [0.8.5](https://github.com/klueless-io/drawio_dsl/compare/v0.8.4...v0.8.5) (2022-03-20)
 
 
