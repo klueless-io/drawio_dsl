@@ -3,7 +3,7 @@
 # Attach configuration to the DrawIO DSL module
 # :nocov:
 module DrawioDsl
-  # Attach predefined shapes DrawIO KConfig module
+  # Used to attach configuration to KConfig module
   module ConfigurationShapes
     ShapeDefaults = Struct.new(:type, :category, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
     Shapes = Struct.new(
@@ -35,6 +35,7 @@ module DrawioDsl
       :diamond,
       :document,
       :ellipse,
+      :group,
       :hexagon,
       :interface,
       :klass,
@@ -84,6 +85,7 @@ module DrawioDsl
         diamond: ShapeDefaults.new(type: :diamond, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'rhombus'),
         document: ShapeDefaults.new(type: :document, x: 0, category: :element, y: 0, w: 160, h: 160, style_modifiers: 'shape=mxgraph.basic.document'),
         ellipse: ShapeDefaults.new(type: :ellipse, x: 0, category: :element, y: 0, w: 200, h: 120, style_modifiers: 'ellipse'),
+        group: ShapeDefaults.new(type: :group, x: 0, category: :element, y: 0, w: 210, h: 210, style_modifiers: 'fontSize=20;verticalAlign=top'),
         hexagon: ShapeDefaults.new(type: :hexagon, x: 0, category: :element, y: 0, w: 200, h: 120, style_modifiers: 'shape=hexagon'),
         interface: ShapeDefaults.new(type: :interface, x: 0, category: :element, y: 0, w: 160, h: 160, style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'),
         klass: ShapeDefaults.new(type: :klass, x: 0, category: :element, y: 0, w: 160, h: 160, style_modifiers: 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'),

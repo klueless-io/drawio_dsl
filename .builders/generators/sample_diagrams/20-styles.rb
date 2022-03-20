@@ -1,4 +1,4 @@
-KManager.action :bootstrap do
+KManager.action :styled_shapes do
   action do
 
     DrawioDsl::Drawio
@@ -50,7 +50,7 @@ KManager.action :bootstrap do
         end
       end
       .cd(:spec)
-      .save('.samples/20-styles.drawio')
+      .osave('.samples/20-styled-shapes.drawio')
       .cd(:docs)
       .export_svg('samples/styles-plain', page: 1)
       .export_svg('samples/styles-shadow', page: 2)

@@ -24,7 +24,5 @@ KManager.action :bootstrap do
       end
       .cd(:spec)
       .save('.samples/35-ids-and-arrows.drawio')
-      # .cd(:docs)
-      # .export_svg('samples/styles-plain', page: 1)
   end
 end

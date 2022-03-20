@@ -2,7 +2,7 @@
 
 ## Class Diagram
 
-![](domain-modal/domain_model_custom.png)
+![](domain-modal/domain_model_custom.svg)
 
 ## Copyright
 

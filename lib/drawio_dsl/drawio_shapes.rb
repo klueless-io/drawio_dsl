@@ -5,7 +5,7 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(43)
+      case rand(44)
       when 0
         line(**opts)
       when 1
@@ -61,36 +61,38 @@ module DrawioDsl
       when 26
         ellipse(**opts)
       when 27
-        hexagon(**opts)
+        group(**opts)
       when 28
-        interface(**opts)
+        hexagon(**opts)
       when 29
-        klass(**opts)
+        interface(**opts)
       when 30
-        note(**opts)
+        klass(**opts)
       when 31
-        process(**opts)
+        note(**opts)
       when 32
-        rectangle(**opts)
+        process(**opts)
       when 33
-        rectangle2(**opts)
+        rectangle(**opts)
       when 34
-        square(**opts)
+        rectangle2(**opts)
       when 35
-        step(**opts)
+        square(**opts)
       when 36
-        tick(**opts)
+        step(**opts)
       when 37
-        todo(**opts)
+        tick(**opts)
       when 38
-        face(**opts)
+        todo(**opts)
       when 39
-        triangle(**opts)
+        face(**opts)
       when 40
-        embed_row(**opts)
+        triangle(**opts)
       when 41
-        embed_col50(**opts)
+        embed_row(**opts)
       when 42
+        embed_col50(**opts)
+      when 43
         embed_col200(**opts)
       end
     end
@@ -201,6 +203,10 @@ module DrawioDsl
 
     def ellipse(id = nil, **opts, &block)
       builder.add_ellipse(id, **opts, &block)
+    end
+
+    def group(id = nil, **opts, &block)
+      builder.add_group(id, **opts, &block)
     end
 
     def hexagon(id = nil, **opts, &block)

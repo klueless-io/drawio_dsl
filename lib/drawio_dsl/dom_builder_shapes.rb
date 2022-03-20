@@ -2,7 +2,7 @@
 
 # :nocov:
 module DrawioDsl
-  # Builder methods for each shape, line and text element to attach to DomBuilder.
+  # DrawioDsl is a DSL for draw-io diagrams.
   module DomBuilderShapes
     def add_line(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
@@ -164,6 +164,12 @@ module DrawioDsl
       opts = { id: id }.merge(opts) if id
       ellipse = DrawioDsl::Schema::Ellipse.new(current_page, **opts, &block)
       add_shape(ellipse)
+    end
+
+    def add_group(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      group = DrawioDsl::Schema::Group.new(current_page, **opts, &block)
+      add_shape(group)
     end
 
     def add_hexagon(id = nil, **opts, &block)

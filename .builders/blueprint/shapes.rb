@@ -129,6 +129,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :diamond              , :element, 0, 0, 100, 100, 'rhombus'
     row :document             , :element, 0, 0, 160, 160, 'shape=mxgraph.basic.document'
     row :ellipse              , :element, 0, 0, 200, 120, 'ellipse'
+    row :group                , :element, 0, 0, 210, 210, 'fontSize=20;verticalAlign=top'
     row :hexagon              , :element, 0, 0, 200, 120, 'shape=hexagon'
     row :interface            , :element, 0, 0, 160, 160, 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'
     row :klass                , :element, 0, 0, 160, 160, 'align=left;overflow=fill;fontSize=12;fontFamily=Helvetica'

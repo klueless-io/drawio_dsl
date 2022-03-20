@@ -11,8 +11,6 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
         
-        todo(title: 'build a domain (class) diagram')
-        todo(title: 'group box, like a regular box but with a top aligned h1 style title')
         todo(title: 'class html builder to support include/extend modules, class methods and regular html nodes such as p, h1.. ul, li')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
@@ -32,7 +30,7 @@ KManager.action :project_plan do
         todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
         todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
-        todo(title: 'add :shape, :line and :text to random shape generator')
+        todo(title: 'add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered')
         todo(title: 'Nodes need to support child nodes')
         todo(title: 'Grid layout does not position itself in relation to the last element')
         todo(title: 'Dynamic sized shapes that expand to the size of their text')
@@ -48,6 +46,8 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'group box, like a regular box but with a top aligned h1 style title')
+        todo(title: 'build a domain (class) diagram')
         todo(title: 'build configuration for line strokes %i[dashed dotted dashdot dashdotdot dotdotdot longdash)')
         todo(title: 'build configuration for line compass %i[n ne e se s sw w nw]')
         todo(title: 'build configuration for line shape %i[style1 style2 style3 style4]')

@@ -452,6 +452,15 @@
       "style_modifiers": "ellipse"
     },
     {
+      "type": "group",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 210,
+      "h": 210,
+      "style_modifiers": "fontSize=20;verticalAlign=top"
+    },
+    {
       "type": "hexagon",
       "category": "element",
       "x": 0,
