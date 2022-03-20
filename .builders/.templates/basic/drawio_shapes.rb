@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DrawioDsl
-  # DrawioDsl::Shapes is a list of DSL methods (one per shape)
+  # List of DSL methods for each common shape
   # :nocov:
   module DrawioShapes
     def random(**opts)

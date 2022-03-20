@@ -3,7 +3,7 @@
 # Attach configuration to the DrawIO DSL module
 # :nocov:
 module DrawioDsl
-  # Used to attach configuration to KConfig module
+  # Attach predefined shapes DrawIO KConfig module
   module ConfigurationShapes
     ShapeDefaults = Struct.new(:type, :category, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
     Shapes = Struct.new(
@@ -31,6 +31,7 @@ module DrawioDsl
       :cross,
       :envelop,
       :database,
+      :db_json,
       :diamond,
       :document,
       :ellipse,
@@ -79,6 +80,7 @@ module DrawioDsl
         cross: ShapeDefaults.new(type: :cross, x: 0, category: :element, y: 0, w: 50, h: 50, style_modifiers: 'verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x'),
         envelop: ShapeDefaults.new(type: :envelop, x: 0, category: :element, y: 0, w: 160, h: 100, style_modifiers: 'shape=message'),
         database: ShapeDefaults.new(type: :database, x: 0, category: :element, y: 0, w: 160, h: 80, style_modifiers: 'shape=mxgraph.flowchart.database;strokeWidth=1'),
+        db_json: ShapeDefaults.new(type: :db_json, x: 0, category: :element, y: 0, w: 160, h: 40, style_modifiers: 'shape=mxgraph.flowchart.database;strokeWidth=1'),
         diamond: ShapeDefaults.new(type: :diamond, x: 0, category: :element, y: 0, w: 100, h: 100, style_modifiers: 'rhombus'),
         document: ShapeDefaults.new(type: :document, x: 0, category: :element, y: 0, w: 160, h: 160, style_modifiers: 'shape=mxgraph.basic.document'),
         ellipse: ShapeDefaults.new(type: :ellipse, x: 0, category: :element, y: 0, w: 200, h: 120, style_modifiers: 'ellipse'),

@@ -4,7 +4,7 @@
 module DrawioDsl
   # HTML formatters can be used on shapes to render HTML using a DSL
   module Formatters
-    # Create an instance of a HTML formatter on the shape
+    # Format the HTML to display an class on a class diagram
     class KlassFormatter < BaseFormatter
       def initialize
         super({ p: { margin: '0px', margin_left: '4px', margin_top: '4px' } })

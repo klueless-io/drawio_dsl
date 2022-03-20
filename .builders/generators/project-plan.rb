@@ -9,13 +9,16 @@ KManager.action :project_plan do
         # h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
         # p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan - In progress')
 
-        grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
+        grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
         
         todo(title: 'build a domain (class) diagram')
+        todo(title: 'group box, like a regular box but with a top aligned h1 style title')
+        todo(title: 'class html builder to support include/extend modules, class methods and regular html nodes such as p, h1.. ul, li')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
         todo(title: 'line connectors should not effect the grid positioning systems')
+        todo(title: 'export diagram json for use with a different DSL builder')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 
@@ -27,7 +30,6 @@ KManager.action :project_plan do
         todo(title: 'add page background to theme, use it whenever the theme is set at a diagram/page level')
         todo(title: 'move DrawioDsl::Formatters::Factory::FORMATTERS to resource file')
         todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
-        todo(title: 'need to setup new project plans')
         todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
         todo(title: 'add :shape, :line and :text to random shape generator')

@@ -40,11 +40,13 @@ See all [samples](./docs/samples/samples.md)
 
 ![](docs/samples/samples.svg)
 
-## Usage
+## Architecture
 
-See all [usage examples](./USAGE.md)
+### Domain 
 
-## Development
+Domain modal and class diagram can be found [here](docs/domain-modal.md)
+
+### Development
 
 Checkout the repo
 

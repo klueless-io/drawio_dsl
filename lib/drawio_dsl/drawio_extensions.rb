@@ -2,8 +2,9 @@
 
 module DrawioDsl
   # :nocov:
-  class DrawIoExtensions
-    include DrawioDsl::DrawIoExtensionsActive
+  # 1000's of extension shapes derived from Extensions.js that can be used via the add_shape method
+  class DrawioExtensions
+    include DrawioDsl::DrawioExtensionsActive
 
     attr_reader :sections
     attr_reader :current_section

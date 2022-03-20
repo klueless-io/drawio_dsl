@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe DrawioDsl::DrawIoExtensions do
+RSpec.describe DrawioDsl::DrawioExtensions do
   let(:instance) { described_class.new }
 
   subject { instance }

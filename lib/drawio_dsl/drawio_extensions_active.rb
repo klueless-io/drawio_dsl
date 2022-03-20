@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DrawioDsl
-  module DrawIoExtensionsActive
+  module DrawioExtensionsActive
     def apply_active_flags
       sections.each do |section|
         section[:shapes].each do |shape|

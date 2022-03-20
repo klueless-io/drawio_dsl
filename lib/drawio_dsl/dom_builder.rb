@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DrawioDsl
-  # DrawioDsl is a DSL for draw-io diagrams.
+  # Build Document object model to represent DrawioDsl output file.
   class DomBuilder
     include DomBuilderShapes
 

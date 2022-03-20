@@ -4,7 +4,7 @@
 module DrawioDsl
   # HTML formatters can be used on shapes to render HTML using a DSL
   module Formatters
-    # Create an instance of a HTML formatter on the shape
+    # Base for any HTML formatter
     class BaseFormatter
       attr_reader :html
 

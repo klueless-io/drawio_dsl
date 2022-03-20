@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="kX5" name="Domain Modal">
+        <mxGraphModel dx="1201" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#fafafa" math="0" shadow="0">
+            <root>
+                <mxCell id="page_root_kX5"/>
+                <mxCell id="node_root_kX5" parent="page_root_kX5"/>
+                <mxCell id="kX5-2" value="Officer" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1" parent="node_root_kX5" vertex="1">
+                    <mxGeometry x="95" y="85" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="kX5-3" value="Vehicle operator" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1" parent="node_root_kX5" vertex="1">
+                    <mxGeometry x="315" y="85" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="kX5-4" value="&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px;text-align:center&quot;&gt;&lt;b&gt;Vehicle&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;make&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;model&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;type&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;registration_number&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;heavy_vehicle&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica" parent="node_root_kX5" vertex="1">
+                    <mxGeometry x="81" y="233" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="kX5-5" value="&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px;text-align:center&quot;&gt;&lt;b&gt;Chalk&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;date_time&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;vehicle&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;location_geo_long&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;location_geo_lat&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica" parent="node_root_kX5" vertex="1">
+                    <mxGeometry x="362" y="225" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="kX5-6" value="&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px;text-align:center&quot;&gt;&lt;b&gt;Pin&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;date_time&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;vehicle&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;location_address&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;location_geo_long&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;location_geo_lat&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;location_photo&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;photos&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;offense_chalk_time&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;offense_offence_limit_time&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-top:4px&quot;&gt;offense_pin_time&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica" parent="node_root_kX5" vertex="1">
+                    <mxGeometry x="910" y="30" width="160" height="215" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DrawioDsl
-  # DrawioDsl is a DSL for draw-io diagrams.
+  # Build the DrawioDsl XML file that is the basis of any draw-io diagrams.
   class XmlBuilder
     include KLog::Logging
 

@@ -5,7 +5,7 @@ KManager.action :transform_drawio_js do
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_10)
 
-      ext = DrawioDsl::DrawIoExtensions.new
+      ext = DrawioDsl::DrawioExtensions.new
       ext.build_extensions
       puts ext.sections.length
 

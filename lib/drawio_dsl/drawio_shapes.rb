@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 module DrawioDsl
-  # DrawioDsl::Shapes is a list of DSL methods (one per shape)
+  # List of DSL methods for each common shape
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(42)
+      case rand(43)
       when 0
         line(**opts)
       when 1
@@ -53,42 +53,44 @@ module DrawioDsl
       when 22
         database(**opts)
       when 23
-        diamond(**opts)
+        db_json(**opts)
       when 24
-        document(**opts)
+        diamond(**opts)
       when 25
-        ellipse(**opts)
+        document(**opts)
       when 26
-        hexagon(**opts)
+        ellipse(**opts)
       when 27
-        interface(**opts)
+        hexagon(**opts)
       when 28
-        klass(**opts)
+        interface(**opts)
       when 29
-        note(**opts)
+        klass(**opts)
       when 30
-        process(**opts)
+        note(**opts)
       when 31
-        rectangle(**opts)
+        process(**opts)
       when 32
-        rectangle2(**opts)
+        rectangle(**opts)
       when 33
-        square(**opts)
+        rectangle2(**opts)
       when 34
-        step(**opts)
+        square(**opts)
       when 35
-        tick(**opts)
+        step(**opts)
       when 36
-        todo(**opts)
+        tick(**opts)
       when 37
-        face(**opts)
+        todo(**opts)
       when 38
-        triangle(**opts)
+        face(**opts)
       when 39
-        embed_row(**opts)
+        triangle(**opts)
       when 40
-        embed_col50(**opts)
+        embed_row(**opts)
       when 41
+        embed_col50(**opts)
+      when 42
         embed_col200(**opts)
       end
     end
@@ -183,6 +185,10 @@ module DrawioDsl
 
     def database(id = nil, **opts, &block)
       builder.add_database(id, **opts, &block)
+    end
+
+    def db_json(id = nil, **opts, &block)
+      builder.add_db_json(id, **opts, &block)
     end
 
     def diamond(id = nil, **opts, &block)

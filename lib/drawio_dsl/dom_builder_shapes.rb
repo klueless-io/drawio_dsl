@@ -2,7 +2,7 @@
 
 # :nocov:
 module DrawioDsl
-  # DrawioDsl is a DSL for draw-io diagrams.
+  # Builder methods for each shape, line and text element to attach to DomBuilder.
   module DomBuilderShapes
     def add_line(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
@@ -140,6 +140,12 @@ module DrawioDsl
       opts = { id: id }.merge(opts) if id
       database = DrawioDsl::Schema::Database.new(current_page, **opts, &block)
       add_shape(database)
+    end
+
+    def add_db_json(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      db_json = DrawioDsl::Schema::DbJson.new(current_page, **opts, &block)
+      add_shape(db_json)
     end
 
     def add_diamond(id = nil, **opts, &block)

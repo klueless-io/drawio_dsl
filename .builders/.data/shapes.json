@@ -416,6 +416,15 @@
       "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
     },
     {
+      "type": "db_json",
+      "category": "element",
+      "x": 0,
+      "y": 0,
+      "w": 160,
+      "h": 40,
+      "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
+    },
+    {
       "type": "diamond",
       "category": "element",
       "x": 0,
