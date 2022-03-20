@@ -1,3 +1,10 @@
+## [0.8.5](https://github.com/klueless-io/drawio_dsl/compare/v0.8.4...v0.8.5) (2022-03-20)
+
+
+### Bug Fixes
+
+* build a domain (class) diagram ([673cbba](https://github.com/klueless-io/drawio_dsl/commit/673cbba2e84bac025f43b64f93547d1547dc6d63))
+
 ## [0.8.4](https://github.com/klueless-io/drawio_dsl/compare/v0.8.3...v0.8.4) (2022-03-17)
 
 
