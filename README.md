@@ -58,13 +58,6 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-```bash
-bin/console
-
-Aaa::Bbb::Program.execute()
-# => ""
-```
-
 `drawio_dsl` is setup with Guard, run `guard`, this will watch development file changes and run tests automatically, if successful, it will then run rubocop for style quality.
 
 To release a new version, update the version number in `version.rb`, build the gem and push the `.gem` file to [rubygems.org](https://rubygems.org).

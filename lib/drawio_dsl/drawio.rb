@@ -19,6 +19,7 @@ module DrawioDsl
 
       layout = DrawioDsl::LayoutEngine.new(builder.current_page)
       layout.call
+
       self
     end
 
@@ -35,6 +36,21 @@ module DrawioDsl
 
     def osave(file_name, **opts)
       save(file_name, **{ open: :write }.merge(opts))
+    end
+
+    def save_json(file_name, **opts)
+      return unless last_save_file_name
+      return unless File.exist?(last_save_file_name)
+
+      file_name = "#{file_name}.json" unless file_name.end_with?('.json')
+
+      add(file_name, content: JSON.pretty_generate(builder.dom), **opts)
+
+      self
+    end
+
+    def osave_json(file_name, **opts)
+      save_json(file_name, **{ open: :write }.merge(opts))
     end
 
     def export_svg(output_file_name, page: 1)
