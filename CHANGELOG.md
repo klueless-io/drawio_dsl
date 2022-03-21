@@ -1,3 +1,10 @@
+## [0.8.8](https://github.com/klueless-io/drawio_dsl/compare/v0.8.7...v0.8.8) (2022-03-21)
+
+
+### Bug Fixes
+
+* export_json will output a diagram in machine readable format ([43fa761](https://github.com/klueless-io/drawio_dsl/commit/43fa761aa5a36326eecf36de2687a29f41506f28))
+
 ## [0.8.7](https://github.com/klueless-io/drawio_dsl/compare/v0.8.6...v0.8.7) (2022-03-20)
 
 
