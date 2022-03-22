@@ -1,3 +1,10 @@
+## [0.8.9](https://github.com/klueless-io/drawio_dsl/compare/v0.8.8...v0.8.9) (2022-03-22)
+
+
+### Bug Fixes
+
+* configuration for line strokes, connector compass [direction, design, arrows, waypoints] ([f2cd8a7](https://github.com/klueless-io/drawio_dsl/commit/f2cd8a70904054909dcce10535dcab2d6013136d))
+
 ## [0.8.8](https://github.com/klueless-io/drawio_dsl/compare/v0.8.7...v0.8.8) (2022-03-21)
 
 
