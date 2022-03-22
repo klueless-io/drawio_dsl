@@ -10,15 +10,16 @@ m = KManager.model :shapes, namespace: %i[domain] do
 
 
   table :strokes do
-    fields [:name, :style]
+    fields %i[type style]
 
+    row :default              , 'dashed=1;fixDash=1'
     row :dashed               , 'dashed=1;fixDash=1'
     row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'
-    row :dashdot              , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
-    row :dashdotdot           , 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
-    row :dotdotdot            , 'dashed=1;fixDash=1;dashPattern=1 2'
-    row :longdash             , 'dashed=1;fixDash=1;dashPattern=16 6'
-    row :dashlongdash         , 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
+    row :dash_dot              , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
+    row :dash_dot_dot           , 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
+    row :dot_dot_dot            , 'dashed=1;fixDash=1;dashPattern=1 2'
+    row :long_dash             , 'dashed=1;fixDash=1;dashPattern=16 6'
+    row :dash_long_dash         , 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
     row :dashed24             , 'dashed=1;fixDash=1;dashPattern=3 8'
     row :dashed32             , 'dashed=1;fixDash=1;dashPattern=6 5'
     row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
@@ -165,8 +166,8 @@ m = KManager.model :shapes, namespace: %i[domain] do
     }
 
     k_builder
-      .cd(:data)
-      .add_file('shapes.json', content: JSON.pretty_generate(content), on_exist: :write)
+      .cd(:app)
+      .add_file('config/configuration.json', content: JSON.pretty_generate(content), on_exist: :write)
   end
 end
 

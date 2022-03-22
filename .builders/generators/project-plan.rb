@@ -11,13 +11,17 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
         
-        todo(title: 'improve coverage')
-        todo(title: 'class html builder to support include/extend modules, class methods')
+        todo(title: 'configuration for line strokes')
+        todo(title: 'configuration for connector compass direction')
+        todo(title: 'configuration for connector design')
+        todo(title: 'configuration for connector arrows')
+        todo(title: 'configuration for connector waypoints')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
         todo(title: 'line connectors should not effect the grid positioning systems')
-        todo(title: 'export diagram json for use with a different DSL builder')
+        todo(title: 'improve coverage')
+        todo(title: 'class html builder to support include/extend modules, class methods')
       end
       .page('To Do', theme: :style_02, margin_left: 0, margin_top: 0) do
 

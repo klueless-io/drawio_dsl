@@ -1,43 +1,47 @@
 {
   "strokes": [
     {
-      "name": "dashed",
+      "type": "default",
       "style": "dashed=1;fixDash=1"
     },
     {
-      "name": "dotted",
+      "type": "dashed",
+      "style": "dashed=1;fixDash=1"
+    },
+    {
+      "type": "dotted",
       "style": "dashed=1;fixDash=1;dashPattern=1 4"
     },
     {
-      "name": "dashdot",
+      "type": "dash_dot",
       "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5"
     },
     {
-      "name": "dashdotdot",
+      "type": "dash_dot_dot",
       "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5"
     },
     {
-      "name": "dotdotdot",
+      "type": "dot_dot_dot",
       "style": "dashed=1;fixDash=1;dashPattern=1 2"
     },
     {
-      "name": "longdash",
+      "type": "long_dash",
       "style": "dashed=1;fixDash=1;dashPattern=16 6"
     },
     {
-      "name": "dashlongdash",
+      "type": "dash_long_dash",
       "style": "dashed=1;fixDash=1;dashPattern=10 6 16 6"
     },
     {
-      "name": "dashed24",
+      "type": "dashed24",
       "style": "dashed=1;fixDash=1;dashPattern=3 8"
     },
     {
-      "name": "dashed32",
+      "type": "dashed32",
       "style": "dashed=1;fixDash=1;dashPattern=6 5"
     },
     {
-      "name": "dashed44",
+      "type": "dashed44",
       "style": "dashed=1;fixDash=1;dashPattern=8 8"
     }
   ],

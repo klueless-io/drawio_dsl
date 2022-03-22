@@ -28,6 +28,8 @@ module DrawioDsl
   # raise DrawioDsl::Error, 'Sample message'
   Error = Class.new(StandardError)
 
+  ROOT_PATH = File.expand_path("../..", __FILE__)
+
   # Your code goes here...
 end
 

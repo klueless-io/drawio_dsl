@@ -30,7 +30,7 @@ KManager.action :parking_app do
 
         # What is wrong with the current apps?
         #
-        # When I book a car, I say it is outside of house #5,  Bondi road.
+        # When I book a car, I say it is outside of house #5, Bondi road.
 
         # What can be improved?
         #

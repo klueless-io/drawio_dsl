@@ -12,6 +12,12 @@ RSpec.describe DrawioDsl::Configuration do
       it { is_expected.to have_attributes(white_space: :wrap, html: 1) }
     end
 
+    describe '.internal_config' do
+      subject { instance.internal_config }
+
+      fit { is_expected.to be_a(Hash) }
+    end
+
     describe '#shapes' do
       subject { instance.shapes }
 
