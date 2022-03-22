@@ -10,6 +10,9 @@ module DrawioDsl
     include KLog::Logging
 
     BaseStyle = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
+    Element = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    Line = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    Text = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
 
     attr_accessor :base_style
 
@@ -44,6 +47,29 @@ module DrawioDsl
 
       @strokes
     end
+
+    def element(type)
+      elements[type] || ''
+    end
+
+    def elements
+      return @elements if defined? @elements
+
+      @elements = {}
+      source_config['shapes'].select { |shape| shape['category'] == 'element' }.each do |element|
+        @elements[element['type'].to_sym] = Element.new(
+          type: element['type'].to_sym,
+          x: element['x'].to_i,
+          y: element['y'].to_i,
+          w: element['w'].to_i,
+          h: element['h'].to_i,
+          style_modifiers: element['style_modifiers']
+        )
+      end
+
+      @elements
+    end
+
 
     def connector
       @connector ||= Connector.new(source_config['connector'])

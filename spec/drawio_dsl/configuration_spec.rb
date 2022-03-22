@@ -37,6 +37,43 @@ RSpec.describe DrawioDsl::Configuration do
       end
     end
 
+    describe '.elements' do
+      subject { instance.elements }
+
+      it { is_expected.to be_a(Hash) }
+
+      describe '#element' do
+        context 'when element is defined' do
+          subject { instance.element(:actor) }
+          # {
+          #   "type": "actor",
+          #   "category": "element",
+          #   "x": 0,
+          #   "y": 0,
+          #   "w": 40,
+          #   "h": 50,
+          #   "style_modifiers": "shape=actor"
+          # }
+
+          fit do
+            is_expected.to have_attributes(
+              type: :actor,
+              x: 0,
+              y: 0,
+              w: 40,
+              h: 50,
+              style_modifiers: 'shape=actor'
+            )
+          end
+        end
+        context 'when element is not defined' do
+          subject { instance.element(:unknown) }
+
+          it { is_expected.to be_empty }
+        end
+      end
+    end
+
     describe '.connector' do
       subject { instance.connector }
 

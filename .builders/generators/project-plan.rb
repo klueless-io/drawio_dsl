@@ -11,6 +11,12 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'configuration for lines')
+        todo(title: 'configuration for text')
+        todo(title: 'refactor shapes configuration so that it reads from custom file')
+
+        todo(title: 'fix :text')
+        todo(title: 'add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
@@ -32,7 +38,6 @@ KManager.action :project_plan do
         todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
         todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
-        todo(title: 'add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered')
         todo(title: 'Nodes need to support child nodes')
         todo(title: 'Grid layout does not position itself in relation to the last element')
         todo(title: 'Dynamic sized shapes that expand to the size of their text')
@@ -48,6 +53,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'configuration for elements')
         todo(title: 'configuration for line strokes')
         todo(title: 'configuration for connector compass direction')
         todo(title: 'configuration for connector design')
