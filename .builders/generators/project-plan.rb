@@ -10,12 +10,7 @@ KManager.action :project_plan do
         # p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan - In progress')
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
-        
-        todo(title: 'configuration for line strokes')
-        todo(title: 'configuration for connector compass direction')
-        todo(title: 'configuration for connector design')
-        todo(title: 'configuration for connector arrows')
-        todo(title: 'configuration for connector waypoints')
+
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
@@ -52,6 +47,11 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'configuration for line strokes')
+        todo(title: 'configuration for connector compass direction')
+        todo(title: 'configuration for connector design')
+        todo(title: 'configuration for connector arrows')
+        todo(title: 'configuration for connector waypoints')
         todo(title: 'export_json will output a diagram in machine readable format')
         todo(title: 'class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder')
         todo(title: 'group box, like a regular box but with a top aligned h1 style title')

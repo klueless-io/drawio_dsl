@@ -12,7 +12,6 @@ m = KManager.model :shapes, namespace: %i[domain] do
   table :strokes do
     fields %i[type style]
 
-    row :default              , 'dashed=1;fixDash=1'
     row :dashed               , 'dashed=1;fixDash=1'
     row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'
     row :dash_dot              , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
@@ -25,8 +24,8 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
   end
 
-  table :connector_compass do
-    fields %i[name x y]
+  table :connector_compass_points do
+    fields %i[type x y]
 
     row :n  , x: 0.5 , y: 0       # 'exitX=0.5;exitY=0;exitDx=0;exitDy=0'  'entryX=0.5;entryY=0;entryDx=0;entryDy=0'
     row :ne , x: 1   , y: 0       # 'exitX=1;exitY=0;exitDx=0;exitDy=0'    'entryX=1;entryY=0;entryDx=0;entryDy=0'
@@ -38,8 +37,8 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :nw , x: 0   , y: 0       # 'exitX=0;exitY=0;exitDx=0;exitDy=0'    'entryX=0;entryY=0;entryDx=0;entryDy=0'
   end
 
-  table :connector_design do
-    fields [:name, :style]
+  table :connector_designs do
+    fields [:type, :style]
 
     row :style1, ''
     row :style2, 'shape=link'
@@ -48,7 +47,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_arrows do
-    fields [:name, :style]
+    fields [:type, :style]
 
     row :simple                     , 'open'
     row :triangle                   , 'block'
@@ -70,7 +69,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_waypoints do # aka edgeStyle
-    fields [:name, :style]
+    fields [:type, :style]
 
     row :straight                 , 'edgeStyle=none'
     row :orthogonal               , 'edgeStyle=orthogonalEdgeStyle'
@@ -157,10 +156,10 @@ m = KManager.model :shapes, namespace: %i[domain] do
     content = {
       strokes: data['strokes'],
       connector: {
-        compass: data['connector_compass'],
+        compass_points: data['connector_compass_points'],
         waypoints: data['connector_waypoints'],
         arrows: data['connector_arrows'],
-        design: data['connector_design']
+        designs: data['connector_designs']
       },
       shapes: data['shapes'],
     }

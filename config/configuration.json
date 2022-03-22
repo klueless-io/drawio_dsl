@@ -1,10 +1,6 @@
 {
   "strokes": [
     {
-      "type": "default",
-      "style": "dashed=1;fixDash=1"
-    },
-    {
       "type": "dashed",
       "style": "dashed=1;fixDash=1"
     },
@@ -46,167 +42,167 @@
     }
   ],
   "connector": {
-    "compass": [
+    "compass_points": [
       {
-        "name": "n",
+        "type": "n",
         "x": 0.5,
         "y": 0
       },
       {
-        "name": "ne",
+        "type": "ne",
         "x": 1,
         "y": 0
       },
       {
-        "name": "e",
+        "type": "e",
         "x": 1,
         "y": 0.5
       },
       {
-        "name": "se",
+        "type": "se",
         "x": 1,
         "y": 1
       },
       {
-        "name": "s",
+        "type": "s",
         "x": 0.5,
         "y": 1
       },
       {
-        "name": "sw",
+        "type": "sw",
         "x": 0,
         "y": 1
       },
       {
-        "name": "w",
+        "type": "w",
         "x": 0,
         "y": 0.5
       },
       {
-        "name": "nw",
+        "type": "nw",
         "x": 0,
         "y": 0
       }
     ],
     "waypoints": [
       {
-        "name": "straight",
+        "type": "straight",
         "style": "edgeStyle=none"
       },
       {
-        "name": "orthogonal",
+        "type": "orthogonal",
         "style": "edgeStyle=orthogonalEdgeStyle"
       },
       {
-        "name": "elbow",
+        "type": "elbow",
         "style": "edgeStyle=elbowEdgeStyle"
       },
       {
-        "name": "elbow_vertical",
+        "type": "elbow_vertical",
         "style": "edgeStyle=elbowEdgeStyle;elbow=vertical"
       },
       {
-        "name": "isometric",
+        "type": "isometric",
         "style": "edgeStyle=isometricEdgeStyle"
       },
       {
-        "name": "isometric_vertical",
+        "type": "isometric_vertical",
         "style": "edgeStyle=isometricEdgeStyle;elbow=vertical"
       },
       {
-        "name": "orthogonal_curved",
+        "type": "orthogonal_curved",
         "style": "edgeStyle=orthogonalEdgeStyle;curved=1"
       },
       {
-        "name": "entity_relation",
+        "type": "entity_relation",
         "style": "edgeStyle=entityRelationEdgeStyle"
       }
     ],
     "arrows": [
       {
-        "name": "simple",
+        "type": "simple",
         "style": "open"
       },
       {
-        "name": "triangle",
+        "type": "triangle",
         "style": "block"
       },
       {
-        "name": "diamond",
+        "type": "diamond",
         "style": "diamond"
       },
       {
-        "name": "circle",
+        "type": "circle",
         "style": "oval"
       },
       {
-        "name": "cross",
+        "type": "cross",
         "style": "cross"
       },
       {
-        "name": "short",
+        "type": "short",
         "style": "classicThin"
       },
       {
-        "name": "default",
+        "type": "default",
         "style": "classic"
       },
       {
-        "name": "none",
+        "type": "none",
         "style": "none"
       },
       {
-        "name": "plain",
+        "type": "plain",
         "style": "open"
       },
       {
-        "name": "skewed_dash",
+        "type": "skewed_dash",
         "style": "dash"
       },
       {
-        "name": "concave",
+        "type": "concave",
         "style": "openThin"
       },
       {
-        "name": "er_many",
+        "type": "er_many",
         "style": "ERmany"
       },
       {
-        "name": "er_one",
+        "type": "er_one",
         "style": "ERone"
       },
       {
-        "name": "er_one_optional",
+        "type": "er_one_optional",
         "style": "ERzeroToOne"
       },
       {
-        "name": "er_one_mandatory",
+        "type": "er_one_mandatory",
         "style": "ERmandOne"
       },
       {
-        "name": "er_many_optional",
+        "type": "er_many_optional",
         "style": "ERzeroToMany"
       },
       {
-        "name": "er_many_mandatory",
+        "type": "er_many_mandatory",
         "style": "ERoneToMany"
       }
     ],
-    "design": [
+    "designs": [
       {
-        "name": "style1",
+        "type": "style1",
         "style": ""
       },
       {
-        "name": "style2",
+        "type": "style2",
         "style": "shape=link"
       },
       {
-        "name": "style3",
+        "type": "style3",
         "style": "shape=flexArrow"
       },
       {
-        "name": "style4",
+        "type": "style4",
         "style": "shape=arrow"
       }
     ]

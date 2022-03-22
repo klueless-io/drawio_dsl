@@ -12,10 +12,93 @@ RSpec.describe DrawioDsl::Configuration do
       it { is_expected.to have_attributes(white_space: :wrap, html: 1) }
     end
 
-    describe '.internal_config' do
-      subject { instance.internal_config }
+    describe '.source_config' do
+      subject { instance.source_config }
 
-      fit { is_expected.to be_a(Hash) }
+      it { is_expected.to be_a(Hash) }
+    end
+
+    describe '.strokes' do
+      subject { instance.strokes }
+
+      it { is_expected.to be_a(Hash) }
+
+      describe '#stroke' do
+        context 'when stroke is defined' do
+          subject { instance.stroke(:dashed) }
+
+          it { is_expected.to eq('dashed=1;fixDash=1') }
+        end
+        context 'when stroke is not defined' do
+          subject { instance.stroke(:unknown) }
+
+          it { is_expected.to be_empty }
+        end
+      end
+    end
+
+    describe '.connector' do
+      subject { instance.connector }
+
+      it { is_expected.to be_a(DrawioDsl::Configuration::Connector) }
+
+      describe '.source_config' do
+        subject { instance.connector.source_config }
+
+        it { is_expected.to be_a(Hash) }
+
+        describe '#compass_point' do
+          context 'when compass_point is defined' do
+            subject { instance.connector.compass_point(:e) }
+
+            it { is_expected.to have_attributes(x: 1, y: 0.5) }
+          end
+          context 'when compass_point is not defined' do
+            subject { instance.connector.compass_point(:unknown) }
+
+            it { is_expected.to have_attributes(x: 0, y: 0) }
+          end
+        end
+
+        describe '#waypoint' do
+          context 'when waypoint is defined' do
+            subject { instance.connector.waypoint(:straight) }
+
+            it { is_expected.to eq('edgeStyle=none') }
+          end
+          context 'when waypoint is not defined' do
+            subject { instance.connector.waypoint(:unknown) }
+
+            it { is_expected.to be_empty }
+          end
+        end
+
+        describe '#arrow' do
+          context 'when arrow is defined' do
+            subject { instance.connector.arrow(:triangle) }
+
+            it { is_expected.to eq('block') }
+          end
+          context 'when arrow is not defined' do
+            subject { instance.connector.arrow(:unknown) }
+
+            it { is_expected.to eq('open') }
+          end
+        end
+
+        describe '#design' do
+          context 'when design is defined' do
+            subject { instance.connector.design(:style2) }
+
+            it { is_expected.to eq('shape=link') }
+          end
+          context 'when design is not defined' do
+            subject { instance.connector.design(:unknown) }
+
+            it { is_expected.to be_empty }
+          end
+        end
+      end
     end
 
     describe '#shapes' do
