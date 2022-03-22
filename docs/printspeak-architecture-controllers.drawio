@@ -1,0 +1,48 @@
+<mxfile host="65bd71144e">
+    <diagram id="lIO" name="Fat Controllers">
+        <mxGraphModel dx="932" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#fafafa" math="0" shadow="0">
+            <root>
+                <mxCell id="page_root_lIO"/>
+                <mxCell id="node_root_lIO" parent="page_root_lIO"/>
+                <mxCell id="lIO-2" value="&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px;text-align:center&quot;&gt;&lt;b&gt;Reports#sales_by_profit&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;h3 style=&quot;margin:0px;margin-left:4px;margin-bottom:6.912px&quot;&gt;Thin Controller&lt;/h3&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Param marshalling&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;my_action_params()&lt;/p&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Call query&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;MyActionQuery.query(scope, **inputs)&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Present&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;@vm = MyActionPresenter.new(**outputs)&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica" parent="node_root_lIO" vertex="1">
+                    <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="lIO-3" value="&lt;b&gt;Param marshaling&lt;/b&gt;&lt;br&gt;&lt;br&gt;@sales_by_profit_params ||= &lt;br&gt;params.permit(...)&lt;br&gt;&amp;nbsp;&amp;nbsp;.symbolize_keys" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_lIO" vertex="1">
+                    <mxGeometry x="230" y="50" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="lIO-4" value="&lt;b&gt;Call Query&lt;/b&gt;&lt;br&gt;&lt;br&gt;SalesByProfitQuery&lt;br&gt;&amp;nbsp;&amp;nbsp;.query(scope, **custom, **params)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_lIO" vertex="1">
+                    <mxGeometry x="450" y="50" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="lIO-5" value="&lt;b&gt;Present&lt;/b&gt;&lt;br&gt;&lt;br&gt;SalesByProfitPresenter&lt;br&gt;&amp;nbsp;&amp;nbsp;.new(**query.outputs)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_lIO" vertex="1">
+                    <mxGeometry x="670" y="50" width="200" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="nmw" name="Fat Controllers">
+        <mxGraphModel dx="932" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#fafafa" math="0" shadow="0">
+            <root>
+                <mxCell id="page_root_nmw"/>
+                <mxCell id="node_root_nmw" parent="page_root_nmw"/>
+                <mxCell id="nmw-2" value="&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px;text-align:center&quot;&gt;&lt;b&gt;Reports#sales_by_profit&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;h3 style=&quot;margin:0px;margin-left:4px;margin-bottom:6.912px&quot;&gt;Fat Controller&lt;/h3&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Param marshalling&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:date_from]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:date_to]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:sort] || &quot;gross_sales&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:direction] || &quot;desc&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:filter_str]&lt;/p&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Dynamic query construction&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;switch params[:filter_str]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;invoice_date_query&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;ugly query&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Query in controller&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;ActiveRecord::Base.connection.execute(query)&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Build outputs&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;@net_sales_total&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;@vat_total&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;@gross_sales_total&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;@document_data&lt;/p&gt;&lt;h5 style=&quot;margin:0px;margin-left:4px;margin-bottom:4.8px&quot;&gt;Composite outputs&lt;/h5&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:sort]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;margin-bottom:4px&quot;&gt;params[:direction]&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica" parent="node_root_nmw" vertex="1">
+                    <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmw-3" value="&lt;b&gt;Paramater marshalling&lt;/b&gt;&lt;br&gt;&lt;br&gt;reading the params[] object&lt;br&gt;setting sane defaults&lt;br&gt;&lt;i&gt;do not alter and reuse params[]&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_nmw" vertex="1">
+                    <mxGeometry x="230" y="50" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmw-4" value="&lt;b&gt;Dynamic query construction&lt;/b&gt;&lt;br&gt;&lt;br&gt;query = &quot;select ...&quot;&lt;br&gt;&lt;i&gt;ActiveRelation vs interpolation&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_nmw" vertex="1">
+                    <mxGeometry x="450" y="50" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmw-5" value="&lt;b&gt;Query in controller&lt;/b&gt;&lt;br&gt;&lt;i&gt;Move out to Query object&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_nmw" vertex="1">
+                    <mxGeometry x="670" y="50" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmw-6" value="&lt;b&gt;Build outputs&lt;/b&gt;&lt;br&gt;Multiple @instance vars&lt;br&gt;&lt;i&gt;single view model @vm&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_nmw" vertex="1">
+                    <mxGeometry x="10" y="270" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmw-7" value="&lt;b&gt;Composite outputs&lt;/b&gt;&lt;br&gt;sort, direction, page_no, page_size&lt;br&gt;&lt;i&gt;single order, page or list object&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" parent="node_root_nmw" vertex="1">
+                    <mxGeometry x="230" y="270" width="200" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

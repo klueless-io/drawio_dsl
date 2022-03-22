@@ -6,7 +6,7 @@ KManager.action :project_plan do
       .diagram(rounded: 1, glass: 1)
       .page('In progress', theme: :style_03, margin_left: 0, margin_top: 0) do
 
-        # h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
+        h5(x: 300, y: 0, w: 400, h: 80, title: 'DrawIO DSL')
         # p(x: 350, y: 40, w: 400, h: 80, title: 'Project plan - In progress')
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
@@ -15,6 +15,7 @@ KManager.action :project_plan do
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
         todo(title: 'line connectors should not effect the grid positioning systems')
+        todo(title: 'headings do not appear to be working?')
         todo(title: 'improve coverage')
         todo(title: 'class html builder to support include/extend modules, class methods')
       end

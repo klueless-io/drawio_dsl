@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="9JO" name="Domain Modal">
-        <mxGraphModel dx="1347" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1172" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="page_root_9JO"/>
                 <mxCell id="node_root_9JO" parent="page_root_9JO"/>
@@ -330,7 +330,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="1" value="" style="group" vertex="1" connectable="0" parent="node_root_9JO">
-                    <mxGeometry x="35" y="28" width="569" height="347" as="geometry"/>
+                    <mxGeometry x="35" y="35" width="569" height="347" as="geometry"/>
                 </mxCell>
                 <mxCell id="p1n56-78arLZspwxZ9LU-1" value="Configuration" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;verticalAlign=top;fontSize=20;" parent="1" vertex="1">
                     <mxGeometry width="569" height="347" as="geometry"/>
