@@ -1,3 +1,15 @@
+# [0.9.0](https://github.com/klueless-io/drawio_dsl/compare/v0.8.11...v0.9.0) (2022-03-23)
+
+
+### Bug Fixes
+
+* broken spec ([f15b77f](https://github.com/klueless-io/drawio_dsl/commit/f15b77fb1ee40a944ad9372035f6b3d870d727a2))
+
+
+### Features
+
+* refactor shapes configuration so that it reads from custom file ([59eb6e7](https://github.com/klueless-io/drawio_dsl/commit/59eb6e729e1853fc7018ae16e8ad6a079a488eeb))
+
 ## [0.8.11](https://github.com/klueless-io/drawio_dsl/compare/v0.8.10...v0.8.11) (2022-03-23)
 
 
