@@ -7,6 +7,13 @@ require 'k_config'
 require 'k_log'
 require 'k_director'
 
+module DrawioDsl
+  # raise DrawioDsl::Error, 'Sample message'
+  Error = Class.new(StandardError)
+
+  ROOT_PATH = File.expand_path('..', __dir__)
+end
+
 require_relative 'drawio_dsl/configuration_extension'
 require_relative 'drawio_dsl/configuration_shapes'
 require_relative 'drawio_dsl/configuration_themes'
@@ -23,15 +30,6 @@ require_relative 'drawio_dsl/drawio_extensions_active'
 require_relative 'drawio_dsl/drawio_extensions'
 require_relative 'drawio_dsl/drawio_page'
 require_relative 'drawio_dsl/drawio'
-
-module DrawioDsl
-  # raise DrawioDsl::Error, 'Sample message'
-  Error = Class.new(StandardError)
-
-  ROOT_PATH = File.expand_path('..', __dir__)
-
-  # Your code goes here...
-end
 
 if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
   namespace = 'DrawioDsl::Version'

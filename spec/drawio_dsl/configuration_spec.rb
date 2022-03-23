@@ -60,7 +60,7 @@ RSpec.describe DrawioDsl::Configuration do
         context 'when element is not defined' do
           subject { instance.element(:unknown) }
 
-          it { is_expected.to be_empty }
+          it { is_expected.to be_nil }
         end
       end
     end
@@ -71,12 +71,12 @@ RSpec.describe DrawioDsl::Configuration do
       it { is_expected.to be_a(Hash) }
 
       describe '#line' do
-        context 'when line is defined' do
-          subject { instance.line(:line) }
+        context 'when solid is defined' do
+          subject { instance.line(:solid) }
 
           it do
             is_expected.to have_attributes(
-              type: :line,
+              type: :solid,
               x: 0,
               y: 0,
               w: 50,
@@ -88,7 +88,7 @@ RSpec.describe DrawioDsl::Configuration do
         context 'when line is not defined' do
           subject { instance.line(:unknown) }
 
-          it { is_expected.to be_empty }
+          it { is_expected.to be_nil }
         end
       end
     end
@@ -116,7 +116,7 @@ RSpec.describe DrawioDsl::Configuration do
         context 'when text is not defined' do
           subject { instance.text(:unknown) }
 
-          it { is_expected.to be_empty }
+          it { is_expected.to be_nil }
         end
       end
     end
@@ -207,7 +207,7 @@ RSpec.describe DrawioDsl::Configuration do
       describe '.themes' do
         subject { instance.themes[:style_01] }
 
-        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#333333', gradient: be_nil) }
+        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', element_font_color: '#333333', text_font_color: '#aaaaaa', gradient: be_nil) }
       end
 
       describe '.random_theme' do
@@ -219,7 +219,7 @@ RSpec.describe DrawioDsl::Configuration do
       describe '#palette' do
         subject { instance.palette(:style_01) }
 
-        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#333333', gradient: be_nil) }
+        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', element_font_color: '#333333', text_font_color: '#aaaaaa', gradient: be_nil) }
       end
     end
   end

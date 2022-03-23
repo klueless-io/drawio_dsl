@@ -7,7 +7,7 @@ module DrawioDsl
     def random(**opts)
       case rand(44)
       when 0
-        line(**opts)
+        solid(**opts)
       when 1
         h1(**opts)
       when 2
@@ -97,8 +97,8 @@ module DrawioDsl
       end
     end
 
-    def line(id = nil, **opts, &block)
-      builder.add_line(id, **opts, &block)
+    def solid(id = nil, **opts, &block)
+      builder.add_solid(id, **opts, &block)
     end
 
     def h1(id = nil, **opts, &block)

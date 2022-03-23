@@ -10,9 +10,9 @@ module DrawioDsl
     include KLog::Logging
 
     BaseStyle = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
-    Element = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-    Line = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-    Text = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    ElementConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    LineConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    TextConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
 
     attr_accessor :base_style
 
@@ -48,8 +48,20 @@ module DrawioDsl
       @strokes
     end
 
+    # need test
+    def get_item_by_category(type, category)
+      case category
+      when :text
+        text(type)
+      when :line
+        line(type)
+      else
+        element(type)
+      end
+    end
+
     def element(type)
-      elements[type] || ''
+      elements[type]
     end
 
     def elements
@@ -57,7 +69,7 @@ module DrawioDsl
 
       @elements = {}
       source_config['shapes'].select { |shape| shape['category'] == 'element' }.each do |element|
-        @elements[element['type'].to_sym] = Element.new(
+        @elements[element['type'].to_sym] = ElementConfig.new(
           type: element['type'].to_sym,
           x: element['x'].to_i,
           y: element['y'].to_i,
@@ -71,7 +83,7 @@ module DrawioDsl
     end
 
     def line(type)
-      lines[type] || ''
+      lines[type]
     end
 
     def lines
@@ -79,7 +91,7 @@ module DrawioDsl
 
       @lines = {}
       source_config['shapes'].select { |shape| shape['category'] == 'line' }.each do |line|
-        @lines[line['type'].to_sym] = Line.new(
+        @lines[line['type'].to_sym] = LineConfig.new(
           type: line['type'].to_sym,
           x: line['x'].to_i,
           y: line['y'].to_i,
@@ -93,7 +105,7 @@ module DrawioDsl
     end
 
     def text(type)
-      texts[type] || ''
+      texts[type]
     end
 
     def texts
@@ -101,7 +113,7 @@ module DrawioDsl
 
       @texts = {}
       source_config['shapes'].select { |shape| shape['category'] == 'text' }.each do |text|
-        @texts[text['type'].to_sym] = Text.new(
+        @texts[text['type'].to_sym] = TextConfig.new(
           type: text['type'].to_sym,
           x: text['x'].to_i,
           y: text['y'].to_i,

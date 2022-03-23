@@ -74,7 +74,7 @@ RSpec.describe DrawioDsl::Schema::Node do
   context 'when node hierarchy' do
     let(:add_child_to_parent) { parent_node.add_node(child_node) }
     let(:parent_node) { DrawioDsl::Schema::Anchor.new(page, id: 'page_node') }
-    let(:child_node) { DrawioDsl::Schema::Shape.new(page, id: 'shape_id') }
+    let(:child_node) { DrawioDsl::Schema::Square.new(page, id: 'shape_id') }
 
     context 'from parent point of view' do
       subject { parent_node }

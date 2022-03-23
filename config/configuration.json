@@ -209,7 +209,7 @@
   },
   "shapes": [
     {
-      "type": "line",
+      "type": "solid",
       "category": "line",
       "x": 0,
       "y": 0,
@@ -224,7 +224,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none"
     },
     {
       "type": "h2",
@@ -233,7 +233,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none"
     },
     {
       "type": "h3",
@@ -242,7 +242,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none"
     },
     {
       "type": "h4",
@@ -251,7 +251,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=37;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none"
     },
     {
       "type": "h5",
@@ -260,7 +260,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=28;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none"
     },
     {
       "type": "h6",
@@ -269,7 +269,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=21;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none"
     },
     {
       "type": "p",
@@ -278,7 +278,7 @@
       "y": 0,
       "w": 100,
       "h": 50,
-      "style_modifiers": "text;fontSize=16;fontColor=#ffffff;fontStyle=1;fillColor=none"
+      "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none"
     },
     {
       "type": "actor",

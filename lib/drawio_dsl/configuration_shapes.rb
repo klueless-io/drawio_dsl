@@ -8,7 +8,7 @@ module DrawioDsl
     ShapeDefaults = Struct.new(:type, :category, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
     Shapes = Struct.new(
       :shape,
-      :line,
+      :solid,
       :h1,
       :h2,
       :h3,
@@ -58,7 +58,7 @@ module DrawioDsl
     def add_shapes
       @shapes = Shapes.new(
         shape: ShapeDefaults.new(type: :shape, category: :element, x: 0, y: 0, w: 20, h: 20, style_modifiers: ''),
-        line: ShapeDefaults.new(type: :line, x: 0, category: :line, y: 0, w: 50, h: 50, style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'),
+        solid: ShapeDefaults.new(type: :solid, x: 0, category: :line, y: 0, w: 50, h: 50, style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'),
         h1: ShapeDefaults.new(type: :h1, x: 0, category: :text, y: 0, w: 100, h: 50, style_modifiers: 'text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none'),
         h2: ShapeDefaults.new(type: :h2, x: 0, category: :text, y: 0, w: 100, h: 50, style_modifiers: 'text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none'),
         h3: ShapeDefaults.new(type: :h3, x: 0, category: :text, y: 0, w: 100, h: 50, style_modifiers: 'text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none'),

@@ -4,10 +4,10 @@
 module DrawioDsl
   # DrawioDsl is a DSL for draw-io diagrams.
   module DomBuilderShapes
-    def add_line(id = nil, **opts, &block)
+    def add_solid(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
-      line = DrawioDsl::Schema::Line.new(current_page, **opts, &block)
-      add_shape(line)
+      solid = DrawioDsl::Schema::Solid.new(current_page, **opts, &block)
+      add_shape(solid)
     end
 
     def add_h1(id = nil, **opts, &block)

@@ -26,7 +26,7 @@ KManager.action :bootstrap do
         circle(title: '07')
       end
       .cd(:spec)
-      .save('.samples/15-grid-direction.drawio')
+      .osave('.samples/15-grid-direction.drawio')
       .cd(:docs)
       .export_svg('samples/grid-direction-horizontal', page: 1)
       .export_svg('samples/grid-direction-vertical', page: 2)

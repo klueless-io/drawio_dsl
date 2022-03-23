@@ -87,7 +87,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
     # shape is a custom object
     # row :shape      , 0, 0,  20,  20, ''
 
-    row :line                 , :line   , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+    row :solid                , :line   , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
     # row :line                 , :line   , 0, 0,  50,  50, 'edgeStyle=entityRelationEdgeStyle;strokeWidth=1;elbow=vertical;startArrow=none;startFill=0;endArrow=block;endFill=0;targetPerimeterSpacing=0;shape=flexArrow;endSize=6;fillStyle=zigzag;'
     # row :dashed               , 'dashed=1;fixDash=1'
     # row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'
@@ -102,13 +102,13 @@ m = KManager.model :shapes, namespace: %i[domain] do
     # edge="1" parent="node_root_2T8" source="b" target="c"
 
     # configuration for general purpose shapes
-    row :h1                   , :text   , 0, 0, 100,  50, 'text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none'
-    row :h2                   , :text   , 0, 0, 100,  50, 'text;fontSize=67;fontColor=#ffffff;fontStyle=1;fillColor=none'
-    row :h3                   , :text   , 0, 0, 100,  50, 'text;fontSize=50;fontColor=#ffffff;fontStyle=1;fillColor=none'
-    row :h4                   , :text   , 0, 0, 100,  50, 'text;fontSize=37;fontColor=#ffffff;fontStyle=1;fillColor=none'
-    row :h5                   , :text   , 0, 0, 100,  50, 'text;fontSize=28;fontColor=#ffffff;fontStyle=1;fillColor=none'
-    row :h6                   , :text   , 0, 0, 100,  50, 'text;fontSize=21;fontColor=#ffffff;fontStyle=1;fillColor=none'
-    row :p                    , :text   , 0, 0, 100,  50, 'text;fontSize=16;fontColor=#ffffff;fontStyle=1;fillColor=none'
+    row :h1                   , :text   , 0, 0, 100,  50, 'text;fontSize=89;fontStyle=1;fillColor=none'
+    row :h2                   , :text   , 0, 0, 100,  50, 'text;fontSize=67;fontStyle=1;fillColor=none'
+    row :h3                   , :text   , 0, 0, 100,  50, 'text;fontSize=50;fontStyle=1;fillColor=none'
+    row :h4                   , :text   , 0, 0, 100,  50, 'text;fontSize=37;fontStyle=1;fillColor=none'
+    row :h5                   , :text   , 0, 0, 100,  50, 'text;fontSize=28;fontStyle=1;fillColor=none'
+    row :h6                   , :text   , 0, 0, 100,  50, 'text;fontSize=21;fontStyle=1;fillColor=none'
+    row :p                    , :text   , 0, 0, 100,  50, 'text;fontSize=16;fontStyle=1;fillColor=none'
 
     row :actor                , :element, 0, 0,  40,  50, 'shape=actor'
     row :actor2               , :element, 0, 0,  30,  50, 'shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1'

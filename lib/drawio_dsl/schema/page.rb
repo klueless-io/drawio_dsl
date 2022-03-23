@@ -79,13 +79,11 @@ module DrawioDsl
         end
 
         @palette = DrawioDsl::Schema::DefaultPalette.new(self, **args) do |page|
-          theme_palette = KConfig.configuration.drawio.palette(page.theme)
-
           # Inherit from theme when specific palette options are not specified.
-          @fill_color   ||= theme_palette.fill_color
-          @stroke_color ||= theme_palette.stroke_color
-          @font_color   ||= theme_palette.font_color
-          @gradient     ||= theme_palette.gradient
+          @fill_color   ||= page.theme_palette.fill_color
+          @stroke_color ||= page.theme_palette.stroke_color
+          @font_color   ||= page.theme_palette.element_font_color
+          @gradient     ||= page.theme_palette.gradient
         end
 
         @nodes = NodeList.new # []
@@ -99,6 +97,10 @@ module DrawioDsl
       def add_node(node)
         @nodes.add(self, node)
         node
+      end
+
+      def theme_palette
+        @theme_palette ||= KConfig.configuration.drawio.palette(theme)
       end
 
       def as_xml(xml)

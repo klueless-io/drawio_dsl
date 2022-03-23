@@ -18,7 +18,7 @@ RSpec.describe DrawioDsl::ConfigurationThemes do
       context 'check one of the themes' do
         subject { instance.themes[:style_01] }
 
-        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#333333', gradient: be_nil) }
+        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', gradient: be_nil, element_font_color: '#333333', text_font_color: '#aaaaaa') }
       end
     end
   end

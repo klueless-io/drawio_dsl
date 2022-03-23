@@ -48,7 +48,7 @@ RSpec.describe DrawioDsl::Schema::DefaultPalette do
         # Inherit from theme when specific palette options are not specified.
         @fill_color   ||= theme_palette.fill_color
         @stroke_color ||= theme_palette.stroke_color
-        @font_color   ||= theme_palette.font_color
+        @font_color   ||= theme_palette.element_font_color
         @gradient     ||= theme_palette.gradient
       end
     end
