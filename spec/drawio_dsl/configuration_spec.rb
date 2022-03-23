@@ -93,6 +93,34 @@ RSpec.describe DrawioDsl::Configuration do
       end
     end
 
+    describe '.texts' do
+      subject { instance.texts }
+
+      it { is_expected.to be_a(Hash) }
+
+      describe '#text' do
+        context 'when text is defined' do
+          subject { instance.text(:h1) }
+
+          it do
+            is_expected.to have_attributes(
+              type: :h1,
+              x: 0,
+              y: 0,
+              w: 100,
+              h: 50,
+              style_modifiers: 'text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none'
+            )
+          end
+        end
+        context 'when text is not defined' do
+          subject { instance.text(:unknown) }
+
+          it { is_expected.to be_empty }
+        end
+      end
+    end
+
     describe '.connector' do
       subject { instance.connector }
 

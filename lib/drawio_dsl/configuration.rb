@@ -92,6 +92,28 @@ module DrawioDsl
       @lines
     end
 
+    def text(type)
+      texts[type] || ''
+    end
+
+    def texts
+      return @texts if defined? @texts
+
+      @texts = {}
+      source_config['shapes'].select { |shape| shape['category'] == 'text' }.each do |text|
+        @texts[text['type'].to_sym] = Text.new(
+          type: text['type'].to_sym,
+          x: text['x'].to_i,
+          y: text['y'].to_i,
+          w: text['w'].to_i,
+          h: text['h'].to_i,
+          style_modifiers: text['style_modifiers']
+        )
+      end
+
+      @texts
+    end
+
     def connector
       @connector ||= Connector.new(source_config['connector'])
     end
