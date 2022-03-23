@@ -1,3 +1,10 @@
+## [0.8.10](https://github.com/klueless-io/drawio_dsl/compare/v0.8.9...v0.8.10) (2022-03-23)
+
+
+### Bug Fixes
+
+* configuration for elements ([ff2b64a](https://github.com/klueless-io/drawio_dsl/commit/ff2b64a50ea7a1504b41e2ca65f281253e582afb))
+
 ## [0.8.9](https://github.com/klueless-io/drawio_dsl/compare/v0.8.8...v0.8.9) (2022-03-22)
 
 
