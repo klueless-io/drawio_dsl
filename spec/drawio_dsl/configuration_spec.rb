@@ -109,7 +109,7 @@ RSpec.describe DrawioDsl::Configuration do
               y: 0,
               w: 100,
               h: 50,
-              style_modifiers: 'text;fontSize=89;fontColor=#ffffff;fontStyle=1;fillColor=none'
+              style_modifiers: 'text;fontSize=89;fontStyle=1;fillColor=none'
             )
           end
         end
