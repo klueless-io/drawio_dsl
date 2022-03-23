@@ -1,3 +1,10 @@
+## [0.8.11](https://github.com/klueless-io/drawio_dsl/compare/v0.8.10...v0.8.11) (2022-03-23)
+
+
+### Bug Fixes
+
+* configuration for lines and texts ([300a51a](https://github.com/klueless-io/drawio_dsl/commit/300a51a357db48ca32c50df128163af1ba24eefb))
+
 ## [0.8.10](https://github.com/klueless-io/drawio_dsl/compare/v0.8.9...v0.8.10) (2022-03-23)
 
 
