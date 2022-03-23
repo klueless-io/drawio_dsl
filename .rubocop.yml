@@ -67,6 +67,7 @@ Metrics/ModuleLength:
 Metrics/AbcSize:
   Exclude:
     - "lib/drawio_dsl/drawio_shapes.rb"
+    - "lib/drawio_dsl/configuration.rb"
     - "lib/drawio_dsl/configuration_shapes.rb"
     - "lib/drawio_dsl/configuration_themes.rb"
 Metrics/CyclomaticComplexity:

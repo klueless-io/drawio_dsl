@@ -70,6 +70,27 @@ module DrawioDsl
       @elements
     end
 
+    def line(type)
+      lines[type] || ''
+    end
+
+    def lines
+      return @lines if defined? @lines
+
+      @lines = {}
+      source_config['shapes'].select { |shape| shape['category'] == 'line' }.each do |line|
+        @lines[line['type'].to_sym] = Line.new(
+          type: line['type'].to_sym,
+          x: line['x'].to_i,
+          y: line['y'].to_i,
+          w: line['w'].to_i,
+          h: line['h'].to_i,
+          style_modifiers: line['style_modifiers']
+        )
+      end
+
+      @lines
+    end
 
     def connector
       @connector ||= Connector.new(source_config['connector'])

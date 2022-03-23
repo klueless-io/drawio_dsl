@@ -45,17 +45,8 @@ RSpec.describe DrawioDsl::Configuration do
       describe '#element' do
         context 'when element is defined' do
           subject { instance.element(:actor) }
-          # {
-          #   "type": "actor",
-          #   "category": "element",
-          #   "x": 0,
-          #   "y": 0,
-          #   "w": 40,
-          #   "h": 50,
-          #   "style_modifiers": "shape=actor"
-          # }
 
-          fit do
+          it do
             is_expected.to have_attributes(
               type: :actor,
               x: 0,
@@ -68,6 +59,34 @@ RSpec.describe DrawioDsl::Configuration do
         end
         context 'when element is not defined' do
           subject { instance.element(:unknown) }
+
+          it { is_expected.to be_empty }
+        end
+      end
+    end
+
+    describe '.lines' do
+      subject { instance.lines }
+
+      it { is_expected.to be_a(Hash) }
+
+      describe '#line' do
+        context 'when line is defined' do
+          subject { instance.line(:line) }
+
+          it do
+            is_expected.to have_attributes(
+              type: :line,
+              x: 0,
+              y: 0,
+              w: 50,
+              h: 50,
+              style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+            )
+          end
+        end
+        context 'when line is not defined' do
+          subject { instance.line(:unknown) }
 
           it { is_expected.to be_empty }
         end
