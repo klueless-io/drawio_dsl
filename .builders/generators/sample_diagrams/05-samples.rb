@@ -25,8 +25,6 @@ KManager.action :bootstrap do
             actor(title: jersy_number, theme: team_color)
           end
         end
-      
-
       end
       .cd(:spec)
       .osave('.samples/05-samples.drawio')

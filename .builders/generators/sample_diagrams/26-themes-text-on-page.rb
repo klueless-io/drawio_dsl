@@ -6,8 +6,8 @@ KManager.action :themes_text_on_page do
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_03)
       
-      KConfig.configuration.drawio.themes.keys.each do |theme|
-        drawio.page(theme.to_s, margin_left: 0, margin_top: 0, theme: theme) do
+      KConfig.configuration.drawio.theme.background_types.each do |theme|
+        drawio.page(theme.to_s, margin_left: 0, margin_top: 0, bg_theme: theme) do
           grid_layout(wrap_at: 3)
 
           square

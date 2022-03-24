@@ -5,14 +5,13 @@ module DrawioDsl
   # Configuration container for the DrawIO DSL
   class Configuration
     include DrawioDsl::ConfigurationShapes
-    include DrawioDsl::ConfigurationThemes
 
     include KLog::Logging
 
-    BaseStyle = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
+    BaseStyle     = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
     ElementConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-    LineConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-    TextConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    LineConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+    TextConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
 
     attr_accessor :base_style
 
@@ -21,16 +20,8 @@ module DrawioDsl
     def initialize
       @base_style = BaseStyle.new(white_space: :wrap, html: 1, rounded: nil, shadow: nil, sketch: nil, glass: nil)
 
+      # TODO: these need to be removed
       add_shapes
-      add_themes
-    end
-
-    def palette(theme)
-      themes[theme]
-    end
-
-    def random_theme
-      themes.keys.sample
     end
 
     def stroke(type)
@@ -247,6 +238,14 @@ module DrawioDsl
         @backgrounds
       end
 
+      def background_types
+        backgrounds.keys
+      end
+
+      def random_background_type
+        backgrounds.values.sample.type
+      end
+
       def element(type)
         elements[type] || ElementThemeConfig.new(
           type: type,
@@ -272,6 +271,14 @@ module DrawioDsl
         end
 
         @elements
+      end
+
+      def element_types
+        elements.keys
+      end
+
+      def random_element_type
+        elements.values.sample.type
       end
     end
   end

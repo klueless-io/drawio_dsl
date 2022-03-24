@@ -22,6 +22,12 @@ RSpec.describe DrawioDsl::Schema::Diagram do
     it { is_expected.not_to be_nil }
   end
 
+  context '.bg_theme' do
+    subject { instance.bg_theme }
+
+    it { is_expected.not_to be_nil }
+  end
+
   it 'should have pages' do
     expect(instance.pages).to eq []
   end

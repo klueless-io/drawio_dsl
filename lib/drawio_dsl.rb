@@ -16,7 +16,6 @@ end
 
 require_relative 'drawio_dsl/configuration_extension'
 require_relative 'drawio_dsl/configuration_shapes'
-require_relative 'drawio_dsl/configuration_themes'
 require_relative 'drawio_dsl/configuration'
 require_relative 'drawio_dsl/version'
 require_relative 'drawio_dsl/formatters/_'

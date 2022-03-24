@@ -14,6 +14,7 @@ module DrawioDsl
       attr_accessor :active
       attr_reader :name
       attr_reader :theme
+      attr_reader :bg_theme
       attr_reader :style
       attr_reader :palette
       attr_reader :margin_left
@@ -43,6 +44,7 @@ module DrawioDsl
         @active       = args[:active].nil? ? true : !args[:active].nil?
         @name         = args[:name]
         @theme        = args[:theme] || diagram.theme
+        @bg_theme     = args[:bg_theme] || diagram.bg_theme
 
         puts "Page has theme: #{theme}"
         # cursor positioning is used by the layout engine
@@ -65,7 +67,7 @@ module DrawioDsl
         @page_scale   = args[:page_scale]   || 1
         @page_width   = args[:page_width]   || 1169 # A4
         @page_height  = args[:page_height]  || 827  # A4
-        @background   = args[:background]   || '#FFFACD'
+        @background   = args[:background]   || bg_theme_palette.bg_color
         @page_shadow  = args[:page_shadow]  || 0
         @math         = args[:math]         || 0
 
@@ -83,7 +85,7 @@ module DrawioDsl
           # Inherit from theme when specific palette options are not specified.
           @fill_color   ||= page.theme_palette.fill_color
           @stroke_color ||= page.theme_palette.stroke_color
-          @font_color   ||= page.theme_palette.element_font_color
+          @font_color   ||= page.theme_palette.font_color
           @gradient     ||= page.theme_palette.gradient
         end
 
@@ -101,7 +103,11 @@ module DrawioDsl
       end
 
       def theme_palette
-        @theme_palette ||= KConfig.configuration.drawio.palette(theme)
+        @theme_palette ||= KConfig.configuration.drawio.theme.element(theme)
+      end
+
+      def bg_theme_palette
+        @bg_theme_palette ||= KConfig.configuration.drawio.theme.background(bg_theme)
       end
 
       def as_xml(xml)

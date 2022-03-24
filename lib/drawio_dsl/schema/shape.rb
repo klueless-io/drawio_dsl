@@ -142,7 +142,12 @@ module DrawioDsl
       end
 
       def theme_palette
-        @theme_palette ||= KConfig.configuration.drawio.palette(theme)
+        @theme_palette ||= KConfig.configuration.drawio.theme.element(theme)
+      end
+
+      # TODO: test
+      def bg_theme_palette
+        @bg_theme_palette ||= KConfig.configuration.drawio.theme.background(bg_theme)
       end
 
       # :nocov:

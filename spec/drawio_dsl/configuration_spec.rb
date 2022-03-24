@@ -206,6 +206,18 @@ RSpec.describe DrawioDsl::Configuration do
 
             it { is_expected.to have_attributes(type: :unknown, bg_color: '#000000', font_color: '#ffffff') }
           end
+
+          describe '#background_types' do
+            subject { instance.theme.background_types }
+
+            it { is_expected.to be_a(Array) }
+          end
+
+          describe '#random_background_type' do
+            subject { instance.theme.random_background_type }
+
+            it { is_expected.to be_a(Symbol) }
+          end
         end
 
         describe '#element' do
@@ -220,6 +232,18 @@ RSpec.describe DrawioDsl::Configuration do
             it { is_expected.to have_attributes(type: :unknown, fill_color: '#ffffff', stroke_color: '#000000', font_color: '#000000', gradient: nil) }
           end
         end
+
+        describe '#random_element_type' do
+          subject { instance.theme.random_element_type }
+
+          it { is_expected.to be_a(Symbol) }
+        end
+
+        describe '#element_types' do
+          subject { instance.theme.element_types }
+
+          it { is_expected.to be_a(Array) }
+        end
       end
     end
 
@@ -232,32 +256,6 @@ RSpec.describe DrawioDsl::Configuration do
         subject { instance.shapes.square }
 
         it { is_expected.to have_attributes(type: :square) }
-      end
-    end
-
-    context 'should have themes' do
-      describe '.themes' do
-        subject { instance.themes }
-
-        it { is_expected.not_to be_nil }
-      end
-
-      describe '.themes' do
-        subject { instance.themes[:style_01] }
-
-        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', element_font_color: '#333333', text_font_color: '#aaaaaa', gradient: be_nil) }
-      end
-
-      describe '.random_theme' do
-        subject { instance.random_theme }
-
-        it { is_expected.to be_a(Symbol) }
-      end
-
-      describe '#palette' do
-        subject { instance.palette(:style_01) }
-
-        it { is_expected.to have_attributes(fill_color: '#f5f5f5', stroke_color: '#666666', element_font_color: '#333333', text_font_color: '#aaaaaa', gradient: be_nil) }
       end
     end
   end

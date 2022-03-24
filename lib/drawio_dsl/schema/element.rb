@@ -16,7 +16,7 @@ module DrawioDsl
         @fill_color       = args[:fill_color]       || theme_palette.fill_color
         @stroke_color     = args[:stroke_color]     || theme_palette.stroke_color
         @gradient         = args[:gradient]         || theme_palette.gradient
-        @font_color       = args[:font_color]       || theme_palette.element_font_color
+        @font_color       = args[:font_color]       || theme_palette.font_color
       end
     end
   end

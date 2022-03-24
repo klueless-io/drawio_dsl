@@ -44,7 +44,7 @@ KManager.action :bootstrap do
 
       end
       .cd(:spec)
-      .save('.samples/50-willoughby-council.drawio')
+      .osave('.samples/50-willoughby-council.drawio')
       .cd(:docs)
       .export_svg('samples/willoughby-council', page: 1)
   end

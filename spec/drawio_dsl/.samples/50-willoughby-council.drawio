@@ -1,97 +1,97 @@
-<mxfile host="80T">
-  <diagram id="xfF" name="Shapes">
-    <mxGraphModel dx="0" dy="0" background="#FFFACD" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="N0l">
+  <diagram id="NKa" name="Shapes">
+    <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="xfF-A"/>
-        <mxCell id="xfF-B" parent="xfF-A"/>
-        <mxCell id="xfF-2" value="Preparation for Investigation" style="text;fontSize=28;fontColor=#ffffff;fontStyle=1;fillColor=none;whiteSpace=wrap;html=1;rounded=1;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="page_root_NKa" parent="NKa"/>
+        <mxCell id="node_root_NKa" parent="page_root_NKa"/>
+        <mxCell id="NKa-2" value="Preparation for Investigation" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#ffffff;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_NKa">
           <mxGeometry x="0" y="20" width="400" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-3" value="(&lt;b&gt;source&lt;/b&gt;: &lt;i&gt;Hunter &amp; Central Coast Regional Environmental Management Strategy &#x2013; Investigations guideline&lt;/i&gt;)" style="text;fontSize=16;fontColor=#ffffff;fontStyle=1;fillColor=none;whiteSpace=wrap;html=1;rounded=1;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-3" value="(&lt;b&gt;source&lt;/b&gt;: &lt;i&gt;Hunter &amp; Central Coast Regional Environmental Management Strategy &#x2013; Investigations guideline&lt;/i&gt;)" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#ffffff;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_NKa">
           <mxGeometry x="0" y="140" width="400" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-4" value="Enter report into system" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-4" value="Enter report into system" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="260" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-5" value="Preliminary Review" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-5" value="Preliminary Review" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="380" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-6" value="Insufficient Information" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-6" value="Insufficient Information" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="500" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-7" value="Seek Additional Information" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-7" value="Seek Additional Information" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="620" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-8" value="Identify Possible Breach" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-8" value="Identify Possible Breach" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="740" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-9" value="Insufficient evidence or no breach detected" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-9" value="Insufficient evidence or no breach detected" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="860" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-10" value="Plan follow up action" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-10" value="Plan follow up action" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="980" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-11" value="Establish Jurisdiction - Council or other agency?" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-11" value="Establish Jurisdiction - Council or other agency?" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="50" y="1100" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-12" value="Refer to other agency" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-12" value="Refer to other agency" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="20" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-13" value="Council Responsibility" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-13" value="Council Responsibility" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="140" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-14" value="Plan investigation" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-14" value="Plan investigation" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="260" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-15" value="Conduct investigation Gather and manage evidence (Evidence Gathering Guideline)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-15" value="Conduct investigation Gather and manage evidence (Evidence Gathering Guideline)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="380" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-16" value="Prepare recommendations report" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-16" value="Prepare recommendations report" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="500" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-17" value="Make decision" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-17" value="Make decision" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="620" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-18" value="Take action (Enforcement Options Guideline)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-18" value="Take action (Enforcement Options Guideline)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="740" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-19" value="Review investigation" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-19" value="Review investigation" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="860" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-20" value="Close case" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-20" value="Close case" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="980" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-21" value="Feedback to complainant" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-21" value="Feedback to complainant" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="450" y="1100" width="300" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-23" value="1. Complaint received by Council gets recorded into the system." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-23" value="1. Complaint received by Council gets recorded into the system." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="805" y="5" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-24" value="2. Council Officer will review the nature of the complaint and consider what evidence or information it has." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-24" value="2. Council Officer will review the nature of the complaint and consider what evidence or information it has." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="805" y="155" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-25" value="3. If the information given thus far is insufficient Officer can go back to complainant and seek additional information." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-25" value="3. If the information given thus far is insufficient Officer can go back to complainant and seek additional information." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="805" y="305" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-26" value="4. With that information Council should be in a position to identify whether there has been a breach." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-26" value="4. With that information Council should be in a position to identify whether there has been a breach." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="805" y="455" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-27" value="5. If there has been a breach: establish whether it&amp;apos;s a matter for which the Council has jurisdiction (ie is it a piece of legislation for which the Council has the authority to enforce?)." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-27" value="5. If there has been a breach: establish whether it&amp;apos;s a matter for which the Council has jurisdiction (ie is it a piece of legislation for which the Council has the authority to enforce?)." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="805" y="605" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-28" value="6. If not: Council can refer that matter to another agency; such as Police, Fisheries, Transport NSW, EPA etc" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-28" value="6. If not: Council can refer that matter to another agency; such as Police, Fisheries, Transport NSW, EPA etc" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="1055" y="5" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-29" value="7. If it is the Councils responsibility then Council needs to plan out the investigation. That will be through: gathering and collecting evidence through statements, observations, interviews, samples, items of interest." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-29" value="7. If it is the Councils responsibility then Council needs to plan out the investigation. That will be through: gathering and collecting evidence through statements, observations, interviews, samples, items of interest." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="1055" y="155" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-30" value="8. The Council Officer should prepare a recommendations report which will: &lt;br/&gt;* go through the history of the matter &lt;br/&gt;* go through the investigations that have happened &lt;br/&gt;* go through the evidence that the Council has and then provide a recommendation as to the future action to be taken" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-30" value="8. The Council Officer should prepare a recommendations report which will: &lt;br/&gt;* go through the history of the matter &lt;br/&gt;* go through the investigations that have happened &lt;br/&gt;* go through the evidence that the Council has and then provide a recommendation as to the future action to be taken" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="1055" y="305" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-31" value="9. Once the Council has that evidence and is in a position that it thinks it can MAKE A DECISION" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-31" value="9. Once the Council has that evidence and is in a position that it thinks it can MAKE A DECISION" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="1055" y="455" width="240" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="xfF-32" value="10. TAKE ACTION: Once a decision is made as to the action that should happen in respect of the breach the council can then decide as to what the appropriate action is: WARNING, CIVIL, CRIMINAL and then proceed from there =&gt; it is important to keep the complainant informed throughout the entire process to be able to explain why you have taken the course you&amp;apos;ve taken and to be able to justify it" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="xfF-B">
+        <mxCell id="NKa-32" value="10. TAKE ACTION: Once a decision is made as to the action that should happen in respect of the breach the council can then decide as to what the appropriate action is: WARNING, CIVIL, CRIMINAL and then proceed from there =&gt; it is important to keep the complainant informed throughout the entire process to be able to explain why you have taken the course you&amp;apos;ve taken and to be able to justify it" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_NKa">
           <mxGeometry x="1055" y="605" width="240" height="140" as="geometry"/>
         </mxCell>
       </root>

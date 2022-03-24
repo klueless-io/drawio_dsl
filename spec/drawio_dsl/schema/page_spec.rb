@@ -41,7 +41,7 @@ RSpec.describe DrawioDsl::Schema::Page do
           page_scale: 1,
           page_width: 1169, # A4
           page_height: 827, # A4
-          background: '#FFFACD',
+          background: '#000000', # '#FFFACD',
           page_shadow: 0,
           math: 0
         )

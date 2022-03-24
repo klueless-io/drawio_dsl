@@ -62,7 +62,7 @@ KManager.action :bootstrap do
         circle
       end
       .cd(:spec)
-      .save('.samples/16-grid-alignment.drawio')
+      .osave('.samples/16-grid-alignment.drawio')
       .cd(:docs)
       # note: there is no difference between center and top/bottom/left/right using SVG/PNG
       .export_svg('samples/grid-alignment', page: 1)

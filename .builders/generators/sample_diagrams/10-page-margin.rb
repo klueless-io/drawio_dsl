@@ -37,6 +37,6 @@ KManager.action :bootstrap do
         circle
       end
       .cd(:spec)
-      .save('.samples/10-page-margin.drawio')
+      .osave('.samples/10-page-margin.drawio')
   end
 end

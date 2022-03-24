@@ -42,13 +42,12 @@ RSpec.describe DrawioDsl::Schema::DefaultPalette do
   context 'with block override' do
     let(:block) do
       proc do |diagram|
-        puts diagram.theme
-        theme_palette = KConfig.configuration.drawio.palette(diagram.theme)
+        theme_palette = KConfig.configuration.drawio.theme.element(diagram.theme)
 
         # Inherit from theme when specific palette options are not specified.
         @fill_color   ||= theme_palette.fill_color
         @stroke_color ||= theme_palette.stroke_color
-        @font_color   ||= theme_palette.element_font_color
+        @font_color   ||= theme_palette.font_color
         @gradient     ||= theme_palette.gradient
       end
     end
