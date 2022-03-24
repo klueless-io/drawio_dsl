@@ -8,17 +8,16 @@ m = KManager.model :shapes, namespace: %i[domain] do
   # when there is an arrow at end
   # endFill=1,0
 
-
   table :strokes do
     fields %i[type style]
 
     row :dashed               , 'dashed=1;fixDash=1'
     row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'
-    row :dash_dot              , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
-    row :dash_dot_dot           , 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
-    row :dot_dot_dot            , 'dashed=1;fixDash=1;dashPattern=1 2'
-    row :long_dash             , 'dashed=1;fixDash=1;dashPattern=16 6'
-    row :dash_long_dash         , 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
+    row :dash_dot             , 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
+    row :dash_dot_dot         , 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
+    row :dot_dot_dot          , 'dashed=1;fixDash=1;dashPattern=1 2'
+    row :long_dash            , 'dashed=1;fixDash=1;dashPattern=16 6'
+    row :dash_long_dash       , 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
     row :dashed24             , 'dashed=1;fixDash=1;dashPattern=3 8'
     row :dashed32             , 'dashed=1;fixDash=1;dashPattern=6 5'
     row :dashed44             , 'dashed=1;fixDash=1;dashPattern=8 8'
@@ -151,6 +150,102 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row :embed_col200         , :element, 0, 0, 150,  40, 'shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden'
   end
 
+  table :background_themes do
+    fields [:type, :bg_color, :font_color]
+
+    row :style_01, '#f5f5f5', '#aaaaaa'
+    row :style_02, '#dae8fc', '#aaaaaa'
+    row :style_03, '#d5e8d4', '#aaaaaa'
+    row :style_04, '#ffe6cc', '#aaaaaa'
+    row :style_05, '#fff2cc', '#aaaaaa'
+    # row :style_06, '#f8cecc', '#aaaaaa'
+    # row :style_07, '#e1d5e7', '#aaaaaa'
+    # row :style_08, '#60a917', '#aaaaaa'
+    # row :style_09, '#008a00', '#aaaaaa'
+    # row :style_10, '#1ba1e2', '#aaaaaa'
+    # row :style_11, '#0050ef', '#aaaaaa'
+    # row :style_12, '#6a00ff', '#aaaaaa'
+    # row :style_13, '#aa00ff', '#aaaaaa'
+    # row :style_14, '#d80073', '#aaaaaa'
+    # row :style_15, '#a20025', '#aaaaaa'
+    # row :style_16, '#e51400', '#aaaaaa'
+    # row :style_17, '#fa6800', '#aaaaaa'
+    # row :style_18, '#f0a30a', '#aaaaaa'
+    # row :style_19, '#e3c800', '#aaaaaa'
+    # row :style_20, '#6d8764', '#aaaaaa'
+    # row :style_21, '#647687', '#aaaaaa'
+    # row :style_22, '#76608a', '#aaaaaa'
+    # row :style_23, '#a0522d', '#aaaaaa'
+    # row :style_24, '#fad7ac', '#aaaaaa'
+    # row :style_25, '#fad9d5', '#aaaaaa'
+    # row :style_26, '#b0e3e6', '#aaaaaa'
+    # row :style_27, '#b1ddf0', '#aaaaaa'
+    # row :style_28, '#d0cee2', '#aaaaaa'
+    # row :style_29, '#bac8d3', '#aaaaaa'
+    # row :style_30, '#f5f5f5', '#aaaaaa'
+    # row :style_31, '#dae8fc', '#aaaaaa'
+    # row :style_32, '#d5e8d4', '#aaaaaa'
+    # row :style_33, '#ffcd28', '#aaaaaa'
+    # row :style_34, '#fff2cc', '#aaaaaa'
+    # row :style_35, '#f8cecc', '#aaaaaa'
+    # row :style_36, '#e6d0de', '#aaaaaa'
+    # row :style_37, '#eeeeee', '#aaaaaa'
+    # row :style_38, '#f9f7ed', '#aaaaaa'
+    # row :style_39, '#ffcc99', '#aaaaaa'
+    # row :style_40, '#cce5ff', '#aaaaaa'
+    # row :style_41, '#ffff88', '#aaaaaa'
+    # row :style_42, '#cdeb8b', '#aaaaaa'
+    # row :style_43, '#ffcccc', '#aaaaaa'
+  end
+
+  table :element_themes do
+    fields [:type, :fill_color, :stroke_color, :font_color, :gradient]
+
+    row :style_01, '#f5f5f5', '#666666', '#333333'
+    row :style_02, '#dae8fc', '#6c8ebf', '#333333'
+    row :style_03, '#d5e8d4', '#82b366', '#333333'
+    row :style_04, '#ffe6cc', '#d79b00', '#333333'
+    row :style_05, '#fff2cc', '#d6b656', '#333333'
+    row :style_06, '#f8cecc', '#b85450', '#333333'
+    row :style_07, '#e1d5e7', '#9673a6', '#333333'
+    row :style_08, '#60a917', '#2D7600', '#ffffff'
+    row :style_09, '#008a00', '#005700', '#ffffff'
+    row :style_10, '#1ba1e2', '#006EAF', '#ffffff'
+    row :style_11, '#0050ef', '#001DBC', '#ffffff'
+    row :style_12, '#6a00ff', '#3700CC', '#ffffff'
+    row :style_13, '#aa00ff', '#7700CC', '#ffffff'
+    row :style_14, '#d80073', '#A50040', '#ffffff'
+    row :style_15, '#a20025', '#6F0000', '#ffffff'
+    row :style_16, '#e51400', '#B20000', '#ffffff'
+    row :style_17, '#fa6800', '#C73500', '#000000'
+    row :style_18, '#f0a30a', '#BD7000', '#000000'
+    row :style_19, '#e3c800', '#B09500', '#000000'
+    row :style_20, '#6d8764', '#3A5431', '#ffffff'
+    row :style_21, '#647687', '#314354', '#ffffff'
+    row :style_22, '#76608a', '#432D57', '#ffffff'
+    row :style_23, '#a0522d', '#6D1F00', '#ffffff'
+    row :style_24, '#fad7ac', '#b46504', '#333333'
+    row :style_25, '#fad9d5', '#ae4132', '#333333'
+    row :style_26, '#b0e3e6', '#0e8088', '#000000'
+    row :style_27, '#b1ddf0', '#10739e', '#000000'
+    row :style_28, '#d0cee2', '#56517e', '#000000'
+    row :style_29, '#bac8d3', '#23445d', '#000000'
+    row :style_30, '#f5f5f5', '#666666', '#000000', '#b3b3b3'
+    row :style_31, '#dae8fc', '#6c8ebf', '#000000', '#7ea6e0'
+    row :style_32, '#d5e8d4', '#82b366', '#000000', '#97d077'
+    row :style_33, '#ffcd28', '#d79b00', '#000000', '#ffa500'
+    row :style_34, '#fff2cc', '#d6b656', '#000000', '#ffd966'
+    row :style_35, '#f8cecc', '#b85450', '#000000', '#ea6b66'
+    row :style_36, '#e6d0de', '#996185', '#000000', '#d5739d'
+    row :style_37, '#eeeeee', '#36393d', '#000000'
+    row :style_38, '#f9f7ed', '#36393d', '#000000'
+    row :style_39, '#ffcc99', '#36393d', '#000000'
+    row :style_40, '#cce5ff', '#36393d', '#000000'
+    row :style_41, '#ffff88', '#36393d', '#000000'
+    row :style_42, '#cdeb8b', '#36393d', '#000000'
+    row :style_43, '#ffcccc', '#36393d', '#000000'
+  end
+
   action do
     data = self.raw_data
     content = {
@@ -159,7 +254,11 @@ m = KManager.model :shapes, namespace: %i[domain] do
         compass_points: data['connector_compass_points'],
         waypoints: data['connector_waypoints'],
         arrows: data['connector_arrows'],
-        designs: data['connector_designs']
+        designs: data['connector_designs'],
+      },
+      theme: {
+        elements: data['element_themes'],
+        backgrounds: data['background_themes']
       },
       shapes: data['shapes'],
     }

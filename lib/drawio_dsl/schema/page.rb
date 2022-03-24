@@ -44,6 +44,7 @@ module DrawioDsl
         @name         = args[:name]
         @theme        = args[:theme] || diagram.theme
 
+        puts "Page has theme: #{theme}"
         # cursor positioning is used by the layout engine
         @position_x   = 0
         @position_y   = 0

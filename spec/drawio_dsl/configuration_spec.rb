@@ -185,6 +185,44 @@ RSpec.describe DrawioDsl::Configuration do
       end
     end
 
+    describe '.theme' do
+      subject { instance.theme }
+
+      it { is_expected.to be_a(DrawioDsl::Configuration::Theme) }
+
+      describe '.source_config' do
+        subject { instance.theme.source_config }
+
+        it { is_expected.to be_a(Hash) }
+
+        describe '#background' do
+          context 'when background is defined' do
+            subject { instance.theme.background(:style_01) }
+
+            it { is_expected.to have_attributes(type: :style_01, bg_color: '#f5f5f5', font_color: '#aaaaaa') }
+          end
+          context 'when background is not defined' do
+            subject { instance.theme.background(:unknown) }
+
+            it { is_expected.to have_attributes(type: :unknown, bg_color: '#000000', font_color: '#ffffff') }
+          end
+        end
+
+        describe '#element' do
+          context 'when element is defined' do
+            subject { instance.theme.element(:style_30) }
+
+            it { is_expected.to have_attributes(type: :style_30, fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#000000', gradient: '#b3b3b3') }
+          end
+          context 'when element is not defined' do
+            subject { instance.theme.element(:unknown) }
+
+            it { is_expected.to have_attributes(type: :unknown, fill_color: '#ffffff', stroke_color: '#000000', font_color: '#000000', gradient: nil) }
+          end
+        end
+      end
+    end
+
     describe '#shapes' do
       subject { instance.shapes }
 

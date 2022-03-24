@@ -50,7 +50,7 @@ KManager.action :styled_shapes do
         end
       end
       .cd(:spec)
-      .osave('.samples/20-styled-shapes.drawio')
+      .save('.samples/20-styled-shapes.drawio')
       .cd(:docs)
       .export_svg('samples/styles-plain', page: 1)
       .export_svg('samples/styles-shadow', page: 2)

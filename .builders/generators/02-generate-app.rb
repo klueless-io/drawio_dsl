@@ -53,19 +53,19 @@ KManager.action :requires do
 
         # build spec for each shape
         elements.each do |element|
-          add("schema/elements/#{element['type']}.rb",
+          add("schema/elements/#{element['type']}_spec.rb",
             template_file: 'schema_element_spec.rb',
             element: element)
         end
 
         lines.each do |line|
-          add("schema/lines/#{line['type']}.rb",
+          add("schema/lines/#{line['type']}_spec.rb",
             template_file: 'schema_line_spec.rb',
             line: line)
         end
 
         texts.each do |text|
-          add("schema/texts/#{text['type']}.rb",
+          add("schema/texts/#{text['type']}_spec.rb",
             template_file: 'schema_text_spec.rb',
             text: text)
         end

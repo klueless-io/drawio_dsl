@@ -130,6 +130,10 @@ module DrawioDsl
       @connector ||= Connector.new(source_config['connector'])
     end
 
+    def theme
+      @theme ||= Theme.new(source_config['theme'])
+    end
+
     def source_config
       return @source_config if defined? @source_config
 
@@ -207,6 +211,67 @@ module DrawioDsl
         end
 
         @designs
+      end
+    end
+
+    class Theme
+      attr_reader :source_config
+
+      BackgroundThemeConfig = Struct.new(:type, :bg_color, :font_color, keyword_init: true)
+      ElementThemeConfig = Struct.new(:type, :fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
+
+      def initialize(source_config)
+        @source_config = source_config
+      end
+
+      def background(type)
+        backgrounds[type] || BackgroundThemeConfig.new(
+          type: type,
+          bg_color: '#000000',
+          font_color: '#ffffff'
+        )
+      end
+
+      def backgrounds
+        return @backgrounds if defined? @backgrounds
+
+        @backgrounds = {}
+        source_config['backgrounds'].each do |background|
+          @backgrounds[background['type'].to_sym] = BackgroundThemeConfig.new(
+            type: background['type'].to_sym,
+            bg_color: background['bg_color'],
+            font_color: background['font_color']
+          )
+        end
+
+        @backgrounds
+      end
+
+      def element(type)
+        elements[type] || ElementThemeConfig.new(
+          type: type,
+          fill_color: '#ffffff',
+          stroke_color: '#000000',
+          font_color: '#000000',
+          gradient: nil
+        )
+      end
+
+      def elements
+        return @elements if defined? @elements
+
+        @elements = {}
+        source_config['elements'].each do |element|
+          @elements[element['type'].to_sym] = ElementThemeConfig.new(
+            type: element['type'].to_sym,
+            fill_color: element['fill_color'],
+            stroke_color: element['stroke_color'],
+            font_color: element['font_color'],
+            gradient: element['gradient']
+          )
+        end
+
+        @elements
       end
     end
   end

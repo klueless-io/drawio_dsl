@@ -1,25 +1,25 @@
-KManager.action :bootstrap do
+KManager.action :themes do
   action do
 
     # :rounded, :shadow, :sketch, :glass
     DrawioDsl::Drawio
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_06)
-      .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
+      .page('Squares', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
         grid_layout(wrap_at: 8)
 
         KConfig.configuration.drawio.themes.keys.each do |theme|
           square(title: theme.to_s, theme: theme)
         end
       end
-      .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
+      .page('Circles', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
         grid_layout(wrap_at: 8)
 
         KConfig.configuration.drawio.themes.keys.each do |theme|
           circle(title: theme.to_s, theme: theme)
         end
       end
-      .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
+      .page('Randoms', margin_left: 0, margin_top: 0, rounded: 1, background: '#FFEADB') do
         grid_layout(wrap_at: 8)
 
         KConfig.configuration.drawio.themes.keys.each do |theme|

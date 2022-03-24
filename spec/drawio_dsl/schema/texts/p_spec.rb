@@ -7,7 +7,7 @@ RSpec.describe DrawioDsl::Schema::P do
 
   let(:instance) { described_class.new(diagram, **args) }
   let(:args) { { id: 1 } }
-  let(:default) { KConfig.configuration.drawio.element(:p) }
+  let(:default) { KConfig.configuration.drawio.text(:p) }
 
   it_behaves_like :basic_text_attributes
 end
