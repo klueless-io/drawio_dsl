@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/klueless-io/drawio_dsl/compare/v0.9.0...v0.10.0) (2022-03-24)
+
+
+### Features
+
+* refactor shapes configuration so that it reads from custom file ([4b48e02](https://github.com/klueless-io/drawio_dsl/commit/4b48e02bf8e4a701418641946db47a76b2b3e9ab))
+
 # [0.9.0](https://github.com/klueless-io/drawio_dsl/compare/v0.8.11...v0.9.0) (2022-03-23)
 
 
