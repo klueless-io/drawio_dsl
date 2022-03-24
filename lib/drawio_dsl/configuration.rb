@@ -208,7 +208,7 @@ module DrawioDsl
     class Theme
       attr_reader :source_config
 
-      BackgroundThemeConfig = Struct.new(:type, :bg_color, :font_color, keyword_init: true)
+      BackgroundThemeConfig = Struct.new(:type, :bg_color, :font_color, :favourite, keyword_init: true)
       ElementThemeConfig = Struct.new(:type, :fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
 
       def initialize(source_config)
@@ -219,7 +219,8 @@ module DrawioDsl
         backgrounds[type] || BackgroundThemeConfig.new(
           type: type,
           bg_color: '#000000',
-          font_color: '#ffffff'
+          font_color: '#FFFFFF',
+          favourite: false
         )
       end
 
@@ -231,7 +232,8 @@ module DrawioDsl
           @backgrounds[background['type'].to_sym] = BackgroundThemeConfig.new(
             type: background['type'].to_sym,
             bg_color: background['bg_color'],
-            font_color: background['font_color']
+            font_color: background['font_color'],
+            favourite: background['favourite'] == 1
           )
         end
 
@@ -240,6 +242,10 @@ module DrawioDsl
 
       def background_types
         backgrounds.keys
+      end
+
+      def favourite_background_types
+        backgrounds.values.select(&:favourite).map(&:type)
       end
 
       def random_background_type

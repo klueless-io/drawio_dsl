@@ -513,29 +513,880 @@
     ],
     "backgrounds": [
       {
-        "type": "style_01",
-        "bg_color": "#f5f5f5",
-        "font_color": "#aaaaaa"
+        "favourite": 0,
+        "type": "navy",
+        "bg_color": "#000080",
+        "font_color": "#FFFFFF"
       },
       {
-        "type": "style_02",
-        "bg_color": "#dae8fc",
-        "font_color": "#aaaaaa"
+        "favourite": 0,
+        "type": "dark_blue",
+        "bg_color": "#00008B",
+        "font_color": "#FFFFFF"
       },
       {
-        "type": "style_03",
-        "bg_color": "#d5e8d4",
-        "font_color": "#aaaaaa"
+        "favourite": 0,
+        "type": "medium_blue",
+        "bg_color": "#0000CD",
+        "font_color": "#FFFFFF"
       },
       {
-        "type": "style_04",
-        "bg_color": "#ffe6cc",
-        "font_color": "#aaaaaa"
+        "favourite": 0,
+        "type": "blue",
+        "bg_color": "#0000FF",
+        "font_color": "#FFFFFF"
       },
       {
-        "type": "style_05",
-        "bg_color": "#fff2cc",
-        "font_color": "#aaaaaa"
+        "favourite": 0,
+        "type": "dark_green",
+        "bg_color": "#006400",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "green",
+        "bg_color": "#008000",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "teal",
+        "bg_color": "#008080",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_cyan",
+        "bg_color": "#008B8B",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "deep_sky_blue",
+        "bg_color": "#00BFFF",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "dark_turquoise",
+        "bg_color": "#00CED1",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_spring_green",
+        "bg_color": "#00FA9A",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "lime",
+        "bg_color": "#00FF00",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "spring_green",
+        "bg_color": "#00FF7F",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "aqua",
+        "bg_color": "#00FFFF",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "cyan",
+        "bg_color": "#00FFFF",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "midnight_blue",
+        "bg_color": "#191970",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dodger_blue",
+        "bg_color": "#1E90FF",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "light_sea_green",
+        "bg_color": "#20B2AA",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "forest_green",
+        "bg_color": "#228B22",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "sea_green",
+        "bg_color": "#2E8B57",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_slate_gray",
+        "bg_color": "#2F4F4F",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_slate_grey",
+        "bg_color": "#2F4F4F",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "lime_green",
+        "bg_color": "#32CD32",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_sea_green",
+        "bg_color": "#3CB371",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "turquoise",
+        "bg_color": "#40E0D0",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "royal_blue",
+        "bg_color": "#4169E1",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "steel_blue",
+        "bg_color": "#4682B4",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_slate_blue",
+        "bg_color": "#483D8B",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_turquoise",
+        "bg_color": "#48D1CC",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "indigo",
+        "bg_color": "#4B0082",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_olive_green",
+        "bg_color": "#556B2F",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "cadet_blue",
+        "bg_color": "#5F9EA0",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "cornflower_blue",
+        "bg_color": "#6495ED",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "rebecca_purple",
+        "bg_color": "#663399",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_aqua_marine",
+        "bg_color": "#66CDAA",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "dim_gray",
+        "bg_color": "#696969",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dim_grey",
+        "bg_color": "#696969",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "slate_blue",
+        "bg_color": "#6A5ACD",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "olive_drab",
+        "bg_color": "#6B8E23",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "slate_gray",
+        "bg_color": "#708090",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "slate_grey",
+        "bg_color": "#708090",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "light_slate_gray",
+        "bg_color": "#778899",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "light_slate_grey",
+        "bg_color": "#778899",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_slate_blue",
+        "bg_color": "#7B68EE",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "lawn_green",
+        "bg_color": "#7CFC00",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "chartreuse",
+        "bg_color": "#7FFF00",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "aquamarine",
+        "bg_color": "#7FFFD4",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "maroon",
+        "bg_color": "#800000",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "purple",
+        "bg_color": "#800080",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "olive",
+        "bg_color": "#808000",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "gray",
+        "bg_color": "#808080",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "grey",
+        "bg_color": "#808080",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "sky_blue",
+        "bg_color": "#87CEEB",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_sky_blue",
+        "bg_color": "#87CEFA",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "blue_violet",
+        "bg_color": "#8A2BE2",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_red",
+        "bg_color": "#8B0000",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_magenta",
+        "bg_color": "#8B008B",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "saddle_brown",
+        "bg_color": "#8B4513",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "dark_sea_green",
+        "bg_color": "#8FBC8F",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_green",
+        "bg_color": "#90EE90",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_purple",
+        "bg_color": "#9370DB",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_violet",
+        "bg_color": "#9400D3",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "pale_green",
+        "bg_color": "#98FB98",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_orchid",
+        "bg_color": "#9932CC",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "yellow_green",
+        "bg_color": "#9ACD32",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "sienna",
+        "bg_color": "#A0522D",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "brown",
+        "bg_color": "#A52A2A",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_gray",
+        "bg_color": "#A9A9A9",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_grey",
+        "bg_color": "#A9A9A9",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_blue",
+        "bg_color": "#ADD8E6",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "green_yellow",
+        "bg_color": "#ADFF2F",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "pale_turquoise",
+        "bg_color": "#AFEEEE",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "light_steel_blue",
+        "bg_color": "#B0C4DE",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "powder_blue",
+        "bg_color": "#B0E0E6",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "fire_brick",
+        "bg_color": "#B22222",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_golden_rod",
+        "bg_color": "#B8860B",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_orchid",
+        "bg_color": "#BA55D3",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "rosy_brown",
+        "bg_color": "#BC8F8F",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_khaki",
+        "bg_color": "#BDB76B",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "silver",
+        "bg_color": "#C0C0C0",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "medium_violet_red",
+        "bg_color": "#C71585",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "indian_red",
+        "bg_color": "#CD5C5C",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "peru",
+        "bg_color": "#CD853F",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "chocolate",
+        "bg_color": "#D2691E",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 1,
+        "type": "tan",
+        "bg_color": "#D2B48C",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_gray",
+        "bg_color": "#D3D3D3",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_grey",
+        "bg_color": "#D3D3D3",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "thistle",
+        "bg_color": "#D8BFD8",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "orchid",
+        "bg_color": "#DA70D6",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "golden_rod",
+        "bg_color": "#DAA520",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "pale_violet_red",
+        "bg_color": "#DB7093",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "crimson",
+        "bg_color": "#DC143C",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "gainsboro",
+        "bg_color": "#DCDCDC",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "plum",
+        "bg_color": "#DDA0DD",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "burly_wood",
+        "bg_color": "#DEB887",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_cyan",
+        "bg_color": "#E0FFFF",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "lavender",
+        "bg_color": "#E6E6FA",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_salmon",
+        "bg_color": "#E9967A",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "violet",
+        "bg_color": "#EE82EE",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "pale_golden_rod",
+        "bg_color": "#EEE8AA",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_coral",
+        "bg_color": "#F08080",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "khaki",
+        "bg_color": "#F0E68C",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "alice_blue",
+        "bg_color": "#F0F8FF",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "honey_dew",
+        "bg_color": "#F0FFF0",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "azure",
+        "bg_color": "#F0FFFF",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "sandy_brown",
+        "bg_color": "#F4A460",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "wheat",
+        "bg_color": "#F5DEB3",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "beige",
+        "bg_color": "#F5F5DC",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "white_smoke",
+        "bg_color": "#F5F5F5",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "mint_cream",
+        "bg_color": "#F5FFFA",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "ghost_white",
+        "bg_color": "#F8F8FF",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "salmon",
+        "bg_color": "#FA8072",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "antique_white",
+        "bg_color": "#FAEBD7",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "linen",
+        "bg_color": "#FAF0E6",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_golden_rod_yellow",
+        "bg_color": "#FAFAD2",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "old_lace",
+        "bg_color": "#FDF5E6",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "red",
+        "bg_color": "#FF0000",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "fuchsia",
+        "bg_color": "#FF00FF",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "magenta",
+        "bg_color": "#FF00FF",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "deep_pink",
+        "bg_color": "#FF1493",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "orange_red",
+        "bg_color": "#FF4500",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "tomato",
+        "bg_color": "#FF6347",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "hot_pink",
+        "bg_color": "#FF69B4",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "coral",
+        "bg_color": "#FF7F50",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "dark_orange",
+        "bg_color": "#FF8C00",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_salmon",
+        "bg_color": "#FFA07A",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "orange",
+        "bg_color": "#FFA500",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_pink",
+        "bg_color": "#FFB6C1",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "pink",
+        "bg_color": "#FFC0CB",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "gold",
+        "bg_color": "#FFD700",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "peach_puff",
+        "bg_color": "#FFDAB9",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "navajo_white",
+        "bg_color": "#FFDEAD",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "moccasin",
+        "bg_color": "#FFE4B5",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "bisque",
+        "bg_color": "#FFE4C4",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "misty_rose",
+        "bg_color": "#FFE4E1",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "blanched_almond",
+        "bg_color": "#FFEBCD",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "papaya_whip",
+        "bg_color": "#FFEFD5",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "lavender_blush",
+        "bg_color": "#FFF0F5",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "sea_shell",
+        "bg_color": "#FFF5EE",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "cornsilk",
+        "bg_color": "#FFF8DC",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "lemon_chiffon",
+        "bg_color": "#FFFACD",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "floral_white",
+        "bg_color": "#FFFAF0",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "snow",
+        "bg_color": "#FFFAFA",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "yellow",
+        "bg_color": "#FFFF00",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 0,
+        "type": "light_yellow",
+        "bg_color": "#FFFFE0",
+        "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "ivory",
+        "bg_color": "#FFFFF0",
+        "font_color": "#1F2D3D"
       }
     ]
   },

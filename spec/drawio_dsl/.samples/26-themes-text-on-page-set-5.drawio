@@ -1,0 +1,482 @@
+<mxfile host="481">
+  <diagram id="VuY" name="medium_purple">
+    <mxGraphModel dx="0" dy="0" background="#9370DB" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_VuY" parent="VuY"/>
+        <mxCell id="node_root_VuY" parent="page_root_VuY"/>
+        <mxCell id="VuY-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-3" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-4" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-5" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-6" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-7" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-8" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="VuY-9" value="medium_purple" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_VuY">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="MVW" name="dark_violet">
+    <mxGraphModel dx="0" dy="0" background="#9400D3" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_MVW" parent="MVW"/>
+        <mxCell id="node_root_MVW" parent="page_root_MVW"/>
+        <mxCell id="MVW-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-3" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-4" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-5" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-6" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-7" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-8" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="MVW-9" value="dark_violet" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_MVW">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BAK" name="pale_green">
+    <mxGraphModel dx="0" dy="0" background="#98FB98" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_BAK" parent="BAK"/>
+        <mxCell id="node_root_BAK" parent="page_root_BAK"/>
+        <mxCell id="BAK-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-3" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-4" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-5" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-6" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-7" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-8" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="BAK-9" value="pale_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_BAK">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IHz" name="dark_orchid">
+    <mxGraphModel dx="0" dy="0" background="#9932CC" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_IHz" parent="IHz"/>
+        <mxCell id="node_root_IHz" parent="page_root_IHz"/>
+        <mxCell id="IHz-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-3" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-4" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-5" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-6" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-7" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-8" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="IHz-9" value="dark_orchid" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_IHz">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="iCE" name="yellow_green">
+    <mxGraphModel dx="0" dy="0" background="#9ACD32" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_iCE" parent="iCE"/>
+        <mxCell id="node_root_iCE" parent="page_root_iCE"/>
+        <mxCell id="iCE-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-3" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-4" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-5" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-6" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-7" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-8" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="iCE-9" value="yellow_green" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_iCE">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4Rz" name="sienna">
+    <mxGraphModel dx="0" dy="0" background="#A0522D" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_4Rz" parent="4Rz"/>
+        <mxCell id="node_root_4Rz" parent="page_root_4Rz"/>
+        <mxCell id="4Rz-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-3" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-4" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-5" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-6" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-7" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-8" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4Rz-9" value="sienna" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_4Rz">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Y4c" name="brown">
+    <mxGraphModel dx="0" dy="0" background="#A52A2A" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_Y4c" parent="Y4c"/>
+        <mxCell id="node_root_Y4c" parent="page_root_Y4c"/>
+        <mxCell id="Y4c-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-3" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-4" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-5" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-6" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-7" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-8" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Y4c-9" value="brown" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Y4c">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="M0I" name="dark_gray">
+    <mxGraphModel dx="0" dy="0" background="#A9A9A9" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_M0I" parent="M0I"/>
+        <mxCell id="node_root_M0I" parent="page_root_M0I"/>
+        <mxCell id="M0I-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-3" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-4" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-5" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-6" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-7" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-8" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="M0I-9" value="dark_gray" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_M0I">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tAm" name="dark_grey">
+    <mxGraphModel dx="0" dy="0" background="#A9A9A9" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_tAm" parent="tAm"/>
+        <mxCell id="node_root_tAm" parent="page_root_tAm"/>
+        <mxCell id="tAm-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-3" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-4" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-5" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-6" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-7" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-8" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tAm-9" value="dark_grey" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_tAm">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wiN" name="light_blue">
+    <mxGraphModel dx="0" dy="0" background="#ADD8E6" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_wiN" parent="wiN"/>
+        <mxCell id="node_root_wiN" parent="page_root_wiN"/>
+        <mxCell id="wiN-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-3" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-4" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-5" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-6" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-7" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-8" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="wiN-9" value="light_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_wiN">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Sf1" name="green_yellow">
+    <mxGraphModel dx="0" dy="0" background="#ADFF2F" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_Sf1" parent="Sf1"/>
+        <mxCell id="node_root_Sf1" parent="page_root_Sf1"/>
+        <mxCell id="Sf1-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-3" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-4" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-5" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-6" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-7" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-8" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Sf1-9" value="green_yellow" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Sf1">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="YP2" name="pale_turquoise">
+    <mxGraphModel dx="0" dy="0" background="#AFEEEE" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_YP2" parent="YP2"/>
+        <mxCell id="node_root_YP2" parent="page_root_YP2"/>
+        <mxCell id="YP2-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-3" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-4" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-5" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-6" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-7" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-8" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="YP2-9" value="pale_turquoise" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_YP2">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3op" name="light_steel_blue">
+    <mxGraphModel dx="0" dy="0" background="#B0C4DE" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_3op" parent="3op"/>
+        <mxCell id="node_root_3op" parent="page_root_3op"/>
+        <mxCell id="3op-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_3op">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-3" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-4" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-5" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-6" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-7" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-8" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3op-9" value="light_steel_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_3op">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Otb" name="powder_blue">
+    <mxGraphModel dx="0" dy="0" background="#B0E0E6" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_Otb" parent="Otb"/>
+        <mxCell id="node_root_Otb" parent="page_root_Otb"/>
+        <mxCell id="Otb-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-3" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-4" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-5" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-6" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-7" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-8" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="Otb-9" value="powder_blue" style="whiteSpace=wrap;html=1;fontColor=#1F2D3D;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_Otb">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="6Le" name="fire_brick">
+    <mxGraphModel dx="0" dy="0" background="#B22222" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_6Le" parent="6Le"/>
+        <mxCell id="node_root_6Le" parent="page_root_6Le"/>
+        <mxCell id="6Le-2" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="30" y="30" width="160" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-3" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=89;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="280" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-4" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=67;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="500" y="85" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-5" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=50;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="60" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-6" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=37;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="280" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-7" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="500" y="305" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-8" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=21;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="60" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6Le-9" value="fire_brick" style="whiteSpace=wrap;html=1;fontColor=#FFFFFF;text;fontSize=16;fontStyle=1;fillColor=none" vertex="1" parent="node_root_6Le">
+          <mxGeometry x="280" y="525" width="100" height="50" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

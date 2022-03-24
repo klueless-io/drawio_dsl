@@ -197,20 +197,34 @@ RSpec.describe DrawioDsl::Configuration do
 
         describe '#background' do
           context 'when background is defined' do
-            subject { instance.theme.background(:style_01) }
+            subject { instance.theme.background(:navy) }
 
-            it { is_expected.to have_attributes(type: :style_01, bg_color: '#f5f5f5', font_color: '#aaaaaa') }
+            it { is_expected.to have_attributes(type: :navy, bg_color: '#000080', font_color: '#FFFFFF', favourite: false) }
+
+            context 'when favourite is set' do
+              subject { instance.theme.background(:teal) }
+
+              it { is_expected.to have_attributes(type: :teal, bg_color: '#008080', font_color: '#FFFFFF', favourite: true) }
+            end
           end
+
           context 'when background is not defined' do
             subject { instance.theme.background(:unknown) }
 
-            it { is_expected.to have_attributes(type: :unknown, bg_color: '#000000', font_color: '#ffffff') }
+            it { is_expected.to have_attributes(type: :unknown, bg_color: '#000000', font_color: '#FFFFFF', favourite: false) }
           end
 
           describe '#background_types' do
             subject { instance.theme.background_types }
 
             it { is_expected.to be_a(Array) }
+          end
+
+          describe '#favourite_background_types' do
+            subject { instance.theme.favourite_background_types }
+
+            it { is_expected.to be_a(Array).and include(:teal) }
+            it { is_expected.not_to include(:navy) }
           end
 
           describe '#random_background_type' do

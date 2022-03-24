@@ -12,8 +12,6 @@ KManager.action :project_plan do
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
         todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
-        todo(title: 'add background theme, with foreground text color')
-        todo(title: 'add sample for backgrounds with text on top')
         todo(title: 'add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
@@ -51,6 +49,8 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'add sample for backgrounds with text on top, add support for favourite backgrounds')
+        todo(title: 'add background themes, with foreground text color')
         todo(title: 'refactor shapes configuration so that it reads from custom file')
         todo(title: 'fix :text')
         todo(title: 'configuration for lines')
