@@ -63,7 +63,7 @@ KManager.action :printspeak_architecture_generator do
         rectangle2(theme: :style_03, title: '<b>Composite outputs</b><br>sort, direction, page_no, page_size<br><i>single order, page or list object</i>')
       end
       .cd(:docs)
-      .osave('printspeak-architecture-controllers.drawio')
+      .save('printspeak-architecture-controllers.drawio')
       # .export_svg('printspeak-architecture-generator', page: 1)
   end
 end

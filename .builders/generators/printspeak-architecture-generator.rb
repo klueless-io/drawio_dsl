@@ -1,97 +1,177 @@
+def printer(sender, title)
+  sender.send(:rectangle2, title: title, w: 75, h: 50, theme: :style_03)
+end
+
+def print_filter(sender, title)
+  sender.send(:rectangle, title: title, w: 90, h: 50, theme: :style_04)
+end
+
+def blank(sender)
+  sender.square(w:50, h:50, fill_color: '#fafafa', stroke_color: '#fafafa', font_color: '#333333')
+end
+
+def report(sender, title)
+  sender.note(title: title, w: 120, h: 120, theme: :style_05)
+end
+
+def generator(sender, title)
+  sender.process(title: title, w: 120, h: 70, theme: :style_05)
+end
+
+def item(sender, title)
+  sender.square(title: title, w: 90, h: 90, theme: :style_06)
+end
+
 KManager.action :printspeak_architecture_generator do
   action do
 
     DrawioDsl::Drawio
       .init(k_builder, on_exist: :write, on_action: :execute)
       .diagram(theme: :style_04)
-      .page('Fat Controllers', margin_left: 0, margin_top: 0, rounded: 0, background: '#fafafa') do
-        grid_layout(wrap_at: 4)
-
-        klass do
-          format
-            .header('Reports#sales_by_profit')
-            .h3('Thin Controller')
-            .h5('Param marshalling')
-            .p('my_action_params()')
-            .h5('Call query')
-            .p('MyActionQuery.query(scope, **inputs)')
-            .hr
-            .h5('Present')
-            .p('@vm = MyActionPresenter.new(**outputs)')
-        end
-
-        rectangle2(theme: :style_03, title: '<b>Param marshaling</b><br><br>@sales_by_profit_params ||= <br>params.permit(...)<br>&nbsp;&nbsp;.symbolize_keys')
-        rectangle2(theme: :style_03, title: '<b>Call Query</b><br><br>SalesByProfitQuery<br>&nbsp;&nbsp;.query(scope, **custom, **params)')
-        rectangle2(theme: :style_03, title: '<b>Present</b><br><br>SalesByProfitPresenter<br>&nbsp;&nbsp;.new(**query.outputs)')
-      end
-      .page('Fat Controllers', margin_left: 0, margin_top: 0, rounded: 0, background: '#fafafa') do
-        grid_layout(wrap_at: 4)
-
-        klass do
-          format
-            .header('Reports#sales_by_profit')
-            .h3('Fat Controller')
-            .h5('Param marshalling')
-            .p('params[:date_from]')
-            .p('params[:date_to]')
-            .p('params[:sort] || "gross_sales"')
-            .p('params[:direction] || "desc"')
-            .p('params[:filter_str]')
-            .h5('Dynamic query construction')
-            .p('switch params[:filter_str]')
-            .p('invoice_date_query')
-            .p('ugly query')
-            .hr
-            .h5('Query in controller')
-            .p('ActiveRecord::Base.connection.execute(query)')
-            .hr
-            .h5('Build outputs')
-            .p('@net_sales_total')
-            .p('@vat_total')
-            .p('@gross_sales_total')
-            .p('@document_data')
-            .h5('Composite outputs')
-            .p('params[:sort]')
-            .p('params[:direction]')
-        end
-
-
-        rectangle2(theme: :style_03, title: '<b>Paramater marshalling</b><br><br>reading the params[] object<br>setting sane defaults<br><i>do not alter and reuse params[]</i>')
-        rectangle2(theme: :style_03, title: '<b>Dynamic query construction</b><br><br>query = "select ..."<br><i>ActiveRelation vs interpolation</i>')
-        rectangle2(theme: :style_03, title: '<b>Query in controller</b><br><i>Move out to Query object</i>')
-        rectangle2(theme: :style_03, title: '<b>Build outputs</b><br>Multiple @instance vars<br><i>single view model @vm</i>')
-        rectangle2(theme: :style_03, title: '<b>Composite outputs</b><br>sort, direction, page_no, page_size<br><i>single order, page or list object</i>')
-      end
       .page('Style-Plain', margin_left: 0, margin_top: 0, rounded: 0, background: '#fafafa') do
-        grid_layout(wrap_at: 6)
-
+        grid_layout(wrap_at: 1)
         group(title: 'Data Sources (Documents)', theme: :style_01)
 
-        db_json(title: 'schema.rb', description: 'Rails schema.rb is the starting point for building db_schema.json')
-        db_json(title: 'db_schema.json', description: 'A model of the database schema based on schema.rb')
-        db_json(title: 'sql_count.json', description: 'Latest SQL counts from production, normalized into a JSON file across regions')
-        db_json(title: 'robocop.txt', description: 'Robocop.txt will be used to generate rubocop.json via `rubocop --format progress > robocop.txt`')
-        db_json(title: 'rubocop.json', description: 'Takes a rubo_cop.txt file parse it so that you can see what issues are in the ruby application')
-        db_json(title: 'domain_model.json', description: 'A model of domain based db_schema.json and annotated with model and controller code')
-        db_json(title: 'data_context.json', description: 'A model of the data context based on domain_model.json and data_context.json')
-        db_json(title: 'routes.json', description: 'Run rails routes and build up a model of what we use')
+        grid_layout(wrap_at: 2, grid_h: 100)
 
-        klass do
-          format
-            .header('Container', description: '')
-        end
+        db_json(:a, title: 'schema.rb'            , description: 'Rails schema.rb is the starting point for building db_schema.json')
+        db_json(:b, title: 'db_schema.json'       , description: 'A model of the database schema based on schema.rb')
+        db_json(:c, title: 'sql_count (rake/api)' , description: 'Reads the database and counts the number of rows in each table')
+        db_json(:d, title: 'sql_count.json'       , description: 'Latest SQL counts from production, normalized into a JSON file across regions')
+        db_json(:e, title: 'rubocop (rake/.txt)'  , description: 'Robocop.txt will be used to generate rubocop.json via `rubocop --format progress > robocop.txt`')
+        db_json(:f, title: 'rubocop.json'         , description: 'Takes a rubo_cop.txt file parse it so that you can see what issues are in the ruby application')
+        db_json(:g, title: 'routes.json'          , description: 'Run rails routes and build up a model of what we use')
+        db_json(:h, title: 'model/**/*.rb'        , description: 'All the models in the application')
+        db_json(:i, title: 'controller/**/*.json' , description: 'All the controllers in the application')
+        db_json(:j, title: 'domain_model.json'    , description: 'A model of domain based db_schema.json and annotated with model and controller code')
 
+        # connect(:a, :b, :solid)
+        solid(source: :a, target: :b)
+        solid(source: :c, target: :d)
+        solid(source: :e, target: :f)
 
-        interface(theme: :style_02) do
-          format
-            .header('Block Processor', interface_type: 'Subsystems', description: '')
-            .field(:block, type: :proc)
-            .field(:block_state, type: :symbol)
-            .method(:depend_on)
-        end
+        solid(source: :b, target: :j)
+        solid(source: :d, target: :j)
+        solid(source: :f, target: :j)
+        solid(source: :g, target: :j)
+        solid(source: :h, target: :j)
+        solid(source: :i, target: :j)
+
+        # blank(self)
+
+        # square(fill_color: '#fafafa', stroke_color: '#fafafa', font_color: '#333333')
+        # square(fill_color: '#fafafa', stroke_color: '#fafafa', font_color: '#333333')
+
+        grid_layout(wrap_at: 1)
+        group(title: 'Printers - DB Schema', theme: :style_01)
+
+        grid_layout(wrap_at: 5, grid_w: 90, grid_h: 70)
+
+        # DB Schema
+        printer(self, 'stats')
+        printer(self, 'tables')
+        printer(self, 'foreign_keys')
+        printer(self, 'indexes')
+        printer(self, 'dictionary')
+
+        grid_layout(wrap_at: 1)
+        group(title: 'Printers - Other', theme: :style_01)
+        grid_layout(wrap_at: 3, grid_w: 100, grid_h: 70)
+
+        printer(self, 'routes')
+        printer(self, 'models')
+        printer(self, 'controllers')
+
+        grid_layout(wrap_at: 5, grid_w: 100, grid_h: 70)
+
+        print_filter(self, 'has_ruby')
+        print_filter(self, 'missing_ruby')
+        print_filter(self, 'has_pk')
+        print_filter(self, 'missing_pk')
+        print_filter(self, 'low_column')
+        print_filter(self, 'fat_column')
+        print_filter(self, 'suspected_m2m')
+        print_filter(self, 'invalid_types')
+        print_filter(self, 'data_columns')
+        print_filter(self, 'date_columns')
+        # blank(self)
+
+        grid_layout(wrap_at: 1)
+        group(title: 'Generators', theme: :style_01)
+        
+        grid_layout(wrap_at: 4, grid_w: 150, grid_h: 100)
+        generator(self, 'Factory data')
+        generator(self, 'Model DSL specs (CRUD / Association)')
+        generator(self, 'Model API specs')
+        generator(self, 'Controller request specs')
+        generator(self, 'Query + spec')
+        generator(self, 'Decorator + spec')
+        generator(self, 'Presentor + spec')
+        blank(self)
+
+        grid_layout(wrap_at: 1)
+        group(title: 'Reports', theme: :style_01)
+
+        grid_layout(wrap_at: 5, grid_w: 150, grid_h: 150)
+        report(self, 'Tests')
+        item(self, 'coverage')
+        item(self, 'model DSL')
+        item(self, 'model API')
+        item(self, 'controller request')
+        item(self, 'controller commands')
+        item(self, 'query')
+        item(self, 'decorator')
+        item(self, 'presentor')
+        blank(self)
+
+        grid_layout(wrap_at: 6, grid_w: 150, grid_h: 150)
+
+        report(self, 'ERD')
+        item(self, 'agg roots')
+        item(self, 'many to many')
+        item(self, 'leaf tables')
+        item(self, 'rubocop')
+        item(self, 'SQL counts')
+
+        grid_layout(wrap_at: 6, grid_w: 150, grid_h: 150)
+        report(self, 'Anti patterns')
+        item(self, 'god classes')
+        item(self, 'fat controllers')
+        item(self, 'fat models')
+        item(self, 'fat views vs components')
+        item(self, 'interpolated SQL')
+
+        grid_layout(wrap_at: 6, grid_w: 150, grid_h: 150)
+        report(self, 'Target patterns')
+        item(self, 'decorators')
+        item(self, 'presenters')
+        item(self, 'queries')
+        item(self, 'commands')
+        item(self, 'form objects')
+
+        grid_layout(wrap_at: 5, grid_w: 150, grid_h: 150)
+        report(self, 'Diff or Conflict')
+        item(self, 'factory data <i>missing data/models</i>')
+        item(self, 'model DSL specs <i>missing data/associations</i>')
+        item(self, 'model API specs <i>missing methods</i>')
+        item(self, 'route / controller action <i>mismatch</i>')
+
+        # klass do
+        #   format
+        #     .header('Container', description: '')
+        # end
+
+        # interface(theme: :style_02) do
+        #   format
+        #     .header('Block Processor', interface_type: 'Subsystems', description: '')
+        #     .field(:block, type: :proc)
+        #     .field(:block_state, type: :symbol)
+        #     .method(:depend_on)
+        # end
+      
       end
       .cd(:docs)
-      .osave('printspeak-architecture-generator.drawio')
+      .save('printspeak-architecture-generator.drawio')
       # .export_svg('printspeak-architecture-generator', page: 1)
   end
 end
