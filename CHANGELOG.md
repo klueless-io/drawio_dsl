@@ -1,3 +1,10 @@
+## [0.10.1](https://github.com/klueless-io/drawio_dsl/compare/v0.10.0...v0.10.1) (2022-03-24)
+
+
+### Bug Fixes
+
+* add sample for backgrounds with text on top, add support for favourite backgrounds ([39f5727](https://github.com/klueless-io/drawio_dsl/commit/39f57279cb6acfd02ada2f5716d33ff59a0211da))
+
 # [0.10.0](https://github.com/klueless-io/drawio_dsl/compare/v0.9.0...v0.10.0) (2022-03-24)
 
 
