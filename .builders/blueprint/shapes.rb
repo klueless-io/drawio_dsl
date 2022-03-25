@@ -9,7 +9,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   # endFill=1,0
 
   table :strokes do
-    fields %i[type style]
+    fields %i[key style]
 
     row :dashed               , 'dashed=1;fixDash=1'
     row :dotted               , 'dashed=1;fixDash=1;dashPattern=1 4'

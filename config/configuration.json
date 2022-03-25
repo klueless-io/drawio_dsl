@@ -1944,43 +1944,43 @@
   },
   "strokes": [
     {
-      "type": "dashed",
+      "key": "dashed",
       "style": "dashed=1;fixDash=1"
     },
     {
-      "type": "dotted",
+      "key": "dotted",
       "style": "dashed=1;fixDash=1;dashPattern=1 4"
     },
     {
-      "type": "dash_dot",
+      "key": "dash_dot",
       "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5"
     },
     {
-      "type": "dash_dot_dot",
+      "key": "dash_dot_dot",
       "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5"
     },
     {
-      "type": "dot_dot_dot",
+      "key": "dot_dot_dot",
       "style": "dashed=1;fixDash=1;dashPattern=1 2"
     },
     {
-      "type": "long_dash",
+      "key": "long_dash",
       "style": "dashed=1;fixDash=1;dashPattern=16 6"
     },
     {
-      "type": "dash_long_dash",
+      "key": "dash_long_dash",
       "style": "dashed=1;fixDash=1;dashPattern=10 6 16 6"
     },
     {
-      "type": "dashed24",
+      "key": "dashed24",
       "style": "dashed=1;fixDash=1;dashPattern=3 8"
     },
     {
-      "type": "dashed32",
+      "key": "dashed32",
       "style": "dashed=1;fixDash=1;dashPattern=6 5"
     },
     {
-      "type": "dashed44",
+      "key": "dashed44",
       "style": "dashed=1;fixDash=1;dashPattern=8 8"
     }
   ]

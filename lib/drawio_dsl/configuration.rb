@@ -18,8 +18,8 @@ module DrawioDsl
       @base_style = BaseStyle.new(white_space: :wrap, html: 1, rounded: nil, shadow: nil, sketch: nil, glass: nil)
     end
 
-    def stroke(type)
-      strokes[type] || ''
+    def stroke(key)
+      strokes[key] || ''
     end
 
     def strokes
@@ -27,7 +27,7 @@ module DrawioDsl
 
       @strokes = {}
       source_config['strokes'].each do |stroke|
-        @strokes[stroke['type'].to_sym] = stroke['style']
+        @strokes[stroke['key'].to_sym] = stroke['style']
       end
 
       @strokes
