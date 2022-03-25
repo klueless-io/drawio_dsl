@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/klueless-io/drawio_dsl/compare/v0.10.1...v0.11.0) (2022-03-25)
+
+
+### Features
+
+* refactor shapes to use configuration file and split into elements, lines and texts ([1d4da50](https://github.com/klueless-io/drawio_dsl/commit/1d4da50d8fcdf129573b592c38713325e2f3c9b0))
+
 ## [0.10.1](https://github.com/klueless-io/drawio_dsl/compare/v0.10.0...v0.10.1) (2022-03-24)
 
 
