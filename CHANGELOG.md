@@ -1,3 +1,10 @@
+## [0.11.1](https://github.com/klueless-io/drawio_dsl/compare/v0.11.0...v0.11.1) (2022-03-25)
+
+
+### Bug Fixes
+
+* rename type to key ([46bd016](https://github.com/klueless-io/drawio_dsl/commit/46bd016d88e42506e775512dbe8dc719ad175e7b))
+
 # [0.11.0](https://github.com/klueless-io/drawio_dsl/compare/v0.10.1...v0.11.0) (2022-03-25)
 
 
