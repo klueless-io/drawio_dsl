@@ -584,165 +584,165 @@
   "connector": {
     "compass_points": [
       {
-        "type": "n",
+        "key": "n",
         "x": 0.5,
         "y": 0
       },
       {
-        "type": "ne",
+        "key": "ne",
         "x": 1,
         "y": 0
       },
       {
-        "type": "e",
+        "key": "e",
         "x": 1,
         "y": 0.5
       },
       {
-        "type": "se",
+        "key": "se",
         "x": 1,
         "y": 1
       },
       {
-        "type": "s",
+        "key": "s",
         "x": 0.5,
         "y": 1
       },
       {
-        "type": "sw",
+        "key": "sw",
         "x": 0,
         "y": 1
       },
       {
-        "type": "w",
+        "key": "w",
         "x": 0,
         "y": 0.5
       },
       {
-        "type": "nw",
+        "key": "nw",
         "x": 0,
         "y": 0
       }
     ],
     "waypoints": [
       {
-        "type": "straight",
+        "key": "straight",
         "style": "edgeStyle=none"
       },
       {
-        "type": "orthogonal",
+        "key": "orthogonal",
         "style": "edgeStyle=orthogonalEdgeStyle"
       },
       {
-        "type": "elbow",
+        "key": "elbow",
         "style": "edgeStyle=elbowEdgeStyle"
       },
       {
-        "type": "elbow_vertical",
+        "key": "elbow_vertical",
         "style": "edgeStyle=elbowEdgeStyle;elbow=vertical"
       },
       {
-        "type": "isometric",
+        "key": "isometric",
         "style": "edgeStyle=isometricEdgeStyle"
       },
       {
-        "type": "isometric_vertical",
+        "key": "isometric_vertical",
         "style": "edgeStyle=isometricEdgeStyle;elbow=vertical"
       },
       {
-        "type": "orthogonal_curved",
+        "key": "orthogonal_curved",
         "style": "edgeStyle=orthogonalEdgeStyle;curved=1"
       },
       {
-        "type": "entity_relation",
+        "key": "entity_relation",
         "style": "edgeStyle=entityRelationEdgeStyle"
       }
     ],
     "arrows": [
       {
-        "type": "simple",
+        "key": "simple",
         "style": "open"
       },
       {
-        "type": "triangle",
+        "key": "triangle",
         "style": "block"
       },
       {
-        "type": "diamond",
+        "key": "diamond",
         "style": "diamond"
       },
       {
-        "type": "circle",
+        "key": "circle",
         "style": "oval"
       },
       {
-        "type": "cross",
+        "key": "cross",
         "style": "cross"
       },
       {
-        "type": "short",
+        "key": "short",
         "style": "classicThin"
       },
       {
-        "type": "default",
+        "key": "default",
         "style": "classic"
       },
       {
-        "type": "none",
+        "key": "none",
         "style": "none"
       },
       {
-        "type": "plain",
+        "key": "plain",
         "style": "open"
       },
       {
-        "type": "skewed_dash",
+        "key": "skewed_dash",
         "style": "dash"
       },
       {
-        "type": "concave",
+        "key": "concave",
         "style": "openThin"
       },
       {
-        "type": "er_many",
+        "key": "er_many",
         "style": "ERmany"
       },
       {
-        "type": "er_one",
+        "key": "er_one",
         "style": "ERone"
       },
       {
-        "type": "er_one_optional",
+        "key": "er_one_optional",
         "style": "ERzeroToOne"
       },
       {
-        "type": "er_one_mandatory",
+        "key": "er_one_mandatory",
         "style": "ERmandOne"
       },
       {
-        "type": "er_many_optional",
+        "key": "er_many_optional",
         "style": "ERzeroToMany"
       },
       {
-        "type": "er_many_mandatory",
+        "key": "er_many_mandatory",
         "style": "ERoneToMany"
       }
     ],
     "designs": [
       {
-        "type": "style1",
+        "key": "style1",
         "style": ""
       },
       {
-        "type": "style2",
+        "key": "style2",
         "style": "shape=link"
       },
       {
-        "type": "style3",
+        "key": "style3",
         "style": "shape=flexArrow"
       },
       {
-        "type": "style4",
+        "key": "style4",
         "style": "shape=arrow"
       }
     ]

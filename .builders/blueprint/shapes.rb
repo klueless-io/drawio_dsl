@@ -24,7 +24,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_compass_points do
-    fields %i[type x y]
+    fields %i[key x y]
 
     row :n  , x: 0.5 , y: 0       # 'exitX=0.5;exitY=0;exitDx=0;exitDy=0'  'entryX=0.5;entryY=0;entryDx=0;entryDy=0'
     row :ne , x: 1   , y: 0       # 'exitX=1;exitY=0;exitDx=0;exitDy=0'    'entryX=1;entryY=0;entryDx=0;entryDy=0'
@@ -37,7 +37,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_designs do
-    fields %i[type style]
+    fields %i[key style]
 
     row :style1, ''
     row :style2, 'shape=link'
@@ -46,7 +46,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_arrows do
-    fields %i[type style]
+    fields %i[key style]
 
     row :simple                     , 'open'
     row :triangle                   , 'block'
@@ -68,7 +68,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_waypoints do # aka edgeStyle
-    fields %i[type style]
+    fields %i[key style]
 
     row :straight                 , 'edgeStyle=none'
     row :orthogonal               , 'edgeStyle=orthogonalEdgeStyle'

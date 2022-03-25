@@ -205,8 +205,8 @@ module DrawioDsl
         @source_config = source_config
       end
 
-      def compass_point(type)
-        compass_points[type] || XyConfig.new(x: 0, y: 0)
+      def compass_point(key)
+        compass_points[key] || XyConfig.new(x: 0, y: 0)
       end
 
       def compass_points
@@ -214,14 +214,14 @@ module DrawioDsl
 
         @compass_points = {}
         source_config['compass_points'].each do |compass_point|
-          @compass_points[compass_point['type'].to_sym] = XyConfig.new(x: compass_point['x'], y: compass_point['y'])
+          @compass_points[compass_point['key'].to_sym] = XyConfig.new(x: compass_point['x'], y: compass_point['y'])
         end
 
         @compass_points
       end
 
-      def waypoint(type)
-        waypoints[type] || ''
+      def waypoint(key)
+        waypoints[key] || ''
       end
 
       def waypoints
@@ -229,14 +229,14 @@ module DrawioDsl
 
         @waypoints = {}
         source_config['waypoints'].each do |waypoint|
-          @waypoints[waypoint['type'].to_sym] = waypoint['style']
+          @waypoints[waypoint['key'].to_sym] = waypoint['style']
         end
 
         @waypoints
       end
 
-      def arrow(type)
-        arrows[type] || 'open'
+      def arrow(key)
+        arrows[key] || 'open'
       end
 
       def arrows
@@ -244,14 +244,14 @@ module DrawioDsl
 
         @arrows = {}
         source_config['arrows'].each do |arrow|
-          @arrows[arrow['type'].to_sym] = arrow['style']
+          @arrows[arrow['key'].to_sym] = arrow['style']
         end
 
         @arrows
       end
 
-      def design(type)
-        designs[type] || ''
+      def design(key)
+        designs[key] || ''
       end
 
       def designs
@@ -259,7 +259,7 @@ module DrawioDsl
 
         @designs = {}
         source_config['designs'].each do |design|
-          @designs[design['type'].to_sym] = design['style']
+          @designs[design['key'].to_sym] = design['style']
         end
 
         @designs
