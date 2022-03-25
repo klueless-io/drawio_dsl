@@ -11,7 +11,6 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'rename type to key')
         todo(title: 'deepen the shape hierarchy,  element_types => element.types')
         todo(title: 'deprecate the old shape technique')
@@ -32,6 +31,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'does x, y, w, h need to be on lines (no for connectors, but other lines?)')
         todo(title: 'update domain model with all the recent architecture changes')
         todo(title: 'replace generated methods for shapes, texts and lines with meta programming')

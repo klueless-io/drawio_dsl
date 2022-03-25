@@ -1,242 +1,242 @@
-<mxfile host="aAu">
-  <diagram id="ns0" name="In progress">
+<mxfile host="U9M">
+  <diagram id="QkS" name="In progress">
     <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="page_root_ns0" parent="ns0"/>
-        <mxCell id="node_root_ns0" parent="page_root_ns0"/>
-        <mxCell id="ns0-1" value="DrawIO DSL" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_ns0">
+        <mxCell id="page_root_QkS" parent="QkS"/>
+        <mxCell id="node_root_QkS" parent="page_root_QkS"/>
+        <mxCell id="QkS-1" value="DrawIO DSL" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fontColor=#FFFFFF;text;fontSize=28;fontStyle=1;fillColor=none" vertex="1" parent="node_root_QkS">
           <mxGeometry x="300" y="0" width="400" height="80" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-3" value="refactor shapes to use configuration file and split into elements, lines and texts" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-3" value="rename type to key" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-4" value="rename type to key" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-4" value="deepen the shape hierarchy,  element_types =&gt; element.types" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-5" value="deepen the shape hierarchy,  element_types =&gt; element.types" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-5" value="deprecate the old shape technique" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="650" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-6" value="deprecate the old shape technique" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-6" value="add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="10" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-7" value="add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-7" value="add new shapes related to line connectors" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="330" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-8" value="add new shapes related to line connectors" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-8" value="line connector aliases gives a simple way to use predefined line configurations" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="650" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-9" value="line connector aliases gives a simple way to use predefined line configurations" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-9" value="line connectors need to support autolinking using ids" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="10" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-10" value="line connectors need to support autolinking using ids" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-10" value="line connectors should not effect the grid positioning systems" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="330" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-11" value="line connectors should not effect the grid positioning systems" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-11" value="new format for connectors - connect(:a, :b, :solid)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="650" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-12" value="new format for connectors - connect(:a, :b, :solid)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-12" value="bg_theme does not work" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="10" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-13" value="bg_theme does not work" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-13" value="improve coverage" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="330" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="ns0-14" value="improve coverage" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
+        <mxCell id="QkS-14" value="class html builder to support include/extend modules, class methods" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_QkS">
           <mxGeometry x="650" y="250" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="ns0-15" value="class html builder to support include/extend modules, class methods" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333" vertex="1" parent="node_root_ns0">
-          <mxGeometry x="10" y="330" width="300" height="60" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="UFM" name="To Do">
+  <diagram id="fty" name="To Do">
     <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="page_root_UFM" parent="UFM"/>
-        <mxCell id="node_root_UFM" parent="page_root_UFM"/>
-        <mxCell id="UFM-2" value="does x, y, w, h need to be on lines (no for connectors, but other lines?)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="page_root_fty" parent="fty"/>
+        <mxCell id="node_root_fty" parent="page_root_fty"/>
+        <mxCell id="fty-2" value="refactor shapes to use configuration file and split into elements, lines and texts" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-3" value="update domain model with all the recent architecture changes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-3" value="does x, y, w, h need to be on lines (no for connectors, but other lines?)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-4" value="replace generated methods for shapes, texts and lines with meta programming" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-4" value="update domain model with all the recent architecture changes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="650" y="10" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-5" value="refactor HTML builder to custom GEM or use existing ruby GEM" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-5" value="replace generated methods for shapes, texts and lines with meta programming" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-6" value="add page background to theme, use it whenever the theme is set at a diagram/page level" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-6" value="refactor HTML builder to custom GEM or use existing ruby GEM" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-7" value="move DrawioDsl::Formatters::Factory::FORMATTERS to resource file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-7" value="add page background to theme, use it whenever the theme is set at a diagram/page level" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="650" y="90" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-8" value="move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-8" value="move DrawioDsl::Formatters::Factory::FORMATTERS to resource file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-9" value="settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-9" value="move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-10" value="write SVG directly into other projects" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-10" value="settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="650" y="170" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-11" value="Nodes need to support child nodes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-11" value="write SVG directly into other projects" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-12" value="Grid layout does not position itself in relation to the last element" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-12" value="Nodes need to support child nodes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-13" value="Grid layout should not be affected by connector lines" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-13" value="Grid layout does not position itself in relation to the last element" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="650" y="250" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-14" value="Grid layout should support flow break (break to next section if less then boundary)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-14" value="Grid layout should not be affected by connector lines" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="330" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-15" value="Grid layout should support hard break (break to next section)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-15" value="Grid layout should support flow break (break to next section if less then boundary)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="330" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-16" value="Dynamic sized shapes that expand to the size of their text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-16" value="Grid layout should support hard break (break to next section)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="650" y="330" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-17" value="Control of text padding left, right, top and bottom" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-17" value="Dynamic sized shapes that expand to the size of their text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="410" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-18" value="Improve the theme control over text-only shapes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-18" value="Control of text padding left, right, top and bottom" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="410" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-19" value="x,y settings do not work for shapes within a grid layout" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-19" value="Improve the theme control over text-only shapes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="650" y="410" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="UFM-20" value="page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_UFM">
+        <mxCell id="fty-20" value="x,y settings do not work for shapes within a grid layout" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="10" y="490" width="300" height="60" as="geometry"/>
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="qxm" name="Done">
-    <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
-      <root>
-        <mxCell id="page_root_qxm" parent="qxm"/>
-        <mxCell id="node_root_qxm" parent="page_root_qxm"/>
-        <mxCell id="qxm-2" value="headings do not appear to be working?" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-3" value="add sample for backgrounds with text on top, add support for favourite backgrounds" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-4" value="add background themes, with foreground text color" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="650" y="10" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-5" value="refactor shapes configuration so that it reads from custom file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="90" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-6" value="fix :text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="330" y="90" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-7" value="configuration for lines" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="650" y="90" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-8" value="configuration for text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="170" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-9" value="configuration for elements" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="330" y="170" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-10" value="configuration for line strokes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="650" y="170" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-11" value="configuration for connector compass direction" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="250" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-12" value="configuration for connector design" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="330" y="250" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-13" value="configuration for connector arrows" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="650" y="250" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-14" value="configuration for connector waypoints" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="330" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-15" value="export_json will output a diagram in machine readable format" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="330" y="330" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-16" value="class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="650" y="330" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-17" value="group box, like a regular box but with a top aligned h1 style title" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="410" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-18" value="build a domain (class) diagram" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="330" y="410" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-19" value="build configuration for line strokes %i[dashed dotted dashdot dashdotdot dotdotdot longdash)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="650" y="410" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-20" value="build configuration for line compass %i[n ne e se s sw w nw]" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
-          <mxGeometry x="10" y="490" width="300" height="60" as="geometry"/>
-        </mxCell>
-        <mxCell id="qxm-21" value="build configuration for line shape %i[style1 style2 style3 style4]" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="fty-21" value="page layout so that you drop elements on and they are positioned correctly, e.g centered, left, right, etc, maybe a grid layout with a wrap of 1 and a width of the page is sufficient" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333" vertex="1" parent="node_root_fty">
           <mxGeometry x="330" y="490" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-22" value="build configuration for arrows %i[straight triangle diamond circle cross short default none plain skewed_dash concave er_many er_one er_one_optional er_one_mandatory er_many_optional er_many_mandatory]" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wIK" name="Done">
+    <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_wIK" parent="wIK"/>
+        <mxCell id="node_root_wIK" parent="page_root_wIK"/>
+        <mxCell id="wIK-2" value="headings do not appear to be working?" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="10" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-3" value="add sample for backgrounds with text on top, add support for favourite backgrounds" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="10" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-4" value="add background themes, with foreground text color" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="650" y="10" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-5" value="refactor shapes configuration so that it reads from custom file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="90" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-6" value="fix :text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="90" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-7" value="configuration for lines" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="650" y="90" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-8" value="configuration for text" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="170" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-9" value="configuration for elements" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="170" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-10" value="configuration for line strokes" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="650" y="170" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-11" value="configuration for connector compass direction" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="250" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-12" value="configuration for connector design" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="250" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-13" value="configuration for connector arrows" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="650" y="250" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-14" value="configuration for connector waypoints" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="330" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-15" value="export_json will output a diagram in machine readable format" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="330" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-16" value="class html formatter to support regular html nodes such as p, h1.. ul, li that are found on the builder" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="650" y="330" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-17" value="group box, like a regular box but with a top aligned h1 style title" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="410" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-18" value="build a domain (class) diagram" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="410" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-19" value="build configuration for line strokes %i[dashed dotted dashdot dashdotdot dotdotdot longdash)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="650" y="410" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-20" value="build configuration for line compass %i[n ne e se s sw w nw]" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="10" y="490" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-21" value="build configuration for line shape %i[style1 style2 style3 style4]" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
+          <mxGeometry x="330" y="490" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="wIK-22" value="build configuration for arrows %i[straight triangle diamond circle cross short default none plain skewed_dash concave er_many er_one er_one_optional er_one_mandatory er_many_optional er_many_mandatory]" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="490" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-23" value="refactor the shape-&gt;text_only (boolean) to category (symbol)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-23" value="refactor the shape-&gt;text_only (boolean) to category (symbol)" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="570" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-24" value="ensure that ids are working as expected" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-24" value="ensure that ids are working as expected" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="330" y="570" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-25" value="alter the initial parameter of all shapes so that it can be an ID, without named attribute" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-25" value="alter the initial parameter of all shapes so that it can be an ID, without named attribute" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="570" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-26" value="move project-plan files" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-26" value="move project-plan files" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="650" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-27" value="alter configure_shape so it sets the default shape key and use that for selecting the default HTML formatter" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-27" value="alter configure_shape so it sets the default shape key and use that for selecting the default HTML formatter" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="330" y="650" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-28" value="add todo shape to simplify project plan drawing" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-28" value="add todo shape to simplify project plan drawing" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="650" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-29" value="introduce .value property to shape and let it use either formatted HTML or plain text title" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-29" value="introduce .value property to shape and let it use either formatted HTML or plain text title" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="730" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-30" value="formatter DSL that can render HTML directly into the value property" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-30" value="formatter DSL that can render HTML directly into the value property" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="330" y="730" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-31" value="formatter DSL for class and interface generation" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-31" value="formatter DSL for class and interface generation" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="730" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-32" value="generate extension based graphics based on drawio extensions.js" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-32" value="generate extension based graphics based on drawio extensions.js" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="810" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-33" value="active? flag on page defaulting to true. set to false to exclude page from diagram." style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-33" value="active? flag on page defaulting to true. set to false to exclude page from diagram." style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="330" y="810" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-34" value="first level child nodes need to hang of node 1" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-34" value="first level child nodes need to hang of node 1" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="810" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-35" value="node has child nodes and add_node will set a nodes parent" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-35" value="node has child nodes and add_node will set a nodes parent" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="890" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-36" value="nodes can belong to a parent node, the top level node responds with truthy to root?" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-36" value="nodes can belong to a parent node, the top level node responds with truthy to root?" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="330" y="890" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-37" value="add sample diagram for the github readme file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-37" value="add sample diagram for the github readme file" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="890" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-38" value="write samples into docs folder and display in readme" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-38" value="write samples into docs folder and display in readme" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="970" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-39" value="add export as .PNG, needs to take a page number as the PNG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-39" value="add export as .PNG, needs to take a page number as the PNG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="330" y="970" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-40" value="add export as .SVG, needs to take a page number as the SVG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-40" value="add export as .SVG, needs to take a page number as the SVG will not support multiple pages" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="650" y="970" width="300" height="60" as="geometry"/>
         </mxCell>
-        <mxCell id="qxm-41" value="add save as .drawio" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_qxm">
+        <mxCell id="wIK-41" value="add save as .drawio" style="whiteSpace=wrap;html=1;rounded=1;glass=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_wIK">
           <mxGeometry x="10" y="1050" width="300" height="60" as="geometry"/>
         </mxCell>
       </root>

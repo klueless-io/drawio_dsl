@@ -37,7 +37,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_designs do
-    fields [:type, :style]
+    fields %i[type style]
 
     row :style1, ''
     row :style2, 'shape=link'
@@ -46,7 +46,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_arrows do
-    fields [:type, :style]
+    fields %i[type style]
 
     row :simple                     , 'open'
     row :triangle                   , 'block'
@@ -68,7 +68,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_waypoints do # aka edgeStyle
-    fields [:type, :style]
+    fields %i[type style]
 
     row :straight                 , 'edgeStyle=none'
     row :orthogonal               , 'edgeStyle=orthogonalEdgeStyle'
@@ -81,7 +81,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :shapes do
-    fields [:category, :type, :x, :y, :w, :h, :style_modifiers]
+    fields %i[category type x y w h style_modifiers]
 
     # shape is a custom object
     # row :shape      , 0, 0,  20,  20, ''
@@ -305,7 +305,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :element_themes do
-    fields [:type, :fill_color, :stroke_color, :font_color, :gradient]
+    fields %i[type fill_color stroke_color font_color gradient]
 
     row :style_01, '#f5f5f5', '#666666', '#333333'
     row :style_02, '#dae8fc', '#6c8ebf', '#333333'
