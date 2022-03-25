@@ -3,10 +3,11 @@ KManager.action :requires do
   action do
     shapes_file = k_builder.target_folders.get_filename(:app, 'config/configuration.json')
     shapes_configuration = JSON.parse(File.read(shapes_file))
-    shapes = shapes_configuration['shapes']
-    elements = shapes.select { |shape| shape['category'] == 'element' }
-    lines = shapes.select { |shape| shape['category'] == 'line' }
-    texts = shapes.select { |shape| shape['category'] == 'text' }
+    shapes = shapes_configuration['shape']
+    lookup = shapes['lookup']
+    elements = shapes['elements']
+    lines = shapes['lines']
+    texts = shapes['texts']
 
     # strokes = shapes_configuration['strokes']
 
@@ -45,9 +46,9 @@ KManager.action :requires do
             text: text)
         end
 
-        add("drawio_shapes.rb"        , template_file: 'drawio_shapes.rb'       , shapes: shapes, shape_length: shapes.length)
-        add("dom_builder_shapes.rb"   , template_file: 'dom_builder_shapes.rb'  , shapes: shapes)
-        add("configuration_shapes.rb" , template_file: 'configuration_shapes.rb', shapes: shapes)
+        add("drawio_shapes.rb"        , template_file: 'drawio_shapes.rb'       , shapes: lookup, shape_length: lookup.length)
+        add("dom_builder_shapes.rb"   , template_file: 'dom_builder_shapes.rb'  , shapes: lookup)
+        # add("configuration_shapes.rb" , template_file: 'configuration_shapes.rb', shapes: lookup)
 
         cd(:spec)
 

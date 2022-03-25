@@ -11,15 +11,17 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'bg_theme does not work')
         todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
+        todo(title: 'rename type to key')
+        todo(title: 'deepen the shape hierarchy,  element_types => element.types')
+        todo(title: 'deprecate the old shape technique')
         todo(title: 'add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
         todo(title: 'line connectors should not effect the grid positioning systems')
         todo(title: 'new format for connectors - connect(:a, :b, :solid)')
-        todo(title: 'headings do not appear to be working?')
+        todo(title: 'bg_theme does not work')
         todo(title: 'improve coverage')
         todo(title: 'class html builder to support include/extend modules, class methods')
       end
@@ -30,6 +32,9 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'does x, y, w, h need to be on lines (no for connectors, but other lines?)')
+        todo(title: 'update domain model with all the recent architecture changes')
+        todo(title: 'replace generated methods for shapes, texts and lines with meta programming')
         todo(title: 'refactor HTML builder to custom GEM or use existing ruby GEM')
         todo(title: 'add page background to theme, use it whenever the theme is set at a diagram/page level')
         todo(title: 'move DrawioDsl::Formatters::Factory::FORMATTERS to resource file')
@@ -54,6 +59,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'headings do not appear to be working?')
         todo(title: 'add sample for backgrounds with text on top, add support for favourite backgrounds')
         todo(title: 'add background themes, with foreground text color')
         todo(title: 'refactor shapes configuration so that it reads from custom file')

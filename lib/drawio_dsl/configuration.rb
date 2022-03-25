@@ -4,24 +4,18 @@
 module DrawioDsl
   # Configuration container for the DrawIO DSL
   class Configuration
-    include DrawioDsl::ConfigurationShapes
+    extend Forwardable
 
     include KLog::Logging
 
     BaseStyle     = Struct.new(:white_space, :html, :rounded, :shadow, :sketch, :glass, keyword_init: true)
-    ElementConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-    LineConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-    TextConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
 
     attr_accessor :base_style
 
-    attr_accessor :shapes
+    def_delegators :shape, :element, :line, :text
 
     def initialize
       @base_style = BaseStyle.new(white_space: :wrap, html: 1, rounded: nil, shadow: nil, sketch: nil, glass: nil)
-
-      # TODO: these need to be removed
-      add_shapes
     end
 
     def stroke(type)
@@ -51,70 +45,8 @@ module DrawioDsl
       end
     end
 
-    def element(type)
-      elements[type]
-    end
-
-    def elements
-      return @elements if defined? @elements
-
-      @elements = {}
-      source_config['shapes'].select { |shape| shape['category'] == 'element' }.each do |element|
-        @elements[element['type'].to_sym] = ElementConfig.new(
-          type: element['type'].to_sym,
-          x: element['x'].to_i,
-          y: element['y'].to_i,
-          w: element['w'].to_i,
-          h: element['h'].to_i,
-          style_modifiers: element['style_modifiers']
-        )
-      end
-
-      @elements
-    end
-
-    def line(type)
-      lines[type]
-    end
-
-    def lines
-      return @lines if defined? @lines
-
-      @lines = {}
-      source_config['shapes'].select { |shape| shape['category'] == 'line' }.each do |line|
-        @lines[line['type'].to_sym] = LineConfig.new(
-          type: line['type'].to_sym,
-          x: line['x'].to_i,
-          y: line['y'].to_i,
-          w: line['w'].to_i,
-          h: line['h'].to_i,
-          style_modifiers: line['style_modifiers']
-        )
-      end
-
-      @lines
-    end
-
-    def text(type)
-      texts[type]
-    end
-
-    def texts
-      return @texts if defined? @texts
-
-      @texts = {}
-      source_config['shapes'].select { |shape| shape['category'] == 'text' }.each do |text|
-        @texts[text['type'].to_sym] = TextConfig.new(
-          type: text['type'].to_sym,
-          x: text['x'].to_i,
-          y: text['y'].to_i,
-          w: text['w'].to_i,
-          h: text['h'].to_i,
-          style_modifiers: text['style_modifiers']
-        )
-      end
-
-      @texts
+    def shape
+      @shape ||= Shape.new(source_config['shape'])
     end
 
     def connector
@@ -131,6 +63,135 @@ module DrawioDsl
       @source_config = begin
         file = File.join(DrawioDsl::ROOT_PATH, 'config/configuration.json')
         JSON.parse(File.read(file))
+      end
+    end
+
+    class Shape
+      attr_reader :source_config
+
+      ElementShapeConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+      LineShapeConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+      TextShapeConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+
+      def initialize(source_config)
+        @source_config = source_config
+      end
+
+      # Elements
+
+      def element(type)
+        elements[type] || ElementShapeConfig.new(
+          type: :square,
+          x: 0,
+          y: 0,
+          w: 160,
+          h: 160,
+          style_modifiers: ''
+        )
+      end
+
+      def elements
+        return @elements if defined? @elements
+
+        @elements = {}
+        source_config['elements'].each do |element|
+          @elements[element['type'].to_sym] = ElementShapeConfig.new(
+            type: element['type'].to_sym,
+            x: element['x'].to_i,
+            y: element['y'].to_i,
+            w: element['w'].to_i,
+            h: element['h'].to_i,
+            style_modifiers: element['style_modifiers']
+          )
+        end
+
+        @elements
+      end
+
+      def element_types
+        elements.keys
+      end
+
+      def random_element_type
+        elements.values.sample.type
+      end
+
+      # Lines
+
+      def line(type)
+        lines[type] || LineShapeConfig.new(
+          type: :solid,
+          x: 0,
+          y: 0,
+          w: 50,
+          h: 50,
+          style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+        )
+      end
+
+      def lines
+        return @lines if defined? @lines
+
+        @lines = {}
+        source_config['lines'].each do |line|
+          @lines[line['type'].to_sym] = LineShapeConfig.new(
+            type: line['type'].to_sym,
+            x: line['x'].to_i,
+            y: line['y'].to_i,
+            w: line['w'].to_i,
+            h: line['h'].to_i,
+            style_modifiers: line['style_modifiers']
+          )
+        end
+
+        @lines
+      end
+
+      def line_types
+        lines.keys
+      end
+
+      def random_line_type
+        lines.values.sample.type
+      end
+
+      def text(type)
+        texts[type] || TextShapeConfig.new(
+          type: :p,
+          x: 0,
+          y: 0,
+          w: 100,
+          h: 50,
+          style_modifiers: 'text;fontSize=16;fontStyle=1;fillColor=none'
+        )
+      end
+
+      # Texts
+
+      def texts
+        return @texts if defined? @texts
+
+        @texts = {}
+        source_config['texts'].each do |text|
+          @texts[text['type'].to_sym] = TextShapeConfig.new(
+            type: text['type'].to_sym,
+            x: text['x'].to_i,
+            y: text['y'].to_i,
+            w: text['w'].to_i,
+            h: text['h'].to_i,
+            style_modifiers: text['style_modifiers']
+          )
+        end
+
+        @texts
+      end
+
+      def text_types
+        texts.keys
+      end
+
+      def random_text_type
+        texts.values.sample.type
       end
     end
 

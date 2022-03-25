@@ -2,7 +2,7 @@
 
 require 'securerandom'
 require 'nokogiri'
-
+require 'forwardable'
 require 'k_config'
 require 'k_log'
 require 'k_director'
@@ -15,7 +15,6 @@ module DrawioDsl
 end
 
 require_relative 'drawio_dsl/configuration_extension'
-require_relative 'drawio_dsl/configuration_shapes'
 require_relative 'drawio_dsl/configuration'
 require_relative 'drawio_dsl/version'
 require_relative 'drawio_dsl/formatters/_'

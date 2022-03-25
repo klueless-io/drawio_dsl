@@ -1,46 +1,586 @@
 {
-  "strokes": [
-    {
-      "type": "dashed",
-      "style": "dashed=1;fixDash=1"
-    },
-    {
-      "type": "dotted",
-      "style": "dashed=1;fixDash=1;dashPattern=1 4"
-    },
-    {
-      "type": "dash_dot",
-      "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5"
-    },
-    {
-      "type": "dash_dot_dot",
-      "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5"
-    },
-    {
-      "type": "dot_dot_dot",
-      "style": "dashed=1;fixDash=1;dashPattern=1 2"
-    },
-    {
-      "type": "long_dash",
-      "style": "dashed=1;fixDash=1;dashPattern=16 6"
-    },
-    {
-      "type": "dash_long_dash",
-      "style": "dashed=1;fixDash=1;dashPattern=10 6 16 6"
-    },
-    {
-      "type": "dashed24",
-      "style": "dashed=1;fixDash=1;dashPattern=3 8"
-    },
-    {
-      "type": "dashed32",
-      "style": "dashed=1;fixDash=1;dashPattern=6 5"
-    },
-    {
-      "type": "dashed44",
-      "style": "dashed=1;fixDash=1;dashPattern=8 8"
-    }
-  ],
+  "shape": {
+    "lookup": [
+      {
+        "type": "solid",
+        "category": "line"
+      },
+      {
+        "type": "h1",
+        "category": "text"
+      },
+      {
+        "type": "h2",
+        "category": "text"
+      },
+      {
+        "type": "h3",
+        "category": "text"
+      },
+      {
+        "type": "h4",
+        "category": "text"
+      },
+      {
+        "type": "h5",
+        "category": "text"
+      },
+      {
+        "type": "h6",
+        "category": "text"
+      },
+      {
+        "type": "p",
+        "category": "text"
+      },
+      {
+        "type": "actor",
+        "category": "element"
+      },
+      {
+        "type": "actor2",
+        "category": "element"
+      },
+      {
+        "type": "callout",
+        "category": "element"
+      },
+      {
+        "type": "callout2",
+        "category": "element"
+      },
+      {
+        "type": "callout3",
+        "category": "element"
+      },
+      {
+        "type": "callout4",
+        "category": "element"
+      },
+      {
+        "type": "circle",
+        "category": "element"
+      },
+      {
+        "type": "cloud",
+        "category": "element"
+      },
+      {
+        "type": "container",
+        "category": "element"
+      },
+      {
+        "type": "container2",
+        "category": "element"
+      },
+      {
+        "type": "container3",
+        "category": "element"
+      },
+      {
+        "type": "container4",
+        "category": "element"
+      },
+      {
+        "type": "cross",
+        "category": "element"
+      },
+      {
+        "type": "envelop",
+        "category": "element"
+      },
+      {
+        "type": "database",
+        "category": "element"
+      },
+      {
+        "type": "db_json",
+        "category": "element"
+      },
+      {
+        "type": "diamond",
+        "category": "element"
+      },
+      {
+        "type": "document",
+        "category": "element"
+      },
+      {
+        "type": "ellipse",
+        "category": "element"
+      },
+      {
+        "type": "group",
+        "category": "element"
+      },
+      {
+        "type": "hexagon",
+        "category": "element"
+      },
+      {
+        "type": "interface",
+        "category": "element"
+      },
+      {
+        "type": "klass",
+        "category": "element"
+      },
+      {
+        "type": "note",
+        "category": "element"
+      },
+      {
+        "type": "process",
+        "category": "element"
+      },
+      {
+        "type": "rectangle",
+        "category": "element"
+      },
+      {
+        "type": "rectangle2",
+        "category": "element"
+      },
+      {
+        "type": "square",
+        "category": "element"
+      },
+      {
+        "type": "step",
+        "category": "element"
+      },
+      {
+        "type": "tick",
+        "category": "element"
+      },
+      {
+        "type": "todo",
+        "category": "element"
+      },
+      {
+        "type": "face",
+        "category": "element"
+      },
+      {
+        "type": "triangle",
+        "category": "element"
+      },
+      {
+        "type": "embed_row",
+        "category": "element"
+      },
+      {
+        "type": "embed_col50",
+        "category": "element"
+      },
+      {
+        "type": "embed_col200",
+        "category": "element"
+      }
+    ],
+    "elements": [
+      {
+        "category": "element",
+        "type": "actor",
+        "x": 0,
+        "y": 0,
+        "w": 40,
+        "h": 50,
+        "style_modifiers": "shape=actor"
+      },
+      {
+        "category": "element",
+        "type": "actor2",
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 50,
+        "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
+      },
+      {
+        "category": "element",
+        "type": "callout",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 120,
+        "style_modifiers": "shape=callout"
+      },
+      {
+        "category": "element",
+        "type": "callout2",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "shape=mxgraph.basic.oval_callout"
+      },
+      {
+        "category": "element",
+        "type": "callout3",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "shape=mxgraph.basic.cloud_callout"
+      },
+      {
+        "category": "element",
+        "type": "callout4",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 120,
+        "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
+      },
+      {
+        "category": "element",
+        "type": "circle",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "ellipse"
+      },
+      {
+        "category": "element",
+        "type": "cloud",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "shape=cloud"
+      },
+      {
+        "category": "element",
+        "type": "container",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "swimlane"
+      },
+      {
+        "category": "element",
+        "type": "container2",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "swimlane;horizontal=0"
+      },
+      {
+        "category": "element",
+        "type": "container3",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "swimlane;startSize=50"
+      },
+      {
+        "category": "element",
+        "type": "container4",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "swimlane;resizable=0"
+      },
+      {
+        "category": "element",
+        "type": "cross",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
+      },
+      {
+        "category": "element",
+        "type": "envelop",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 100,
+        "style_modifiers": "shape=message"
+      },
+      {
+        "category": "element",
+        "type": "database",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 80,
+        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
+      },
+      {
+        "category": "element",
+        "type": "db_json",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 40,
+        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
+      },
+      {
+        "category": "element",
+        "type": "diamond",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 100,
+        "style_modifiers": "rhombus"
+      },
+      {
+        "category": "element",
+        "type": "document",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "shape=mxgraph.basic.document"
+      },
+      {
+        "category": "element",
+        "type": "ellipse",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 120,
+        "style_modifiers": "ellipse"
+      },
+      {
+        "category": "element",
+        "type": "group",
+        "x": 0,
+        "y": 0,
+        "w": 210,
+        "h": 210,
+        "style_modifiers": "fontSize=20;verticalAlign=top"
+      },
+      {
+        "category": "element",
+        "type": "hexagon",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 120,
+        "style_modifiers": "shape=hexagon"
+      },
+      {
+        "category": "element",
+        "type": "interface",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
+      },
+      {
+        "category": "element",
+        "type": "klass",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
+      },
+      {
+        "category": "element",
+        "type": "note",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": "shape=note"
+      },
+      {
+        "category": "element",
+        "type": "process",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 120,
+        "style_modifiers": "shape=process"
+      },
+      {
+        "category": "element",
+        "type": "rectangle",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 120,
+        "style_modifiers": ""
+      },
+      {
+        "category": "element",
+        "type": "rectangle2",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 120,
+        "style_modifiers": "shape=mxgraph.basic.cloud_rect"
+      },
+      {
+        "category": "element",
+        "type": "square",
+        "x": 0,
+        "y": 0,
+        "w": 160,
+        "h": 160,
+        "style_modifiers": ""
+      },
+      {
+        "category": "element",
+        "type": "step",
+        "x": 0,
+        "y": 0,
+        "w": 120,
+        "h": 80,
+        "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
+      },
+      {
+        "category": "element",
+        "type": "tick",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
+      },
+      {
+        "category": "element",
+        "type": "todo",
+        "x": 0,
+        "y": 0,
+        "w": 300,
+        "h": 60,
+        "style_modifiers": ""
+      },
+      {
+        "category": "element",
+        "type": "face",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 100,
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
+      },
+      {
+        "category": "element",
+        "type": "triangle",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 100,
+        "style_modifiers": "triangle"
+      },
+      {
+        "category": "element",
+        "type": "embed_row",
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 40,
+        "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
+      },
+      {
+        "category": "element",
+        "type": "embed_col50",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 40,
+        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
+      },
+      {
+        "category": "element",
+        "type": "embed_col200",
+        "x": 0,
+        "y": 0,
+        "w": 150,
+        "h": 40,
+        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
+      }
+    ],
+    "lines": [
+      {
+        "category": "line",
+        "type": "solid",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0"
+      }
+    ],
+    "texts": [
+      {
+        "category": "text",
+        "type": "h1",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none"
+      },
+      {
+        "category": "text",
+        "type": "h2",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none"
+      },
+      {
+        "category": "text",
+        "type": "h3",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none"
+      },
+      {
+        "category": "text",
+        "type": "h4",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none"
+      },
+      {
+        "category": "text",
+        "type": "h5",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none"
+      },
+      {
+        "category": "text",
+        "type": "h6",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none"
+      },
+      {
+        "category": "text",
+        "type": "p",
+        "x": 0,
+        "y": 0,
+        "w": 100,
+        "h": 50,
+        "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none"
+      }
+    ]
+  },
   "connector": {
     "compass_points": [
       {
@@ -1197,10 +1737,22 @@
         "font_color": "#1F2D3D"
       },
       {
-        "favourite": 0,
+        "favourite": 1,
         "type": "light_golden_rod_yellow",
         "bg_color": "#FAFAD2",
         "font_color": "#1F2D3D"
+      },
+      {
+        "favourite": 1,
+        "type": "pale_gray",
+        "bg_color": "#FAFAFA",
+        "font_color": "#FFFFFF"
+      },
+      {
+        "favourite": 0,
+        "type": "pale_grey",
+        "bg_color": "#FAFAFA",
+        "font_color": "#FFFFFF"
       },
       {
         "favourite": 0,
@@ -1365,7 +1917,7 @@
         "font_color": "#1F2D3D"
       },
       {
-        "favourite": 0,
+        "favourite": 1,
         "type": "snow",
         "bg_color": "#FFFAFA",
         "font_color": "#1F2D3D"
@@ -1390,402 +1942,46 @@
       }
     ]
   },
-  "shapes": [
+  "strokes": [
     {
-      "type": "solid",
-      "category": "line",
-      "x": 0,
-      "y": 0,
-      "w": 50,
-      "h": 50,
-      "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0"
+      "type": "dashed",
+      "style": "dashed=1;fixDash=1"
     },
     {
-      "type": "h1",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none"
+      "type": "dotted",
+      "style": "dashed=1;fixDash=1;dashPattern=1 4"
     },
     {
-      "type": "h2",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none"
+      "type": "dash_dot",
+      "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5"
     },
     {
-      "type": "h3",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none"
+      "type": "dash_dot_dot",
+      "style": "dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5"
     },
     {
-      "type": "h4",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none"
+      "type": "dot_dot_dot",
+      "style": "dashed=1;fixDash=1;dashPattern=1 2"
     },
     {
-      "type": "h5",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none"
+      "type": "long_dash",
+      "style": "dashed=1;fixDash=1;dashPattern=16 6"
     },
     {
-      "type": "h6",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none"
+      "type": "dash_long_dash",
+      "style": "dashed=1;fixDash=1;dashPattern=10 6 16 6"
     },
     {
-      "type": "p",
-      "category": "text",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 50,
-      "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none"
+      "type": "dashed24",
+      "style": "dashed=1;fixDash=1;dashPattern=3 8"
     },
     {
-      "type": "actor",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 40,
-      "h": 50,
-      "style_modifiers": "shape=actor"
+      "type": "dashed32",
+      "style": "dashed=1;fixDash=1;dashPattern=6 5"
     },
     {
-      "type": "actor2",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 30,
-      "h": 50,
-      "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
-    },
-    {
-      "type": "callout",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 120,
-      "style_modifiers": "shape=callout"
-    },
-    {
-      "type": "callout2",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "shape=mxgraph.basic.oval_callout"
-    },
-    {
-      "type": "callout3",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "shape=mxgraph.basic.cloud_callout"
-    },
-    {
-      "type": "callout4",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 120,
-      "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
-    },
-    {
-      "type": "circle",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "ellipse"
-    },
-    {
-      "type": "cloud",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "shape=cloud"
-    },
-    {
-      "type": "container",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "swimlane"
-    },
-    {
-      "type": "container2",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "swimlane;horizontal=0"
-    },
-    {
-      "type": "container3",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "swimlane;startSize=50"
-    },
-    {
-      "type": "container4",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "swimlane;resizable=0"
-    },
-    {
-      "type": "cross",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 50,
-      "h": 50,
-      "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
-    },
-    {
-      "type": "envelop",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 100,
-      "style_modifiers": "shape=message"
-    },
-    {
-      "type": "database",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 80,
-      "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
-    },
-    {
-      "type": "db_json",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 40,
-      "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
-    },
-    {
-      "type": "diamond",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "style_modifiers": "rhombus"
-    },
-    {
-      "type": "document",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "shape=mxgraph.basic.document"
-    },
-    {
-      "type": "ellipse",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 200,
-      "h": 120,
-      "style_modifiers": "ellipse"
-    },
-    {
-      "type": "group",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 210,
-      "h": 210,
-      "style_modifiers": "fontSize=20;verticalAlign=top"
-    },
-    {
-      "type": "hexagon",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 200,
-      "h": 120,
-      "style_modifiers": "shape=hexagon"
-    },
-    {
-      "type": "interface",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
-    },
-    {
-      "type": "klass",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
-    },
-    {
-      "type": "note",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": "shape=note"
-    },
-    {
-      "type": "process",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 200,
-      "h": 120,
-      "style_modifiers": "shape=process"
-    },
-    {
-      "type": "rectangle",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 200,
-      "h": 120,
-      "style_modifiers": ""
-    },
-    {
-      "type": "rectangle2",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 200,
-      "h": 120,
-      "style_modifiers": "shape=mxgraph.basic.cloud_rect"
-    },
-    {
-      "type": "square",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 160,
-      "h": 160,
-      "style_modifiers": ""
-    },
-    {
-      "type": "step",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 120,
-      "h": 80,
-      "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
-    },
-    {
-      "type": "tick",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 50,
-      "h": 50,
-      "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
-    },
-    {
-      "type": "todo",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 300,
-      "h": 60,
-      "style_modifiers": ""
-    },
-    {
-      "type": "face",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
-    },
-    {
-      "type": "triangle",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 100,
-      "h": 100,
-      "style_modifiers": "triangle"
-    },
-    {
-      "type": "embed_row",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 200,
-      "h": 40,
-      "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
-    },
-    {
-      "type": "embed_col50",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 50,
-      "h": 40,
-      "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
-    },
-    {
-      "type": "embed_col200",
-      "category": "element",
-      "x": 0,
-      "y": 0,
-      "w": 150,
-      "h": 40,
-      "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
+      "type": "dashed44",
+      "style": "dashed=1;fixDash=1;dashPattern=8 8"
     }
   ]
 }

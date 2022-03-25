@@ -37,86 +37,146 @@ RSpec.describe DrawioDsl::Configuration do
       end
     end
 
-    describe '.elements' do
-      subject { instance.elements }
+    describe '.shape' do
+      subject { instance.shape }
 
-      it { is_expected.to be_a(Hash) }
+      it { is_expected.to be_a(DrawioDsl::Configuration::Shape) }
 
-      describe '#element' do
-        context 'when element is defined' do
-          subject { instance.element(:actor) }
+      describe '.source_config' do
+        subject { instance.shape.source_config }
 
-          it do
-            is_expected.to have_attributes(
-              type: :actor,
-              x: 0,
-              y: 0,
-              w: 40,
-              h: 50,
-              style_modifiers: 'shape=actor'
-            )
+        it { is_expected.to be_a(Hash) }
+
+        describe '#element' do
+          context 'when element is defined' do
+            subject { instance.shape.element(:actor) }
+
+            it do
+              is_expected.to have_attributes(
+                type: :actor,
+                x: 0,
+                y: 0,
+                w: 40,
+                h: 50,
+                style_modifiers: 'shape=actor'
+              )
+            end
+          end
+
+          context 'when element is not defined' do
+            subject { instance.shape.element(:unknown) }
+
+            it do
+              is_expected.to have_attributes(
+                type: :square,
+                x: 0,
+                y: 0,
+                w: 160,
+                h: 160,
+                style_modifiers: ''
+              )
+            end
+          end
+
+          describe '#element_types' do
+            subject { instance.shape.element_types }
+
+            it { is_expected.to be_a(Array) }
+          end
+
+          describe '#random_element_type' do
+            subject { instance.shape.random_element_type }
+
+            it { is_expected.to be_a(Symbol) }
           end
         end
-        context 'when element is not defined' do
-          subject { instance.element(:unknown) }
 
-          it { is_expected.to be_nil }
-        end
-      end
-    end
+        describe '#line' do
+          context 'when line is defined' do
+            subject { instance.line(:solid) }
 
-    describe '.lines' do
-      subject { instance.lines }
+            it do
+              is_expected.to have_attributes(
+                type: :solid,
+                x: 0,
+                y: 0,
+                w: 50,
+                h: 50,
+                style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+              )
+            end
+          end
 
-      it { is_expected.to be_a(Hash) }
+          context 'when line is not defined' do
+            subject { instance.shape.line(:unknown) }
 
-      describe '#line' do
-        context 'when solid is defined' do
-          subject { instance.line(:solid) }
+            it do
+              is_expected.to have_attributes(
+                type: :solid,
+                x: 0,
+                y: 0,
+                w: 50,
+                h: 50,
+                style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+              )
+            end
+          end
 
-          it do
-            is_expected.to have_attributes(
-              type: :solid,
-              x: 0,
-              y: 0,
-              w: 50,
-              h: 50,
-              style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
-            )
+          describe '#line_types' do
+            subject { instance.shape.line_types }
+
+            it { is_expected.to be_a(Array) }
+          end
+
+          describe '#random_line_type' do
+            subject { instance.shape.random_line_type }
+
+            it { is_expected.to be_a(Symbol) }
           end
         end
-        context 'when line is not defined' do
-          subject { instance.line(:unknown) }
 
-          it { is_expected.to be_nil }
-        end
-      end
-    end
+        describe '#text' do
+          context 'when text is defined' do
+            subject { instance.shape.text(:h1) }
 
-    describe '.texts' do
-      subject { instance.texts }
-
-      it { is_expected.to be_a(Hash) }
-
-      describe '#text' do
-        context 'when text is defined' do
-          subject { instance.text(:h1) }
-
-          it do
-            is_expected.to have_attributes(
-              type: :h1,
-              x: 0,
-              y: 0,
-              w: 100,
-              h: 50,
-              style_modifiers: 'text;fontSize=89;fontStyle=1;fillColor=none'
-            )
+            it do
+              is_expected.to have_attributes(
+                type: :h1,
+                x: 0,
+                y: 0,
+                w: 100,
+                h: 50,
+                style_modifiers: 'text;fontSize=89;fontStyle=1;fillColor=none'
+              )
+            end
           end
-        end
-        context 'when text is not defined' do
-          subject { instance.text(:unknown) }
 
-          it { is_expected.to be_nil }
+          context 'when text is not defined' do
+            subject { instance.shape.text(:unknown) }
+
+            it do
+              is_expected.to have_attributes(
+                type: :p,
+                x: 0,
+                y: 0,
+                w: 100,
+                h: 50,
+                style_modifiers: 'text;fontSize=16;fontStyle=1;fillColor=none'
+              )
+            end
+          end
+
+          describe '#text_types' do
+            subject { instance.shape.text_types }
+
+            it { is_expected.to be_a(Array) }
+          end
+
+          describe '#random_text_type' do
+            subject { instance.shape.random_text_type }
+
+            it { is_expected.to be_a(Symbol) }
+          end
         end
       end
     end
@@ -258,18 +318,6 @@ RSpec.describe DrawioDsl::Configuration do
 
           it { is_expected.to be_a(Array) }
         end
-      end
-    end
-
-    describe '#shapes' do
-      subject { instance.shapes }
-
-      it { is_expected.not_to be_nil }
-
-      context 'check one of the shapes' do
-        subject { instance.shapes.square }
-
-        it { is_expected.to have_attributes(type: :square) }
       end
     end
   end

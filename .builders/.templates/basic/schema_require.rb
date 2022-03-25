@@ -31,5 +31,5 @@ require_relative 'lines/{{snake ./type}}'
 require_relative 'texts/{{snake ./type}}'
 {{/each}}
 
-# Virtual elements have internal uses 
+# Virtual elements have internal uses
 require_relative 'virtual/anchor'
