@@ -29,44 +29,43 @@ KManager.action :requires do
           texts: texts)
 
         elements.each do |element|
-          add("schema/elements/#{element['type']}.rb",
+          add("schema/elements/#{element['key']}.rb",
             template_file: 'schema_element.rb',
             element: element)
         end
 
         lines.each do |line|
-          add("schema/lines/#{line['type']}.rb",
+          add("schema/lines/#{line['key']}.rb",
             template_file: 'schema_line.rb',
             line: line)
         end
 
         texts.each do |text|
-          add("schema/texts/#{text['type']}.rb",
+          add("schema/texts/#{text['key']}.rb",
             template_file: 'schema_text.rb',
             text: text)
         end
 
         add("drawio_shapes.rb"        , template_file: 'drawio_shapes.rb'       , shapes: lookup, shape_length: lookup.length)
         add("dom_builder_shapes.rb"   , template_file: 'dom_builder_shapes.rb'  , shapes: lookup)
-        # add("configuration_shapes.rb" , template_file: 'configuration_shapes.rb', shapes: lookup)
 
         cd(:spec)
 
         # build spec for each shape
         elements.each do |element|
-          add("schema/elements/#{element['type']}_spec.rb",
+          add("schema/elements/#{element['key']}_spec.rb",
             template_file: 'schema_element_spec.rb',
             element: element)
         end
 
         lines.each do |line|
-          add("schema/lines/#{line['type']}_spec.rb",
+          add("schema/lines/#{line['key']}_spec.rb",
             template_file: 'schema_line_spec.rb',
             line: line)
         end
 
         texts.each do |text|
-          add("schema/texts/#{text['type']}_spec.rb",
+          add("schema/texts/#{text['key']}_spec.rb",
             template_file: 'schema_text_spec.rb',
             text: text)
         end

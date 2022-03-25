@@ -34,14 +34,14 @@ module DrawioDsl
     end
 
     # need test
-    def get_item_by_category(type, category)
+    def get_item_by_category(key, category)
       case category
       when :text
-        text(type)
+        text(key)
       when :line
-        line(type)
+        line(key)
       else
-        element(type)
+        element(key)
       end
     end
 
@@ -69,9 +69,9 @@ module DrawioDsl
     class Shape
       attr_reader :source_config
 
-      ElementShapeConfig = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-      LineShapeConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
-      TextShapeConfig    = Struct.new(:type, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+      ElementShapeConfig = Struct.new(:key, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+      LineShapeConfig    = Struct.new(:key, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
+      TextShapeConfig    = Struct.new(:key, :x, :y, :w, :h, :style_modifiers, keyword_init: true)
 
       def initialize(source_config)
         @source_config = source_config
@@ -79,9 +79,9 @@ module DrawioDsl
 
       # Elements
 
-      def element(type)
-        elements[type] || ElementShapeConfig.new(
-          type: :square,
+      def element(key)
+        elements[key] || ElementShapeConfig.new(
+          key: :square,
           x: 0,
           y: 0,
           w: 160,
@@ -95,8 +95,8 @@ module DrawioDsl
 
         @elements = {}
         source_config['elements'].each do |element|
-          @elements[element['type'].to_sym] = ElementShapeConfig.new(
-            type: element['type'].to_sym,
+          @elements[element['key'].to_sym] = ElementShapeConfig.new(
+            key: element['key'].to_sym,
             x: element['x'].to_i,
             y: element['y'].to_i,
             w: element['w'].to_i,
@@ -108,19 +108,19 @@ module DrawioDsl
         @elements
       end
 
-      def element_types
+      def element_keys
         elements.keys
       end
 
-      def random_element_type
-        elements.values.sample.type
+      def random_element_key
+        elements.values.sample.key
       end
 
       # Lines
 
-      def line(type)
-        lines[type] || LineShapeConfig.new(
-          type: :solid,
+      def line(key)
+        lines[key] || LineShapeConfig.new(
+          key: :solid,
           x: 0,
           y: 0,
           w: 50,
@@ -134,8 +134,8 @@ module DrawioDsl
 
         @lines = {}
         source_config['lines'].each do |line|
-          @lines[line['type'].to_sym] = LineShapeConfig.new(
-            type: line['type'].to_sym,
+          @lines[line['key'].to_sym] = LineShapeConfig.new(
+            key: line['key'].to_sym,
             x: line['x'].to_i,
             y: line['y'].to_i,
             w: line['w'].to_i,
@@ -147,17 +147,17 @@ module DrawioDsl
         @lines
       end
 
-      def line_types
+      def line_keys
         lines.keys
       end
 
-      def random_line_type
-        lines.values.sample.type
+      def random_line_key
+        lines.values.sample.key
       end
 
-      def text(type)
-        texts[type] || TextShapeConfig.new(
-          type: :p,
+      def text(key)
+        texts[key] || TextShapeConfig.new(
+          key: :p,
           x: 0,
           y: 0,
           w: 100,
@@ -173,8 +173,8 @@ module DrawioDsl
 
         @texts = {}
         source_config['texts'].each do |text|
-          @texts[text['type'].to_sym] = TextShapeConfig.new(
-            type: text['type'].to_sym,
+          @texts[text['key'].to_sym] = TextShapeConfig.new(
+            key: text['key'].to_sym,
             x: text['x'].to_i,
             y: text['y'].to_i,
             w: text['w'].to_i,
@@ -186,12 +186,12 @@ module DrawioDsl
         @texts
       end
 
-      def text_types
+      def text_keys
         texts.keys
       end
 
-      def random_text_type
-        texts.values.sample.type
+      def random_text_key
+        texts.values.sample.key
       end
     end
 
@@ -269,16 +269,16 @@ module DrawioDsl
     class Theme
       attr_reader :source_config
 
-      BackgroundThemeConfig = Struct.new(:type, :bg_color, :font_color, :favourite, keyword_init: true)
-      ElementThemeConfig = Struct.new(:type, :fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
+      BackgroundThemeConfig = Struct.new(:key, :bg_color, :font_color, :favourite, keyword_init: true)
+      ElementThemeConfig = Struct.new(:key, :fill_color, :stroke_color, :font_color, :gradient, keyword_init: true)
 
       def initialize(source_config)
         @source_config = source_config
       end
 
-      def background(type)
-        backgrounds[type] || BackgroundThemeConfig.new(
-          type: type,
+      def background(key)
+        backgrounds[key] || BackgroundThemeConfig.new(
+          key: key,
           bg_color: '#000000',
           font_color: '#FFFFFF',
           favourite: false
@@ -290,8 +290,8 @@ module DrawioDsl
 
         @backgrounds = {}
         source_config['backgrounds'].each do |background|
-          @backgrounds[background['type'].to_sym] = BackgroundThemeConfig.new(
-            type: background['type'].to_sym,
+          @backgrounds[background['key'].to_sym] = BackgroundThemeConfig.new(
+            key: background['key'].to_sym,
             bg_color: background['bg_color'],
             font_color: background['font_color'],
             favourite: background['favourite'] == 1
@@ -301,21 +301,21 @@ module DrawioDsl
         @backgrounds
       end
 
-      def background_types
+      def background_keys
         backgrounds.keys
       end
 
-      def favourite_background_types
-        backgrounds.values.select(&:favourite).map(&:type)
+      def favourite_background_keys
+        backgrounds.values.select(&:favourite).map(&:key)
       end
 
-      def random_background_type
-        backgrounds.values.sample.type
+      def random_background_key
+        backgrounds.values.sample.key
       end
 
-      def element(type)
-        elements[type] || ElementThemeConfig.new(
-          type: type,
+      def element(key)
+        elements[key] || ElementThemeConfig.new(
+          key: key,
           fill_color: '#ffffff',
           stroke_color: '#000000',
           font_color: '#000000',
@@ -328,8 +328,8 @@ module DrawioDsl
 
         @elements = {}
         source_config['elements'].each do |element|
-          @elements[element['type'].to_sym] = ElementThemeConfig.new(
-            type: element['type'].to_sym,
+          @elements[element['key'].to_sym] = ElementThemeConfig.new(
+            key: element['key'].to_sym,
             fill_color: element['fill_color'],
             stroke_color: element['stroke_color'],
             font_color: element['font_color'],
@@ -340,12 +340,12 @@ module DrawioDsl
         @elements
       end
 
-      def element_types
+      def element_keys
         elements.keys
       end
 
-      def random_element_type
-        elements.values.sample.type
+      def random_element_key
+        elements.values.sample.key
       end
     end
   end

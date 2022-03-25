@@ -2,8 +2,8 @@
 
 module DrawioDsl
   module Schema
-    class {{camel text.key}} < Text
-      configure_as(:{{snake text.key}})
+    class EmbedCol200 < Element
+      configure_as(:embed_col200)
     end
   end
 end

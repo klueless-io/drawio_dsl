@@ -53,7 +53,7 @@ RSpec.describe DrawioDsl::Configuration do
 
             it do
               is_expected.to have_attributes(
-                type: :actor,
+                key: :actor,
                 x: 0,
                 y: 0,
                 w: 40,
@@ -68,7 +68,7 @@ RSpec.describe DrawioDsl::Configuration do
 
             it do
               is_expected.to have_attributes(
-                type: :square,
+                key: :square,
                 x: 0,
                 y: 0,
                 w: 160,
@@ -78,14 +78,14 @@ RSpec.describe DrawioDsl::Configuration do
             end
           end
 
-          describe '#element_types' do
-            subject { instance.shape.element_types }
+          describe '#element_keys' do
+            subject { instance.shape.element_keys }
 
             it { is_expected.to be_a(Array) }
           end
 
-          describe '#random_element_type' do
-            subject { instance.shape.random_element_type }
+          describe '#random_element_key' do
+            subject { instance.shape.random_element_key }
 
             it { is_expected.to be_a(Symbol) }
           end
@@ -97,7 +97,7 @@ RSpec.describe DrawioDsl::Configuration do
 
             it do
               is_expected.to have_attributes(
-                type: :solid,
+                key: :solid,
                 x: 0,
                 y: 0,
                 w: 50,
@@ -112,7 +112,7 @@ RSpec.describe DrawioDsl::Configuration do
 
             it do
               is_expected.to have_attributes(
-                type: :solid,
+                key: :solid,
                 x: 0,
                 y: 0,
                 w: 50,
@@ -122,14 +122,14 @@ RSpec.describe DrawioDsl::Configuration do
             end
           end
 
-          describe '#line_types' do
-            subject { instance.shape.line_types }
+          describe '#line_keys' do
+            subject { instance.shape.line_keys }
 
             it { is_expected.to be_a(Array) }
           end
 
-          describe '#random_line_type' do
-            subject { instance.shape.random_line_type }
+          describe '#random_line_key' do
+            subject { instance.shape.random_line_key }
 
             it { is_expected.to be_a(Symbol) }
           end
@@ -141,7 +141,7 @@ RSpec.describe DrawioDsl::Configuration do
 
             it do
               is_expected.to have_attributes(
-                type: :h1,
+                key: :h1,
                 x: 0,
                 y: 0,
                 w: 100,
@@ -156,7 +156,7 @@ RSpec.describe DrawioDsl::Configuration do
 
             it do
               is_expected.to have_attributes(
-                type: :p,
+                key: :p,
                 x: 0,
                 y: 0,
                 w: 100,
@@ -166,14 +166,14 @@ RSpec.describe DrawioDsl::Configuration do
             end
           end
 
-          describe '#text_types' do
-            subject { instance.shape.text_types }
+          describe '#text_keys' do
+            subject { instance.shape.text_keys }
 
             it { is_expected.to be_a(Array) }
           end
 
-          describe '#random_text_type' do
-            subject { instance.shape.random_text_type }
+          describe '#random_text_key' do
+            subject { instance.shape.random_text_key }
 
             it { is_expected.to be_a(Symbol) }
           end
@@ -259,36 +259,36 @@ RSpec.describe DrawioDsl::Configuration do
           context 'when background is defined' do
             subject { instance.theme.background(:navy) }
 
-            it { is_expected.to have_attributes(type: :navy, bg_color: '#000080', font_color: '#FFFFFF', favourite: false) }
+            it { is_expected.to have_attributes(key: :navy, bg_color: '#000080', font_color: '#FFFFFF', favourite: false) }
 
             context 'when favourite is set' do
               subject { instance.theme.background(:teal) }
 
-              it { is_expected.to have_attributes(type: :teal, bg_color: '#008080', font_color: '#FFFFFF', favourite: true) }
+              it { is_expected.to have_attributes(key: :teal, bg_color: '#008080', font_color: '#FFFFFF', favourite: true) }
             end
           end
 
           context 'when background is not defined' do
             subject { instance.theme.background(:unknown) }
 
-            it { is_expected.to have_attributes(type: :unknown, bg_color: '#000000', font_color: '#FFFFFF', favourite: false) }
+            it { is_expected.to have_attributes(key: :unknown, bg_color: '#000000', font_color: '#FFFFFF', favourite: false) }
           end
 
-          describe '#background_types' do
-            subject { instance.theme.background_types }
+          describe '#background_keys' do
+            subject { instance.theme.background_keys }
 
             it { is_expected.to be_a(Array) }
           end
 
-          describe '#favourite_background_types' do
-            subject { instance.theme.favourite_background_types }
+          describe '#favourite_background_keys' do
+            subject { instance.theme.favourite_background_keys }
 
             it { is_expected.to be_a(Array).and include(:teal) }
             it { is_expected.not_to include(:navy) }
           end
 
-          describe '#random_background_type' do
-            subject { instance.theme.random_background_type }
+          describe '#random_background_key' do
+            subject { instance.theme.random_background_key }
 
             it { is_expected.to be_a(Symbol) }
           end
@@ -298,23 +298,23 @@ RSpec.describe DrawioDsl::Configuration do
           context 'when element is defined' do
             subject { instance.theme.element(:style_30) }
 
-            it { is_expected.to have_attributes(type: :style_30, fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#000000', gradient: '#b3b3b3') }
+            it { is_expected.to have_attributes(key: :style_30, fill_color: '#f5f5f5', stroke_color: '#666666', font_color: '#000000', gradient: '#b3b3b3') }
           end
           context 'when element is not defined' do
             subject { instance.theme.element(:unknown) }
 
-            it { is_expected.to have_attributes(type: :unknown, fill_color: '#ffffff', stroke_color: '#000000', font_color: '#000000', gradient: nil) }
+            it { is_expected.to have_attributes(key: :unknown, fill_color: '#ffffff', stroke_color: '#000000', font_color: '#000000', gradient: nil) }
           end
         end
 
-        describe '#random_element_type' do
-          subject { instance.theme.random_element_type }
+        describe '#random_element_key' do
+          subject { instance.theme.random_element_key }
 
           it { is_expected.to be_a(Symbol) }
         end
 
-        describe '#element_types' do
-          subject { instance.theme.element_types }
+        describe '#element_keys' do
+          subject { instance.theme.element_keys }
 
           it { is_expected.to be_a(Array) }
         end

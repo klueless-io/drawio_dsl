@@ -67,20 +67,20 @@ RSpec.describe DrawioDsl::DomBuilder do
 
     before { instance.add_page }
 
-    describe '#add_shape (any type of shape can be provided)' do
+    describe '#add_shape (any key of shape can be provided)' do
       before { instance.add_shape(shape) }
 
       let(:shape) { DrawioDsl::Schema::Square.new(page, **opts) }
       let(:opts) { { id: 1 } }
 
-      it { is_expected.to include(id: 1, type: :square) }
+      it { is_expected.to include(id: 1, key: :square) }
     end
 
     describe '#add_rectangle' do
       context 'when id is not provided' do
         before { instance.add_rectangle }
 
-        it { is_expected.to include(type: :rectangle) }
+        it { is_expected.to include(key: :rectangle) }
         it { expect(subject[:id]).to eq("#{instance.current_page.id}-1") }
       end
 
@@ -89,13 +89,13 @@ RSpec.describe DrawioDsl::DomBuilder do
 
         let(:opts) { { id: 1 } }
 
-        it { is_expected.to include(id: 1, type: :rectangle) }
+        it { is_expected.to include(id: 1, key: :rectangle) }
       end
 
       context 'when id is provided via optional positional param' do
         before { instance.add_rectangle(2) }
 
-        it { is_expected.to include(id: 2, type: :rectangle) }
+        it { is_expected.to include(id: 2, key: :rectangle) }
       end
     end
   end

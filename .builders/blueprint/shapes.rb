@@ -81,7 +81,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :shapes do
-    fields %i[category type x y w h style_modifiers]
+    fields %i[category key x y w h style_modifiers]
 
     # shape is a custom object
     # row :shape      , 0, 0,  20,  20, ''
@@ -150,7 +150,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :background_themes do
-    fields %i[favourite type bg_color font_color]
+    fields %i[favourite key bg_color font_color]
 
     # alternative source: https://www.quackit.com/css/css_color_codes.cfm
     # source: https://www.w3schools.com/colors/colors_hex.asp
@@ -269,8 +269,8 @@ m = KManager.model :shapes, namespace: %i[domain] do
     row 0, :antique_white                   , '#FAEBD7', '#1F2D3D'
     row 1, :linen                           , '#FAF0E6', '#1F2D3D'
     row 1, :light_golden_rod_yellow         , '#FAFAD2', '#1F2D3D'
-    row 1, :pale_gray                       , '#FAFAFA', '#FFFFFF'
-    row 0, :pale_grey                       , '#FAFAFA', '#FFFFFF'
+    row 1, :pale_gray                       , '#FAFAFA', '#1F2D3D'
+    row 0, :pale_grey                       , '#FAFAFA', '#1F2D3D'
     row 0, :old_lace                        , '#FDF5E6', '#1F2D3D'
     row 0, :red                             , '#FF0000', '#FFFFFF'
     row 0, :fuchsia                         , '#FF00FF', '#FFFFFF'
@@ -305,7 +305,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :element_themes do
-    fields %i[type fill_color stroke_color font_color gradient]
+    fields %i[key fill_color stroke_color font_color gradient]
 
     row :style_01, '#f5f5f5', '#666666', '#333333'
     row :style_02, '#dae8fc', '#6c8ebf', '#333333'
@@ -356,7 +356,7 @@ m = KManager.model :shapes, namespace: %i[domain] do
     data = self.raw_data
     content = {
       shape: {
-        lookup: data['shapes'].map { |shape| { type: shape['type'], category: shape['category'] } },
+        lookup: data['shapes'].map { |shape| { key: shape['key'], category: shape['category'] } },
         elements: data['shapes'].select { |shape| shape['category'] == :element },
         lines: data['shapes'].select { |shape| shape['category'] == :line },
         texts: data['shapes'].select { |shape| shape['category'] == :text }

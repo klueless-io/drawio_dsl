@@ -1,8 +1,8 @@
 KManager.action :themes_for_backgrounds do
   action do
 
-    favourites = KConfig.configuration.drawio.theme.favourite_background_types
-    all = KConfig.configuration.drawio.theme.background_types.each_slice(15).to_a.take(2)
+    favourites = KConfig.configuration.drawio.theme.favourite_background_keys
+    all = KConfig.configuration.drawio.theme.background_keys.each_slice(15).to_a.take(2)
     groups = [favourites] + all
 
     groups.each_with_index do |group, index|
@@ -36,7 +36,7 @@ KManager.action :themes_for_backgrounds do
 
       drawio
         .cd(:spec)
-        .save(".samples/26-themes-text-on-page-set-#{index}#{index == 0 ? '-favourite' : ''}.drawio")
+        .osave(".samples/26-themes-text-on-page-set-#{index}#{index == 0 ? '-favourite' : ''}.drawio")
     end
   end
 end

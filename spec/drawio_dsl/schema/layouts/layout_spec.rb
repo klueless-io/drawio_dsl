@@ -9,8 +9,8 @@ RSpec.describe DrawioDsl::Schema::Layout do
   let(:args) { {} }
 
   describe '#initialize' do
-    context '.type' do
-      subject { instance.type }
+    context '.key' do
+      subject { instance.key }
 
       it { is_expected.to eq(:unknown) }
     end

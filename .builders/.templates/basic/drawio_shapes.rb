@@ -8,14 +8,14 @@ module DrawioDsl
       case rand({{shape_length}})
       {{#each shapes}}
       when {{@index}}
-        {{snake ./type}}(**opts)
+        {{snake ./key}}(**opts)
       {{/each}}
       end
     end
     {{#each shapes}}
 
-    def {{snake ./type}}(id = nil, **opts, &block)
-      builder.add_{{snake ./type}}(id, **opts, &block)
+    def {{snake ./key}}(id = nil, **opts, &block)
+      builder.add_{{snake ./key}}(id, **opts, &block)
     end
     {{/each}}
   end

@@ -75,7 +75,7 @@ module DrawioDsl
         @sketch           = args[:sketch]           || page.style.sketch
         @glass            = args[:glass]            || page.style.glass
 
-        @type             = args[:type]             || shape_defaults.type
+        @key              = args[:key]              || shape_defaults.key
         @x                = args[:x]                || shape_defaults.x
         @y                = args[:y]                || shape_defaults.y
         @w                = args[:w]                || shape_defaults.w
@@ -83,9 +83,9 @@ module DrawioDsl
         @style_modifiers  = args[:style_modifiers]  || shape_defaults.style_modifiers
       end
 
-      def format(type = nil)
-        type ||= self.class.shape_key
-        format_instance(type)
+      def format(key = nil)
+        key ||= self.class.shape_key
+        format_instance(key)
       end
 
       def style
@@ -108,7 +108,7 @@ module DrawioDsl
 
       def as_xml(xml)
         # log.error category
-        # log.error type
+        # log.error key
         draw_element(xml) if is_a?(Element) || is_a?(Text)
         draw_line(xml)    if is_a?(Line)
       end
@@ -130,7 +130,7 @@ module DrawioDsl
           id: id,
           parent_id: parent&.id,
           classification: classification,
-          type: type,
+          key: key,
           x: x,
           y: y,
           w: w,
@@ -153,9 +153,9 @@ module DrawioDsl
       # :nocov:
       def debug(format: :detail)
         if format == :detail
-          debug_detail({ id: id, classification: classification, type: type })
+          debug_detail({ id: id, classification: classification, key: key })
         else
-          debug_row(classification, id, type, x, y, w, h)
+          debug_row(classification, id, key, x, y, w, h)
         end
       end
       # :nocov:

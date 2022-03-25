@@ -18,17 +18,17 @@ require_relative 'text'
 
 # Block elements such as actor, callout, square, circle, etc.
 {{#each elements}}
-require_relative 'elements/{{snake ./type}}'
+require_relative 'elements/{{snake ./key}}'
 {{/each}}
 
 # Connector lines
 {{#each lines}}
-require_relative 'lines/{{snake ./type}}'
+require_relative 'lines/{{snake ./key}}'
 {{/each}}
 
 # Text elements such as h1, h2, p, etc.
 {{#each texts}}
-require_relative 'texts/{{snake ./type}}'
+require_relative 'texts/{{snake ./key}}'
 {{/each}}
 
 # Virtual elements have internal uses

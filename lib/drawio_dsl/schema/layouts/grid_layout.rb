@@ -24,7 +24,7 @@ module DrawioDsl
         @v_align    = args[:v_align]    || :center
         @cell_no    = 1
 
-        super(page, **args.merge(type: :grid_layout))
+        super(page, **args.merge(key: :grid_layout))
       end
       # rubocop:enable Metrics/CyclomaticComplexity
 

@@ -1,5 +1,5 @@
 SHAPES = KConfig.configuration.drawio.shape
-TEXT_AND_ELEMENT_TYPES = SHAPES.text_types + SHAPES.element_types
+TEXT_AND_ELEMENT_KEYS = SHAPES.text_keys + SHAPES.element_keys
 
 KManager.action :styled_shapes do
   action do
@@ -10,35 +10,35 @@ KManager.action :styled_shapes do
       .page('Style-Plain', margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 5)
 
-        TEXT_AND_ELEMENT_TYPES.each do |shape|
+        TEXT_AND_ELEMENT_KEYS.each do |shape|
           send(shape, title: shape.to_s)
         end
       end
       .page('Style-Shadow', shadow: 1, margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 5)
 
-        TEXT_AND_ELEMENT_TYPES.each do |shape|
+        TEXT_AND_ELEMENT_KEYS.each do |shape|
           send(shape, title: shape.to_s)
         end
       end
       .page('Style-Rounded', rounded: 1, margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 5)
 
-        TEXT_AND_ELEMENT_TYPES.each do |shape|
+        TEXT_AND_ELEMENT_KEYS.each do |shape|
           send(shape, title: shape.to_s)
         end
       end
       .page('Style-Glass', glass: 1, margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 5)
 
-        TEXT_AND_ELEMENT_TYPES.each do |shape|
+        TEXT_AND_ELEMENT_KEYS.each do |shape|
           send(shape, title: shape.to_s)
         end
       end
       .page('Style-Sketch', sketch: 1, margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 5)
 
-        TEXT_AND_ELEMENT_TYPES.each do |shape|
+        TEXT_AND_ELEMENT_KEYS.each do |shape|
           send(shape, title: shape.to_s)
         end
       end

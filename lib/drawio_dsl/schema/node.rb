@@ -9,7 +9,7 @@ module DrawioDsl
       attr_accessor :page
       attr_accessor :parent
       attr_accessor :classification
-      attr_accessor :type
+      attr_accessor :key
       attr_accessor :nodes
 
       def initialize(page, **args)
@@ -17,7 +17,7 @@ module DrawioDsl
         @id = args[:id]
         @parent = args[:parent]
         @classification = args[:classification] || :unknown
-        @type = args[:type] || :unknown
+        @key = args[:key] || :unknown
         @nodes = NodeList.new
       end
 
@@ -26,7 +26,7 @@ module DrawioDsl
           id: id,
           parent_id: parent&.id,
           classification: classification,
-          type: type
+          key: key
         }
         result[:nodes] = nodes.to_h if nodes.any?
         result
@@ -58,11 +58,11 @@ module DrawioDsl
       end
 
       # rubocop:disable Metrics/ParameterLists
-      def debug_row(classification, id, type = nil, x = nil, y = nil, width = nil, height = nil)
+      def debug_row(classification, id, key = nil, x = nil, y = nil, width = nil, height = nil)
         row = []
         row << classification.to_s.ljust(11)
         row << id.to_s.ljust(6)
-        row << (type.nil? ? '' : type).to_s.ljust(15)
+        row << (key.nil? ? '' : key).to_s.ljust(15)
         row << (x.nil? ? '' : x).to_s.rjust(5)
         row << (y.nil? ? '' : y).to_s.rjust(5)
         row << (width.nil? ? '' : width).to_s.rjust(5)

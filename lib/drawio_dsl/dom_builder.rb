@@ -47,8 +47,8 @@ module DrawioDsl
       current_page.id = SecureRandom.alphanumeric(3) unless current_page.id
 
       # add anchor nodes
-      page_anchor = DrawioDsl::Schema::Anchor.new(self, id: "page_root_#{current_page.id}", type: :page_root)
-      node_anchor = DrawioDsl::Schema::Anchor.new(self, id: "node_root_#{current_page.id}", type: :node_root)
+      page_anchor = DrawioDsl::Schema::Anchor.new(self, id: "page_root_#{current_page.id}", key: :page_root)
+      node_anchor = DrawioDsl::Schema::Anchor.new(self, id: "node_root_#{current_page.id}", key: :node_root)
       page_anchor.add_node(node_anchor)
 
       @focus_node = node_anchor

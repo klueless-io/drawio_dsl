@@ -15,7 +15,7 @@ module DrawioDsl
         @gap = args[:gap] || 20
         @perpendicular_max = 0
 
-        super(page, **args.merge(type: :flex_layout))
+        super(page, **args.merge(key: :flex_layout))
       end
 
       def position_shape(shape)

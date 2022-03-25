@@ -2,8 +2,8 @@
 
 module DrawioDsl
   module Schema
-    class {{camel element.type}} < Element
-      configure_as(:{{snake element.type}})
+    class {{camel element.key}} < Element
+      configure_as(:{{snake element.key}})
     end
   end
 end

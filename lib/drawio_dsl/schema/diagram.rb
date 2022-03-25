@@ -15,7 +15,7 @@ module DrawioDsl
       def initialize(**args)
         @host     = args[:host]     || SecureRandom.alphanumeric(3)
         # TODO: assess and resolve this inconsistency
-        @theme    = args[:theme]    || KConfig.configuration.drawio.theme.random_background_type
+        @theme    = args[:theme]    || KConfig.configuration.drawio.theme.random_background_key
         @bg_theme = args[:bg_theme] || :not_set
 
         @style = DrawioDsl::Schema::CommonStyle.new(**args) do

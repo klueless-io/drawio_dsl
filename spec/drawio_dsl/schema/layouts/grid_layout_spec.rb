@@ -14,7 +14,7 @@ RSpec.describe DrawioDsl::Schema::GridLayout do
     context 'when minimal arguments' do
       it do
         is_expected.to have_attributes(
-          type: :grid_layout,
+          key: :grid_layout,
           direction: :horizontal,
           wrap_at: 5,
           grid_w: 220,

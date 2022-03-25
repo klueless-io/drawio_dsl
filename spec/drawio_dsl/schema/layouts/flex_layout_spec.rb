@@ -21,7 +21,7 @@ RSpec.describe DrawioDsl::Schema::FlexLayout do
     context 'when minimal arguments' do
       it do
         is_expected.to have_attributes(
-          type: :flex_layout,
+          key: :flex_layout,
           direction: :horizontal,
           wrap_at: 1000,
           anchor_x: 0,
@@ -33,7 +33,7 @@ RSpec.describe DrawioDsl::Schema::FlexLayout do
         let(:layout_args) { { direction: :vertical } }
         it do
           is_expected.to have_attributes(
-            type: :flex_layout,
+            key: :flex_layout,
             direction: :vertical,
             wrap_at: 800,
             anchor_x: 0,
@@ -55,7 +55,7 @@ RSpec.describe DrawioDsl::Schema::FlexLayout do
     context 'when 0 shape' do
       it do
         is_expected.to include(
-          type: :flex_layout,
+          key: :flex_layout,
           direction: :horizontal,
           wrap_at: 300,
           anchor_x: 10,
@@ -200,7 +200,7 @@ RSpec.describe DrawioDsl::Schema::FlexLayout do
     context 'when 0 shape' do
       it do
         is_expected.to include(
-          type: :flex_layout,
+          key: :flex_layout,
           direction: :horizontal,
           wrap_at: 100,
           anchor_x: 0,
@@ -296,7 +296,7 @@ RSpec.describe DrawioDsl::Schema::FlexLayout do
     context 'when 0 shape' do
       it do
         is_expected.to include(
-          type: :flex_layout,
+          key: :flex_layout,
           direction: :vertical,
           wrap_at: 300,
           anchor_x: 10,
@@ -441,7 +441,7 @@ RSpec.describe DrawioDsl::Schema::FlexLayout do
     context 'when 0 shape' do
       it do
         is_expected.to include(
-          type: :flex_layout,
+          key: :flex_layout,
           direction: :vertical,
           wrap_at: 100,
           anchor_x: 0,

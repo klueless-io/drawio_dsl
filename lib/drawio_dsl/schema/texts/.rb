@@ -2,8 +2,8 @@
 
 module DrawioDsl
   module Schema
-    class {{camel text.key}} < Text
-      configure_as(:{{snake text.key}})
+    class P < Text
+      configure_as(:p)
     end
   end
 end
