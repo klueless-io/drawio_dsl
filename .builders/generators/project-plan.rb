@@ -11,10 +11,6 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'rename type to key')
-        todo(title: 'deepen the shape hierarchy,  element_types => element.types')
-        todo(title: 'deprecate the old shape technique')
-        todo(title: 'add :shape, :line and :text to random shape generator, note: you can see the issue in the samples/20-styled-shapes.rb where the text is not rendered')
         todo(title: 'add new shapes related to line connectors')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
@@ -59,6 +55,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'rename type to key')
         todo(title: 'headings do not appear to be working?')
         todo(title: 'add sample for backgrounds with text on top, add support for favourite backgrounds')
         todo(title: 'add background themes, with foreground text color')

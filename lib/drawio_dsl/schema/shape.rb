@@ -60,7 +60,7 @@ module DrawioDsl
       end
 
       def shape_defaults
-        @shape_defaults ||= self.class.shape_defaults.clone
+        @shape_defaults ||= self.class.shape_defaults || default_configuration
       end
 
       # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity

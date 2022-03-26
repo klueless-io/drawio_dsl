@@ -80,14 +80,7 @@ module DrawioDsl
       # Elements
 
       def element(key)
-        elements[key] || ElementShapeConfig.new(
-          key: :square,
-          x: 0,
-          y: 0,
-          w: 160,
-          h: 160,
-          style_modifiers: ''
-        )
+        elements[key] || default_element
       end
 
       def elements
@@ -108,6 +101,17 @@ module DrawioDsl
         @elements
       end
 
+      def default_element
+        @default_element ||= ElementShapeConfig.new(
+          key: :square,
+          x: 0,
+          y: 0,
+          w: 160,
+          h: 160,
+          style_modifiers: ''
+        )
+      end
+
       def element_keys
         elements.keys
       end
@@ -119,14 +123,7 @@ module DrawioDsl
       # Lines
 
       def line(key)
-        lines[key] || LineShapeConfig.new(
-          key: :solid,
-          x: 0,
-          y: 0,
-          w: 50,
-          h: 50,
-          style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
-        )
+        lines[key] || default_line
       end
 
       def lines
@@ -147,6 +144,17 @@ module DrawioDsl
         @lines
       end
 
+      def default_line
+        @default_line ||= LineShapeConfig.new(
+          key: :solid,
+          x: 0,
+          y: 0,
+          w: 50,
+          h: 50,
+          style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+        )
+      end
+
       def line_keys
         lines.keys
       end
@@ -156,14 +164,7 @@ module DrawioDsl
       end
 
       def text(key)
-        texts[key] || TextShapeConfig.new(
-          key: :p,
-          x: 0,
-          y: 0,
-          w: 100,
-          h: 50,
-          style_modifiers: 'text;fontSize=16;fontStyle=1;fillColor=none'
-        )
+        texts[key] || default_text
       end
 
       # Texts
@@ -184,6 +185,17 @@ module DrawioDsl
         end
 
         @texts
+      end
+
+      def default_text
+        @default_line ||= TextShapeConfig.new(
+          key: :p,
+          x: 0,
+          y: 0,
+          w: 100,
+          h: 50,
+          style_modifiers: 'text;fontSize=16;fontStyle=1;fillColor=none'
+        )
       end
 
       def text_keys

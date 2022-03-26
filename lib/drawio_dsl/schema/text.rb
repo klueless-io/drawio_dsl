@@ -18,6 +18,10 @@ module DrawioDsl
         @gradient         = args[:gradient]
         @font_color       = args[:font_color] || page.bg_theme_palette.font_color
       end
+
+      def default_configuration
+        KConfig.configuration.drawio.shape.default_text
+      end
     end
   end
 end

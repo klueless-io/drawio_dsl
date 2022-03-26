@@ -40,6 +40,20 @@ RSpec.describe DrawioDsl::Schema::Shape do
           let(:name) { :square }
           let(:category) { :element }
         end
+
+        # context 'when using base element class' do
+        #   let(:instance) { DrawioDsl::Schema::Element.new(page) }
+        #   fit do
+        #     is_expected.to have_attributes(
+        #       key: :square,
+        #       x: 0,
+        #       y: 0,
+        #       w: 160,
+        #       h: 160,
+        #       style_modifiers: ''
+        #     )
+        #   end
+        # end
       end
 
       context 'when shape is an line' do

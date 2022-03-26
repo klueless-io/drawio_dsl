@@ -66,6 +66,12 @@ RSpec.describe DrawioDsl::Configuration do
           context 'when element is not defined' do
             subject { instance.shape.element(:unknown) }
 
+            it { is_expected.to eq(instance.shape.default_element) }
+          end
+
+          describe '@default_element' do
+            subject { instance.shape.default_element }
+
             it do
               is_expected.to have_attributes(
                 key: :square,
@@ -110,6 +116,12 @@ RSpec.describe DrawioDsl::Configuration do
           context 'when line is not defined' do
             subject { instance.shape.line(:unknown) }
 
+            it { is_expected.to eq(instance.shape.default_line) }
+          end
+
+          describe '@default_line' do
+            subject { instance.shape.default_line }
+
             it do
               is_expected.to have_attributes(
                 key: :solid,
@@ -153,6 +165,12 @@ RSpec.describe DrawioDsl::Configuration do
 
           context 'when text is not defined' do
             subject { instance.shape.text(:unknown) }
+
+            it { is_expected.to eq(instance.shape.default_text) }
+          end
+
+          describe '@default_text' do
+            subject { instance.shape.default_text }
 
             it do
               is_expected.to have_attributes(

@@ -16,8 +16,15 @@ module DrawioDsl
       def apply_defaults(args)
         super(args)
 
-        @source = args[:source]
-        @target = args[:target]
+        @source           = args[:source]
+        @target           = args[:target]
+
+        @fill_color       = args[:fill_color]       || theme_palette.fill_color
+        @stroke_color     = args[:stroke_color]     || theme_palette.stroke_color
+      end
+
+      def default_configuration
+        KConfig.configuration.drawio.shape.default_line
       end
     end
   end
