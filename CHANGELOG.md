@@ -1,3 +1,10 @@
+## [0.11.2](https://github.com/klueless-io/drawio_dsl/compare/v0.11.1...v0.11.2) (2022-03-26)
+
+
+### Bug Fixes
+
+* refactor the default shape code for dealing with base classes shape, line, text ([058b06a](https://github.com/klueless-io/drawio_dsl/commit/058b06a25f9d6a13c1ccb45957e7def9841be349))
+
 ## [0.11.1](https://github.com/klueless-io/drawio_dsl/compare/v0.11.0...v0.11.1) (2022-03-25)
 
 
