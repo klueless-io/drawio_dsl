@@ -22,6 +22,6 @@ KManager.action :bootstrap do
 
       end
       .cd(:spec)
-      .osave('.samples/35-ids-and-arrows.drawio')
+      .save('.samples/35-ids-and-arrows.drawio')
   end
 end

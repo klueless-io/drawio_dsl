@@ -12,6 +12,7 @@ KManager.action :project_plan do
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
         todo(title: 'add new shapes related to line connectors')
+        todo(title: 'line connectors attributes for :strokes, compass_points, designs, arrows and waypoints')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
         todo(title: 'line connectors should not effect the grid positioning systems')

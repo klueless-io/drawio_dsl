@@ -1,0 +1,259 @@
+<mxfile host="dNQ">
+  <diagram id="jAE" name="Style-Plain">
+    <mxGraphModel dx="0" dy="0" background="#fafafa" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="page_root_jAE" parent="jAE"/>
+        <mxCell id="node_root_jAE" parent="page_root_jAE"/>
+        <mxCell id="jAE-2" value="Data Sources (Documents)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=20;verticalAlign=top" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="5" y="5" width="210" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="a" value="schema.rb" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="30" y="250" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b" value="db_schema.json" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="250" y="250" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c" value="sql_count (rake/api)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="30" y="350" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="d" value="sql_count.json" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="250" y="350" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="e" value="rubocop (rake/.txt)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="30" y="450" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="f" value="rubocop.json" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="250" y="450" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="g" value="routes.json" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="30" y="550" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="h" value="model/**/*.rb" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="250" y="550" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i" value="controller/**/*.json" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="30" y="650" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="j" value="domain_model.json" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="250" y="650" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-14" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="a" target="b" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-15" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="c" target="d" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-16" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="e" target="f" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-17" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="b" target="j" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-18" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="d" target="j" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-19" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="f" target="j" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-20" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="g" target="j" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-21" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="h" target="j" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-22" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" parent="node_root_jAE" source="i" target="j" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-24" value="Printers - DB Schema" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=20;verticalAlign=top" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="225" y="1125" width="210" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-26" value="stats" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="227" y="1350" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-27" value="tables" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="317" y="1350" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-28" value="foreign_keys" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="407" y="1350" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-29" value="indexes" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="497" y="1350" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-30" value="dictionary" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="587" y="1350" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-32" value="Printers - Other" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=20;verticalAlign=top" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="225" y="1415" width="210" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-34" value="routes" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="232" y="1640" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-35" value="models" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="332" y="1640" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-36" value="controllers" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;shape=mxgraph.basic.cloud_rect" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="432" y="1640" width="75" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-38" value="has_ruby" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="225" y="1710" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-39" value="missing_ruby" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="325" y="1710" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-40" value="has_pk" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="425" y="1710" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-41" value="missing_pk" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="525" y="1710" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-42" value="low_column" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="625" y="1710" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-43" value="fat_column" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="225" y="1780" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-44" value="suspected_m2m" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="325" y="1780" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-45" value="invalid_types" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="425" y="1780" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-46" value="data_columns" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="525" y="1780" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-47" value="date_columns" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="625" y="1780" width="90" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-49" value="Generators" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=20;verticalAlign=top" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="225" y="1845" width="210" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-51" value="Factory data" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="2075" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-52" value="Model DSL specs (CRUD / Association)" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="385" y="2075" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-53" value="Model API specs" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="535" y="2075" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-54" value="Controller request specs" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="685" y="2075" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-55" value="Query + spec" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="2175" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-56" value="Decorator + spec" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="385" y="2175" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-57" value="Presentor + spec" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="535" y="2175" width="120" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-58" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fafafa;strokeColor=#fafafa;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="720" y="2185" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-60" value="Reports" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=20;verticalAlign=top" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="225" y="2265" width="210" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-62" value="Tests" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="2495" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-63" value="coverage" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="400" y="2510" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-64" value="model DSL" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="550" y="2510" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-65" value="model API" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="700" y="2510" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-66" value="controller request" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="850" y="2510" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-67" value="controller commands" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="250" y="2660" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-68" value="query" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="400" y="2660" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-69" value="decorator" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="550" y="2660" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-70" value="presentor" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="700" y="2660" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-71" value="" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fafafa;strokeColor=#fafafa;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="870" y="2680" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-73" value="ERD" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="2795" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-74" value="agg roots" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="400" y="2810" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-75" value="many to many" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="550" y="2810" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-76" value="leaf tables" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="700" y="2810" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-77" value="rubocop" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="850" y="2810" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-78" value="SQL counts" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="1000" y="2810" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-80" value="Anti patterns" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="2945" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-81" value="god classes" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="400" y="2960" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-82" value="fat controllers" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="550" y="2960" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-83" value="fat models" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="700" y="2960" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-84" value="fat views vs components" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="850" y="2960" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-85" value="interpolated SQL" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="1000" y="2960" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-87" value="Target patterns" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="3095" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-88" value="decorators" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="400" y="3110" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-89" value="presenters" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="550" y="3110" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-90" value="queries" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="700" y="3110" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-91" value="commands" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="850" y="3110" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-92" value="form objects" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="1000" y="3110" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-94" value="Diff or Conflict" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="235" y="3245" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-95" value="factory data &lt;i&gt;missing data/models&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="400" y="3260" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-96" value="model DSL specs &lt;i&gt;missing data/associations&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="550" y="3260" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-97" value="model API specs &lt;i&gt;missing methods&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="700" y="3260" width="90" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="jAE-98" value="route / controller action &lt;i&gt;mismatch&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" vertex="1" parent="node_root_jAE">
+          <mxGeometry x="850" y="3260" width="90" height="90" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

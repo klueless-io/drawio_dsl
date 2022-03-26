@@ -171,7 +171,7 @@ KManager.action :printspeak_architecture_generator do
       
       end
       .cd(:docs)
-      .save('printspeak-architecture-generator.drawio')
+      .osave('printspeak-architecture-generator.drawio')
       # .export_svg('printspeak-architecture-generator', page: 1)
   end
 end

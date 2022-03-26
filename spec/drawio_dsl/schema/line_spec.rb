@@ -23,5 +23,16 @@ RSpec.describe DrawioDsl::Schema::Line do
 
       it { is_expected.to be_nil }
     end
+    context '.c1' do
+      subject { instance.c1 }
+
+      it { is_expected.to eq :nw }
+    end
+    context '.c2' do
+      subject { instance.c2 }
+
+      it { is_expected.to eq :ne }
+    end
+
   end
 end
