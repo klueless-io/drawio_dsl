@@ -25,7 +25,7 @@ RSpec.describe DrawioDsl::Configuration do
 
       describe '#stroke' do
         context 'when stroke is defined' do
-          subject { instance.stroke(:dashed) }
+          subject { instance.stroke(:dash) }
 
           it { is_expected.to eq('dashed=1;fixDash=1') }
         end
@@ -100,14 +100,13 @@ RSpec.describe DrawioDsl::Configuration do
         describe '#line' do
           context 'when line is defined' do
             subject { instance.line(:solid) }
-
             it do
               is_expected.to have_attributes(
                 key: :solid,
                 x: 0,
                 y: 0,
-                w: 50,
-                h: 50,
+                w: 0,
+                h: 0,
                 style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
               )
             end
@@ -250,12 +249,17 @@ RSpec.describe DrawioDsl::Configuration do
 
         describe '#design' do
           context 'when design is defined' do
-            subject { instance.connector.design(:style2) }
+            subject { instance.connector.design(:double) }
 
             it { is_expected.to eq('shape=link') }
           end
           context 'when design is not defined' do
             subject { instance.connector.design(:unknown) }
+
+            it { is_expected.to be_empty }
+          end
+          context 'when design is nil' do
+            subject { instance.connector.design(nil) }
 
             it { is_expected.to be_empty }
           end

@@ -4,8 +4,12 @@
 #   configure_as(:actor)
 # end
 
-class FakeLine < DrawioDsl::Schema::Line
+class FakeStroke < DrawioDsl::Schema::Line
   configure_as(:some_name, stroke: :some_stroke)
+end
+
+class FakeDouble < DrawioDsl::Schema::Line
+  configure_as(:some_name, design: :double)
 end
 
 RSpec.describe DrawioDsl::Schema::Line do
@@ -18,14 +22,14 @@ RSpec.describe DrawioDsl::Schema::Line do
   let(:args) { { id: 1 } }
 
   context 'line configuration' do
-    before { FakeLine.configure_as(:some_name, stroke: :some_stroke) }
+    before { FakeStroke.configure_as(:some_name, stroke: :some_stroke) }
 
     it 'sets the shape key' do
-      expect(FakeLine.shape_key).to eq(:some_name)
+      expect(FakeStroke.shape_key).to eq(:some_name)
     end
 
     it 'sets the shape stroke ' do
-      expect(FakeLine.default_stroke).to eq(:some_stroke)
+      expect(FakeStroke.default_stroke).to eq(:some_stroke)
     end
   end
 
@@ -62,10 +66,15 @@ RSpec.describe DrawioDsl::Schema::Line do
       end
 
       context 'when dashed line' do
-        let(:target_class) { DrawioDsl::Schema::Dashed }
+        let(:target_class) { DrawioDsl::Schema::Dash }
 
-        it { is_expected.to eq(:dashed) }
+        it { is_expected.to eq(:dash) }
       end
+    end
+    context '.design' do
+      subject { instance.design }
+
+      it { is_expected.to be_nil }
     end
     context '.base_modifiers' do
       subject { instance.base_modifiers }
@@ -79,7 +88,7 @@ RSpec.describe DrawioDsl::Schema::Line do
       end
 
       context 'when dashed line' do
-        let(:target_class) { DrawioDsl::Schema::Dashed }
+        let(:target_class) { DrawioDsl::Schema::Dash }
 
         it { is_expected.to eq('dashed=1;fixDash=1') }
       end

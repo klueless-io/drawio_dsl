@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-RSpec.describe DrawioDsl::Schema::Dashed44 do
+RSpec.describe DrawioDsl::Schema::Dash44 do
   include_context :node_dependencies
 
   subject { instance }
 
   let(:instance) { described_class.new(diagram, **args) }
   let(:args) { { id: 1 } }
-  let(:default) { KConfig.configuration.drawio.line(:dashed44) }
+  let(:default) { KConfig.configuration.drawio.line(:dash44) }
 
   it_behaves_like :basic_line_attributes
 end

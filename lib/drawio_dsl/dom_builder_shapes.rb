@@ -10,16 +10,16 @@ module DrawioDsl
       add_shape(solid)
     end
 
-    def add_dashed(id = nil, **opts, &block)
+    def add_dash(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
-      dashed = DrawioDsl::Schema::Dashed.new(current_page, **opts, &block)
-      add_shape(dashed)
+      dash = DrawioDsl::Schema::Dash.new(current_page, **opts, &block)
+      add_shape(dash)
     end
 
-    def add_dotted(id = nil, **opts, &block)
+    def add_dot(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
-      dotted = DrawioDsl::Schema::Dotted.new(current_page, **opts, &block)
-      add_shape(dotted)
+      dot = DrawioDsl::Schema::Dot.new(current_page, **opts, &block)
+      add_shape(dot)
     end
 
     def add_dash_dot(id = nil, **opts, &block)
@@ -52,22 +52,40 @@ module DrawioDsl
       add_shape(dash_long_dash)
     end
 
-    def add_dashed24(id = nil, **opts, &block)
+    def add_dash24(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
-      dashed24 = DrawioDsl::Schema::Dashed24.new(current_page, **opts, &block)
-      add_shape(dashed24)
+      dash24 = DrawioDsl::Schema::Dash24.new(current_page, **opts, &block)
+      add_shape(dash24)
     end
 
-    def add_dashed32(id = nil, **opts, &block)
+    def add_dash32(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
-      dashed32 = DrawioDsl::Schema::Dashed32.new(current_page, **opts, &block)
-      add_shape(dashed32)
+      dash32 = DrawioDsl::Schema::Dash32.new(current_page, **opts, &block)
+      add_shape(dash32)
     end
 
-    def add_dashed44(id = nil, **opts, &block)
+    def add_dash44(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
-      dashed44 = DrawioDsl::Schema::Dashed44.new(current_page, **opts, &block)
-      add_shape(dashed44)
+      dash44 = DrawioDsl::Schema::Dash44.new(current_page, **opts, &block)
+      add_shape(dash44)
+    end
+
+    def add_double(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      double = DrawioDsl::Schema::Double.new(current_page, **opts, &block)
+      add_shape(double)
+    end
+
+    def add_double_dash(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      double_dash = DrawioDsl::Schema::DoubleDash.new(current_page, **opts, &block)
+      add_shape(double_dash)
+    end
+
+    def add_double_dot(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      double_dot = DrawioDsl::Schema::DoubleDot.new(current_page, **opts, &block)
+      add_shape(double_dot)
     end
 
     def add_h1(id = nil, **opts, &block)

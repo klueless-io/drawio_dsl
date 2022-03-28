@@ -6,11 +6,11 @@
         "category": "line"
       },
       {
-        "key": "dashed",
+        "key": "dash",
         "category": "line"
       },
       {
-        "key": "dotted",
+        "key": "dot",
         "category": "line"
       },
       {
@@ -34,15 +34,27 @@
         "category": "line"
       },
       {
-        "key": "dashed24",
+        "key": "dash24",
         "category": "line"
       },
       {
-        "key": "dashed32",
+        "key": "dash32",
         "category": "line"
       },
       {
-        "key": "dashed44",
+        "key": "dash44",
+        "category": "line"
+      },
+      {
+        "key": "double",
+        "category": "line"
+      },
+      {
+        "key": "double_dash",
+        "category": "line"
+      },
+      {
+        "key": "double_dot",
         "category": "line"
       },
       {
@@ -549,77 +561,99 @@
         "category": "line",
         "key": "solid",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null
+        "design": null,
+        "stroke": null
       },
       {
         "category": "line",
-        "key": "dashed",
+        "key": "dash",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
-        "stroke": "dashed"
+        "design": null,
+        "stroke": "dash"
       },
       {
         "category": "line",
-        "key": "dotted",
+        "key": "dot",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
-        "stroke": "dotted"
+        "design": null,
+        "stroke": "dot"
       },
       {
         "category": "line",
         "key": "dash_dot",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
+        "design": null,
         "stroke": "dash_dot"
       },
       {
         "category": "line",
         "key": "dash_dot_dot",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
+        "design": null,
         "stroke": "dash_dot_dot"
       },
       {
         "category": "line",
         "key": "dot_dot_dot",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
+        "design": null,
         "stroke": "dot_dot_dot"
       },
       {
         "category": "line",
         "key": "long_dash",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
+        "design": null,
         "stroke": "long_dash"
       },
       {
         "category": "line",
         "key": "dash_long_dash",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
+        "design": null,
         "stroke": "dash_long_dash"
       },
       {
         "category": "line",
-        "key": "dashed24",
+        "key": "dash24",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
-        "stroke": "dashed24"
+        "design": null,
+        "stroke": "dash24"
       },
       {
         "category": "line",
-        "key": "dashed32",
+        "key": "dash32",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
-        "stroke": "dashed32"
+        "design": null,
+        "stroke": "dash32"
       },
       {
         "category": "line",
-        "key": "dashed44",
+        "key": "dash44",
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
-        "strokes": null,
-        "stroke": "dashed44"
+        "design": null,
+        "stroke": "dash44"
+      },
+      {
+        "category": "line",
+        "key": "double",
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "design": "double",
+        "stroke": null
+      },
+      {
+        "category": "line",
+        "key": "double_dash",
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "design": "double",
+        "stroke": "dash"
+      },
+      {
+        "category": "line",
+        "key": "double_dot",
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "design": "double",
+        "stroke": "dot"
       }
     ],
     "texts": [
@@ -837,19 +871,19 @@
     ],
     "designs": [
       {
-        "key": "style1",
+        "key": "single",
         "style": ""
       },
       {
-        "key": "style2",
+        "key": "double",
         "style": "shape=link"
       },
       {
-        "key": "style3",
+        "key": "fat1",
         "style": "shape=flexArrow"
       },
       {
-        "key": "style4",
+        "key": "fat2",
         "style": "shape=arrow"
       }
     ]
@@ -2051,11 +2085,11 @@
   },
   "strokes": [
     {
-      "key": "dashed",
+      "key": "dash",
       "style": "dashed=1;fixDash=1"
     },
     {
-      "key": "dotted",
+      "key": "dot",
       "style": "dashed=1;fixDash=1;dashPattern=1 4"
     },
     {
@@ -2079,15 +2113,15 @@
       "style": "dashed=1;fixDash=1;dashPattern=10 6 16 6"
     },
     {
-      "key": "dashed24",
+      "key": "dash24",
       "style": "dashed=1;fixDash=1;dashPattern=3 8"
     },
     {
-      "key": "dashed32",
+      "key": "dash32",
       "style": "dashed=1;fixDash=1;dashPattern=6 5"
     },
     {
-      "key": "dashed44",
+      "key": "dash44",
       "style": "dashed=1;fixDash=1;dashPattern=8 8"
     }
   ]

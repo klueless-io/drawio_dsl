@@ -11,8 +11,8 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'add help messages when invalid lookups are used for stroke, design etc.')
         todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
-        todo(title: 'split configured elements, lines and texts into their own source configurations')
         todo(title: 'line connectors attributes for :strokes (done), compass_points, designs, arrows and waypoints')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
@@ -56,6 +56,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'add support for :design to line')
         todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'add new shapes related to line connectors, plus add stroke: configuration')
         todo(title: 'rename type to key')

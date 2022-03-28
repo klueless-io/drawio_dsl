@@ -2,8 +2,8 @@
 
 module DrawioDsl
   module Schema
-    class Dashed < Line
-      configure_as(:dashed, stroke: :dashed)
+    class Dash24 < Line
+      configure_as(:dash24, stroke: :dash24)
     end
   end
 end

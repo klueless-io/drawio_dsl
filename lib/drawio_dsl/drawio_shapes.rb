@@ -5,13 +5,13 @@ module DrawioDsl
   # :nocov:
   module DrawioShapes
     def random(**opts)
-      case rand(54)
+      case rand(57)
       when 0
         solid(**opts)
       when 1
-        dashed(**opts)
+        dash(**opts)
       when 2
-        dotted(**opts)
+        dot(**opts)
       when 3
         dash_dot(**opts)
       when 4
@@ -23,96 +23,102 @@ module DrawioDsl
       when 7
         dash_long_dash(**opts)
       when 8
-        dashed24(**opts)
+        dash24(**opts)
       when 9
-        dashed32(**opts)
+        dash32(**opts)
       when 10
-        dashed44(**opts)
+        dash44(**opts)
       when 11
-        h1(**opts)
+        double(**opts)
       when 12
-        h2(**opts)
+        double_dash(**opts)
       when 13
-        h3(**opts)
+        double_dot(**opts)
       when 14
-        h4(**opts)
+        h1(**opts)
       when 15
-        h5(**opts)
+        h2(**opts)
       when 16
-        h6(**opts)
+        h3(**opts)
       when 17
-        p(**opts)
+        h4(**opts)
       when 18
-        actor(**opts)
+        h5(**opts)
       when 19
-        actor2(**opts)
+        h6(**opts)
       when 20
-        callout(**opts)
+        p(**opts)
       when 21
-        callout2(**opts)
+        actor(**opts)
       when 22
-        callout3(**opts)
+        actor2(**opts)
       when 23
-        callout4(**opts)
+        callout(**opts)
       when 24
-        circle(**opts)
+        callout2(**opts)
       when 25
-        cloud(**opts)
+        callout3(**opts)
       when 26
-        container(**opts)
+        callout4(**opts)
       when 27
-        container2(**opts)
+        circle(**opts)
       when 28
-        container3(**opts)
+        cloud(**opts)
       when 29
-        container4(**opts)
+        container(**opts)
       when 30
-        cross(**opts)
+        container2(**opts)
       when 31
-        envelop(**opts)
+        container3(**opts)
       when 32
-        database(**opts)
+        container4(**opts)
       when 33
-        db_json(**opts)
+        cross(**opts)
       when 34
-        diamond(**opts)
+        envelop(**opts)
       when 35
-        document(**opts)
+        database(**opts)
       when 36
-        ellipse(**opts)
+        db_json(**opts)
       when 37
-        group(**opts)
+        diamond(**opts)
       when 38
-        hexagon(**opts)
+        document(**opts)
       when 39
-        interface(**opts)
+        ellipse(**opts)
       when 40
-        klass(**opts)
+        group(**opts)
       when 41
-        note(**opts)
+        hexagon(**opts)
       when 42
-        process(**opts)
+        interface(**opts)
       when 43
-        rectangle(**opts)
+        klass(**opts)
       when 44
-        rectangle2(**opts)
+        note(**opts)
       when 45
-        square(**opts)
+        process(**opts)
       when 46
-        step(**opts)
+        rectangle(**opts)
       when 47
-        tick(**opts)
+        rectangle2(**opts)
       when 48
-        todo(**opts)
+        square(**opts)
       when 49
-        face(**opts)
+        step(**opts)
       when 50
-        triangle(**opts)
+        tick(**opts)
       when 51
-        embed_row(**opts)
+        todo(**opts)
       when 52
-        embed_col50(**opts)
+        face(**opts)
       when 53
+        triangle(**opts)
+      when 54
+        embed_row(**opts)
+      when 55
+        embed_col50(**opts)
+      when 56
         embed_col200(**opts)
       end
     end
@@ -121,12 +127,12 @@ module DrawioDsl
       builder.add_solid(id, **opts, &block)
     end
 
-    def dashed(id = nil, **opts, &block)
-      builder.add_dashed(id, **opts, &block)
+    def dash(id = nil, **opts, &block)
+      builder.add_dash(id, **opts, &block)
     end
 
-    def dotted(id = nil, **opts, &block)
-      builder.add_dotted(id, **opts, &block)
+    def dot(id = nil, **opts, &block)
+      builder.add_dot(id, **opts, &block)
     end
 
     def dash_dot(id = nil, **opts, &block)
@@ -149,16 +155,28 @@ module DrawioDsl
       builder.add_dash_long_dash(id, **opts, &block)
     end
 
-    def dashed24(id = nil, **opts, &block)
-      builder.add_dashed24(id, **opts, &block)
+    def dash24(id = nil, **opts, &block)
+      builder.add_dash24(id, **opts, &block)
     end
 
-    def dashed32(id = nil, **opts, &block)
-      builder.add_dashed32(id, **opts, &block)
+    def dash32(id = nil, **opts, &block)
+      builder.add_dash32(id, **opts, &block)
     end
 
-    def dashed44(id = nil, **opts, &block)
-      builder.add_dashed44(id, **opts, &block)
+    def dash44(id = nil, **opts, &block)
+      builder.add_dash44(id, **opts, &block)
+    end
+
+    def double(id = nil, **opts, &block)
+      builder.add_double(id, **opts, &block)
+    end
+
+    def double_dash(id = nil, **opts, &block)
+      builder.add_double_dash(id, **opts, &block)
+    end
+
+    def double_dot(id = nil, **opts, &block)
+      builder.add_double_dot(id, **opts, &block)
     end
 
     def h1(id = nil, **opts, &block)
