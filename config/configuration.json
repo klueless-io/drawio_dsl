@@ -226,8 +226,7 @@
         "y": 0,
         "w": 40,
         "h": 50,
-        "style_modifiers": "shape=actor",
-        "strokes": null
+        "style_modifiers": "shape=actor"
       },
       {
         "category": "element",
@@ -236,8 +235,7 @@
         "y": 0,
         "w": 30,
         "h": 50,
-        "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1",
-        "strokes": null
+        "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
       },
       {
         "category": "element",
@@ -246,8 +244,7 @@
         "y": 0,
         "w": 160,
         "h": 120,
-        "style_modifiers": "shape=callout",
-        "strokes": null
+        "style_modifiers": "shape=callout"
       },
       {
         "category": "element",
@@ -256,8 +253,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=mxgraph.basic.oval_callout",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.basic.oval_callout"
       },
       {
         "category": "element",
@@ -266,8 +262,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=mxgraph.basic.cloud_callout",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.basic.cloud_callout"
       },
       {
         "category": "element",
@@ -276,8 +271,7 @@
         "y": 0,
         "w": 160,
         "h": 120,
-        "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
       },
       {
         "category": "element",
@@ -286,8 +280,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "ellipse",
-        "strokes": null
+        "style_modifiers": "ellipse"
       },
       {
         "category": "element",
@@ -296,8 +289,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=cloud",
-        "strokes": null
+        "style_modifiers": "shape=cloud"
       },
       {
         "category": "element",
@@ -306,8 +298,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane",
-        "strokes": null
+        "style_modifiers": "swimlane"
       },
       {
         "category": "element",
@@ -316,8 +307,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane;horizontal=0",
-        "strokes": null
+        "style_modifiers": "swimlane;horizontal=0"
       },
       {
         "category": "element",
@@ -326,8 +316,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane;startSize=50",
-        "strokes": null
+        "style_modifiers": "swimlane;startSize=50"
       },
       {
         "category": "element",
@@ -336,8 +325,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane;resizable=0",
-        "strokes": null
+        "style_modifiers": "swimlane;resizable=0"
       },
       {
         "category": "element",
@@ -346,8 +334,7 @@
         "y": 0,
         "w": 50,
         "h": 50,
-        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x",
-        "strokes": null
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
       },
       {
         "category": "element",
@@ -356,8 +343,7 @@
         "y": 0,
         "w": 160,
         "h": 100,
-        "style_modifiers": "shape=message",
-        "strokes": null
+        "style_modifiers": "shape=message"
       },
       {
         "category": "element",
@@ -366,8 +352,7 @@
         "y": 0,
         "w": 160,
         "h": 80,
-        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
       },
       {
         "category": "element",
@@ -376,8 +361,7 @@
         "y": 0,
         "w": 160,
         "h": 40,
-        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
       },
       {
         "category": "element",
@@ -386,8 +370,7 @@
         "y": 0,
         "w": 100,
         "h": 100,
-        "style_modifiers": "rhombus",
-        "strokes": null
+        "style_modifiers": "rhombus"
       },
       {
         "category": "element",
@@ -396,8 +379,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=mxgraph.basic.document",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.basic.document"
       },
       {
         "category": "element",
@@ -406,8 +388,7 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "ellipse",
-        "strokes": null
+        "style_modifiers": "ellipse"
       },
       {
         "category": "element",
@@ -416,8 +397,7 @@
         "y": 0,
         "w": 210,
         "h": 210,
-        "style_modifiers": "fontSize=20;verticalAlign=top",
-        "strokes": null
+        "style_modifiers": "fontSize=20;verticalAlign=top"
       },
       {
         "category": "element",
@@ -426,8 +406,7 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "shape=hexagon",
-        "strokes": null
+        "style_modifiers": "shape=hexagon"
       },
       {
         "category": "element",
@@ -436,8 +415,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica",
-        "strokes": null
+        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
       },
       {
         "category": "element",
@@ -446,8 +424,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica",
-        "strokes": null
+        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
       },
       {
         "category": "element",
@@ -456,8 +433,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=note",
-        "strokes": null
+        "style_modifiers": "shape=note"
       },
       {
         "category": "element",
@@ -466,8 +442,7 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "shape=process",
-        "strokes": null
+        "style_modifiers": "shape=process"
       },
       {
         "category": "element",
@@ -476,8 +451,7 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "",
-        "strokes": null
+        "style_modifiers": ""
       },
       {
         "category": "element",
@@ -486,8 +460,7 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "shape=mxgraph.basic.cloud_rect",
-        "strokes": null
+        "style_modifiers": "shape=mxgraph.basic.cloud_rect"
       },
       {
         "category": "element",
@@ -496,8 +469,7 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "",
-        "strokes": null
+        "style_modifiers": ""
       },
       {
         "category": "element",
@@ -506,8 +478,7 @@
         "y": 0,
         "w": 120,
         "h": 80,
-        "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1",
-        "strokes": null
+        "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
       },
       {
         "category": "element",
@@ -516,8 +487,7 @@
         "y": 0,
         "w": 50,
         "h": 50,
-        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick",
-        "strokes": null
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
       },
       {
         "category": "element",
@@ -526,8 +496,7 @@
         "y": 0,
         "w": 300,
         "h": 60,
-        "style_modifiers": "",
-        "strokes": null
+        "style_modifiers": ""
       },
       {
         "category": "element",
@@ -536,8 +505,7 @@
         "y": 0,
         "w": 100,
         "h": 100,
-        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley",
-        "strokes": null
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
       },
       {
         "category": "element",
@@ -546,8 +514,7 @@
         "y": 0,
         "w": 100,
         "h": 100,
-        "style_modifiers": "triangle",
-        "strokes": null
+        "style_modifiers": "triangle"
       },
       {
         "category": "element",
@@ -556,8 +523,7 @@
         "y": 0,
         "w": 200,
         "h": 40,
-        "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest",
-        "strokes": null
+        "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
       },
       {
         "category": "element",
@@ -566,8 +532,7 @@
         "y": 0,
         "w": 50,
         "h": 40,
-        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden",
-        "strokes": null
+        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
       },
       {
         "category": "element",
@@ -576,28 +541,19 @@
         "y": 0,
         "w": 150,
         "h": 40,
-        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden",
-        "strokes": null
+        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
       }
     ],
     "lines": [
       {
         "category": "line",
         "key": "solid",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null
       },
       {
         "category": "line",
         "key": "dashed",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dashed"
@@ -605,10 +561,6 @@
       {
         "category": "line",
         "key": "dotted",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dotted"
@@ -616,10 +568,6 @@
       {
         "category": "line",
         "key": "dash_dot",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dash_dot"
@@ -627,10 +575,6 @@
       {
         "category": "line",
         "key": "dash_dot_dot",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dash_dot_dot"
@@ -638,10 +582,6 @@
       {
         "category": "line",
         "key": "dot_dot_dot",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dot_dot_dot"
@@ -649,10 +589,6 @@
       {
         "category": "line",
         "key": "long_dash",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "long_dash"
@@ -660,10 +596,6 @@
       {
         "category": "line",
         "key": "dash_long_dash",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dash_long_dash"
@@ -671,10 +603,6 @@
       {
         "category": "line",
         "key": "dashed24",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dashed24"
@@ -682,10 +610,6 @@
       {
         "category": "line",
         "key": "dashed32",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dashed32"
@@ -693,10 +617,6 @@
       {
         "category": "line",
         "key": "dashed44",
-        "x": 0,
-        "y": 0,
-        "w": 50,
-        "h": 50,
         "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
         "strokes": null,
         "stroke": "dashed44"
@@ -710,8 +630,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none"
       },
       {
         "category": "text",
@@ -720,8 +639,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none"
       },
       {
         "category": "text",
@@ -730,8 +648,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none"
       },
       {
         "category": "text",
@@ -740,8 +657,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none"
       },
       {
         "category": "text",
@@ -750,8 +666,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none"
       },
       {
         "category": "text",
@@ -760,8 +675,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none"
       },
       {
         "category": "text",
@@ -770,8 +684,7 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none",
-        "strokes": null
+        "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none"
       }
     ]
   },

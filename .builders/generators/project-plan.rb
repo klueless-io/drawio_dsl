@@ -30,7 +30,6 @@ KManager.action :project_plan do
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
         todo(title: 'add active flag to shapes')
-        todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'does x, y, w, h need to be on lines (no for connectors, but other lines?)')
         todo(title: 'update domain model with all the recent architecture changes')
         todo(title: 'replace generated methods for shapes, texts and lines with meta programming')
@@ -57,6 +56,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'add new shapes related to line connectors, plus add stroke: configuration')
         todo(title: 'rename type to key')
         todo(title: 'headings do not appear to be working?')
