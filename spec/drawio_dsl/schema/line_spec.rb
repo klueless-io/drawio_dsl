@@ -4,7 +4,7 @@
 #   configure_as(:actor)
 # end
 
-class FakeLine <  DrawioDsl::Schema::Line
+class FakeLine < DrawioDsl::Schema::Line
   configure_as(:some_name, stroke: :some_stroke)
 end
 
