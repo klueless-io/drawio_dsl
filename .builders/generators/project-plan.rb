@@ -11,8 +11,9 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'add new shapes related to line connectors')
-        todo(title: 'line connectors attributes for :strokes, compass_points, designs, arrows and waypoints')
+        todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
+        todo(title: 'split configured elements, lines and texts into their own source configurations')
+        todo(title: 'line connectors attributes for :strokes (done), compass_points, designs, arrows and waypoints')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
         todo(title: 'line connectors should not effect the grid positioning systems')
@@ -28,6 +29,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'add active flag to shapes')
         todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'does x, y, w, h need to be on lines (no for connectors, but other lines?)')
         todo(title: 'update domain model with all the recent architecture changes')
@@ -36,9 +38,8 @@ KManager.action :project_plan do
         todo(title: 'add page background to theme, use it whenever the theme is set at a diagram/page level')
         todo(title: 'move DrawioDsl::Formatters::Factory::FORMATTERS to resource file')
         todo(title: 'move DrawioDsl::Formatters::StyleBuilder::MAPPINGS to resource file')
-        todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'write SVG directly into other projects')
-        todo(title: 'Nodes need to support child nodes')
+        todo(title: 'Nodes need to support child nodes - aka namespaces, groupings')
         todo(title: 'Grid layout does not position itself in relation to the last element')
         todo(title: 'Grid layout should not be affected by connector lines')
         todo(title: 'Grid layout should support flow break (break to next section if less then boundary)')
@@ -56,6 +57,7 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'add new shapes related to line connectors, plus add stroke: configuration')
         todo(title: 'rename type to key')
         todo(title: 'headings do not appear to be working?')
         todo(title: 'add sample for backgrounds with text on top, add support for favourite backgrounds')

@@ -80,6 +80,14 @@ RSpec.describe DrawioDsl::Schema::Shape do
     end
   end
 
+  describe '.base_modifiers' do
+    let(:instance) { Fake.new(diagram, **args) }
+
+    subject { instance.base_modifiers }
+
+    it { is_expected.to be_empty }
+  end
+
   describe '.style' do
     subject { instance.style }
 

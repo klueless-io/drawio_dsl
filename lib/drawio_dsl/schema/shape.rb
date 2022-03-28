@@ -100,6 +100,7 @@ module DrawioDsl
         key_values << "strokeColor=#{stroke_color}"       if stroke_color
         key_values << "fontColor=#{font_color}"           if font_color
         key_values << "gradient=#{gradient}"              if gradient
+        key_values << base_modifiers unless base_modifiers.empty?
         key_values << style_modifiers unless style_modifiers.empty?
 
         key_values.join(';')
@@ -139,6 +140,10 @@ module DrawioDsl
         }
         result[:nodes] = nodes.to_h if nodes.any?
         result
+      end
+
+      def base_modifiers
+        @base_modifiers ||= ''
       end
 
       def theme_palette

@@ -10,6 +10,66 @@ module DrawioDsl
       add_shape(solid)
     end
 
+    def add_dashed(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dashed = DrawioDsl::Schema::Dashed.new(current_page, **opts, &block)
+      add_shape(dashed)
+    end
+
+    def add_dotted(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dotted = DrawioDsl::Schema::Dotted.new(current_page, **opts, &block)
+      add_shape(dotted)
+    end
+
+    def add_dash_dot(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dash_dot = DrawioDsl::Schema::DashDot.new(current_page, **opts, &block)
+      add_shape(dash_dot)
+    end
+
+    def add_dash_dot_dot(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dash_dot_dot = DrawioDsl::Schema::DashDotDot.new(current_page, **opts, &block)
+      add_shape(dash_dot_dot)
+    end
+
+    def add_dot_dot_dot(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dot_dot_dot = DrawioDsl::Schema::DotDotDot.new(current_page, **opts, &block)
+      add_shape(dot_dot_dot)
+    end
+
+    def add_long_dash(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      long_dash = DrawioDsl::Schema::LongDash.new(current_page, **opts, &block)
+      add_shape(long_dash)
+    end
+
+    def add_dash_long_dash(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dash_long_dash = DrawioDsl::Schema::DashLongDash.new(current_page, **opts, &block)
+      add_shape(dash_long_dash)
+    end
+
+    def add_dashed24(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dashed24 = DrawioDsl::Schema::Dashed24.new(current_page, **opts, &block)
+      add_shape(dashed24)
+    end
+
+    def add_dashed32(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dashed32 = DrawioDsl::Schema::Dashed32.new(current_page, **opts, &block)
+      add_shape(dashed32)
+    end
+
+    def add_dashed44(id = nil, **opts, &block)
+      opts = { id: id }.merge(opts) if id
+      dashed44 = DrawioDsl::Schema::Dashed44.new(current_page, **opts, &block)
+      add_shape(dashed44)
+    end
+
     def add_h1(id = nil, **opts, &block)
       opts = { id: id }.merge(opts) if id
       h1 = DrawioDsl::Schema::H1.new(current_page, **opts, &block)

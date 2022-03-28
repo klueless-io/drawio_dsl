@@ -458,7 +458,7 @@ KManager.action :domain_model do
 
       end
       .cd(:docs)
-      .save('domain_model.drawio')
+      .osave('domain_model.drawio')
       .save_json('domain_model')
       .export_svg('domain_model', page: 1)
   end

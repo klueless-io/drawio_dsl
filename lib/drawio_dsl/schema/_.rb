@@ -56,6 +56,16 @@ require_relative 'elements/embed_col200'
 
 # Connector lines
 require_relative 'lines/solid'
+require_relative 'lines/dashed'
+require_relative 'lines/dotted'
+require_relative 'lines/dash_dot'
+require_relative 'lines/dash_dot_dot'
+require_relative 'lines/dot_dot_dot'
+require_relative 'lines/long_dash'
+require_relative 'lines/dash_long_dash'
+require_relative 'lines/dashed24'
+require_relative 'lines/dashed32'
+require_relative 'lines/dashed44'
 
 # Text elements such as h1, h2, p, etc.
 require_relative 'texts/h1'

@@ -6,7 +6,7 @@ KManager.action :bootstrap do
       .page('Style-Plain', margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 2, grid_w: 400)
 
-        shape_count = 12
+        shape_count = 20
         # for 1 to 20 step 2
         (1..shape_count).step(2).each do |i|
           circle(i, title: i)
@@ -14,7 +14,8 @@ KManager.action :bootstrap do
         end
 
         (1..shape_count).step(2).each do |i|
-          solid(source: i, target: i+1) 
+          line_type = KConfig.configuration.drawio.shape.random_line_key
+          send(line_type, source: i, target: i+1)
         end
 
         # # label = '<div style="background-color: #B85450; height: 100%; margin: 0; border: 1px solid red;"><p style="padding: 10px; font-size: 12px;color: #ffffff;width: 150px;"><img style="margin-right: 20px" src="https://picsum.photos/40" /> the quick brown fox jumped over the lazy dog</p></div>'

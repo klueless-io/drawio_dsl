@@ -81,23 +81,22 @@ m = KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :shapes do
-    fields %i[category key x y w h style_modifiers]
+    fields %i[category key x y w h style_modifiers strokes]
 
     # shape is a custom object
     # row :shape      , 0, 0,  20,  20, ''
 
     row :line   , :solid                , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
-    # row :line   , :dashed               , 0, 0,  50,  50, 'dashed=1;fixDash=1'
-    # row :line   , :dotted               , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=1 4'
-    # row :line   , :dash_dot             , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=10 5 1 5'
-    # row :line   , :dash_dot_dot         , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=10 5 1 5 1 5'
-    # row :line   , :dot_dot_dot          , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=1 2'
-    # row :line   , :long_dash            , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=16 6'
-    # row :line   , :dash_long_dash       , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=10 6 16 6'
-    # row :line   , :dashed24             , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=3 8'
-    # row :line   , :dashed32             , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=6 5'
-    # row :line   , :dashed44             , 0, 0,  50,  50, 'dashed=1;fixDash=1;dashPattern=8 8'
-    # edge="1" parent="node_root_2T8" source="b" target="c"
+    row :line   , :dashed               , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dashed
+    row :line   , :dotted               , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dotted
+    row :line   , :dash_dot             , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash_dot
+    row :line   , :dash_dot_dot         , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash_dot_dot
+    row :line   , :dot_dot_dot          , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dot_dot_dot
+    row :line   , :long_dash            , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :long_dash
+    row :line   , :dash_long_dash       , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash_long_dash
+    row :line   , :dashed24             , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dashed24
+    row :line   , :dashed32             , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dashed32
+    row :line   , :dashed44             , 0, 0,  50,  50, 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dashed44
 
     # configuration for general purpose shapes
     row :text   , :h1                   , 0, 0, 100,  50, 'text;fontSize=89;fontStyle=1;fillColor=none'

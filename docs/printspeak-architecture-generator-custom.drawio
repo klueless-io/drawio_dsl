@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="tsA" name="Style-Plain">
-        <mxGraphModel dx="4669" dy="1296" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#fafafa" math="0" shadow="0">
+        <mxGraphModel dx="1153" dy="583" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#fafafa" math="0" shadow="0">
             <root>
                 <mxCell id="page_root_tsA"/>
                 <mxCell id="node_root_tsA" parent="page_root_tsA"/>
@@ -168,13 +168,13 @@
                 <mxCell id="tsA-57" value="Presentor + spec" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=process" parent="ncJzMHtPDMttCXbYRI98-7" vertex="1">
                     <mxGeometry x="338.5" y="156" width="120" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="" style="group" vertex="1" connectable="0" parent="node_root_tsA">
+                <mxCell id="12" value="" style="group" parent="node_root_tsA" vertex="1" connectable="0">
                     <mxGeometry x="268" y="590" width="1746" height="620" as="geometry"/>
                 </mxCell>
                 <mxCell id="tsA-60" value="Reports" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=20;verticalAlign=top" parent="12" vertex="1">
                     <mxGeometry width="1746" height="620" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="" style="group" vertex="1" connectable="0" parent="12">
+                <mxCell id="7" value="" style="group" parent="12" vertex="1" connectable="0">
                     <mxGeometry x="830" y="48" width="882.5" height="156" as="geometry"/>
                 </mxCell>
                 <mxCell id="tsA-77" value="rubocop" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" parent="7" vertex="1">
@@ -195,10 +195,10 @@
                 <mxCell id="tsA-98" value="route / controller action &lt;i&gt;mismatch&lt;/i&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" parent="7" vertex="1">
                     <mxGeometry x="615" y="33" width="90" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" vertex="1" parent="7">
+                <mxCell id="6" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" parent="7" vertex="1">
                     <mxGeometry x="137.5" width="745" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="" style="group" vertex="1" connectable="0" parent="12">
+                <mxCell id="8" value="" style="group" parent="12" vertex="1" connectable="0">
                     <mxGeometry x="827" y="428" width="882.5" height="156" as="geometry"/>
                 </mxCell>
                 <mxCell id="tsA-87" value="Target patterns" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" parent="8" vertex="1">
@@ -219,10 +219,10 @@
                 <mxCell id="tsA-92" value="form objects" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" parent="8" vertex="1">
                     <mxGeometry x="765" y="33" width="90" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" vertex="1" parent="8">
+                <mxCell id="5" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" parent="8" vertex="1">
                     <mxGeometry x="137.5" width="745" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="" style="group" vertex="1" connectable="0" parent="12">
+                <mxCell id="9" value="" style="group" parent="12" vertex="1" connectable="0">
                     <mxGeometry x="829" y="236" width="883" height="156" as="geometry"/>
                 </mxCell>
                 <mxCell id="tsA-80" value="Anti patterns" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" parent="9" vertex="1">
@@ -243,10 +243,10 @@
                 <mxCell id="tsA-85" value="interpolated SQL" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333" parent="9" vertex="1">
                     <mxGeometry x="765" y="33" width="90" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" vertex="1" parent="9">
+                <mxCell id="4" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" parent="9" vertex="1">
                     <mxGeometry x="138" width="745" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="" style="group" vertex="1" connectable="0" parent="12">
+                <mxCell id="10" value="" style="group" parent="12" vertex="1" connectable="0">
                     <mxGeometry x="38" y="44" width="734" height="156" as="geometry"/>
                 </mxCell>
                 <mxCell id="tsA-73" value="ERD" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" parent="10" vertex="1">
@@ -267,7 +267,7 @@
                 <mxCell id="ncJzMHtPDMttCXbYRI98-26" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" parent="10" vertex="1">
                     <mxGeometry x="140" width="594" height="156" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="" style="group" vertex="1" connectable="0" parent="12">
+                <mxCell id="11" value="" style="group" parent="12" vertex="1" connectable="0">
                     <mxGeometry x="38" y="303" width="734" height="262" as="geometry"/>
                 </mxCell>
                 <mxCell id="tsA-62" value="Tests" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;shape=note" parent="11" vertex="1">
@@ -299,6 +299,12 @@
                 </mxCell>
                 <mxCell id="ncJzMHtPDMttCXbYRI98-11" value="" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;opacity=5;fontColor=#ffffff;" parent="11" vertex="1">
                     <mxGeometry x="141" width="593" height="262" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;shape=connector;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=#6F0000;fillColor=#a20025;" edge="1" parent="node_root_tsA" source="13" target="g">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="rake routes:json&lt;br&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;shape=mxgraph.flowchart.database;strokeWidth=1" vertex="1" parent="node_root_tsA">
+                    <mxGeometry x="26.5" y="283" width="160" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

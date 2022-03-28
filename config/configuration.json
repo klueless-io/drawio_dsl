@@ -6,6 +6,46 @@
         "category": "line"
       },
       {
+        "key": "dashed",
+        "category": "line"
+      },
+      {
+        "key": "dotted",
+        "category": "line"
+      },
+      {
+        "key": "dash_dot",
+        "category": "line"
+      },
+      {
+        "key": "dash_dot_dot",
+        "category": "line"
+      },
+      {
+        "key": "dot_dot_dot",
+        "category": "line"
+      },
+      {
+        "key": "long_dash",
+        "category": "line"
+      },
+      {
+        "key": "dash_long_dash",
+        "category": "line"
+      },
+      {
+        "key": "dashed24",
+        "category": "line"
+      },
+      {
+        "key": "dashed32",
+        "category": "line"
+      },
+      {
+        "key": "dashed44",
+        "category": "line"
+      },
+      {
         "key": "h1",
         "category": "text"
       },
@@ -186,7 +226,8 @@
         "y": 0,
         "w": 40,
         "h": 50,
-        "style_modifiers": "shape=actor"
+        "style_modifiers": "shape=actor",
+        "strokes": null
       },
       {
         "category": "element",
@@ -195,7 +236,8 @@
         "y": 0,
         "w": 30,
         "h": 50,
-        "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1"
+        "style_modifiers": "shape=umlActor;verticalLabelPosition=bottom;outlineConnect=1",
+        "strokes": null
       },
       {
         "category": "element",
@@ -204,7 +246,8 @@
         "y": 0,
         "w": 160,
         "h": 120,
-        "style_modifiers": "shape=callout"
+        "style_modifiers": "shape=callout",
+        "strokes": null
       },
       {
         "category": "element",
@@ -213,7 +256,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=mxgraph.basic.oval_callout"
+        "style_modifiers": "shape=mxgraph.basic.oval_callout",
+        "strokes": null
       },
       {
         "category": "element",
@@ -222,7 +266,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=mxgraph.basic.cloud_callout"
+        "style_modifiers": "shape=mxgraph.basic.cloud_callout",
+        "strokes": null
       },
       {
         "category": "element",
@@ -231,7 +276,8 @@
         "y": 0,
         "w": 160,
         "h": 120,
-        "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;"
+        "style_modifiers": "shape=mxgraph.basic.roundRectCallout;dx=30;dy=15;size=5;boundedLbl=1;",
+        "strokes": null
       },
       {
         "category": "element",
@@ -240,7 +286,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "ellipse"
+        "style_modifiers": "ellipse",
+        "strokes": null
       },
       {
         "category": "element",
@@ -249,7 +296,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=cloud"
+        "style_modifiers": "shape=cloud",
+        "strokes": null
       },
       {
         "category": "element",
@@ -258,7 +306,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane"
+        "style_modifiers": "swimlane",
+        "strokes": null
       },
       {
         "category": "element",
@@ -267,7 +316,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane;horizontal=0"
+        "style_modifiers": "swimlane;horizontal=0",
+        "strokes": null
       },
       {
         "category": "element",
@@ -276,7 +326,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane;startSize=50"
+        "style_modifiers": "swimlane;startSize=50",
+        "strokes": null
       },
       {
         "category": "element",
@@ -285,7 +336,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "swimlane;resizable=0"
+        "style_modifiers": "swimlane;resizable=0",
+        "strokes": null
       },
       {
         "category": "element",
@@ -294,7 +346,8 @@
         "y": 0,
         "w": 50,
         "h": 50,
-        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x"
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.x",
+        "strokes": null
       },
       {
         "category": "element",
@@ -303,7 +356,8 @@
         "y": 0,
         "w": 160,
         "h": 100,
-        "style_modifiers": "shape=message"
+        "style_modifiers": "shape=message",
+        "strokes": null
       },
       {
         "category": "element",
@@ -312,7 +366,8 @@
         "y": 0,
         "w": 160,
         "h": 80,
-        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
+        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1",
+        "strokes": null
       },
       {
         "category": "element",
@@ -321,7 +376,8 @@
         "y": 0,
         "w": 160,
         "h": 40,
-        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1"
+        "style_modifiers": "shape=mxgraph.flowchart.database;strokeWidth=1",
+        "strokes": null
       },
       {
         "category": "element",
@@ -330,7 +386,8 @@
         "y": 0,
         "w": 100,
         "h": 100,
-        "style_modifiers": "rhombus"
+        "style_modifiers": "rhombus",
+        "strokes": null
       },
       {
         "category": "element",
@@ -339,7 +396,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=mxgraph.basic.document"
+        "style_modifiers": "shape=mxgraph.basic.document",
+        "strokes": null
       },
       {
         "category": "element",
@@ -348,7 +406,8 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "ellipse"
+        "style_modifiers": "ellipse",
+        "strokes": null
       },
       {
         "category": "element",
@@ -357,7 +416,8 @@
         "y": 0,
         "w": 210,
         "h": 210,
-        "style_modifiers": "fontSize=20;verticalAlign=top"
+        "style_modifiers": "fontSize=20;verticalAlign=top",
+        "strokes": null
       },
       {
         "category": "element",
@@ -366,7 +426,8 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "shape=hexagon"
+        "style_modifiers": "shape=hexagon",
+        "strokes": null
       },
       {
         "category": "element",
@@ -375,7 +436,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
+        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica",
+        "strokes": null
       },
       {
         "category": "element",
@@ -384,7 +446,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica"
+        "style_modifiers": "align=left;overflow=fill;fontSize=12;fontFamily=Helvetica",
+        "strokes": null
       },
       {
         "category": "element",
@@ -393,7 +456,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": "shape=note"
+        "style_modifiers": "shape=note",
+        "strokes": null
       },
       {
         "category": "element",
@@ -402,7 +466,8 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "shape=process"
+        "style_modifiers": "shape=process",
+        "strokes": null
       },
       {
         "category": "element",
@@ -411,7 +476,8 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": ""
+        "style_modifiers": "",
+        "strokes": null
       },
       {
         "category": "element",
@@ -420,7 +486,8 @@
         "y": 0,
         "w": 200,
         "h": 120,
-        "style_modifiers": "shape=mxgraph.basic.cloud_rect"
+        "style_modifiers": "shape=mxgraph.basic.cloud_rect",
+        "strokes": null
       },
       {
         "category": "element",
@@ -429,7 +496,8 @@
         "y": 0,
         "w": 160,
         "h": 160,
-        "style_modifiers": ""
+        "style_modifiers": "",
+        "strokes": null
       },
       {
         "category": "element",
@@ -438,7 +506,8 @@
         "y": 0,
         "w": 120,
         "h": 80,
-        "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1"
+        "style_modifiers": "shape=step;perimeter=stepPerimeter;fixedSize=1",
+        "strokes": null
       },
       {
         "category": "element",
@@ -447,7 +516,8 @@
         "y": 0,
         "w": 50,
         "h": 50,
-        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick"
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.tick",
+        "strokes": null
       },
       {
         "category": "element",
@@ -456,7 +526,8 @@
         "y": 0,
         "w": 300,
         "h": 60,
-        "style_modifiers": ""
+        "style_modifiers": "",
+        "strokes": null
       },
       {
         "category": "element",
@@ -465,7 +536,8 @@
         "y": 0,
         "w": 100,
         "h": 100,
-        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley"
+        "style_modifiers": "verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.basic.smiley",
+        "strokes": null
       },
       {
         "category": "element",
@@ -474,7 +546,8 @@
         "y": 0,
         "w": 100,
         "h": 100,
-        "style_modifiers": "triangle"
+        "style_modifiers": "triangle",
+        "strokes": null
       },
       {
         "category": "element",
@@ -483,7 +556,8 @@
         "y": 0,
         "w": 200,
         "h": 40,
-        "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest"
+        "style_modifiers": "shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest",
+        "strokes": null
       },
       {
         "category": "element",
@@ -492,7 +566,8 @@
         "y": 0,
         "w": 50,
         "h": 40,
-        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden"
+        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden",
+        "strokes": null
       },
       {
         "category": "element",
@@ -501,7 +576,8 @@
         "y": 0,
         "w": 150,
         "h": 40,
-        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden"
+        "style_modifiers": "shape=partialRectangle;connectable=0;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden",
+        "strokes": null
       }
     ],
     "lines": [
@@ -512,7 +588,118 @@
         "y": 0,
         "w": 50,
         "h": 50,
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0"
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null
+      },
+      {
+        "category": "line",
+        "key": "dashed",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dashed"
+      },
+      {
+        "category": "line",
+        "key": "dotted",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dotted"
+      },
+      {
+        "category": "line",
+        "key": "dash_dot",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dash_dot"
+      },
+      {
+        "category": "line",
+        "key": "dash_dot_dot",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dash_dot_dot"
+      },
+      {
+        "category": "line",
+        "key": "dot_dot_dot",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dot_dot_dot"
+      },
+      {
+        "category": "line",
+        "key": "long_dash",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "long_dash"
+      },
+      {
+        "category": "line",
+        "key": "dash_long_dash",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dash_long_dash"
+      },
+      {
+        "category": "line",
+        "key": "dashed24",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dashed24"
+      },
+      {
+        "category": "line",
+        "key": "dashed32",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dashed32"
+      },
+      {
+        "category": "line",
+        "key": "dashed44",
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 50,
+        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "strokes": null,
+        "stroke": "dashed44"
       }
     ],
     "texts": [
@@ -523,7 +710,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=89;fontStyle=1;fillColor=none",
+        "strokes": null
       },
       {
         "category": "text",
@@ -532,7 +720,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=67;fontStyle=1;fillColor=none",
+        "strokes": null
       },
       {
         "category": "text",
@@ -541,7 +730,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=50;fontStyle=1;fillColor=none",
+        "strokes": null
       },
       {
         "category": "text",
@@ -550,7 +740,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=37;fontStyle=1;fillColor=none",
+        "strokes": null
       },
       {
         "category": "text",
@@ -559,7 +750,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=28;fontStyle=1;fillColor=none",
+        "strokes": null
       },
       {
         "category": "text",
@@ -568,7 +760,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=21;fontStyle=1;fillColor=none",
+        "strokes": null
       },
       {
         "category": "text",
@@ -577,7 +770,8 @@
         "y": 0,
         "w": 100,
         "h": 50,
-        "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none"
+        "style_modifiers": "text;fontSize=16;fontStyle=1;fillColor=none",
+        "strokes": null
       }
     ]
   },
