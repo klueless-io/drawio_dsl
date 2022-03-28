@@ -1,3 +1,11 @@
+## [0.11.3](https://github.com/klueless-io/drawio_dsl/compare/v0.11.2...v0.11.3) (2022-03-28)
+
+
+### Bug Fixes
+
+* add new shapes related to line connectors, plus add stroke: configuration ([f1c64bd](https://github.com/klueless-io/drawio_dsl/commit/f1c64bde3d1d665e9abdf20da87a721651f79461))
+* add new shapes related to line connectors, plus add stroke: configuration ([c7bc02b](https://github.com/klueless-io/drawio_dsl/commit/c7bc02b1ad66fe44e8660d21ab5989ade4838e1f))
+
 ## [0.11.2](https://github.com/klueless-io/drawio_dsl/compare/v0.11.1...v0.11.2) (2022-03-26)
 
 
