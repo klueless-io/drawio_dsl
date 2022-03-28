@@ -1,3 +1,11 @@
+## [0.11.4](https://github.com/klueless-io/drawio_dsl/compare/v0.11.3...v0.11.4) (2022-03-28)
+
+
+### Bug Fixes
+
+* add support for :design to line ([bc007e4](https://github.com/klueless-io/drawio_dsl/commit/bc007e4fc77ffaf69491b571e840522220773ac3))
+* refactor shapes to use configuration file and split into elements, lines and texts ([6303747](https://github.com/klueless-io/drawio_dsl/commit/630374751a60b797f045ae84b76506c51a3d0c00))
+
 ## [0.11.3](https://github.com/klueless-io/drawio_dsl/compare/v0.11.2...v0.11.3) (2022-03-28)
 
 
