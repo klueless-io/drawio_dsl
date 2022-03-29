@@ -17,38 +17,47 @@ module DrawioDsl
 
       attr_accessor :source
       attr_accessor :target
-      attr_accessor :c1       # compass_point1 = :n, :ne, :e, :se, :s, :sw, :w, :nw
-      attr_accessor :c2       # compass_point2 = :n, :ne, :e, :se, :s, :sw, :w, :nw
+      attr_accessor :exit_point         # compass_point1 = :n, :ne, :e, :se, :s, :sw, :w, :nw
+      attr_accessor :entry_point        # compass_point2 = :n, :ne, :e, :se, :s, :sw, :w, :nw
       attr_accessor :stroke
       attr_accessor :design
 
-      # rubocop:disable Metrics/AbcSize
+      # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity,  Metrics/PerceivedComplexity
       def apply_defaults(args)
         super(args)
 
         @source           = args[:source]
         @target           = args[:target]
-        @c1               = args[:c1]               || :nw
-        @c2               = args[:c2]               || :ne
+        @exit_point       = args[:exit_point]       || args[:c1] || :nw
+        @entry_point      = args[:entry_point]      || args[:c2] || :ne
+        log.kv 'exit_point', @exit_point
+        log.kv 'entry_point', @entry_point
         @stroke           = args[:stroke]           || self.class.default_stroke
         @design           = args[:design]           || self.class.default_design
         @fill_color       = args[:fill_color]       || theme_palette.fill_color
         @stroke_color     = args[:stroke_color]     || theme_palette.stroke_color
       end
-      # rubocop:enable Metrics/AbcSize
+      # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity,  Metrics/PerceivedComplexity
 
       def default_configuration
         KConfig.configuration.drawio.shape.default_line
       end
 
+      # rubocop:disable Metrics/AbcSize
       def base_modifiers
         return @base_modifiers if defined? @base_modifiers
 
-        stroke_modifiers = KConfig.configuration.drawio.stroke(stroke)
-        design_modifiers = KConfig.configuration.drawio.connector.design(design)
+        log.kv 'exit_modifier', KConfig.configuration.drawio.connector.compass_point(exit_point).exit_modifiers
+        log.kv 'entry_modifier', KConfig.configuration.drawio.connector.compass_point(entry_point).entry_modifiers
 
-        @base_modifiers = [stroke_modifiers, design_modifiers].reject(&:empty?).join(';')
+        @base_modifiers = [
+          KConfig.configuration.drawio.stroke(stroke),
+          KConfig.configuration.drawio.connector.design(design),
+          KConfig.configuration.drawio.connector.compass_point(exit_point).exit_modifiers,
+          KConfig.configuration.drawio.connector.compass_point(entry_point).entry_modifiers
+        ].reject(&:empty?).join(';')
       end
+      # rubocop:enable Metrics/AbcSize
     end
   end
 end

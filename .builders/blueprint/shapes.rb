@@ -83,23 +83,23 @@ KManager.model :shapes, namespace: %i[domain] do
   table :lines do
     fields %i[category key style_modifiers design stroke]
 
-    # style="whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;"
-    # style="whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0"
-    row :line   , :solid          , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
-    row :line   , :dash           , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash
-    row :line   , :dot            , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dot
-    row :line   , :dash_dot       , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash_dot
-    row :line   , :dash_dot_dot   , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash_dot_dot
-    row :line   , :dot_dot_dot    , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dot_dot_dot
-    row :line   , :long_dash      , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :long_dash
-    row :line   , :dash_long_dash , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash_long_dash
-    row :line   , :dash24         , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash24
-    row :line   , :dash32         , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash32
-    row :line   , :dash44         , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', stroke: :dash44
+    # style="whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;edgeStyle=none;shape=link;"
+    # style="whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;edgeStyle=none"
+    row :line   , :solid          , 'edgeStyle=none'
+    row :line   , :dash           , 'edgeStyle=none', stroke: :dash
+    row :line   , :dot            , 'edgeStyle=none', stroke: :dot
+    row :line   , :dash_dot       , 'edgeStyle=none', stroke: :dash_dot
+    row :line   , :dash_dot_dot   , 'edgeStyle=none', stroke: :dash_dot_dot
+    row :line   , :dot_dot_dot    , 'edgeStyle=none', stroke: :dot_dot_dot
+    row :line   , :long_dash      , 'edgeStyle=none', stroke: :long_dash
+    row :line   , :dash_long_dash , 'edgeStyle=none', stroke: :dash_long_dash
+    row :line   , :dash24         , 'edgeStyle=none', stroke: :dash24
+    row :line   , :dash32         , 'edgeStyle=none', stroke: :dash32
+    row :line   , :dash44         , 'edgeStyle=none', stroke: :dash44
 
-    row :line   , :double         , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', design: :double
-    row :line   , :double_dash    , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', design: :double, stroke: :dash
-    row :line   , :double_dot     , 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0', design: :double, stroke: :dot
+    row :line   , :double         , 'edgeStyle=none', design: :double
+    row :line   , :double_dash    , 'edgeStyle=none', design: :double, stroke: :dash
+    row :line   , :double_dot     , 'edgeStyle=none', design: :double, stroke: :dot
   end
 
   table :texts do

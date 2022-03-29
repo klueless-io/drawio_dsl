@@ -211,14 +211,30 @@ module DrawioDsl
     class Connector
       attr_reader :source_config
 
-      XyConfig = Struct.new(:x, :y, keyword_init: true)
+      class CompassPoint
+        attr_reader :x
+        attr_reader :y
+
+        def initialize(x, y)
+          @x = x
+          @y = y
+        end
+
+        def entry_modifiers
+          "entryX=#{x};entryY=#{y};entryDx=0;entryDy=0"
+        end
+
+        def exit_modifiers
+          "exitX=#{x};exitY=#{y};exitDx=0;exitDy=0"
+        end
+      end
 
       def initialize(source_config)
         @source_config = source_config
       end
 
       def compass_point(key)
-        compass_points[key] || XyConfig.new(x: 0, y: 0)
+        compass_points[key] || CompassPoint.new(0, 0)
       end
 
       def compass_points
@@ -226,7 +242,7 @@ module DrawioDsl
 
         @compass_points = {}
         source_config['compass_points'].each do |compass_point|
-          @compass_points[compass_point['key'].to_sym] = XyConfig.new(x: compass_point['x'], y: compass_point['y'])
+          @compass_points[compass_point['key'].to_sym] = CompassPoint.new(compass_point['x'], compass_point['y'])
         end
 
         @compass_points

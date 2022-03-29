@@ -44,13 +44,13 @@ RSpec.describe DrawioDsl::Schema::Line do
 
       it { is_expected.to be_nil }
     end
-    context '.c1' do
-      subject { instance.c1 }
+    context '.exit_point' do
+      subject { instance.exit_point }
 
       it { is_expected.to eq :nw }
     end
-    context '.c2' do
-      subject { instance.c2 }
+    context '.entry_point' do
+      subject { instance.entry_point }
 
       it { is_expected.to eq :ne }
     end
@@ -79,18 +79,12 @@ RSpec.describe DrawioDsl::Schema::Line do
     context '.base_modifiers' do
       subject { instance.base_modifiers }
 
-      it { is_expected.to be_empty }
-
-      context 'when solid line' do
-        let(:target_class) { DrawioDsl::Schema::Solid }
-
-        it { is_expected.to be_empty }
-      end
+      it { is_expected.to be_a(String) }
 
       context 'when dashed line' do
         let(:target_class) { DrawioDsl::Schema::Dash }
 
-        it { is_expected.to eq('dashed=1;fixDash=1') }
+        it { is_expected.to include('dashed=1;fixDash=1') }
       end
     end
   end

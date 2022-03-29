@@ -560,98 +560,98 @@
       {
         "category": "line",
         "key": "solid",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": null
       },
       {
         "category": "line",
         "key": "dash",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash"
       },
       {
         "category": "line",
         "key": "dot",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dot"
       },
       {
         "category": "line",
         "key": "dash_dot",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash_dot"
       },
       {
         "category": "line",
         "key": "dash_dot_dot",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash_dot_dot"
       },
       {
         "category": "line",
         "key": "dot_dot_dot",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dot_dot_dot"
       },
       {
         "category": "line",
         "key": "long_dash",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "long_dash"
       },
       {
         "category": "line",
         "key": "dash_long_dash",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash_long_dash"
       },
       {
         "category": "line",
         "key": "dash24",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash24"
       },
       {
         "category": "line",
         "key": "dash32",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash32"
       },
       {
         "category": "line",
         "key": "dash44",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": null,
         "stroke": "dash44"
       },
       {
         "category": "line",
         "key": "double",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": "double",
         "stroke": null
       },
       {
         "category": "line",
         "key": "double_dash",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": "double",
         "stroke": "dash"
       },
       {
         "category": "line",
         "key": "double_dot",
-        "style_modifiers": "edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0",
+        "style_modifiers": "edgeStyle=none",
         "design": "double",
         "stroke": "dot"
       }
