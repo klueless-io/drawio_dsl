@@ -23,6 +23,7 @@ module DrawioDsl
         shape=partialRectangle;right=0;left=0
       ]
 
+      puts 33
       return false if style.empty?
       return false if ban.include?(style)
 

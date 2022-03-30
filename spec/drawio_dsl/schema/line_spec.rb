@@ -8,8 +8,12 @@ class FakeStroke < DrawioDsl::Schema::Line
   configure_as(:some_name, stroke: :some_stroke)
 end
 
-class FakeDouble < DrawioDsl::Schema::Line
+class FakeDesign < DrawioDsl::Schema::Line
   configure_as(:some_name, design: :double)
+end
+
+class FakeWaypoint < DrawioDsl::Schema::Line
+  configure_as(:some_name, waypoint: :orthogonal)
 end
 
 RSpec.describe DrawioDsl::Schema::Line do
@@ -24,12 +28,20 @@ RSpec.describe DrawioDsl::Schema::Line do
   context 'line configuration' do
     before { FakeStroke.configure_as(:some_name, stroke: :some_stroke) }
 
-    it 'sets the shape key' do
+    it 'sets the shape_key' do
       expect(FakeStroke.shape_key).to eq(:some_name)
     end
 
-    it 'sets the shape stroke ' do
+    it 'sets the default_stroke' do
       expect(FakeStroke.default_stroke).to eq(:some_stroke)
+    end
+
+    it 'sets the default_design' do
+      expect(FakeDesign.default_design).to eq(:double)
+    end
+
+    it 'sets the default_waypoint' do
+      expect(FakeWaypoint.default_waypoint).to eq(:orthogonal)
     end
   end
 
@@ -54,6 +66,16 @@ RSpec.describe DrawioDsl::Schema::Line do
 
       it { is_expected.to eq :ne }
     end
+    context '.start_arrow' do
+      subject { instance.start_arrow }
+
+      it { is_expected.to eq :none }
+    end
+    context '.end_arrow' do
+      subject { instance.end_arrow }
+
+      it { is_expected.to eq :simple }
+    end
     context '.stroke' do
       subject { instance.stroke }
 
@@ -75,6 +97,11 @@ RSpec.describe DrawioDsl::Schema::Line do
       subject { instance.design }
 
       it { is_expected.to be_nil }
+    end
+    context '.waypoint' do
+      subject { instance.waypoint }
+
+      it { is_expected.to eq(:straight) }
     end
     context '.base_modifiers' do
       subject { instance.base_modifiers }

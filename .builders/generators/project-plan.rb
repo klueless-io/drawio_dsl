@@ -11,8 +11,6 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'add support for :exit, :entry to line')
-        todo(title: 'add support for :waypoint to line')
         todo(title: 'add support for :arrow to line')
         todo(title: 'add support for :design to line')
         todo(title: 'add help messages when invalid lookups are used for stroke, design etc.')
@@ -34,7 +32,8 @@ KManager.action :project_plan do
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
         todo(title: 'add active flag to shapes')
-        todo(title: 'does x, y, w, h need to be on lines (no for connectors, but other lines?)')
+        todo(title: 'rename entry/exit compass point to start/end point to be consistent with the arrows')
+        todo(title: 'does x, y, w, h need to be on lines (yes for connectors, but other lines?)')
         todo(title: 'update domain model with all the recent architecture changes')
         todo(title: 'replace generated methods for shapes, texts and lines with meta programming')
         todo(title: 'refactor HTML builder to custom GEM or use existing ruby GEM')
@@ -60,6 +59,8 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'add support for :waypoint to line')
+        todo(title: 'add support for :exit, :entry to line')
         todo(title: 'add support for :design to line')
         todo(title: 'refactor shapes to use configuration file and split into elements, lines and texts')
         todo(title: 'add new shapes related to line connectors, plus add stroke: configuration')

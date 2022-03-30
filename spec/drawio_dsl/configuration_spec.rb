@@ -107,7 +107,7 @@ RSpec.describe DrawioDsl::Configuration do
                 y: 0,
                 w: 0,
                 h: 0,
-                style_modifiers: 'edgeStyle=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0'
+                style_modifiers: nil
               )
             end
           end
@@ -234,17 +234,35 @@ RSpec.describe DrawioDsl::Configuration do
           end
         end
 
+        describe '#random_waypoint_key' do
+          subject { instance.connector.random_waypoint_key }
+
+          it { is_expected.to be_a(Symbol) }
+        end
+
         describe '#arrow' do
           context 'when arrow is defined' do
-            subject { instance.connector.arrow(:triangle) }
+            subject { instance.connector.arrow(:arrow) }
 
-            it { is_expected.to eq('block') }
+            it { is_expected.to have_attributes(image: 'block', fill: 1) }
           end
           context 'when arrow is not defined' do
             subject { instance.connector.arrow(:unknown) }
 
-            it { is_expected.to eq('open') }
+            it { is_expected.to have_attributes(image: 'open', fill: 1) }
           end
+        end
+
+        describe '#arrow_keys' do
+          subject { instance.connector.arrow_keys }
+
+          it { is_expected.to be_a(Array) }
+        end
+
+        describe '#random_arrow_key' do
+          subject { instance.connector.random_arrow_key }
+
+          it { is_expected.to be_a(Symbol) }
         end
 
         describe '#design' do

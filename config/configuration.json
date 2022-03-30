@@ -560,98 +560,98 @@
       {
         "category": "line",
         "key": "solid",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": null
       },
       {
         "category": "line",
         "key": "dash",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash"
       },
       {
         "category": "line",
         "key": "dot",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dot"
       },
       {
         "category": "line",
         "key": "dash_dot",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash_dot"
       },
       {
         "category": "line",
         "key": "dash_dot_dot",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash_dot_dot"
       },
       {
         "category": "line",
         "key": "dot_dot_dot",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dot_dot_dot"
       },
       {
         "category": "line",
         "key": "long_dash",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "long_dash"
       },
       {
         "category": "line",
         "key": "dash_long_dash",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash_long_dash"
       },
       {
         "category": "line",
         "key": "dash24",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash24"
       },
       {
         "category": "line",
         "key": "dash32",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash32"
       },
       {
         "category": "line",
         "key": "dash44",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": null,
         "stroke": "dash44"
       },
       {
         "category": "line",
         "key": "double",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": "double",
         "stroke": null
       },
       {
         "category": "line",
         "key": "double_dash",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": "double",
         "stroke": "dash"
       },
       {
         "category": "line",
         "key": "double_dot",
-        "style_modifiers": "edgeStyle=none",
+        "style_modifiers": null,
         "design": "double",
         "stroke": "dot"
       }
@@ -801,72 +801,194 @@
     ],
     "arrows": [
       {
-        "key": "simple",
-        "style": "open"
+        "key": "none",
+        "image": "none",
+        "fill": 1
       },
       {
-        "key": "triangle",
-        "style": "block"
+        "key": "box",
+        "image": "box",
+        "fill": 1
+      },
+      {
+        "key": "open_box",
+        "image": "box",
+        "fill": 0
+      },
+      {
+        "key": "simple",
+        "image": "open",
+        "fill": 1
+      },
+      {
+        "key": "simple_thin",
+        "image": "openThin",
+        "fill": 1
+      },
+      {
+        "key": "arrow",
+        "image": "block",
+        "fill": 1
+      },
+      {
+        "key": "open_arrow",
+        "image": "block",
+        "fill": 0
+      },
+      {
+        "key": "arrow_thin",
+        "image": "blockThin",
+        "fill": 1
+      },
+      {
+        "key": "open_arrow_thin",
+        "image": "blockThin",
+        "fill": 0
+      },
+      {
+        "key": "arrow_double",
+        "image": "doubleBlock",
+        "fill": 1
+      },
+      {
+        "key": "open_arrow_double",
+        "image": "doubleBlock",
+        "fill": 0
       },
       {
         "key": "diamond",
-        "style": "diamond"
+        "image": "diamond",
+        "fill": 1
+      },
+      {
+        "key": "open_diamond",
+        "image": "diamond",
+        "fill": 0
+      },
+      {
+        "key": "diamond_thin",
+        "image": "diamondThin",
+        "fill": 1
+      },
+      {
+        "key": "open_diamond_thin",
+        "image": "diamondThin",
+        "fill": 0
       },
       {
         "key": "circle",
-        "style": "oval"
+        "image": "oval",
+        "fill": 1
+      },
+      {
+        "key": "open_circle",
+        "image": "oval",
+        "fill": 0
+      },
+      {
+        "key": "half_circle",
+        "image": "halfCircle",
+        "fill": 1
+      },
+      {
+        "key": "plus_circle",
+        "image": "circlePlus",
+        "fill": 1
+      },
+      {
+        "key": "open_plus_circle",
+        "image": "circlePlus",
+        "fill": 0
       },
       {
         "key": "cross",
-        "style": "cross"
+        "image": "cross",
+        "fill": 1
       },
       {
         "key": "short",
-        "style": "classicThin"
+        "image": "classicThin",
+        "fill": 1
+      },
+      {
+        "key": "open_short",
+        "image": "classicThin",
+        "fill": 0
       },
       {
         "key": "default",
-        "style": "classic"
+        "image": "classic",
+        "fill": 1
+      },
+      {
+        "key": "open_default",
+        "image": "classic",
+        "fill": 0
       },
       {
         "key": "none",
-        "style": "none"
+        "image": "none",
+        "fill": 1
       },
       {
-        "key": "plain",
-        "style": "open"
+        "key": "open_none",
+        "image": "none",
+        "fill": 0
       },
       {
         "key": "skewed_dash",
-        "style": "dash"
-      },
-      {
-        "key": "concave",
-        "style": "openThin"
+        "image": "dash",
+        "fill": 1
       },
       {
         "key": "er_many",
-        "style": "ERmany"
+        "image": "ERmany",
+        "fill": 1
       },
       {
         "key": "er_one",
-        "style": "ERone"
+        "image": "ERone",
+        "fill": 1
       },
       {
         "key": "er_one_optional",
-        "style": "ERzeroToOne"
+        "image": "ERzeroToOne",
+        "fill": 1
       },
       {
         "key": "er_one_mandatory",
-        "style": "ERmandOne"
+        "image": "ERmandOne",
+        "fill": 1
       },
       {
         "key": "er_many_optional",
-        "style": "ERzeroToMany"
+        "image": "ERzeroToMany",
+        "fill": 1
+      },
+      {
+        "key": "er_many_optional",
+        "image": "ERzeroToMany",
+        "fill": 0
       },
       {
         "key": "er_many_mandatory",
-        "style": "ERoneToMany"
+        "image": "ERoneToMany",
+        "fill": 1
+      },
+      {
+        "key": "er_many_mandatory",
+        "image": "ERoneToMany",
+        "fill": 0
+      },
+      {
+        "key": "async",
+        "image": "async",
+        "fill": 1
+      },
+      {
+        "key": "async",
+        "image": "async",
+        "fill": 0
       }
     ],
     "designs": [

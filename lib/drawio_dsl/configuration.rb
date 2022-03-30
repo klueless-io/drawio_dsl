@@ -220,12 +220,31 @@ module DrawioDsl
           @y = y
         end
 
+        # should this be start/end
+        def exit_modifiers
+          "exitX=#{x};exitY=#{y};exitDx=0;exitDy=0"
+        end
+
         def entry_modifiers
           "entryX=#{x};entryY=#{y};entryDx=0;entryDy=0"
         end
+      end
 
-        def exit_modifiers
-          "exitX=#{x};exitY=#{y};exitDx=0;exitDy=0"
+      class Arrow
+        attr_reader :image
+        attr_reader :fill
+
+        def initialize(image, fill)
+          @image = image
+          @fill = fill
+        end
+
+        def start_modifiers
+          "startArrow=#{image};startFill=#{fill}"
+        end
+
+        def end_modifiers
+          "endArrow=#{image};endFill=#{fill}"
         end
       end
 
@@ -263,8 +282,12 @@ module DrawioDsl
         @waypoints
       end
 
+      def random_waypoint_key
+        waypoints.keys.sample
+      end
+
       def arrow(key)
-        arrows[key] || 'open'
+        arrows[key] || Arrow.new('open', 1)
       end
 
       def arrows
@@ -272,10 +295,18 @@ module DrawioDsl
 
         @arrows = {}
         source_config['arrows'].each do |arrow|
-          @arrows[arrow['key'].to_sym] = arrow['style']
+          @arrows[arrow['key'].to_sym] = Arrow.new(arrow['image'], arrow['fill'])
         end
 
         @arrows
+      end
+
+      def arrow_keys
+        arrows.keys
+      end
+
+      def random_arrow_key
+        arrows.keys.sample
       end
 
       def design(key)

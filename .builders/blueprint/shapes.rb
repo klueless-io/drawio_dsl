@@ -46,25 +46,47 @@ KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :connector_arrows do
-    fields %i[key style]
+    fields %i[key image fill]
 
-    row :simple                     , 'open'
-    row :triangle                   , 'block'
-    row :diamond                    , 'diamond'
-    row :circle                     , 'oval'
-    row :cross                      , 'cross'
-    row :short                      , 'classicThin'
-    row :default                    , 'classic'
-    row :none                       , 'none'
-    row :plain                      , 'open'
-    row :skewed_dash                , 'dash'
-    row :concave                    , 'openThin'
-    row :er_many                    , 'ERmany'
-    row :er_one                     , 'ERone'
-    row :er_one_optional            , 'ERzeroToOne'
-    row :er_one_mandatory           , 'ERmandOne'
-    row :er_many_optional           , 'ERzeroToMany'
-    row :er_many_mandatory          , 'ERoneToMany'
+    row :none                       , 'none'        , 1
+    row :box                        , 'box'         , 1
+    row :open_box                   , 'box'         , 0
+    row :simple                     , 'open'        , 1
+    row :simple_thin                , 'openThin'    , 1
+    row :arrow                      , 'block'       , 1
+    row :open_arrow                 , 'block'       , 0
+    row :arrow_thin                 , 'blockThin'   , 1
+    row :open_arrow_thin            , 'blockThin'   , 0
+    row :arrow_double               , 'doubleBlock' , 1
+    row :open_arrow_double          , 'doubleBlock' , 0
+    row :diamond                    , 'diamond'     , 1
+    row :open_diamond               , 'diamond'     , 0
+    row :diamond_thin               , 'diamondThin' , 1
+    row :open_diamond_thin          , 'diamondThin' , 0
+    row :circle                     , 'oval'        , 1
+    row :open_circle                , 'oval'        , 0
+    row :half_circle                , 'halfCircle'  , 1
+    row :plus_circle                , 'circlePlus'  , 1
+    row :open_plus_circle           , 'circlePlus'  , 0
+    row :cross                      , 'cross'       , 1
+    row :short                      , 'classicThin' , 1
+    row :open_short                 , 'classicThin' , 0
+    row :default                    , 'classic'     , 1
+    row :open_default               , 'classic'     , 0
+    row :none                       , 'none'        , 1
+    row :open_none                  , 'none'        , 0
+    row :skewed_dash                , 'dash'        , 1
+    row :er_many                    , 'ERmany'      , 1
+    row :er_one                     , 'ERone'       , 1
+    row :er_one_optional            , 'ERzeroToOne' , 1
+    row :er_one_mandatory           , 'ERmandOne'   , 1
+    row :er_many_optional           , 'ERzeroToMany', 1
+    row :er_many_optional           , 'ERzeroToMany', 0
+    row :er_many_mandatory          , 'ERoneToMany' , 1
+    row :er_many_mandatory          , 'ERoneToMany' , 0
+    row :async                      , 'async'       , 1
+    row :async                      , 'async'       , 0
+
   end
 
   table :connector_waypoints do # aka edgeStyle
@@ -81,25 +103,25 @@ KManager.model :shapes, namespace: %i[domain] do
   end
 
   table :lines do
-    fields %i[category key style_modifiers design stroke]
+    fields %i[category key style_modifiers design stroke] # need to add support for waypoint, don't think I need support for exit or entry
 
     # style="whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;edgeStyle=none;shape=link;"
     # style="whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;edgeStyle=none"
-    row :line   , :solid          , 'edgeStyle=none'
-    row :line   , :dash           , 'edgeStyle=none', stroke: :dash
-    row :line   , :dot            , 'edgeStyle=none', stroke: :dot
-    row :line   , :dash_dot       , 'edgeStyle=none', stroke: :dash_dot
-    row :line   , :dash_dot_dot   , 'edgeStyle=none', stroke: :dash_dot_dot
-    row :line   , :dot_dot_dot    , 'edgeStyle=none', stroke: :dot_dot_dot
-    row :line   , :long_dash      , 'edgeStyle=none', stroke: :long_dash
-    row :line   , :dash_long_dash , 'edgeStyle=none', stroke: :dash_long_dash
-    row :line   , :dash24         , 'edgeStyle=none', stroke: :dash24
-    row :line   , :dash32         , 'edgeStyle=none', stroke: :dash32
-    row :line   , :dash44         , 'edgeStyle=none', stroke: :dash44
+    row :line   , :solid          
+    row :line   , :dash           , stroke: :dash
+    row :line   , :dot            , stroke: :dot
+    row :line   , :dash_dot       , stroke: :dash_dot
+    row :line   , :dash_dot_dot   , stroke: :dash_dot_dot
+    row :line   , :dot_dot_dot    , stroke: :dot_dot_dot
+    row :line   , :long_dash      , stroke: :long_dash
+    row :line   , :dash_long_dash , stroke: :dash_long_dash
+    row :line   , :dash24         , stroke: :dash24
+    row :line   , :dash32         , stroke: :dash32
+    row :line   , :dash44         , stroke: :dash44
 
-    row :line   , :double         , 'edgeStyle=none', design: :double
-    row :line   , :double_dash    , 'edgeStyle=none', design: :double, stroke: :dash
-    row :line   , :double_dot     , 'edgeStyle=none', design: :double, stroke: :dot
+    row :line   , :double         , design: :double
+    row :line   , :double_dash    , design: :double, stroke: :dash
+    row :line   , :double_dot     , design: :double, stroke: :dot
   end
 
   table :texts do

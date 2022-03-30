@@ -80,7 +80,7 @@ module DrawioDsl
         @y                = args[:y]                || shape_defaults.y
         @w                = args[:w]                || shape_defaults.w
         @h                = args[:h]                || shape_defaults.h
-        @style_modifiers  = args[:style_modifiers]  || shape_defaults.style_modifiers
+        @style_modifiers  = args[:style_modifiers]  || shape_defaults.style_modifiers || ''
       end
 
       def format(key = nil)
