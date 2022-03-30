@@ -1,3 +1,11 @@
+## [0.11.5](https://github.com/klueless-io/drawio_dsl/compare/v0.11.4...v0.11.5) (2022-03-30)
+
+
+### Bug Fixes
+
+* add support for :arrow to line ([5511b1a](https://github.com/klueless-io/drawio_dsl/commit/5511b1a56f444b1cac58c11670cdf1ee2e67e0d1))
+* add support for :exit, :entry to line ([3381ff4](https://github.com/klueless-io/drawio_dsl/commit/3381ff45c0e8b4c3458f2c40d7e34f5c7a074800))
+
 ## [0.11.4](https://github.com/klueless-io/drawio_dsl/compare/v0.11.3...v0.11.4) (2022-03-28)
 
 
