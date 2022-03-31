@@ -1,3 +1,10 @@
+## [0.11.7](https://github.com/klueless-io/drawio_dsl/compare/v0.11.6...v0.11.7) (2022-03-31)
+
+
+### Bug Fixes
+
+* settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class ([4772b9d](https://github.com/klueless-io/drawio_dsl/commit/4772b9dbb9f647216e704165e65ebe2d97b352c8))
+
 ## [0.11.6](https://github.com/klueless-io/drawio_dsl/compare/v0.11.5...v0.11.6) (2022-03-31)
 
 
