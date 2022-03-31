@@ -11,6 +11,7 @@ require_relative 'layouts/layout'
 require_relative 'layouts/flex_layout'
 require_relative 'layouts/grid_layout'
 
+require_relative 'style_builder'
 require_relative 'shape'
 require_relative 'element'
 require_relative 'line'

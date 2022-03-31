@@ -52,6 +52,8 @@ module DrawioDsl
         args[:classification] = :shape
         super(page, **args)
 
+        @style_builder = DrawioDsl::Schema::StyleBuilder.new
+
         apply_defaults(args)
 
         instance_eval(&block) if block_given?
@@ -89,21 +91,40 @@ module DrawioDsl
       end
 
       def style
-        key_values = []
-        key_values << "whiteSpace=#{white_space}"         if white_space
-        key_values << "html=#{html}"                      if html
-        key_values << "rounded=#{rounded}"                if rounded
-        key_values << "shadow=#{shadow}"                  if shadow
-        key_values << "sketch=#{sketch}"                  if sketch
-        key_values << "glass=#{glass}"                    if glass
-        key_values << "fillColor=#{fill_color}"           if fill_color
-        key_values << "strokeColor=#{stroke_color}"       if stroke_color
-        key_values << "fontColor=#{font_color}"           if font_color
-        key_values << "gradient=#{gradient}"              if gradient
-        key_values << base_modifiers unless base_modifiers.empty?
-        key_values << style_modifiers unless style_modifiers.empty?
+        return @style if defined? @style
 
-        key_values.join(';')
+        # key_values = []
+        # key_values << "whiteSpace=#{white_space}"         if white_space
+        # key_values << "html=#{html}"                      if html
+        # key_values << "rounded=#{rounded}"                if rounded
+        # key_values << "shadow=#{shadow}"                  if shadow
+        # key_values << "sketch=#{sketch}"                  if sketch
+        # key_values << "glass=#{glass}"                    if glass
+        # key_values << "fillColor=#{fill_color}"           if fill_color
+        # key_values << "strokeColor=#{stroke_color}"       if stroke_color
+        # key_values << "fontColor=#{font_color}"           if font_color
+        # key_values << "gradient=#{gradient}"              if gradient
+
+        add_base_modifiers
+
+        @style_builder.add_kv('whiteSpace', white_space)      if white_space
+        @style_builder.add_kv('html', html)                   if html
+        @style_builder.add_kv('rounded', rounded)             if rounded
+        @style_builder.add_kv('shadow', shadow)               if shadow
+        @style_builder.add_kv('sketch', sketch)               if sketch
+        @style_builder.add_kv('glass', glass)                 if glass
+        @style_builder.add_kv('fillColor', fill_color)        if fill_color
+        @style_builder.add_kv('strokeColor', stroke_color)    if stroke_color
+        @style_builder.add_kv('fontColor', font_color)        if font_color
+        @style_builder.add_kv('gradient', gradient)           if gradient
+        @style_builder.add(style_modifiers)
+
+        # key_values << base_modifiers unless base_modifiers.empty?
+        # key_values << style_modifiers unless style_modifiers.empty?
+        # @style_builder.add(style_modifiers) unless style_modifiers.empty?
+
+        # key_values.join(';')
+        @style = @style_builder.style
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
@@ -142,9 +163,7 @@ module DrawioDsl
         result
       end
 
-      def base_modifiers
-        @base_modifiers ||= ''
-      end
+      def add_base_modifiers; end
 
       def theme_palette
         @theme_palette ||= KConfig.configuration.drawio.theme.element(theme)

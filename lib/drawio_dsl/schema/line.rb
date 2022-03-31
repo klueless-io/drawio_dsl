@@ -28,7 +28,6 @@ module DrawioDsl
       attr_accessor :design
       attr_accessor :waypoint
 
-      # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity,  Metrics/PerceivedComplexity
       def apply_defaults(args)
         super(args)
 
@@ -44,30 +43,22 @@ module DrawioDsl
         @fill_color       = args[:fill_color]       || theme_palette.fill_color
         @stroke_color     = args[:stroke_color]     || theme_palette.stroke_color
       end
-      # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity,  Metrics/PerceivedComplexity
 
       def default_configuration
         KConfig.configuration.drawio.shape.default_line
       end
 
-      # rubocop:disable Metrics/AbcSize
-      def base_modifiers
-        return @base_modifiers if defined? @base_modifiers
+      def add_base_modifiers
+        cfg = KConfig.configuration.drawio
 
-        # log.kv 'waypoint', waypoint
-        # log.kv 'waypoint_modifier', KConfig.configuration.drawio.connector.waypoint(waypoint)
-
-        @base_modifiers = [
-          KConfig.configuration.drawio.stroke(stroke),
-          KConfig.configuration.drawio.connector.waypoint(waypoint),
-          KConfig.configuration.drawio.connector.design(design),
-          KConfig.configuration.drawio.connector.compass_point(exit_point).exit_modifiers,
-          KConfig.configuration.drawio.connector.compass_point(entry_point).entry_modifiers,
-          KConfig.configuration.drawio.connector.arrow(start_arrow).start_modifiers,
-          KConfig.configuration.drawio.connector.arrow(end_arrow).end_modifiers
-        ].reject(&:empty?).join(';')
+        @style_builder.add(cfg.stroke(stroke))
+        @style_builder.add(cfg.connector.waypoint(waypoint))
+        @style_builder.add(cfg.connector.design(design))
+        @style_builder.add(cfg.connector.compass_point(exit_point).exit_modifiers)
+        @style_builder.add(cfg.connector.compass_point(entry_point).entry_modifiers)
+        @style_builder.add(cfg.connector.arrow(start_arrow).start_modifiers)
+        @style_builder.add(cfg.connector.arrow(end_arrow).end_modifiers)
       end
-      # rubocop:enable Metrics/AbcSize
     end
   end
 end

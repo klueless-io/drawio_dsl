@@ -103,16 +103,5 @@ RSpec.describe DrawioDsl::Schema::Line do
 
       it { is_expected.to eq(:straight) }
     end
-    context '.base_modifiers' do
-      subject { instance.base_modifiers }
-
-      it { is_expected.to be_a(String) }
-
-      context 'when dashed line' do
-        let(:target_class) { DrawioDsl::Schema::Dash }
-
-        it { is_expected.to include('dashed=1;fixDash=1') }
-      end
-    end
   end
 end

@@ -8,9 +8,9 @@ KManager.action :bootstrap do
     # KConfig.configuration.drawio.rectangle.w = KConfig.configuration.drawio.rectangle.w / 4
     # KConfig.configuration.drawio.rectangle.h = KConfig.configuration.drawio.rectangle.h / 4
 
-    director = DrawioDsl::Drawio
+    DrawioDsl::Drawio
       .init(k_builder, on_exist: :write, on_action: :execute)
-      .diagram(theme: :style_01)
+      .diagram
       .page('Grid-Center', margin_left: 0, margin_top: 0) do
         grid_layout(wrap_at: 3)
         circle

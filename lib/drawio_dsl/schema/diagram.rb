@@ -14,9 +14,8 @@ module DrawioDsl
       # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
       def initialize(**args)
         @host     = args[:host]     || SecureRandom.alphanumeric(3)
-        # TODO: assess and resolve this inconsistency
-        @theme    = args[:theme]    || KConfig.configuration.drawio.theme.random_background_key
-        @bg_theme = args[:bg_theme] || :not_set
+        @theme    = args[:theme]    || :style_02
+        @bg_theme = args[:bg_theme] || :snow
 
         @style = DrawioDsl::Schema::CommonStyle.new(**args) do
           default_style = KConfig.configuration.drawio.base_style

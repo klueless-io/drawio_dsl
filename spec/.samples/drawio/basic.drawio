@@ -1,42 +1,42 @@
-<mxfile host="GEz">
-  <diagram id="g8U" name="Normal">
-    <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
+<mxfile host="KOD">
+  <diagram id="4la" name="Normal">
+    <mxGraphModel dx="0" dy="0" background="#FFFAFA" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="1">
       <root>
-        <mxCell id="page_root_g8U" parent="g8U"/>
-        <mxCell id="node_root_g8U" parent="page_root_g8U"/>
-        <mxCell id="g8U-1" value="Square" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_g8U">
+        <mxCell id="page_root_4la" parent="4la"/>
+        <mxCell id="node_root_4la" parent="page_root_4la"/>
+        <mxCell id="4la-1" value="Square" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_4la">
           <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
         </mxCell>
-        <mxCell id="g8U-2" value="Rectangle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_g8U">
+        <mxCell id="4la-2" value="Rectangle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_4la">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="g8U-3" value="Rectangle (Rounded)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_g8U">
+        <mxCell id="4la-3" value="Rectangle (Rounded)" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_4la">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="g8U-4" value="Circle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;ellipse" vertex="1" parent="node_root_g8U">
+        <mxCell id="4la-4" value="Circle" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;ellipse" vertex="1" parent="node_root_4la">
           <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
         </mxCell>
-        <mxCell id="g8U-5" value="Process" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shape=process" vertex="1" parent="node_root_g8U">
+        <mxCell id="4la-5" value="Process" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;shape=process" vertex="1" parent="node_root_4la">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="g8U-6" value="Ellipse" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;ellipse" vertex="1" parent="node_root_g8U">
+        <mxCell id="4la-6" value="Ellipse" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;ellipse" vertex="1" parent="node_root_4la">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="N9F" name="Sketch">
-    <mxGraphModel dx="0" dy="0" background="#000000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+  <diagram id="8xr" name="Sketch">
+    <mxGraphModel dx="0" dy="0" background="#FFFAFA" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
-        <mxCell id="page_root_N9F" parent="N9F"/>
-        <mxCell id="node_root_N9F" parent="page_root_N9F"/>
-        <mxCell id="N9F-1" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_N9F">
+        <mxCell id="page_root_8xr" parent="8xr"/>
+        <mxCell id="node_root_8xr" parent="page_root_8xr"/>
+        <mxCell id="8xr-1" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_8xr">
           <mxGeometry x="0" y="0" width="160" height="160" as="geometry"/>
         </mxCell>
-        <mxCell id="N9F-2" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_N9F">
+        <mxCell id="8xr-2" value="" style="whiteSpace=wrap;html=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_8xr">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
-        <mxCell id="N9F-3" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_N9F">
+        <mxCell id="8xr-3" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333" vertex="1" parent="node_root_8xr">
           <mxGeometry x="0" y="0" width="200" height="120" as="geometry"/>
         </mxCell>
       </root>

@@ -70,9 +70,11 @@ Metrics/AbcSize:
     - "lib/drawio_dsl/configuration.rb"
     - "lib/drawio_dsl/configuration_shapes.rb"
     - "lib/drawio_dsl/configuration_themes.rb"
+    - "lib/drawio_dsl/schema/line.rb"
 Metrics/CyclomaticComplexity:
   Exclude:
     - "lib/drawio_dsl/drawio_shapes.rb"
+    - "lib/drawio_dsl/schema/line.rb"
 Metrics/MethodLength:
   Max: 25
   Exclude:
@@ -84,6 +86,7 @@ Metrics/MethodLength:
 Metrics/PerceivedComplexity:
   Exclude:
     - "lib/drawio_dsl/drawio_shapes.rb"
+    - "lib/drawio_dsl/schema/line.rb"
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 Naming/AccessorMethodName:
