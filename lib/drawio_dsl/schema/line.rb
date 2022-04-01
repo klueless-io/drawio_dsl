@@ -28,6 +28,11 @@ module DrawioDsl
       attr_accessor :design
       attr_accessor :waypoint
 
+      # def initialize(page, **args)
+      #   args[:classification] = :line
+      #   super(page, **args)
+      # end
+
       def apply_defaults(args)
         super(args)
 

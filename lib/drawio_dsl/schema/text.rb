@@ -10,6 +10,11 @@ module DrawioDsl
         end
       end
 
+      # def initialize(page, **args)
+      #   args[:classification] = :text
+      #   super(page, **args)
+      # end
+
       def apply_defaults(args)
         super(args)
 

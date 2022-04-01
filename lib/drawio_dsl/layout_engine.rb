@@ -27,6 +27,8 @@ module DrawioDsl
       end
     end
 
+    private
+
     def traverse_node(node)
       process_node(node)
       node.nodes.all.each do |child|
@@ -39,7 +41,7 @@ module DrawioDsl
       when :layout_rule
         @current_layout = node
       when :shape
-        current_layout&.position_shape(node)
+        current_layout&.position_shape(node) if %i[element text].include?(node.class.shape_category)
       end
     end
   end

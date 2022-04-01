@@ -11,12 +11,12 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
-        todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
-        todo(title: 'add help messages when invalid lookups are used for stroke, design etc.')
+        todo(title: 'line connectors can take an object reference as an alternative to an id')
+        todo(title: 'merge category and classification into one property')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')
         todo(title: 'line connectors need to support autolinking using ids')
-        todo(title: 'line connectors should not effect the grid positioning systems')
         todo(title: 'new format for connectors - connect(:a, :b, :solid)')
+        todo(title: 'add help messages when invalid lookups are used for stroke, design etc.')
         todo(title: 'improve coverage')
         todo(title: 'class html builder to support include/extend modules, class methods')
       end
@@ -55,7 +55,9 @@ KManager.action :project_plan do
 
         grid_layout(y:90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'line connectors should not effect the grid positioning systems')
         todo(title: 'bg_theme does not work OR at least make it better (see willoughby example)')
+        todo(title: 'settings style attributes need to de-duplicate, might be best to utilize the new StyleBuilder class')
         todo(title: 'add support for :design to line')
         todo(title: 'add support for :arrow to line')
         todo(title: 'add support for :waypoint to line')
