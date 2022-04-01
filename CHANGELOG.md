@@ -1,3 +1,10 @@
+## [0.11.8](https://github.com/klueless-io/drawio_dsl/compare/v0.11.7...v0.11.8) (2022-04-01)
+
+
+### Bug Fixes
+
+* line connectors should not effect the grid positioning systems ([7dfc76b](https://github.com/klueless-io/drawio_dsl/commit/7dfc76ba371e18f04f7ea1d027f3c5057e4de866))
+
 ## [0.11.7](https://github.com/klueless-io/drawio_dsl/compare/v0.11.6...v0.11.7) (2022-03-31)
 
 
