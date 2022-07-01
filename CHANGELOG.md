@@ -1,3 +1,10 @@
+# [0.12.0](https://github.com/klueless-io/drawio_dsl/compare/v0.11.8...v0.12.0) (2022-07-01)
+
+
+### Features
+
+* update code and specs ([de1d101](https://github.com/klueless-io/drawio_dsl/commit/de1d101ce3fd8eea31911af5f2b9c9c164317460))
+
 ## [0.11.8](https://github.com/klueless-io/drawio_dsl/compare/v0.11.7...v0.11.8) (2022-04-01)
 
 
