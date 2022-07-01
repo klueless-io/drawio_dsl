@@ -84,7 +84,9 @@ RSpec.describe DrawioDsl::Schema::Page do
         it do
           is_expected.to eq(
             id: 8,
+            active: true,
             name: 'Page 8',
+            bg_theme: :snow,
             position_x: 0,
             position_y: 0,
             theme: :style_25,

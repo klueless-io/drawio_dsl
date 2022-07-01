@@ -59,6 +59,7 @@ module DrawioDsl
         instance_eval(&block) if block_given?
 
         @value = formatter.empty? ? title : formatter.as_html
+        @meta_data = formatter.empty? ? { items: [{ type: :title, content: title }] } : formatter.to_h
       end
 
       def shape_defaults
@@ -93,18 +94,6 @@ module DrawioDsl
       def style
         return @style if defined? @style
 
-        # key_values = []
-        # key_values << "whiteSpace=#{white_space}"         if white_space
-        # key_values << "html=#{html}"                      if html
-        # key_values << "rounded=#{rounded}"                if rounded
-        # key_values << "shadow=#{shadow}"                  if shadow
-        # key_values << "sketch=#{sketch}"                  if sketch
-        # key_values << "glass=#{glass}"                    if glass
-        # key_values << "fillColor=#{fill_color}"           if fill_color
-        # key_values << "strokeColor=#{stroke_color}"       if stroke_color
-        # key_values << "fontColor=#{font_color}"           if font_color
-        # key_values << "gradient=#{gradient}"              if gradient
-
         add_base_modifiers
 
         @style_builder.add_kv('whiteSpace', white_space)      if white_space
@@ -119,18 +108,11 @@ module DrawioDsl
         @style_builder.add_kv('gradient', gradient)           if gradient
         @style_builder.add(style_modifiers)
 
-        # key_values << base_modifiers unless base_modifiers.empty?
-        # key_values << style_modifiers unless style_modifiers.empty?
-        # @style_builder.add(style_modifiers) unless style_modifiers.empty?
-
-        # key_values.join(';')
         @style = @style_builder.style
       end
       # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 
       def as_xml(xml)
-        # log.error category
-        # log.error key
         draw_element(xml) if is_a?(Element) || is_a?(Text)
         draw_line(xml)    if is_a?(Line)
       end
@@ -157,7 +139,9 @@ module DrawioDsl
           y: y,
           w: w,
           h: h,
-          style: style
+          style: style,
+          value: value,
+          meta_data: @meta_data
         }
         result[:nodes] = nodes.to_h if nodes.any?
         result

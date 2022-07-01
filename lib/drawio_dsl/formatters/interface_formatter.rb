@@ -22,12 +22,20 @@ module DrawioDsl
         )
       end
 
-      def header(name, description: nil, interface_type: 'Interface')
+      def header(name, description: nil, namespace: nil, interface_type: 'Interface')
         html.p("<i>&lt;&lt; #{interface_type} &gt;&gt;</i>", text_align: :center)
         html.p("<b>#{name}</b>", text_align: :center)
         html.hr
 
         html.group(:description).p(description) if description
+
+        items << {
+          type: :interface,
+          name: name,
+          description: description,
+          namespace: namespace,
+          interface_type: interface_type
+        }
 
         self
       end
@@ -40,6 +48,12 @@ module DrawioDsl
                 end
         html.group(:fields).p(value)
 
+        items << {
+          type: :field,
+          name: name,
+          return_type: type
+        }
+
         self
       end
 
@@ -50,6 +64,12 @@ module DrawioDsl
                   "#{name}()"
                 end
         html.group(:methods).p(value)
+
+        items << {
+          type: :method,
+          name: name,
+          return_type: type
+        }
 
         self
       end

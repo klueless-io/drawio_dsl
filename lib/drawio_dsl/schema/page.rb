@@ -116,10 +116,12 @@ module DrawioDsl
       def to_h
         {
           id: id,
+          active: active,
           name: name,
           position_x: position_x,
           position_y: position_y,
           theme: theme,
+          bg_theme: bg_theme,
           palette: palette.to_h,
           style: style.to_h,
           settings: settings,

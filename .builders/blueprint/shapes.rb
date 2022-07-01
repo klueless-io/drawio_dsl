@@ -94,12 +94,19 @@ KManager.model :shapes, namespace: %i[domain] do
 
     row :straight                 , 'edgeStyle=none'
     row :orthogonal               , 'edgeStyle=orthogonalEdgeStyle'
+    row :orthogonal_curved        , 'edgeStyle=orthogonalEdgeStyle;curved=1'
+    row :orthogonal_rounded       , 'edgeStyle=orthogonalEdgeStyle;rounded=1'
     row :elbow                    , 'edgeStyle=elbowEdgeStyle'
+    row :elbow_curved             , 'edgeStyle=elbowEdgeStyle;curved=1'
+    row :elbow_rounded            , 'edgeStyle=elbowEdgeStyle;rounded=1'
     row :elbow_vertical           , 'edgeStyle=elbowEdgeStyle;elbow=vertical'
     row :isometric                , 'edgeStyle=isometricEdgeStyle'
+    row :isometric_curved         , 'edgeStyle=isometricEdgeStyle;curved=1'
+    row :isometric_rounded        , 'edgeStyle=isometricEdgeStyle;rounded=1'
     row :isometric_vertical       , 'edgeStyle=isometricEdgeStyle;elbow=vertical'
-    row :orthogonal_curved        , 'edgeStyle=orthogonalEdgeStyle;curved=1'
     row :entity_relation          , 'edgeStyle=entityRelationEdgeStyle'
+    row :entity_relation_curved   , 'edgeStyle=entityRelationEdgeStyle;curved=1'
+    row :entity_relation_rounded  , 'edgeStyle=entityRelationEdgeStyle;rounded=1'
   end
 
   table :lines do

@@ -22,11 +22,18 @@ module DrawioDsl
         )
       end
 
-      def header(name, description: nil)
+      def header(name, description: nil, namespace: nil)
         html.p("<b>#{name}</b>", text_align: :center)
         html.hr
 
         html.group(:description).p(description) if description
+
+        items << {
+          type: :class,
+          name: name,
+          description: description,
+          namespace: namespace
+        }
 
         self
       end
@@ -39,6 +46,12 @@ module DrawioDsl
                 end
         html.group(:fields).p(value)
 
+        items << {
+          type: :field,
+          name: name,
+          return_type: type
+        }
+
         self
       end
 
@@ -49,6 +62,12 @@ module DrawioDsl
                   "#{name}()"
                 end
         html.group(:methods).p(value)
+
+        items << {
+          type: :method,
+          name: name,
+          return_type: type
+        }
 
         self
       end

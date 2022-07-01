@@ -775,8 +775,24 @@
         "style": "edgeStyle=orthogonalEdgeStyle"
       },
       {
+        "key": "orthogonal_curved",
+        "style": "edgeStyle=orthogonalEdgeStyle;curved=1"
+      },
+      {
+        "key": "orthogonal_rounded",
+        "style": "edgeStyle=orthogonalEdgeStyle;rounded=1"
+      },
+      {
         "key": "elbow",
         "style": "edgeStyle=elbowEdgeStyle"
+      },
+      {
+        "key": "elbow_curved",
+        "style": "edgeStyle=elbowEdgeStyle;curved=1"
+      },
+      {
+        "key": "elbow_rounded",
+        "style": "edgeStyle=elbowEdgeStyle;rounded=1"
       },
       {
         "key": "elbow_vertical",
@@ -787,16 +803,28 @@
         "style": "edgeStyle=isometricEdgeStyle"
       },
       {
+        "key": "isometric_curved",
+        "style": "edgeStyle=isometricEdgeStyle;curved=1"
+      },
+      {
+        "key": "isometric_rounded",
+        "style": "edgeStyle=isometricEdgeStyle;rounded=1"
+      },
+      {
         "key": "isometric_vertical",
         "style": "edgeStyle=isometricEdgeStyle;elbow=vertical"
       },
       {
-        "key": "orthogonal_curved",
-        "style": "edgeStyle=orthogonalEdgeStyle;curved=1"
-      },
-      {
         "key": "entity_relation",
         "style": "edgeStyle=entityRelationEdgeStyle"
+      },
+      {
+        "key": "entity_relation_curved",
+        "style": "edgeStyle=entityRelationEdgeStyle;curved=1"
+      },
+      {
+        "key": "entity_relation_rounded",
+        "style": "edgeStyle=entityRelationEdgeStyle;rounded=1"
       }
     ],
     "arrows": [

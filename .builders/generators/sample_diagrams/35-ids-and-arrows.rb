@@ -7,7 +7,7 @@ KManager.action :ids_and_arrows do
         # grid_layout(wrap_at: 2, grid_w: 120, grid_h: 200, direction: :vertical)
         grid_layout(wrap_at: 10, grid_w: 160, grid_h: 120)
 
-        shape_count = 20
+        shape_count = 2
 
 
         (1..shape_count).step(2).each do |i|

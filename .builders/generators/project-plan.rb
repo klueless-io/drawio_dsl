@@ -11,6 +11,7 @@ KManager.action :project_plan do
 
         grid_layout(y: 90, direction: :horizontal, grid_h: 80, grid_w: 320, wrap_at: 3, grid: 0)
 
+        todo(title: 'refactor save_json data file so that it can easily be read by external DSL tools, make sure osave_json is work')
         todo(title: 'line connectors can take an object reference as an alternative to an id')
         todo(title: 'merge category and classification into one property')
         todo(title: 'line connector aliases gives a simple way to use predefined line configurations')

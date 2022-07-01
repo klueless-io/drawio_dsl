@@ -29,7 +29,7 @@ require_relative 'drawio_dsl/drawio_extensions'
 require_relative 'drawio_dsl/drawio_page'
 require_relative 'drawio_dsl/drawio'
 
-if ENV['KLUE_DEBUG']&.to_s&.downcase == 'true'
+if ENV.fetch('KLUE_DEBUG', 'false').downcase == 'true'
   namespace = 'DrawioDsl::Version'
   file_path = $LOADED_FEATURES.find { |f| f.include?('drawio_dsl/version') }
   version   = DrawioDsl::VERSION.ljust(9)

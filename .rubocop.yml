@@ -39,7 +39,7 @@ Metrics/BlockLength:
 Layout/LineLength:
   Max: 200
   # Ignores annotate output
-  IgnoredPatterns: ['\A# \*\*']
+  AllowedPatterns: ['\A# \*\*']
   IgnoreCopDirectives: true
   Exclude:
     - "lib/drawio_dsl/configuration_shapes.rb"

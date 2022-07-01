@@ -8,60 +8,73 @@ module DrawioDsl
     class BaseFormatter
       attr_reader :html
 
+      # items are separate to html and are used for building a hash for export
+      attr_reader :items
+
       def initialize(element_style_defaults = {})
         @html = DrawioDsl::Formatters::HtmlBuilder.new(element_style_defaults)
+        @items = []
       end
 
       def hr(size: 1)
         html.hr(size: size)
+        items << { type: :hr }
 
         self
       end
 
       def b(content, **opts)
         html.b(content, **opts)
+        items << { type: :b, content: content }
 
         self
       end
 
       def p(content, **opts)
         html.p(content, **opts)
+        items << { type: :p, content: content }
 
         self
       end
 
       def h1(content, **opts)
         html.h1(content, **opts)
+        items << { type: :h1, content: content }
 
         self
       end
 
       def h2(content, **opts)
         html.h2(content, **opts)
+        items << { type: :h2, content: content }
 
         self
       end
 
       def h3(content, **opts)
         html.h3(content, **opts)
+        items << { type: :h3, content: content }
 
         self
       end
 
       def h4(content, **opts)
         html.h4(content, **opts)
+        items << { type: :h4, content: content }
 
         self
       end
 
       def h5(content, **opts)
         html.h5(content, **opts)
+        items << { type: :h5, content: content }
 
         self
       end
 
       def h6(content, **opts)
         html.h6(content, **opts)
+        items << { type: :h6, content: content }
 
         self
       end
@@ -90,6 +103,12 @@ module DrawioDsl
 
       def as_html(new_line: false)
         html.as_html(new_line: new_line)
+      end
+
+      def to_h
+        {
+          items: items.map(&:to_h)
+        }
       end
 
       private
