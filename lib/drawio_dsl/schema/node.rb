@@ -5,12 +5,26 @@ module DrawioDsl
     # Node is a base class for shapes, connections, positioners and layout rules
     #
     class Node
+      # Unique ID so that nodes can be referenced
       attr_accessor :id
+
+      # What drawio page is this node on?
       attr_accessor :page
+
+      # What is the parent node?
       attr_accessor :parent
+
+      # What is the class of this node? [anchor, layout_rule, shape, line, ]
       attr_accessor :classification
+
+      # Represents the node type as a string [circle, square, diamond, line]
       attr_accessor :key
+
+      # Child nodes
       attr_accessor :nodes
+
+      # Optional description of this node, this can be useful for json output
+      attr_accessor :description
 
       def initialize(page, **args)
         @page = page
@@ -19,6 +33,7 @@ module DrawioDsl
         @classification = args[:classification] || :unknown
         @key = args[:key] || :unknown
         @nodes = NodeList.new
+        @description = args[:description]
       end
 
       def to_h
@@ -28,6 +43,7 @@ module DrawioDsl
           classification: classification,
           key: key
         }
+        result[:description] = description unless description.nil?
         result[:nodes] = nodes.to_h if nodes.any?
         result
       end
