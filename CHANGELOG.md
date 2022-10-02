@@ -1,3 +1,11 @@
+## [0.12.1](https://github.com/klueless-io/drawio_dsl/compare/v0.12.0...v0.12.1) (2022-10-02)
+
+
+### Bug Fixes
+
+* update gem dependancies ([c175ee8](https://github.com/klueless-io/drawio_dsl/commit/c175ee8f782efd26e56e239a53627ffe4c7eaa78))
+* update gem dependancies ([80864a8](https://github.com/klueless-io/drawio_dsl/commit/80864a8c80b60ee9dfb3d7d9ea816d93fe78ac39))
+
 # [0.12.0](https://github.com/klueless-io/drawio_dsl/compare/v0.11.8...v0.12.0) (2022-07-01)
 
 
