@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   # spec.metadata['allowed_push_host'] = "Set to 'http://mygemserver.com'"
 
   spec.metadata['homepage_uri']     = spec.homepage
-  spec.metadata['source_code_uri']  = ''
-  spec.metadata['changelog_uri']    = '/blob/main/CHANGELOG.md'
+  spec.metadata['source_code_uri']  = 'https://github.com/klueless-io/drawio_dsl'
+  spec.metadata['changelog_uri']    = 'https://github.com/klueless-io/drawio_dsl/blob/main/CHANGELOG.md'
 
   # The `git ls-files -z` loads the RubyGem files that have been added into git.
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
@@ -37,10 +37,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
   # spec.extensions    = ['ext/drawio_dsl/extconf.rb']
-
-  spec.metadata = {
-    'rubygems_mfa_required' => 'true'
-  }
 
   spec.add_dependency 'k_config', '~> 0.0.0'
   spec.add_dependency 'k_director' # , '~> 0.0.0'
