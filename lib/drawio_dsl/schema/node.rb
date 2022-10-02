@@ -23,9 +23,6 @@ module DrawioDsl
       # Child nodes
       attr_accessor :nodes
 
-      # Optional description of this node, this can be useful for json output
-      attr_accessor :description
-
       def initialize(page, **args)
         @page = page
         @id = args[:id]
@@ -33,7 +30,6 @@ module DrawioDsl
         @classification = args[:classification] || :unknown
         @key = args[:key] || :unknown
         @nodes = NodeList.new
-        @description = args[:description]
       end
 
       def to_h
@@ -43,7 +39,6 @@ module DrawioDsl
           classification: classification,
           key: key
         }
-        result[:description] = description unless description.nil?
         result[:nodes] = nodes.to_h if nodes.any?
         result
       end
