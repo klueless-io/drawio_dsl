@@ -1,3 +1,10 @@
+## [0.12.2](https://github.com/klueless-io/drawio_dsl/compare/v0.12.1...v0.12.2) (2022-10-02)
+
+
+### Bug Fixes
+
+* add description to node class ([63725ec](https://github.com/klueless-io/drawio_dsl/commit/63725ec5cd5cf607c0e96bd39990996ee1e26321))
+
 ## [0.12.1](https://github.com/klueless-io/drawio_dsl/compare/v0.12.0...v0.12.1) (2022-10-02)
 
 
