@@ -9,6 +9,27 @@ RSpec.describe DrawioDsl::Formatters::InterfaceFormatter do
     it { expect(instance).to be_a(described_class) }
   end
 
+  context '#header' do
+    let(:name) { 'IPerson' }
+    let(:description) { 'My description' }
+    let(:namespace) { 'My::Namespace' }
+    let(:args) { {} }
+
+    describe '.items.first' do
+      subject { instance.items.first }
+
+      before { instance.header(name, description: description, namespace: namespace, **args) }
+
+      it { expect(subject).to include(type: :interface, name: name, description: description, namespace: namespace) }
+
+      context 'with args' do
+        let(:args) { { foo: 'bar' } }
+
+        it { expect(subject).to include(type: :interface, name: name, description: description, namespace: namespace, foo: 'bar') }
+      end
+    end
+  end
+
   describe 'as_html' do
     subject { instance.as_html(new_line: true) }
 

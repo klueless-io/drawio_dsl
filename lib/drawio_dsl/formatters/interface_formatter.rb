@@ -22,7 +22,7 @@ module DrawioDsl
         )
       end
 
-      def header(name, description: nil, namespace: nil, interface_type: 'Interface')
+      def header(name, description: nil, namespace: nil, interface_type: 'Interface', **args)
         html.p("<i>&lt;&lt; #{interface_type} &gt;&gt;</i>", text_align: :center)
         html.p("<b>#{name}</b>", text_align: :center)
         html.hr
@@ -34,7 +34,8 @@ module DrawioDsl
           name: name,
           description: description,
           namespace: namespace,
-          interface_type: interface_type
+          interface_type: interface_type,
+          **args
         }
 
         self

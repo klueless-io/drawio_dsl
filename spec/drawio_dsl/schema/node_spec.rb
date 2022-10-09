@@ -71,18 +71,6 @@ RSpec.describe DrawioDsl::Schema::Node do
     end
   end
 
-  describe '.description' do
-    subject { instance.description }
-
-    it { is_expected.to be_nil }
-
-    context 'with description' do
-      let(:args) { { description: 'the quick brown fox' } }
-
-      it { is_expected.to eq 'the quick brown fox' }
-    end
-  end
-
   context 'when node hierarchy' do
     let(:add_child_to_parent) { parent_node.add_node(child_node) }
     let(:parent_node) { DrawioDsl::Schema::Anchor.new(page, id: 'page_node') }

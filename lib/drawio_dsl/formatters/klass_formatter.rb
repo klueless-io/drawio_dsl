@@ -22,7 +22,7 @@ module DrawioDsl
         )
       end
 
-      def header(name, description: nil, namespace: nil)
+      def header(name, description: nil, namespace: nil, **args)
         html.p("<b>#{name}</b>", text_align: :center)
         html.hr
 
@@ -32,7 +32,8 @@ module DrawioDsl
           type: :class,
           name: name,
           description: description,
-          namespace: namespace
+          namespace: namespace,
+          **args
         }
 
         self
