@@ -1,3 +1,11 @@
+## [0.12.3](https://github.com/klueless-io/drawio_dsl/compare/v0.12.2...v0.12.3) (2022-10-09)
+
+
+### Bug Fixes
+
+* add **args to .header in klass and interface formatter ([2cbbb19](https://github.com/klueless-io/drawio_dsl/commit/2cbbb19af1c0e0eee75047c49743d6a9a290e5dc))
+* remove description ([005e781](https://github.com/klueless-io/drawio_dsl/commit/005e78188529ccc662dd0c035f73c868162d81aa))
+
 ## [0.12.2](https://github.com/klueless-io/drawio_dsl/compare/v0.12.1...v0.12.2) (2022-10-02)
 
 
