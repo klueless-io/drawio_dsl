@@ -1,3 +1,10 @@
+## [0.12.4](https://github.com/klueless-io/drawio_dsl/compare/v0.12.3...v0.12.4) (2022-10-23)
+
+
+### Bug Fixes
+
+* before machine backup push ([c1d13a1](https://github.com/klueless-io/drawio_dsl/commit/c1d13a1379719e5477a4ff4c143286537c1985a6))
+
 ## [0.12.3](https://github.com/klueless-io/drawio_dsl/compare/v0.12.2...v0.12.3) (2022-10-09)
 
 
